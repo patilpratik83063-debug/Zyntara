@@ -34,7 +34,7 @@ export const IndustriesView: React.FC<IndustriesViewProps> = ({
         
         {/* Header */}
         <div className="text-center max-w-4xl mx-auto space-y-4">
-          <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-blue-950/70 border border-blue-500/30 text-xs font-mono text-cyan-300">
+          <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-emerald-950/70 border border-emerald-500/30 text-xs font-mono text-emerald-300">
             <Building2 className="w-3.5 h-3.5" />
             <span>VERTICAL ENTERPRISE INTELLIGENCE</span>
           </div>
@@ -59,7 +59,7 @@ export const IndustriesView: React.FC<IndustriesViewProps> = ({
                   onClick={() => setSelectedIndustryId(ind.id)}
                   className={`px-4 py-2.5 rounded-xl text-xs font-mono font-semibold tracking-wider transition-all duration-300 border cursor-pointer ${
                     isSelected
-                      ? 'bg-blue-600 text-white border-cyan-300 shadow-[0_0_15px_#38bdf8] scale-105'
+                      ? 'bg-emerald-600 text-white border-emerald-300 shadow-[0_0_15px_#34d399] scale-105'
                       : 'bg-slate-900/80 text-slate-400 border-slate-800 hover:text-slate-200 hover:border-slate-700'
                   }`}
                 >
@@ -71,17 +71,17 @@ export const IndustriesView: React.FC<IndustriesViewProps> = ({
         </div>
 
         {/* Active Industry Comprehensive Profile */}
-        <div className="p-8 sm:p-10 rounded-3xl bg-[#090C16] border border-blue-500/30 shadow-2xl space-y-8">
+        <div className="p-8 sm:p-10 rounded-3xl bg-[#090C16] border border-emerald-500/30 shadow-2xl space-y-8">
           {/* Top Headline & Opportunity */}
           <div className="flex flex-col lg:flex-row lg:items-center justify-between gap-6 pb-6 border-b border-slate-800">
             <div>
-              <span className="text-xs font-mono text-cyan-400 uppercase tracking-widest">
+              <span className="text-xs font-mono text-emerald-400 uppercase tracking-widest">
                 Target Industry Sector
               </span>
               <h2 className="text-3xl sm:text-4xl font-display font-extrabold text-white mt-1">
                 {current.name}
               </h2>
-              <p className="text-sm text-cyan-300 mt-1 font-mono">
+              <p className="text-sm text-emerald-300 mt-1 font-mono">
                 {current.headline}
               </p>
             </div>
@@ -107,8 +107,8 @@ export const IndustriesView: React.FC<IndustriesViewProps> = ({
               </p>
             </div>
 
-            <div className="p-6 rounded-2xl bg-blue-950/30 border border-cyan-500/30 space-y-2">
-              <div className="text-xs font-mono text-cyan-400 uppercase font-bold">
+            <div className="p-6 rounded-2xl bg-emerald-950/30 border border-emerald-500/30 space-y-2">
+              <div className="text-xs font-mono text-emerald-400 uppercase font-bold">
                 Zyntara AI Transformation Opportunity:
               </div>
               <p className="text-sm text-slate-200 leading-relaxed">
@@ -125,7 +125,7 @@ export const IndustriesView: React.FC<IndustriesViewProps> = ({
             <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
               {current.intelligenceLayerUse.map((item, idx) => (
                 <div key={idx} className="p-4 rounded-xl bg-slate-900/60 border border-slate-800 text-xs text-slate-300 flex items-start gap-2.5">
-                  <CheckCircle2 className="w-4 h-4 text-cyan-400 shrink-0 mt-0.5" />
+                  <CheckCircle2 className="w-4 h-4 text-emerald-400 shrink-0 mt-0.5" />
                   <span>{item}</span>
                 </div>
               ))}
@@ -134,7 +134,7 @@ export const IndustriesView: React.FC<IndustriesViewProps> = ({
 
           {/* Expected Outcomes Framework */}
           <div className="p-6 rounded-2xl bg-slate-900/80 border border-slate-800 space-y-4">
-            <div className="text-xs font-mono text-cyan-400 uppercase font-semibold">
+            <div className="text-xs font-mono text-emerald-400 uppercase font-semibold">
               Quantifiable Business Impact Metrics:
             </div>
             <div className="grid grid-cols-1 sm:grid-cols-3 gap-4">
@@ -155,7 +155,7 @@ export const IndustriesView: React.FC<IndustriesViewProps> = ({
               </div>
               <div className="flex flex-wrap gap-2">
                 {current.workforceModules.map((wm, i) => (
-                  <span key={i} className="text-xs font-mono px-3 py-1 rounded bg-blue-950/60 text-cyan-300 border border-blue-500/30">
+                  <span key={i} className="text-xs font-mono px-3 py-1 rounded bg-emerald-950/60 text-emerald-300 border border-emerald-500/30">
                     {wm}
                   </span>
                 ))}

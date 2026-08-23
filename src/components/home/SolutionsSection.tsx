@@ -61,7 +61,7 @@ export const SolutionsSection: React.FC<SolutionsSectionProps> = ({ onNavigate }
                 onClick={() => setActiveCategory(tab.id as any)}
                 className={`px-4 py-2 rounded-xl text-xs font-mono font-medium tracking-wider transition-all cursor-pointer ${
                   activeCategory === tab.id
-                    ? 'bg-gradient-to-r from-[#695CF6] to-[#5143E0] text-white shadow-[0_2px_12px_rgba(105,92,246,0.35)]'
+                    ? 'bg-gradient-to-r from-[#10B981] to-[#059669] text-white shadow-[0_2px_12px_rgba(16, 185, 129,0.35)]'
                     : 'text-[#7E8491] hover:text-[#F5F3EE]'
                 }`}
               >
@@ -100,7 +100,7 @@ export const SolutionsSection: React.FC<SolutionsSectionProps> = ({ onNavigate }
                   <h3 className="font-display font-bold text-lg text-[#F5F3EE] group-hover:text-white transition-colors">
                     {solution.title}
                   </h3>
-                  <div className="text-xs font-mono text-[#8B7CFF] font-medium mt-1">
+                  <div className="text-xs font-mono text-[#34D399] font-medium mt-1">
                     {solution.tagline}
                   </div>
 
@@ -110,7 +110,7 @@ export const SolutionsSection: React.FC<SolutionsSectionProps> = ({ onNavigate }
                 </div>
 
                 <div className="mt-6 pt-4 border-t border-white/[0.06] flex items-center justify-between">
-                  <span className="text-xs font-mono text-[#59D6C4] line-clamp-1">
+                  <span className="text-xs font-mono text-[#2DD4BF] line-clamp-1">
                     {solution.businessOutcomes[0]}
                   </span>
                   <ArrowRight className="w-4 h-4 text-[#7E8491] group-hover:text-[#D6B77A] group-hover:translate-x-1 transition-all shrink-0 ml-2" />
@@ -128,7 +128,7 @@ export const SolutionsSection: React.FC<SolutionsSectionProps> = ({ onNavigate }
                 <span className="font-mono text-xs font-bold text-[#D6B77A] px-2 py-0.5 rounded-md bg-[#181D2A] border border-[#D6B77A]/30">
                   SOLUTION {activeSolution.number}
                 </span>
-                <span className="text-xs font-mono text-[#8B7CFF] uppercase font-semibold">
+                <span className="text-xs font-mono text-[#34D399] uppercase font-semibold">
                   {activeSolution.tagline}
                 </span>
               </div>
@@ -173,7 +173,7 @@ export const SolutionsSection: React.FC<SolutionsSectionProps> = ({ onNavigate }
             </div>
 
             <div className="p-4 rounded-2xl bg-[#141824]/80 border border-white/[0.06] space-y-1.5">
-              <span className="text-[10px] font-mono text-[#8B7CFF] uppercase font-bold tracking-wider">
+              <span className="text-[10px] font-mono text-[#34D399] uppercase font-bold tracking-wider">
                 Where It Fits In Your Business:
               </span>
               <p className="text-xs text-[#E0E2EC] leading-relaxed">
@@ -182,7 +182,7 @@ export const SolutionsSection: React.FC<SolutionsSectionProps> = ({ onNavigate }
             </div>
 
             <div className="p-4 rounded-2xl bg-[#141824]/80 border border-white/[0.06] space-y-1.5">
-              <span className="text-[10px] font-mono text-[#59D6C4] uppercase font-bold tracking-wider">
+              <span className="text-[10px] font-mono text-[#2DD4BF] uppercase font-bold tracking-wider">
                 AI Cognitive Capability:
               </span>
               <p className="text-xs text-[#E0E2EC] leading-relaxed">
@@ -220,7 +220,7 @@ export const SolutionsSection: React.FC<SolutionsSectionProps> = ({ onNavigate }
                 ))}
               </div>
               <div className="mt-4 text-xs font-mono text-[#7E8491]">
-                Estimated Deployment: <span className="text-[#8B7CFF]">{activeSolution.implementationTimeline}</span>
+                Estimated Deployment: <span className="text-[#34D399]">{activeSolution.implementationTimeline}</span>
               </div>
             </div>
           </div>

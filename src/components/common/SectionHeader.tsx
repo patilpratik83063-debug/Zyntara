@@ -51,11 +51,11 @@ export const SectionHeader: React.FC<SectionHeaderProps> = ({
       {/* Eyebrow or Badge */}
       <motion.div variants={item} className="flex items-center gap-2.5 mb-3.5">
         {eyebrow && (
-          <span className={`font-mono text-xs tracking-[0.2em] uppercase font-semibold ${isLight ? 'text-[#5A48F5]' : 'text-[#D6B77A]'}`}>
+          <span className={`font-mono text-xs tracking-[0.2em] uppercase font-semibold ${isLight ? 'text-[#059669]' : 'text-[#D6B77A]'}`}>
             {eyebrow}
           </span>
         )}
-        {eyebrow && <span className={`hidden sm:block w-10 h-px ${isLight ? 'bg-[#5A48F5]/40' : 'bg-[#D6B77A]/40'}`} />}
+        {eyebrow && <span className={`hidden sm:block w-10 h-px ${isLight ? 'bg-[#059669]/40' : 'bg-[#D6B77A]/40'}`} />}
         {badge && (
           <span className={`inline-flex items-center px-2.5 py-0.5 rounded-full text-[10px] font-mono tracking-wider ${
             isLight
@@ -78,8 +78,8 @@ export const SectionHeader: React.FC<SectionHeaderProps> = ({
         {highlightText && (
           <span className={`text-transparent bg-clip-text animate-gradient-pan bg-[length:200%_auto] ${
             isLight
-              ? 'bg-gradient-to-r from-[#5A48F5] via-[#8B7CFF] to-[#5A48F5]'
-              : 'bg-gradient-to-r from-[#C4BEFF] via-[#8B7CFF] to-[#D6B77A]'
+              ? 'bg-gradient-to-r from-[#059669] via-[#34D399] to-[#059669]'
+              : 'bg-gradient-to-r from-[#6EE7B7] via-[#34D399] to-[#D6B77A]'
           }`}>
             {highlightText}
           </span>

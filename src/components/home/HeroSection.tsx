@@ -47,16 +47,16 @@ export const HeroSection: React.FC<HeroSectionProps> = ({
   ];
 
   const systemNodes: SystemNode[] = [
-    { id: 'data', name: 'DATA', category: 'Data Fabric', angle: 0, distance: 38, color: '#8B7CFF', metric: '100% Zero-Silo', description: 'Unified data ingestion & real-time semantic fabric' },
+    { id: 'data', name: 'DATA', category: 'Data Fabric', angle: 0, distance: 38, color: '#34D399', metric: '100% Zero-Silo', description: 'Unified data ingestion & real-time semantic fabric' },
     { id: 'intelligence', name: 'INTELLIGENCE', category: 'Cognitive Engine', angle: 33, distance: 44, color: '#D6B77A', metric: 'Sub-300ms', description: 'Domain-adapted hybrid reasoning & GraphRAG' },
-    { id: 'ai-agents', name: 'AI AGENTS', category: 'Autonomous Mesh', angle: 66, distance: 36, color: '#8B7CFF', metric: 'Multi-Agent', description: 'Autonomous digital workers executing approved workflows' },
-    { id: 'automation', name: 'AUTOMATION', category: 'Orchestration', angle: 100, distance: 42, color: '#5A48F5', metric: 'Event-Driven', description: 'Deterministic state machines & cross-system queues' },
+    { id: 'ai-agents', name: 'AI AGENTS', category: 'Autonomous Mesh', angle: 66, distance: 36, color: '#34D399', metric: 'Multi-Agent', description: 'Autonomous digital workers executing approved workflows' },
+    { id: 'automation', name: 'AUTOMATION', category: 'Orchestration', angle: 100, distance: 42, color: '#059669', metric: 'Event-Driven', description: 'Deterministic state machines & cross-system queues' },
     { id: 'crm', name: 'CRM', category: 'Operating Layer', angle: 135, distance: 46, color: '#D6B77A', metric: 'Active Sync', description: 'Real-time pipeline orchestration & contact sync' },
-    { id: 'erp', name: 'ERP', category: 'System of Record', angle: 170, distance: 40, color: '#8B7CFF', metric: 'SAP / Oracle', description: 'Certified direct ledger & inventory orchestration' },
-    { id: 'cx', name: 'CX & WHATSAPP', category: 'Business Channel', angle: 205, distance: 45, color: '#59D6C4', metric: 'Real-Time', description: 'Lead capture, auto-replies, and human escalation' },
-    { id: 'operations', name: 'OPERATIONS', category: 'Workflow Mesh', angle: 240, distance: 38, color: '#8B7CFF', metric: 'Zero Friction', description: 'Cross-departmental handoffs & auditable execution' },
+    { id: 'erp', name: 'ERP', category: 'System of Record', angle: 170, distance: 40, color: '#34D399', metric: 'SAP / Oracle', description: 'Certified direct ledger & inventory orchestration' },
+    { id: 'cx', name: 'CX & WHATSAPP', category: 'Business Channel', angle: 205, distance: 45, color: '#2DD4BF', metric: 'Real-Time', description: 'Lead capture, auto-replies, and human escalation' },
+    { id: 'operations', name: 'OPERATIONS', category: 'Workflow Mesh', angle: 240, distance: 38, color: '#34D399', metric: 'Zero Friction', description: 'Cross-departmental handoffs & auditable execution' },
     { id: 'analytics', name: 'ANALYTICS', category: 'Decision Engine', angle: 275, distance: 42, color: '#D6B77A', metric: 'Live SQL', description: 'Operational decision support & automated reporting' },
-    { id: 'revenue', name: 'REVENUE', category: 'Pipeline Growth', angle: 310, distance: 37, color: '#8B7CFF', metric: 'Velocity', description: 'Automated chasing, qualification, and deal progression' },
+    { id: 'revenue', name: 'REVENUE', category: 'Pipeline Growth', angle: 310, distance: 37, color: '#34D399', metric: 'Velocity', description: 'Automated chasing, qualification, and deal progression' },
     { id: 'growth', name: 'DIGITAL TWIN', category: 'Simulation', angle: 340, distance: 43, color: '#D6B77A', metric: 'Predictive', description: 'Scenario modeling & continuous process optimization' }
   ];
 
@@ -102,7 +102,7 @@ export const HeroSection: React.FC<HeroSectionProps> = ({
       {/* Background Interactive Particle Canvas */}
       <InteractiveCanvas nodeCount={42} />
 
-      {/* Atmospheric Spatial Lighting in Electric Indigo & Champagne */}
+      {/* Atmospheric Spatial Lighting in Emerald & Champagne */}
       <motion.div
         initial={{ opacity: 0 }}
         animate={{ opacity: 0.8 }}
@@ -129,17 +129,17 @@ export const HeroSection: React.FC<HeroSectionProps> = ({
               src={ZENTARA_LOGO_ICON} 
               alt="Zentara" 
               referrerPolicy="no-referrer"
-              className="w-4 h-4 rounded-full object-cover shadow-[0_0_6px_rgba(89,214,196,0.8)]"
+              className="w-4 h-4 rounded-full object-cover shadow-[0_0_6px_rgba(45, 212, 191,0.8)]"
             />
             <span className="tracking-[0.16em] uppercase font-bold text-[#F5F3EE]">ZENTARA TECHNOLOGY</span>
             <span className="text-white/20">•</span>
-            <span className="text-[#59D6C4] font-medium">AI • AUTOMATION • INTELLIGENT SYSTEMS</span>
+            <span className="text-[#2DD4BF] font-medium">AI • AUTOMATION • INTELLIGENT SYSTEMS</span>
           </motion.div>
 
           {/* Main Headline */}
           <motion.h1 variants={item} className="text-4xl sm:text-5xl lg:text-6xl xl:text-7xl font-display font-extrabold text-[#F5F3EE] tracking-tight leading-[1.05]">
             BUILD AN{' '}
-            <span className="text-transparent bg-clip-text bg-gradient-to-r from-[#C4BEFF] via-[#8B7CFF] to-[#D6B77A] bg-[length:200%_auto] animate-gradient-pan">
+            <span className="text-transparent bg-clip-text bg-gradient-to-r from-[#6EE7B7] via-[#34D399] to-[#D6B77A] bg-[length:200%_auto] animate-gradient-pan">
               AI-POWERED
             </span>{' '}
             ENTERPRISE.
@@ -179,7 +179,7 @@ export const HeroSection: React.FC<HeroSectionProps> = ({
 
             <button
               onClick={() => onNavigate('automation')}
-              className="px-4 py-3.5 rounded-xl bg-[#121622] hover:bg-[#181D2A] border border-[#8B7CFF]/30 text-xs font-mono text-[#8B7CFF] hover:text-white transition-all flex items-center justify-center gap-2 cursor-pointer shadow-sm hover:border-[#8B7CFF]/60"
+              className="px-4 py-3.5 rounded-xl bg-[#121622] hover:bg-[#181D2A] border border-[#34D399]/30 text-xs font-mono text-[#34D399] hover:text-white transition-all flex items-center justify-center gap-2 cursor-pointer shadow-sm hover:border-[#34D399]/60"
             >
               <Zap className="w-3.5 h-3.5 text-[#D6B77A]" />
               <span>Automate a Workflow</span>
@@ -189,7 +189,7 @@ export const HeroSection: React.FC<HeroSectionProps> = ({
           {/* Conversion Microcopy */}
           <motion.div variants={item} className="flex flex-col space-y-1 text-xs text-[#7E8491]">
             <p className="flex items-center gap-2 text-[#B6BAC4]">
-              <span className="w-1.5 h-1.5 rounded-full bg-[#59D6C4]" />
+              <span className="w-1.5 h-1.5 rounded-full bg-[#2DD4BF]" />
               <span>Built around your systems. Designed around your business.</span>
             </p>
             <p className="flex items-center gap-2 text-[#7E8491]">
@@ -199,7 +199,7 @@ export const HeroSection: React.FC<HeroSectionProps> = ({
           </motion.div>
 
           {/* Transformation Sequence Pill */}
-          <motion.div variants={item} className="pt-1 flex items-center flex-wrap gap-1.5 text-[11px] font-mono text-[#8B7CFF] bg-[#0E1119] px-3.5 py-2 rounded-xl border border-white/[0.08]">
+          <motion.div variants={item} className="pt-1 flex items-center flex-wrap gap-1.5 text-[11px] font-mono text-[#34D399] bg-[#0E1119] px-3.5 py-2 rounded-xl border border-white/[0.08]">
             <span className="text-[#D6B77A] font-semibold">Sequence:</span>
             <span>Strategy</span>
             <ChevronRight className="w-3 h-3 text-[#7E8491]" />
@@ -233,7 +233,7 @@ export const HeroSection: React.FC<HeroSectionProps> = ({
               }}
             >
               {/* Orbital concentric guide tracks */}
-              <div className="absolute w-[80%] h-[80%] rounded-full border border-[#8B7CFF]/15 animate-[spin_45s_linear_infinite]" />
+              <div className="absolute w-[80%] h-[80%] rounded-full border border-[#34D399]/15 animate-[spin_45s_linear_infinite]" />
               <div className="absolute w-[60%] h-[60%] rounded-full border border-[#D6B77A]/15 animate-[spin_30s_linear_infinite_reverse]" />
               
               {/* Animated Dynamic Connection Lines to Center */}
@@ -251,7 +251,7 @@ export const HeroSection: React.FC<HeroSectionProps> = ({
                         y1="250"
                         x2={nodeX}
                         y2={nodeY}
-                        stroke={isSelected ? '#D6B77A' : 'rgba(139, 124, 255, 0.2)'}
+                        stroke={isSelected ? '#D6B77A' : 'rgba(52, 211, 153, 0.2)'}
                         strokeWidth={isSelected ? '2' : '1'}
                         strokeDasharray={isSelected ? '4 2' : 'none'}
                       />
@@ -272,13 +272,13 @@ export const HeroSection: React.FC<HeroSectionProps> = ({
               {/* Central Hub: ZYNTARA ONE™ Core Processor with Official Emblem */}
               <div 
                 onClick={() => onNavigate('zyntara-one')}
-                className="relative z-20 w-36 h-36 rounded-2xl bg-gradient-to-br from-[#181D2E] via-[#0E111A] to-[#1F2538] border-2 border-[#59D6C4]/60 flex flex-col items-center justify-center p-2 shadow-[0_0_35px_rgba(89,214,196,0.3)] cursor-pointer group hover:scale-105 transition-all duration-300"
+                className="relative z-20 w-36 h-36 rounded-2xl bg-gradient-to-br from-[#181D2E] via-[#0E111A] to-[#1F2538] border-2 border-[#2DD4BF]/60 flex flex-col items-center justify-center p-2 shadow-[0_0_35px_rgba(45, 212, 191,0.3)] cursor-pointer group hover:scale-105 transition-all duration-300"
               >
-                {/* Outer pulsing ring in cyan/indigo */}
-                <div className="absolute -inset-2 rounded-2xl bg-[#59D6C4]/20 blur-md group-hover:bg-[#8B7CFF]/40 transition-colors animate-pulse" />
+                {/* Outer pulsing ring in mint/emerald */}
+                <div className="absolute -inset-2 rounded-2xl bg-[#2DD4BF]/20 blur-md group-hover:bg-[#34D399]/40 transition-colors animate-pulse" />
                 
                 {/* Official Logo Emblem Avatar */}
-                <div className="relative w-14 h-14 rounded-xl overflow-hidden border border-[#59D6C4]/50 shadow-[0_0_15px_rgba(89,214,196,0.6)] mb-1 bg-[#05070B] p-0.5">
+                <div className="relative w-14 h-14 rounded-xl overflow-hidden border border-[#2DD4BF]/50 shadow-[0_0_15px_rgba(45, 212, 191,0.6)] mb-1 bg-[#05070B] p-0.5">
                   <img 
                     src={ZENTARA_LOGO_ICON} 
                     alt="Zentara Core" 
@@ -293,8 +293,8 @@ export const HeroSection: React.FC<HeroSectionProps> = ({
                 <span className="font-mono text-[8px] tracking-widest text-[#D6B77A] font-bold">
                   INTELLIGENCE HUB
                 </span>
-                <span className="text-[7px] font-mono text-[#59D6C4] flex items-center gap-1 mt-0.5">
-                  <span className="w-1.5 h-1.5 rounded-full bg-[#59D6C4] animate-ping" />
+                <span className="text-[7px] font-mono text-[#2DD4BF] flex items-center gap-1 mt-0.5">
+                  <span className="w-1.5 h-1.5 rounded-full bg-[#2DD4BF] animate-ping" />
                   ACTIVE ENGINE
                 </span>
               </div>
@@ -314,8 +314,8 @@ export const HeroSection: React.FC<HeroSectionProps> = ({
                     onMouseEnter={() => setActiveNode(node.id)}
                   className={`absolute -translate-x-1/2 -translate-y-1/2 z-20 px-2 sm:px-2.5 py-1 rounded-lg text-[9px] sm:text-[10px] font-mono font-bold tracking-wider transition-all duration-300 cursor-pointer ${
                     isSelected
-                      ? 'bg-gradient-to-r from-[#695CF6] to-[#5143E0] text-white scale-110 border border-[#D6B77A] shadow-[0_0_18px_rgba(214,183,122,0.5)]'
-                      : 'bg-[#101420]/95 text-[#B6BAC4] hover:text-white border border-white/10 hover:border-[#8B7CFF]/50'
+                      ? 'bg-gradient-to-r from-[#10B981] to-[#059669] text-white scale-110 border border-[#D6B77A] shadow-[0_0_18px_rgba(214,183,122,0.5)]'
+                      : 'bg-[#101420]/95 text-[#B6BAC4] hover:text-white border border-white/10 hover:border-[#34D399]/50'
                   }`}
                     style={{
                       left: `${posX}%`,
@@ -340,7 +340,7 @@ export const HeroSection: React.FC<HeroSectionProps> = ({
                   <span className="font-display font-bold text-sm text-[#F5F3EE]">
                     {selectedNodeData.name} NODE
                   </span>
-                  <span className="text-[10px] font-mono px-2 py-0.5 rounded-md bg-[#181D2A] text-[#8B7CFF] border border-[#8B7CFF]/30 font-semibold">
+                  <span className="text-[10px] font-mono px-2 py-0.5 rounded-md bg-[#181D2A] text-[#34D399] border border-[#34D399]/30 font-semibold">
                     {selectedNodeData.category}
                   </span>
                 </div>

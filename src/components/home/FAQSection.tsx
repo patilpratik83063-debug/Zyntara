@@ -90,7 +90,7 @@ export const FAQSection: React.FC<FAQSectionProps> = ({ onNavigate }) => {
                 key={idx}
                 className={`rounded-2xl transition-all duration-300 border overflow-hidden ${
                   isOpen
-                    ? 'bg-[#101422] border-[#D6B77A]/50 shadow-[0_4px_25px_rgba(214,183,122,0.1)]'
+                    ? 'bg-[#101A14] border-[#D6B77A]/50 shadow-[0_4px_25px_rgba(214,183,122,0.1)]'
                     : 'bg-[#0D1018]/90 border-white/[0.06] hover:border-white/15'
                 }`}
               >
@@ -115,7 +115,7 @@ export const FAQSection: React.FC<FAQSectionProps> = ({ onNavigate }) => {
                 {isOpen && (
                   <div className="px-6 pb-6 pt-1 text-sm sm:text-base text-[#B6BAC4] leading-relaxed border-t border-white/[0.04]">
                     <p>{faq.a}</p>
-                    <div className="mt-4 flex items-center gap-2 text-xs font-mono text-[#8B7CFF]">
+                    <div className="mt-4 flex items-center gap-2 text-xs font-mono text-[#34D399]">
                       <span>Category: {faq.category}</span>
                     </div>
                   </div>

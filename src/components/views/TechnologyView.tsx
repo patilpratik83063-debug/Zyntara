@@ -50,7 +50,7 @@ export const TechnologyView: React.FC<TechnologyViewProps> = ({
         
         {/* Header with Official Logo Badge */}
         <div className="text-center max-w-4xl mx-auto space-y-4">
-          <div className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-[#121622] border border-[#59D6C4]/30 text-xs font-mono text-[#59D6C4] shadow-[0_0_15px_rgba(89,214,196,0.2)]">
+          <div className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-[#121622] border border-[#2DD4BF]/30 text-xs font-mono text-[#2DD4BF] shadow-[0_0_15px_rgba(45, 212, 191,0.2)]">
             <img 
               src={ZENTARA_LOGO_ICON} 
               alt="Zentara" 
@@ -77,7 +77,7 @@ export const TechnologyView: React.FC<TechnologyViewProps> = ({
                 placeholder="Search capabilities, RAG, agents, SAP..."
                 value={searchQuery}
                 onChange={(e) => setSearchQuery(e.target.value)}
-                className="w-full pl-9 pr-4 py-2.5 rounded-xl bg-slate-900 border border-slate-800 text-xs text-slate-100 placeholder-slate-500 focus:border-blue-500 focus:outline-none"
+                className="w-full pl-9 pr-4 py-2.5 rounded-xl bg-slate-900 border border-slate-800 text-xs text-slate-100 placeholder-slate-500 focus:border-emerald-500 focus:outline-none"
               />
             </div>
 
@@ -88,7 +88,7 @@ export const TechnologyView: React.FC<TechnologyViewProps> = ({
                   onClick={() => setSelectedCategory(cat)}
                   className={`px-3 py-2 rounded-lg text-xs font-mono transition-all ${
                     selectedCategory === cat
-                      ? 'bg-blue-600 text-white shadow-[0_0_10px_#3b82f6]'
+                      ? 'bg-emerald-600 text-white shadow-[0_0_10px_#10b981]'
                       : 'bg-slate-900/80 text-slate-400 border border-slate-800 hover:text-white'
                   }`}
                 >
@@ -104,11 +104,11 @@ export const TechnologyView: React.FC<TechnologyViewProps> = ({
           {filtered.map((cap) => (
             <div
               key={cap.id}
-              className="p-6 rounded-2xl bg-[#090C16] border border-slate-800 hover:border-cyan-400/40 transition-all duration-300 flex flex-col justify-between group shadow-lg"
+              className="p-6 rounded-2xl bg-[#090C16] border border-slate-800 hover:border-emerald-400/40 transition-all duration-300 flex flex-col justify-between group shadow-lg"
             >
               <div>
                 <div className="flex items-center justify-between mb-3">
-                  <span className="text-[10px] font-mono px-2 py-0.5 rounded bg-blue-950 text-cyan-300 border border-blue-500/30">
+                  <span className="text-[10px] font-mono px-2 py-0.5 rounded bg-emerald-950 text-emerald-300 border border-emerald-500/30">
                     {cap.category}
                   </span>
                   <span className="text-[10px] font-mono text-emerald-400 font-bold">
@@ -116,7 +116,7 @@ export const TechnologyView: React.FC<TechnologyViewProps> = ({
                   </span>
                 </div>
 
-                <h3 className="text-lg font-display font-bold text-white group-hover:text-cyan-200 transition-colors">
+                <h3 className="text-lg font-display font-bold text-white group-hover:text-emerald-200 transition-colors">
                   {cap.title}
                 </h3>
 
@@ -131,7 +131,7 @@ export const TechnologyView: React.FC<TechnologyViewProps> = ({
                   </div>
                   {cap.technicalSpecs.map((spec, sIdx) => (
                     <div key={sIdx} className="text-xs text-slate-300 flex items-center gap-1.5 font-mono">
-                      <span className="text-cyan-400">•</span>
+                      <span className="text-emerald-400">•</span>
                       <span>{spec}</span>
                     </div>
                   ))}
@@ -144,7 +144,7 @@ export const TechnologyView: React.FC<TechnologyViewProps> = ({
                 </span>
                 <button
                   onClick={() => onNavigate('contact')}
-                  className="text-xs font-mono text-cyan-400 hover:text-white flex items-center gap-1"
+                  className="text-xs font-mono text-emerald-400 hover:text-white flex items-center gap-1"
                 >
                   <span>Scope</span>
                   <ArrowRight className="w-3.5 h-3.5" />
@@ -155,7 +155,7 @@ export const TechnologyView: React.FC<TechnologyViewProps> = ({
         </div>
 
         {/* Scoping Action Footer */}
-        <div className="p-8 rounded-3xl bg-gradient-to-r from-blue-950/60 via-slate-900 to-blue-950/60 border border-cyan-400/30 text-center space-y-4">
+        <div className="p-8 rounded-3xl bg-gradient-to-r from-emerald-950/60 via-slate-900 to-emerald-950/60 border border-emerald-400/30 text-center space-y-4">
           <h3 className="text-2xl font-display font-bold text-white">
             Need a custom enterprise architecture blueprint?
           </h3>

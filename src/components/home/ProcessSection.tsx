@@ -108,7 +108,7 @@ export const ProcessSection: React.FC<ProcessSectionProps> = ({ onNavigate }) =>
   return (
     <section id="process-section" className="py-28 px-4 sm:px-6 lg:px-8 bg-[#050506] border-t border-white/[0.08] relative overflow-hidden">
       {/* Ambient background lighting */}
-      <div className="absolute top-1/3 right-1/4 w-[600px] h-[500px] bg-[#695CF6]/06 blur-[180px] pointer-events-none" />
+      <div className="absolute top-1/3 right-1/4 w-[600px] h-[500px] bg-[#10B981]/06 blur-[180px] pointer-events-none" />
 
       <div className="max-w-7xl mx-auto">
         
@@ -191,7 +191,7 @@ export const ProcessSection: React.FC<ProcessSectionProps> = ({ onNavigate }) =>
             <div className="grid grid-cols-1 sm:grid-cols-2 gap-3">
               {current.deliverables.map((deliv, idx) => (
                 <div key={idx} className="p-3.5 rounded-xl bg-[#141824] border border-white/[0.06] flex items-start gap-2.5">
-                  <CheckCircle2 className="w-4 h-4 text-[#59D6C4] shrink-0 mt-0.5" />
+                  <CheckCircle2 className="w-4 h-4 text-[#2DD4BF] shrink-0 mt-0.5" />
                   <span className="text-xs font-mono text-[#E0E2EC] leading-relaxed">
                     {deliv}
                   </span>

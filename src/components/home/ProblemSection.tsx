@@ -65,7 +65,7 @@ export const ProblemSection: React.FC<ProblemSectionProps> = ({ onNavigate }) =>
     <section id="problem-section" className="py-28 px-4 sm:px-6 lg:px-8 bg-[#090B10] border-t border-white/[0.08] relative overflow-hidden">
       {/* Background ambient lighting */}
       <div className="absolute top-1/2 left-0 w-96 h-96 bg-rose-950/08 blur-[140px] pointer-events-none" />
-      <div className="absolute top-1/2 right-0 w-96 h-96 bg-[#8B7CFF]/08 blur-[140px] pointer-events-none" />
+      <div className="absolute top-1/2 right-0 w-96 h-96 bg-[#34D399]/08 blur-[140px] pointer-events-none" />
 
       <div className="max-w-7xl mx-auto">
         <SectionHeader
@@ -95,9 +95,9 @@ export const ProblemSection: React.FC<ProblemSectionProps> = ({ onNavigate }) =>
               return (
                 <div 
                   key={idx}
-                  className="p-3.5 rounded-2xl bg-[#141824]/80 border border-white/[0.06] flex flex-col items-center text-center space-y-1.5 hover:border-[#8B7CFF]/40 transition-colors"
+                  className="p-3.5 rounded-2xl bg-[#141824]/80 border border-white/[0.06] flex flex-col items-center text-center space-y-1.5 hover:border-[#34D399]/40 transition-colors"
                 >
-                  <div className="w-8 h-8 rounded-lg bg-[#1D2335] flex items-center justify-center text-[#8B7CFF]">
+                  <div className="w-8 h-8 rounded-lg bg-[#1D2335] flex items-center justify-center text-[#34D399]">
                     <Icon className="w-4 h-4" />
                   </div>
                   <span className="font-mono text-xs font-bold text-[#F5F3EE] tracking-wider">
@@ -114,7 +114,7 @@ export const ProblemSection: React.FC<ProblemSectionProps> = ({ onNavigate }) =>
           {/* Arrow / Bridge Indicator */}
           <div className="my-6 flex items-center justify-center gap-4">
             <div className="h-[1px] flex-1 bg-gradient-to-r from-transparent via-white/20 to-[#D6B77A]" />
-            <div className="px-5 py-2 rounded-full bg-gradient-to-r from-[#1E1735] to-[#121622] border border-[#D6B77A]/40 text-xs font-mono font-bold text-[#D6B77A] shadow-[0_0_15px_rgba(214,183,122,0.3)] flex items-center gap-2">
+            <div className="px-5 py-2 rounded-full bg-gradient-to-r from-[#0F2219] to-[#121622] border border-[#D6B77A]/40 text-xs font-mono font-bold text-[#D6B77A] shadow-[0_0_15px_rgba(214,183,122,0.3)] flex items-center gap-2">
               <span>UNIFIED BY ZYNTARA</span>
               <ArrowRight className="w-3.5 h-3.5 text-[#D6B77A]" />
             </div>
@@ -170,7 +170,7 @@ export const ProblemSection: React.FC<ProblemSectionProps> = ({ onNavigate }) =>
               onClick={() => setViewState('unified')}
               className={`px-5 py-2.5 rounded-xl text-xs font-mono font-semibold tracking-wider transition-all duration-300 flex items-center gap-2 cursor-pointer ${
                 viewState === 'unified'
-                  ? 'bg-gradient-to-r from-[#695CF6] to-[#5143E0] text-white border border-[#D6B77A] shadow-[0_4px_20px_rgba(105,92,246,0.4)]'
+                  ? 'bg-gradient-to-r from-[#10B981] to-[#059669] text-white border border-[#D6B77A] shadow-[0_4px_20px_rgba(16, 185, 129,0.4)]'
                   : 'text-[#7E8491] hover:text-[#F5F3EE]'
               }`}
             >
@@ -222,7 +222,7 @@ export const ProblemSection: React.FC<ProblemSectionProps> = ({ onNavigate }) =>
           {/* Unified Zyntara Architecture Card */}
           <div className={`p-8 rounded-3xl transition-all duration-500 border ${
             viewState === 'unified'
-              ? 'bg-[#101422] border-[#D6B77A]/60 shadow-[0_8px_30px_rgba(214,183,122,0.15)] ring-1 ring-[#D6B77A]/40'
+              ? 'bg-[#101A14] border-[#D6B77A]/60 shadow-[0_8px_30px_rgba(214,183,122,0.15)] ring-1 ring-[#D6B77A]/40'
               : 'bg-[#0D1018]/50 border-white/[0.04] opacity-50'
           }`}>
             <div className="flex items-center justify-between pb-6 border-b border-white/[0.08]">
@@ -232,7 +232,7 @@ export const ProblemSection: React.FC<ProblemSectionProps> = ({ onNavigate }) =>
                 </div>
                 <div>
                   <h4 className="font-display font-bold text-lg text-[#F5F3EE]">Zyntara Intelligent Systems</h4>
-                  <p className="text-xs text-[#8B7CFF]">Connected workflows, automation & AI</p>
+                  <p className="text-xs text-[#34D399]">Connected workflows, automation & AI</p>
                 </div>
               </div>
               <span className="font-mono text-xs px-2.5 py-1 rounded-full bg-[#181D2E] text-[#D6B77A] border border-[#D6B77A]/40 font-semibold">
@@ -243,8 +243,8 @@ export const ProblemSection: React.FC<ProblemSectionProps> = ({ onNavigate }) =>
             <div className="mt-6 space-y-4">
               {unifiedBenefits.map((item, idx) => (
                 <div key={idx} className="flex items-start gap-3.5">
-                  <div className="w-5 h-5 rounded-full bg-[#181D2E] border border-[#59D6C4]/40 flex items-center justify-center shrink-0 mt-0.5">
-                    <CheckCircle2 className="w-3.5 h-3.5 text-[#59D6C4]" />
+                  <div className="w-5 h-5 rounded-full bg-[#181D2E] border border-[#2DD4BF]/40 flex items-center justify-center shrink-0 mt-0.5">
+                    <CheckCircle2 className="w-3.5 h-3.5 text-[#2DD4BF]" />
                   </div>
                   <div>
                     <div className="font-display font-semibold text-sm text-[#F5F3EE]">{item.title}</div>

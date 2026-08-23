@@ -18,10 +18,14 @@ export const InteractiveCanvas: React.FC<InteractiveCanvasProps> = ({
     const canvas = canvasRef.current;
     if (!canvas) return;
 
+    const prefersReducedMotion = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+    if (prefersReducedMotion) return;
+
     const ctx = canvas.getContext('2d');
     if (!ctx) return;
 
     let animationFrameId: number;
+    let isVisible = true;
     let width = (canvas.width = canvas.parentElement?.clientWidth || window.innerWidth);
     let height = (canvas.height = canvas.parentElement?.clientHeight || window.innerHeight);
 
@@ -32,6 +36,15 @@ export const InteractiveCanvas: React.FC<InteractiveCanvasProps> = ({
     };
 
     window.addEventListener('resize', handleResize);
+
+    // Pause rendering when the canvas scrolls out of view — big CPU win
+    const observer = new IntersectionObserver(
+      (entries) => {
+        isVisible = entries[0]?.isIntersecting ?? true;
+      },
+      { rootMargin: '200px' }
+    );
+    observer.observe(canvas);
 
     const handleMouseMove = (e: MouseEvent) => {
       if (!interactive || !canvas) return;
@@ -52,16 +65,18 @@ export const InteractiveCanvas: React.FC<InteractiveCanvasProps> = ({
       vy: number;
       radius: number;
       baseAlpha: number;
-      colorType: 'indigo' | 'champagne' | 'ivory';
+      colorType: 'emerald' | 'champagne' | 'ivory';
     }
 
     const nodes: Node[] = [];
-    const count = Math.min(nodeCount, Math.floor(width / 35));
+    // Fewer particles on small screens keeps 60fps on phones
+    const isMobile = width < 768;
+    const count = Math.min(isMobile ? Math.floor(nodeCount / 2) : nodeCount, Math.floor(width / 35));
 
     for (let i = 0; i < count; i++) {
       const typeRand = Math.random();
-      const colorType: 'indigo' | 'champagne' | 'ivory' = 
-        typeRand < 0.5 ? 'indigo' : typeRand < 0.8 ? 'champagne' : 'ivory';
+      const colorType: 'emerald' | 'champagne' | 'ivory' = 
+        typeRand < 0.5 ? 'emerald' : typeRand < 0.8 ? 'champagne' : 'ivory';
 
       nodes.push({
         x: Math.random() * width,
@@ -76,6 +91,9 @@ export const InteractiveCanvas: React.FC<InteractiveCanvasProps> = ({
 
     // Animation Loop
     const render = () => {
+      animationFrameId = requestAnimationFrame(render);
+      if (!isVisible) return;
+
       ctx.clearRect(0, 0, width, height);
 
       // Subtle celestial orbital track in background
@@ -83,7 +101,7 @@ export const InteractiveCanvas: React.FC<InteractiveCanvasProps> = ({
       const centerY = height / 2;
 
       ctx.save();
-      ctx.strokeStyle = 'rgba(139, 124, 255, 0.025)';
+      ctx.strokeStyle = 'rgba(52, 211, 153, 0.025)';
       ctx.lineWidth = 1;
       ctx.beginPath();
       ctx.arc(centerX, centerY, Math.min(width, height) * 0.35, 0, Math.PI * 2);
@@ -118,8 +136,8 @@ export const InteractiveCanvas: React.FC<InteractiveCanvasProps> = ({
           node.y -= (dy / dist) * 0.25;
         }
 
-        if (node.colorType === 'indigo') {
-          ctx.fillStyle = `rgba(139, 124, 255, ${alpha})`;
+        if (node.colorType === 'emerald') {
+          ctx.fillStyle = `rgba(52, 211, 153, ${alpha})`;
         } else if (node.colorType === 'champagne') {
           ctx.fillStyle = `rgba(214, 183, 122, ${alpha})`;
         } else {
@@ -139,7 +157,7 @@ export const InteractiveCanvas: React.FC<InteractiveCanvasProps> = ({
 
           if (lineDist < 120) {
             const lineAlpha = (1 - lineDist / 120) * 0.12;
-            ctx.strokeStyle = `rgba(139, 124, 255, ${lineAlpha})`;
+            ctx.strokeStyle = `rgba(52, 211, 153, ${lineAlpha})`;
             ctx.lineWidth = 0.6;
             ctx.beginPath();
             ctx.moveTo(node.x, node.y);
@@ -148,8 +166,6 @@ export const InteractiveCanvas: React.FC<InteractiveCanvasProps> = ({
           }
         }
       }
-
-      animationFrameId = requestAnimationFrame(render);
     };
 
     render();
@@ -157,6 +173,7 @@ export const InteractiveCanvas: React.FC<InteractiveCanvasProps> = ({
     return () => {
       window.removeEventListener('resize', handleResize);
       window.removeEventListener('mousemove', handleMouseMove);
+      observer.disconnect();
       cancelAnimationFrame(animationFrameId);
     };
   }, [nodeCount, interactive]);

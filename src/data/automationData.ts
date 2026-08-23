@@ -19,7 +19,7 @@ export const AUTOMATION_LEVELS_META: AutomationLevelMeta[] = [
     tagline: 'Automate repetitive work. Eliminate manual effort.',
     description: 'Entry-level deterministic automations that eliminate repetitive tasks across email, WhatsApp, SMS, simple lead capture, form routing, notifications, and customer communications.',
     targetFit: 'Small Businesses, Startups & SME Operational Teams',
-    accentColor: '#38bdf8', // sky-400
+    accentColor: '#34d399', // sky-400
     capabilitiesCount: '12+ Core Modules'
   },
   {
@@ -29,7 +29,7 @@ export const AUTOMATION_LEVELS_META: AutomationLevelMeta[] = [
     tagline: 'Connect fragmented systems. Synchronize end-to-end business workflows.',
     description: 'Multi-system automated pipelines spanning CRM, ERP, payment gateways, calendar scheduling, inventory updates, and transactional document generation without manual handoffs.',
     targetFit: 'Growing Companies, SMEs & Mid-Market Organizations',
-    accentColor: '#3b82f6', // blue-500
+    accentColor: '#10b981', // emerald-500
     capabilitiesCount: '18+ Integrated Pipelines'
   },
   {
@@ -39,7 +39,7 @@ export const AUTOMATION_LEVELS_META: AutomationLevelMeta[] = [
     tagline: 'Infuse intelligence into workflows with contextual understanding and OCR.',
     description: 'Combines traditional automation with specialized cognitive models for document extraction, intent classification, sentiment analysis, dynamic draft synthesis, and predictive routing.',
     targetFit: 'Mid-Market & Scaled Enterprise Operations',
-    accentColor: '#818cf8', // indigo-400
+    accentColor: '#34d399', // indigo-400
     capabilitiesCount: '15+ Cognitive Engines'
   },
   {
@@ -49,7 +49,7 @@ export const AUTOMATION_LEVELS_META: AutomationLevelMeta[] = [
     tagline: 'Deploy autonomous digital agents that plan, reason, and call enterprise tools.',
     description: 'Goal-driven AI agents and specialized multi-agent departmental swarms capable of state management, tool invocation, cross-functional reasoning, and exception escalation.',
     targetFit: 'Modern Enterprises & High-Velocity Digital Operations',
-    accentColor: '#06b6d4', // cyan-500
+    accentColor: '#10b981', // emerald-500
     capabilitiesCount: '10+ Autonomous Digital Roles'
   },
   {

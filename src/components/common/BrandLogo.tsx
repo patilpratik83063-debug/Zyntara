@@ -38,7 +38,7 @@ export const BrandLogo: React.FC<BrandLogoProps> = ({
         role="banner"
         aria-label="Zentara Technology"
       >
-        <div className="relative rounded-2xl p-1 bg-gradient-to-b from-[#1C2333] via-[#0E121A] to-[#06080D] border border-[#8B7CFF]/30 group-hover:border-[#D6B77A]/60 shadow-[0_8px_30px_rgba(0,0,0,0.8)] group-hover:shadow-[0_0_35px_rgba(89,214,196,0.3)] transition-all duration-300 overflow-hidden">
+        <div className="relative rounded-2xl p-1 bg-gradient-to-b from-[#1C2333] via-[#0E121A] to-[#06080D] border border-[#34D399]/30 group-hover:border-[#D6B77A]/60 shadow-[0_8px_30px_rgba(0,0,0,0.8)] group-hover:shadow-[0_0_35px_rgba(45, 212, 191,0.3)] transition-all duration-300 overflow-hidden">
           <img 
             src={ZENTARA_LOGO_EMBLEM} 
             alt="Zentara Technology Logo" 
@@ -62,10 +62,10 @@ export const BrandLogo: React.FC<BrandLogoProps> = ({
         aria-label="Zentara Technology"
       >
         {/* Outer glowing orbital energy halo */}
-        <div className="absolute -inset-1 rounded-full bg-gradient-to-r from-[#8B7CFF]/30 via-[#59D6C4]/30 to-[#D6B77A]/30 blur-sm group-hover:blur-md opacity-70 group-hover:opacity-100 transition-all duration-500" />
+        <div className="absolute -inset-1 rounded-full bg-gradient-to-r from-[#34D399]/30 via-[#2DD4BF]/30 to-[#D6B77A]/30 blur-sm group-hover:blur-md opacity-70 group-hover:opacity-100 transition-all duration-500" />
         
         {/* Emblem Image Container */}
-        <div className="relative w-full h-full rounded-full bg-[#080A10] border border-[#8B7CFF]/40 group-hover:border-[#D6B77A]/80 overflow-hidden shadow-[0_0_15px_rgba(139,124,255,0.4)] flex items-center justify-center">
+        <div className="relative w-full h-full rounded-full bg-[#080A10] border border-[#34D399]/40 group-hover:border-[#D6B77A]/80 overflow-hidden shadow-[0_0_15px_rgba(52, 211, 153,0.4)] flex items-center justify-center">
           {!imageError ? (
             <img 
               src={ZENTARA_LOGO_ICON} 
@@ -96,13 +96,13 @@ export const BrandLogo: React.FC<BrandLogoProps> = ({
         style={{ width: currentSize.icon, height: currentSize.icon }}
       >
         {/* Outer subtle orbital ring with blue/champagne shimmer */}
-        <div className="absolute -inset-0.5 rounded-full border border-[#8B7CFF]/30 group-hover:border-[#59D6C4]/60 transition-colors duration-500 animate-[spin_20s_linear_infinite]" />
+        <div className="absolute -inset-0.5 rounded-full border border-[#34D399]/30 group-hover:border-[#2DD4BF]/60 transition-colors duration-500 animate-[spin_20s_linear_infinite]" />
         
         {/* Orbital celestial particle */}
-        <div className="absolute -top-0.5 left-1/2 -translate-x-1/2 w-1.5 h-1.5 rounded-full bg-[#59D6C4] shadow-[0_0_8px_rgba(89,214,196,0.9)] group-hover:scale-125 transition-transform" />
+        <div className="absolute -top-0.5 left-1/2 -translate-x-1/2 w-1.5 h-1.5 rounded-full bg-[#2DD4BF] shadow-[0_0_8px_rgba(45, 212, 191,0.9)] group-hover:scale-125 transition-transform" />
         
         {/* Inner geometric core container with logo image */}
-        <div className="w-full h-full rounded-xl bg-gradient-to-br from-[#121622] via-[#080A0E] to-[#1C2030] border border-white/15 group-hover:border-[#8B7CFF]/50 flex items-center justify-center shadow-[0_4px_16px_rgba(0,0,0,0.6)] group-hover:shadow-[0_4px_20px_rgba(139,124,255,0.35)] transition-all duration-300 overflow-hidden p-0.5">
+        <div className="w-full h-full rounded-xl bg-gradient-to-br from-[#121622] via-[#080A0E] to-[#1C2030] border border-white/15 group-hover:border-[#34D399]/50 flex items-center justify-center shadow-[0_4px_16px_rgba(0,0,0,0.6)] group-hover:shadow-[0_4px_20px_rgba(52, 211, 153,0.35)] transition-all duration-300 overflow-hidden p-0.5">
           {!imageError ? (
             <img 
               src={ZENTARA_LOGO_ICON} 
@@ -143,7 +143,7 @@ export const BrandLogo: React.FC<BrandLogoProps> = ({
         </div>
         
         {showTagline ? (
-          <span className={`font-mono tracking-widest text-[#59D6C4] uppercase ${currentSize.sub}`}>
+          <span className={`font-mono tracking-widest text-[#2DD4BF] uppercase ${currentSize.sub}`}>
             AI • Automation • Systems
           </span>
         ) : (

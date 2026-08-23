@@ -99,7 +99,7 @@ export const AIWorkforceSection: React.FC<AIWorkforceSectionProps> = ({ onNaviga
   return (
     <section id="ai-workforce-section" className="py-28 px-4 sm:px-6 lg:px-8 bg-[#050506] relative overflow-hidden border-t border-white/[0.08]">
       {/* Ambient background glow */}
-      <div className="absolute top-1/3 left-1/4 w-[700px] h-[500px] bg-[#8B7CFF]/06 blur-[160px] pointer-events-none" />
+      <div className="absolute top-1/3 left-1/4 w-[700px] h-[500px] bg-[#34D399]/06 blur-[160px] pointer-events-none" />
 
       <div className="max-w-7xl mx-auto">
         
@@ -130,7 +130,7 @@ export const AIWorkforceSection: React.FC<AIWorkforceSectionProps> = ({ onNaviga
           <div className="grid grid-cols-2 sm:grid-cols-4 gap-3">
             {cognitiveCapabilities.map((cap, idx) => (
               <div key={idx} className="p-3.5 rounded-xl bg-[#141824] border border-white/[0.06] flex flex-col justify-between">
-                <span className="font-mono text-xs font-bold text-[#8B7CFF]">{cap.name}</span>
+                <span className="font-mono text-xs font-bold text-[#34D399]">{cap.name}</span>
                 <span className="text-[11px] text-[#7E8491] mt-1">{cap.desc}</span>
               </div>
             ))}
@@ -140,8 +140,8 @@ export const AIWorkforceSection: React.FC<AIWorkforceSectionProps> = ({ onNaviga
         {/* Section 28: ONE AI AGENT IS USEFUL. AN AI WORKFORCE IS TRANSFORMATIVE. */}
         <div className="mt-20">
           <div className="text-center mb-8">
-            <div className="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-[#121622] text-xs font-mono text-[#59D6C4] border border-[#59D6C4]/30 mb-2">
-              <Users className="w-3.5 h-3.5 text-[#59D6C4]" />
+            <div className="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-[#121622] text-xs font-mono text-[#2DD4BF] border border-[#2DD4BF]/30 mb-2">
+              <Users className="w-3.5 h-3.5 text-[#2DD4BF]" />
               <span>Multi-Agent Swarm Orchestration</span>
             </div>
             <h3 className="text-2xl sm:text-4xl font-display font-bold text-[#F5F3EE]">
@@ -166,7 +166,7 @@ export const AIWorkforceSection: React.FC<AIWorkforceSectionProps> = ({ onNaviga
                   onClick={() => setActiveDepartment(tab.id as any)}
                   className={`px-4 py-2 rounded-xl text-xs font-mono font-medium transition-all cursor-pointer ${
                     activeDepartment === tab.id
-                      ? 'bg-gradient-to-r from-[#695CF6] to-[#5143E0] text-white shadow-md'
+                      ? 'bg-gradient-to-r from-[#10B981] to-[#059669] text-white shadow-md'
                       : 'text-[#7E8491] hover:text-[#F5F3EE]'
                   }`}
                 >
@@ -226,7 +226,7 @@ export const AIWorkforceSection: React.FC<AIWorkforceSectionProps> = ({ onNaviga
                 <span className="text-[10px] font-mono text-[#7E8491] uppercase tracking-wider block">
                   End-to-End Swarm Execution Sequence:
                 </span>
-                <div className="font-mono text-xs text-[#59D6C4] mt-1">
+                <div className="font-mono text-xs text-[#2DD4BF] mt-1">
                   {activeSwarm.flow}
                 </div>
               </div>

@@ -31,13 +31,15 @@ export const CustomCursor: React.FC = () => {
     window.addEventListener('mousemove', handleMouseMove);
     document.addEventListener('mouseleave', handleMouseLeave);
 
-    // Smooth trailing loop
+    // Smooth trailing loop — only renders while the cursor is on the page
     let animationId: number;
     const updateTrailing = () => {
-      setTrailingPos(prev => ({
-        x: prev.x + (position.x - prev.x) * 0.18,
-        y: prev.y + (position.y - prev.y) * 0.18
-      }));
+      if (isVisible) {
+        setTrailingPos(prev => ({
+          x: prev.x + (position.x - prev.x) * 0.18,
+          y: prev.y + (position.y - prev.y) * 0.18
+        }));
+      }
       animationId = requestAnimationFrame(updateTrailing);
     };
     animationId = requestAnimationFrame(updateTrailing);
@@ -63,11 +65,11 @@ export const CustomCursor: React.FC = () => {
         }}
       />
 
-      {/* Smooth outer aura ring with indigo/champagne blend */}
+      {/* Smooth outer aura ring with emerald/champagne blend */}
       <div
         className={`fixed rounded-full border transition-all duration-300 -translate-x-1/2 -translate-y-1/2 ${
           isHovering
-            ? 'w-10 h-10 border-[#8B7CFF]/60 bg-[#8B7CFF]/10 shadow-[0_0_20px_rgba(139,124,255,0.25)]'
+            ? 'w-10 h-10 border-[#34D399]/60 bg-[#34D399]/10 shadow-[0_0_20px_rgba(52, 211, 153,0.25)]'
             : 'w-6 h-6 border-white/15 bg-transparent'
         }`}
         style={{

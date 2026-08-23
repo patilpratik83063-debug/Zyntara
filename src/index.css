@@ -6,7 +6,7 @@
     --font-body: 'Plus Jakarta Sans', sans-serif;
     --font-mono: 'JetBrains Mono', monospace;
 
-    /* Palette tokens */
+    /* Palette tokens — Deep Emerald & Champagne */
     --color-obsidian: #050506;
     --color-midnight: #090B10;
     --color-section: #0D1017;
@@ -15,8 +15,16 @@
     --color-ivory: #F5F3EE;
     --color-champagne: #D6B77A;
     --color-champagne-light: #EBD9B3;
-    --color-indigo: #8B7CFF;
-    --color-indigo-deep: #5A48F5;
+    --color-emerald: #34D399;
+    --color-emerald-deep: #059669;
+    --color-mint: #2DD4BF;
+
+    color-scheme: dark;
+  }
+
+  html {
+    scroll-behavior: smooth;
+    scroll-padding-top: 96px;
   }
 
   body {
@@ -25,11 +33,19 @@
     color: #F5F3EE;
     overflow-x: hidden;
     letter-spacing: -0.01em;
+    text-rendering: optimizeLegibility;
+    -webkit-font-smoothing: antialiased;
   }
 
   h1, h2, h3, h4, h5, h6 {
     font-family: var(--font-display);
     letter-spacing: -0.025em;
+  }
+
+  @media (prefers-reduced-motion: reduce) {
+    html {
+      scroll-behavior: auto;
+    }
   }
 }
 
@@ -48,11 +64,11 @@
 
 /* Luxury Material Systems */
 .bg-obsidian-gradient {
-  background: radial-gradient(1200px 800px at 50% 0%, rgba(139, 124, 255, 0.07) 0%, rgba(214, 183, 122, 0.03) 40%, rgba(5, 5, 6, 0.98) 100%), #050506;
+  background: radial-gradient(1200px 800px at 50% 0%, rgba(52, 211, 153, 0.07) 0%, rgba(214, 183, 122, 0.03) 40%, rgba(5, 5, 6, 0.98) 100%), #050506;
 }
 
 .bg-hero-glow {
-  background: radial-gradient(circle at 60% 40%, rgba(139, 124, 255, 0.14) 0%, rgba(77, 124, 255, 0.06) 35%, transparent 70%);
+  background: radial-gradient(circle at 60% 40%, rgba(52, 211, 153, 0.14) 0%, rgba(45, 212, 191, 0.06) 35%, transparent 70%);
 }
 
 .bg-champagne-radial {
@@ -80,8 +96,8 @@
 
 .glass-luxury-hover:hover {
   background: rgba(20, 26, 38, 0.82);
-  border-color: rgba(139, 124, 255, 0.3);
-  box-shadow: 0 16px 40px -15px rgba(139, 124, 255, 0.18);
+  border-color: rgba(52, 211, 153, 0.3);
+  box-shadow: 0 16px 40px -15px rgba(52, 211, 153, 0.18);
   transform: translateY(-2px);
 }
 
@@ -98,8 +114,8 @@
   -webkit-text-fill-color: transparent;
 }
 
-.text-gradient-indigo {
-  background: linear-gradient(135deg, #C4BEFF 0%, #8B7CFF 50%, #D6B77A 100%);
+.text-gradient-emerald {
+  background: linear-gradient(135deg, #6EE7B7 0%, #34D399 50%, #D6B77A 100%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
@@ -123,8 +139,8 @@
 }
 
 .light-card:hover {
-  border-color: rgba(139, 124, 255, 0.4);
-  box-shadow: 0 12px 30px -4px rgba(139, 124, 255, 0.12);
+  border-color: rgba(52, 211, 153, 0.4);
+  box-shadow: 0 12px 30px -4px rgba(52, 211, 153, 0.12);
 }
 
 /* Custom scrollbar */
@@ -143,7 +159,7 @@
 }
 
 ::-webkit-scrollbar-thumb:hover {
-  background: #8B7CFF;
+  background: #34D399;
 }
 
 /* ============================================================
@@ -158,6 +174,7 @@
 
 .animate-marquee {
   animation: marquee 40s linear infinite;
+  will-change: transform;
 }
 
 /* Slow luxury float for hero stage */
@@ -168,6 +185,7 @@
 
 .animate-float-slow {
   animation: float-slow 7s ease-in-out infinite;
+  will-change: transform;
 }
 
 /* Animated gradient text pan */
@@ -221,6 +239,24 @@
   background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='160' height='160'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.85' numOctaves='3' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)'/%3E%3C/svg%3E");
 }
 
+/* ============================================================
+   Mobile Performance — reduce expensive effects on small screens
+   ============================================================ */
+@media (max-width: 768px) {
+  /* Backdrop blur is the #1 jank source on low-end phones */
+  .glass-luxury,
+  .glass-champagne,
+  .backdrop-blur-2xl {
+    backdrop-filter: blur(8px);
+    -webkit-backdrop-filter: blur(8px);
+  }
+
+  .backdrop-blur-xl {
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+  }
+}
+
 /* Respect reduced motion preferences */
 @media (prefers-reduced-motion: reduce) {
   .animate-marquee,
@@ -229,5 +265,10 @@
   .animate-shine,
   .animate-pulse-glow {
     animation: none;
+  }
+
+  .backdrop-blur-2xl {
+    backdrop-filter: blur(8px);
+    -webkit-backdrop-filter: blur(8px);
   }
 }

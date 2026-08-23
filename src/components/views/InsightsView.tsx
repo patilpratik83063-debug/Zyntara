@@ -40,7 +40,7 @@ export const InsightsView: React.FC<InsightsViewProps> = ({
         
         {/* Header */}
         <div className="text-center max-w-4xl mx-auto space-y-4">
-          <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-blue-950/70 border border-blue-500/30 text-xs font-mono text-cyan-300">
+          <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-emerald-950/70 border border-emerald-500/30 text-xs font-mono text-emerald-300">
             <BookOpen className="w-3.5 h-3.5" />
             <span>RESEARCH & EXECUTIVE PUBLICATIONS</span>
           </div>
@@ -61,7 +61,7 @@ export const InsightsView: React.FC<InsightsViewProps> = ({
                 onClick={() => setSelectedCategory(cat)}
                 className={`px-4 py-2 rounded-xl text-xs font-mono transition-all ${
                   selectedCategory === cat
-                    ? 'bg-blue-600 text-white shadow-[0_0_12px_#38bdf8]'
+                    ? 'bg-emerald-600 text-white shadow-[0_0_12px_#34d399]'
                     : 'bg-slate-900/80 text-slate-400 border border-slate-800 hover:text-white'
                 }`}
               >
@@ -77,20 +77,20 @@ export const InsightsView: React.FC<InsightsViewProps> = ({
             <div
               key={item.id}
               onClick={() => setSelectedArticle(item)}
-              className="p-8 rounded-3xl bg-[#090C16] border border-slate-800 hover:border-cyan-400/40 transition-all duration-300 flex flex-col justify-between group shadow-xl cursor-pointer"
+              className="p-8 rounded-3xl bg-[#090C16] border border-slate-800 hover:border-emerald-400/40 transition-all duration-300 flex flex-col justify-between group shadow-xl cursor-pointer"
             >
               <div className="space-y-4">
                 <div className="flex items-center justify-between">
-                  <span className="text-[10px] font-mono px-2.5 py-1 rounded bg-blue-950 text-cyan-300 border border-blue-500/30 uppercase">
+                  <span className="text-[10px] font-mono px-2.5 py-1 rounded bg-emerald-950 text-emerald-300 border border-emerald-500/30 uppercase">
                     {item.category}
                   </span>
                   <div className="flex items-center gap-1.5 text-[11px] font-mono text-slate-500">
-                    <Clock className="w-3 h-3 text-cyan-400" />
+                    <Clock className="w-3 h-3 text-emerald-400" />
                     <span>{item.readTime}</span>
                   </div>
                 </div>
 
-                <h3 className="text-xl font-display font-bold text-white group-hover:text-cyan-200 transition-colors">
+                <h3 className="text-xl font-display font-bold text-white group-hover:text-emerald-200 transition-colors">
                   {item.title}
                 </h3>
 
@@ -102,7 +102,7 @@ export const InsightsView: React.FC<InsightsViewProps> = ({
                   <div className="text-[10px] font-mono text-slate-500 uppercase">Key Takeaways:</div>
                   {item.keyInsights.slice(0, 3).map((k, i) => (
                     <div key={i} className="text-xs text-slate-300 flex items-start gap-1.5 font-mono">
-                      <span className="text-cyan-400">•</span>
+                      <span className="text-emerald-400">•</span>
                       <span className="line-clamp-1">{k}</span>
                     </div>
                   ))}
@@ -111,7 +111,7 @@ export const InsightsView: React.FC<InsightsViewProps> = ({
 
               <div className="mt-8 pt-4 border-t border-slate-800/80 flex items-center justify-between text-xs font-mono">
                 <span className="text-slate-400">{item.author.name} • {item.author.role}</span>
-                <span className="text-cyan-400 group-hover:translate-x-1 transition-transform flex items-center gap-1">
+                <span className="text-emerald-400 group-hover:translate-x-1 transition-transform flex items-center gap-1">
                   <span>Read Paper</span>
                   <ArrowRight className="w-3.5 h-3.5" />
                 </span>
@@ -123,7 +123,7 @@ export const InsightsView: React.FC<InsightsViewProps> = ({
         {/* Active Article Full Reader Modal */}
         {selectedArticle && (
           <div className="fixed inset-0 z-50 flex items-center justify-center p-4 bg-black/85 backdrop-blur-md">
-            <div className="w-full max-w-4xl max-h-[90vh] overflow-y-auto rounded-3xl bg-[#090C16] border border-blue-500/40 p-6 sm:p-10 space-y-8 shadow-2xl relative scrollbar-thin">
+            <div className="w-full max-w-4xl max-h-[90vh] overflow-y-auto rounded-3xl bg-[#090C16] border border-emerald-500/40 p-6 sm:p-10 space-y-8 shadow-2xl relative scrollbar-thin">
               
               {/* Close Button */}
               <button
@@ -135,7 +135,7 @@ export const InsightsView: React.FC<InsightsViewProps> = ({
 
               <div className="space-y-4">
                 <div className="flex items-center gap-3">
-                  <span className="text-xs font-mono px-3 py-1 rounded bg-blue-950 text-cyan-300 border border-blue-500/30 uppercase">
+                  <span className="text-xs font-mono px-3 py-1 rounded bg-emerald-950 text-emerald-300 border border-emerald-500/30 uppercase">
                     {selectedArticle.category}
                   </span>
                   <span className="text-xs font-mono text-slate-400">
@@ -147,13 +147,13 @@ export const InsightsView: React.FC<InsightsViewProps> = ({
                   {selectedArticle.title}
                 </h2>
 
-                <div className="text-xs font-mono text-cyan-400">
+                <div className="text-xs font-mono text-emerald-400">
                   By {selectedArticle.author.name} ({selectedArticle.author.role})
                 </div>
               </div>
 
               {/* Summary Callout */}
-              <div className="p-6 rounded-2xl bg-blue-950/30 border border-blue-500/20 text-sm text-slate-200 leading-relaxed italic">
+              <div className="p-6 rounded-2xl bg-emerald-950/30 border border-emerald-500/20 text-sm text-slate-200 leading-relaxed italic">
                 "{selectedArticle.excerpt}"
               </div>
 
@@ -166,13 +166,13 @@ export const InsightsView: React.FC<InsightsViewProps> = ({
 
               {/* Key Takeaways */}
               <div className="p-6 rounded-2xl bg-slate-900/80 border border-slate-800 space-y-3">
-                <div className="text-xs font-mono text-cyan-400 uppercase font-bold">
+                <div className="text-xs font-mono text-emerald-400 uppercase font-bold">
                   Executive Recommendations & Key Takeaways:
                 </div>
                 <div className="space-y-2">
                   {selectedArticle.keyInsights.map((t, idx) => (
                     <div key={idx} className="text-xs sm:text-sm text-slate-200 flex items-start gap-2.5">
-                      <CheckCircle2 className="w-4 h-4 text-cyan-400 shrink-0 mt-0.5" />
+                      <CheckCircle2 className="w-4 h-4 text-emerald-400 shrink-0 mt-0.5" />
                       <span>{t}</span>
                     </div>
                   ))}

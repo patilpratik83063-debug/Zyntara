@@ -70,12 +70,12 @@ export const AssessmentModal: React.FC<AssessmentModalProps> = ({
   return (
     <div className="fixed inset-0 z-50 flex items-center justify-center p-4 sm:p-6 bg-black/85 backdrop-blur-xl overflow-y-auto">
       <div 
-        className="relative w-full max-w-3xl rounded-2xl bg-[#0A0D14] border border-blue-500/30 shadow-[0_0_50px_rgba(0,102,255,0.25)] p-6 sm:p-8 text-slate-100 my-8 overflow-hidden"
+        className="relative w-full max-w-3xl rounded-2xl bg-[#0A0D14] border border-emerald-500/30 shadow-[0_0_50px_rgba(16, 185, 129,0.25)] p-6 sm:p-8 text-slate-100 my-8 overflow-hidden"
         role="dialog"
         aria-modal="true"
       >
         {/* Subtle decorative glow */}
-        <div className="absolute top-0 right-0 w-96 h-96 bg-blue-600/10 rounded-full blur-3xl pointer-events-none" />
+        <div className="absolute top-0 right-0 w-96 h-96 bg-emerald-600/10 rounded-full blur-3xl pointer-events-none" />
 
         {/* Close Button */}
         <button
@@ -93,9 +93,9 @@ export const AssessmentModal: React.FC<AssessmentModalProps> = ({
               src={ZENTARA_LOGO_ICON} 
               alt="Zentara" 
               referrerPolicy="no-referrer"
-              className="w-5 h-5 rounded-full object-cover shadow-[0_0_8px_rgba(89,214,196,0.6)]"
+              className="w-5 h-5 rounded-full object-cover shadow-[0_0_8px_rgba(45, 212, 191,0.6)]"
             />
-            <span className="font-mono text-xs text-[#59D6C4] tracking-wider uppercase font-semibold">
+            <span className="font-mono text-xs text-[#2DD4BF] tracking-wider uppercase font-semibold">
               Zentara Technology • Executive Assessment Engine
             </span>
           </div>
@@ -112,7 +112,7 @@ export const AssessmentModal: React.FC<AssessmentModalProps> = ({
               <div 
                 key={i} 
                 className={`h-1.5 flex-1 rounded-full transition-all duration-300 ${
-                  step >= i ? 'bg-blue-500 shadow-[0_0_8px_#3b82f6]' : 'bg-slate-800'
+                  step >= i ? 'bg-emerald-500 shadow-[0_0_8px_#10b981]' : 'bg-slate-800'
                 }`}
               />
             ))}
@@ -134,7 +134,7 @@ export const AssessmentModal: React.FC<AssessmentModalProps> = ({
                     onClick={() => setFormData({ ...formData, companySize: size })}
                     className={`py-3 px-3 rounded-lg text-xs font-medium border text-center transition-all ${
                       formData.companySize === size
-                        ? 'bg-blue-950/80 border-cyan-400 text-cyan-200 shadow-[0_0_15px_rgba(0,210,255,0.2)]'
+                        ? 'bg-emerald-950/80 border-emerald-400 text-emerald-200 shadow-[0_0_15px_rgba(0,210,255,0.2)]'
                         : 'bg-slate-900/60 border-slate-800 text-slate-300 hover:border-slate-700'
                     }`}
                   >
@@ -151,7 +151,7 @@ export const AssessmentModal: React.FC<AssessmentModalProps> = ({
               <select
                 value={formData.primaryIndustry}
                 onChange={(e) => setFormData({ ...formData, primaryIndustry: e.target.value })}
-                className="w-full px-4 py-3 rounded-lg bg-slate-900 border border-slate-800 text-slate-100 text-sm focus:border-blue-500 focus:outline-none"
+                className="w-full px-4 py-3 rounded-lg bg-slate-900 border border-slate-800 text-slate-100 text-sm focus:border-emerald-500 focus:outline-none"
               >
                 <option value="Manufacturing & Industrial">Manufacturing & Industrial</option>
                 <option value="Financial Services & Banking">Financial Services & Banking</option>
@@ -198,12 +198,12 @@ export const AssessmentModal: React.FC<AssessmentModalProps> = ({
                       onClick={() => toggleSystem(sys)}
                       className={`py-3 px-4 rounded-lg text-xs font-medium border text-left flex items-center justify-between transition-all ${
                         selected
-                          ? 'bg-blue-950/80 border-cyan-400 text-cyan-200'
+                          ? 'bg-emerald-950/80 border-emerald-400 text-emerald-200'
                           : 'bg-slate-900/60 border-slate-800 text-slate-300 hover:border-slate-700'
                       }`}
                     >
                       <span>{sys}</span>
-                      {selected && <CheckCircle2 className="w-4 h-4 text-cyan-400 shrink-0" />}
+                      {selected && <CheckCircle2 className="w-4 h-4 text-emerald-400 shrink-0" />}
                     </button>
                   );
                 })}
@@ -244,7 +244,7 @@ export const AssessmentModal: React.FC<AssessmentModalProps> = ({
                     onClick={() => setFormData({ ...formData, biggestPainPoint: pain })}
                     className={`w-full py-3 px-4 rounded-lg text-xs font-medium border text-left transition-all ${
                       formData.biggestPainPoint === pain
-                        ? 'bg-blue-950/80 border-cyan-400 text-cyan-200'
+                        ? 'bg-emerald-950/80 border-emerald-400 text-emerald-200'
                         : 'bg-slate-900/60 border-slate-800 text-slate-300 hover:border-slate-700'
                     }`}
                   >
@@ -279,10 +279,10 @@ export const AssessmentModal: React.FC<AssessmentModalProps> = ({
                 <div className="text-[11px] text-slate-500 mt-0.5">Point solutions without ERP sync</div>
               </div>
 
-              <div className="p-4 rounded-xl bg-blue-950/40 border border-blue-500/40 text-center">
-                <div className="text-xs font-mono text-cyan-400">Target Transformation</div>
+              <div className="p-4 rounded-xl bg-emerald-950/40 border border-emerald-500/40 text-center">
+                <div className="text-xs font-mono text-emerald-400">Target Transformation</div>
                 <div className="text-sm font-semibold text-white mt-1">Stage 5: Autonomous Enterprise</div>
-                <div className="text-[11px] text-cyan-300 mt-0.5">Unified Zyntara One™ Architecture</div>
+                <div className="text-[11px] text-emerald-300 mt-0.5">Unified Zyntara One™ Architecture</div>
               </div>
 
               <div className="p-4 rounded-xl bg-slate-900/80 border border-slate-800 text-center">
@@ -295,8 +295,8 @@ export const AssessmentModal: React.FC<AssessmentModalProps> = ({
             {/* Recommended Blueprint */}
             <div className="p-5 rounded-xl bg-slate-900/90 border border-slate-800 space-y-3">
               <div className="flex items-center gap-2">
-                <Cpu className="w-4 h-4 text-cyan-400" />
-                <span className="font-mono text-xs text-cyan-300 uppercase">
+                <Cpu className="w-4 h-4 text-emerald-400" />
+                <span className="font-mono text-xs text-emerald-300 uppercase">
                   Recommended Architecture Blueprint
                 </span>
               </div>

@@ -40,7 +40,7 @@ export const ARCHITECTURE_LAYERS: ArchitectureLayer[] = [
       'Zero training on confidential company IP or sensitive PII',
       'Context-aware answers backed by strict citation provenance'
     ],
-    colorHex: '#2563EB',
+    colorHex: '#059669',
     status: 'streaming'
   },
   {
@@ -61,7 +61,7 @@ export const ARCHITECTURE_LAYERS: ArchitectureLayer[] = [
       'Multi-step decision making with built-in sanity checks',
       'Scales knowledge worker capacity by 10x without proportional headcount'
     ],
-    colorHex: '#00D2FF',
+    colorHex: '#34d399',
     status: 'active'
   },
   {
@@ -82,7 +82,7 @@ export const ARCHITECTURE_LAYERS: ArchitectureLayer[] = [
       'Guaranteed transactional integrity on mission-critical operations',
       'Instant escalation routing when anomalous data is detected'
     ],
-    colorHex: '#60A5FA',
+    colorHex: '#34D399',
     status: 'synced'
   },
   {
@@ -124,7 +124,7 @@ export const ARCHITECTURE_LAYERS: ArchitectureLayer[] = [
       'Eliminates wait times and repetitive customer questions',
       'Boosts CSAT while decreasing customer support overhead by 60%+'
     ],
-    colorHex: '#93C5FD',
+    colorHex: '#6EE7B7',
     status: 'streaming'
   },
   {
@@ -145,7 +145,7 @@ export const ARCHITECTURE_LAYERS: ArchitectureLayer[] = [
       'Proactively identifies at-risk enterprise accounts 60 days before renewal',
       'Automates personalized follow-ups that increase deal velocity'
     ],
-    colorHex: '#0066FF',
+    colorHex: '#10b981',
     status: 'active'
   },
   {
@@ -166,7 +166,7 @@ export const ARCHITECTURE_LAYERS: ArchitectureLayer[] = [
       'System gets smarter, faster, and more accurate each operating quarter',
       'Provides C-suite with live forward-looking visibility rather than lagging metrics'
     ],
-    colorHex: '#1D4ED8',
+    colorHex: '#047857',
     status: 'streaming'
   }
 ];

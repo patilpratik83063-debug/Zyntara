@@ -80,7 +80,7 @@ export const EnterpriseIntelligenceSection: React.FC<EnterpriseIntelligenceSecti
               key={idx}
               className="px-3 py-1.5 rounded-xl text-xs font-mono font-medium bg-[#101420] text-[#B6BAC4] border border-white/[0.06] flex items-center gap-1.5"
             >
-              <Database className="w-3 h-3 text-[#8B7CFF]" />
+              <Database className="w-3 h-3 text-[#34D399]" />
               <span>{sys}</span>
             </span>
           ))}
@@ -126,7 +126,7 @@ export const EnterpriseIntelligenceSection: React.FC<EnterpriseIntelligenceSecti
                   Synthesized Executive Intelligence Brief
                 </span>
               </div>
-              <span className="text-[10px] font-mono text-[#59D6C4] px-2 py-0.5 rounded-md bg-[#181D2A] border border-[#59D6C4]/30 font-semibold">
+              <span className="text-[10px] font-mono text-[#2DD4BF] px-2 py-0.5 rounded-md bg-[#181D2A] border border-[#2DD4BF]/30 font-semibold">
                 {current.confidence}
               </span>
             </div>
@@ -145,7 +145,7 @@ export const EnterpriseIntelligenceSection: React.FC<EnterpriseIntelligenceSecti
                 {current.sources.map((src, idx) => (
                   <span
                     key={idx}
-                    className="px-2.5 py-1 rounded-md text-[11px] font-mono bg-[#181D2A] text-[#8B7CFF] border border-white/[0.06] flex items-center gap-1"
+                    className="px-2.5 py-1 rounded-md text-[11px] font-mono bg-[#181D2A] text-[#34D399] border border-white/[0.06] flex items-center gap-1"
                   >
                     <FileText className="w-3 h-3 text-[#D6B77A]" />
                     <span>{src}</span>
@@ -172,7 +172,7 @@ export const EnterpriseIntelligenceSection: React.FC<EnterpriseIntelligenceSecti
           {/* Bottom Callout */}
           <div className="pt-2 flex flex-col sm:flex-row sm:items-center justify-between gap-4 text-xs font-mono text-[#7E8491]">
             <div className="flex items-center gap-2">
-              <ShieldCheck className="w-4 h-4 text-[#8B7CFF]" />
+              <ShieldCheck className="w-4 h-4 text-[#34D399]" />
               <span>Full cryptographic audit trail & strict data boundary isolation</span>
             </div>
 

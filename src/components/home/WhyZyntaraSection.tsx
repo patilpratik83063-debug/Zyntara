@@ -84,7 +84,7 @@ export const WhyZyntaraSection: React.FC<WhyZyntaraSectionProps> = ({ onNavigate
   return (
     <section id="why-zyntara-section" className="py-28 px-4 sm:px-6 lg:px-8 bg-[#090B10] border-t border-white/[0.08] relative overflow-hidden">
       {/* Background ambient lighting */}
-      <div className="absolute top-1/2 left-1/3 w-[800px] h-[500px] bg-[#8B7CFF]/06 blur-[180px] pointer-events-none" />
+      <div className="absolute top-1/2 left-1/3 w-[800px] h-[500px] bg-[#34D399]/06 blur-[180px] pointer-events-none" />
 
       <div className="max-w-7xl mx-auto">
         
@@ -112,13 +112,13 @@ export const WhyZyntaraSection: React.FC<WhyZyntaraSectionProps> = ({ onNavigate
                   <span className="font-mono text-xs font-bold px-2.5 py-1 rounded-md bg-[#181D2A] text-[#D6B77A] border border-[#D6B77A]/30">
                     PRINCIPLE {p.num}
                   </span>
-                  <Sparkles className="w-4 h-4 text-[#8B7CFF]" />
+                  <Sparkles className="w-4 h-4 text-[#34D399]" />
                 </div>
 
                 <h3 className="font-display font-extrabold text-lg sm:text-xl text-[#F5F3EE]">
                   {p.title}
                 </h3>
-                <div className="text-xs font-mono text-[#8B7CFF] font-medium mt-1">
+                <div className="text-xs font-mono text-[#34D399] font-medium mt-1">
                   {p.tagline}
                 </div>
 
@@ -127,7 +127,7 @@ export const WhyZyntaraSection: React.FC<WhyZyntaraSectionProps> = ({ onNavigate
                 </p>
               </div>
 
-              <div className="pt-2 flex items-center gap-1 text-xs font-mono text-[#59D6C4]">
+              <div className="pt-2 flex items-center gap-1 text-xs font-mono text-[#2DD4BF]">
                 <CheckCircle2 className="w-3.5 h-3.5" />
                 <span>Enterprise Standard</span>
               </div>
@@ -179,7 +179,7 @@ export const WhyZyntaraSection: React.FC<WhyZyntaraSectionProps> = ({ onNavigate
             </div>
 
             {/* Zyntara Enterprise Architecture Card */}
-            <div className="p-8 rounded-2xl bg-[#101422] border border-[#D6B77A]/50 shadow-[0_4px_30px_rgba(214,183,122,0.15)] flex flex-col justify-between">
+            <div className="p-8 rounded-2xl bg-[#101A14] border border-[#D6B77A]/50 shadow-[0_4px_30px_rgba(214,183,122,0.15)] flex flex-col justify-between">
               <div>
                 <div className="flex items-center justify-between pb-4 border-b border-[#D6B77A]/20 mb-4">
                   <span className="font-mono text-xs font-bold text-[#D6B77A] uppercase tracking-wider">
@@ -193,7 +193,7 @@ export const WhyZyntaraSection: React.FC<WhyZyntaraSectionProps> = ({ onNavigate
                 <div className="space-y-3 font-mono text-xs text-[#F5F3EE]">
                   {zyntaraSystemSteps.map((step, idx) => (
                     <div key={idx} className="flex items-start gap-2.5">
-                      <CheckCircle2 className="w-3.5 h-3.5 text-[#59D6C4] shrink-0 mt-0.5" />
+                      <CheckCircle2 className="w-3.5 h-3.5 text-[#2DD4BF] shrink-0 mt-0.5" />
                       <span>{step}</span>
                     </div>
                   ))}
@@ -213,8 +213,8 @@ export const WhyZyntaraSection: React.FC<WhyZyntaraSectionProps> = ({ onNavigate
           <div className="flex flex-col lg:flex-row lg:items-center justify-between gap-6 pb-8 border-b border-white/[0.08]">
             <div className="space-y-1">
               <div className="flex items-center gap-2">
-                <ShieldCheck className="w-5 h-5 text-[#8B7CFF]" />
-                <span className="text-xs font-mono text-[#8B7CFF] uppercase font-bold tracking-wider">
+                <ShieldCheck className="w-5 h-5 text-[#34D399]" />
+                <span className="text-xs font-mono text-[#34D399] uppercase font-bold tracking-wider">
                   Security & Enterprise Governance
                 </span>
               </div>

@@ -92,12 +92,12 @@ export const AutomationView: React.FC<AutomationViewProps> = ({
   const activeSwarm = MULTI_AGENT_DEPARTMENT_SWARMS.find(s => s.id === activeSwarmId) || MULTI_AGENT_DEPARTMENT_SWARMS[0];
 
   return (
-    <div className="pt-28 pb-24 px-4 sm:px-6 lg:px-8 bg-[#07090E] min-h-screen text-slate-100 selection:bg-blue-600">
+    <div className="pt-28 pb-24 px-4 sm:px-6 lg:px-8 bg-[#07090E] min-h-screen text-slate-100 selection:bg-emerald-600">
       <div className="max-w-7xl mx-auto space-y-24">
 
         {/* ===================== HERO SECTION ===================== */}
         <div className="text-center space-y-6 pt-4 max-w-4xl mx-auto">
-          <div className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-[#121622] border border-[#59D6C4]/30 text-xs font-mono text-[#59D6C4] shadow-[0_0_15px_rgba(89,214,196,0.2)]">
+          <div className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-[#121622] border border-[#2DD4BF]/30 text-xs font-mono text-[#2DD4BF] shadow-[0_0_15px_rgba(45, 212, 191,0.2)]">
             <img 
               src={ZENTARA_LOGO_ICON} 
               alt="Zentara" 
@@ -109,7 +109,7 @@ export const AutomationView: React.FC<AutomationViewProps> = ({
 
           <h1 className="text-4xl sm:text-5xl lg:text-6xl font-display font-extrabold text-white tracking-tight leading-[1.1]">
             Automate What Slows <br className="hidden sm:block" />
-            <span className="text-transparent bg-clip-text bg-gradient-to-r from-cyan-400 via-blue-400 to-indigo-300">
+            <span className="text-transparent bg-clip-text bg-gradient-to-r from-emerald-400 via-emerald-400 to-emerald-300">
               Your Business Down.
             </span>
           </h1>
@@ -132,7 +132,7 @@ export const AutomationView: React.FC<AutomationViewProps> = ({
               onClick={onOpenAssessment}
               className="px-5 py-3 rounded-xl bg-slate-900/80 hover:bg-slate-800 border border-slate-700 text-sm font-medium text-slate-200 hover:text-white transition-colors flex items-center gap-2 cursor-pointer"
             >
-              <BarChart3 className="w-4 h-4 text-cyan-400" />
+              <BarChart3 className="w-4 h-4 text-emerald-400" />
               <span>Evaluate Automation Readiness</span>
             </button>
           </div>
@@ -142,7 +142,7 @@ export const AutomationView: React.FC<AutomationViewProps> = ({
         <div className="p-6 sm:p-8 rounded-3xl bg-gradient-to-b from-slate-900/90 to-[#0A0D18]/90 border border-slate-800 shadow-2xl relative overflow-hidden">
           <div className="flex flex-col md:flex-row md:items-center justify-between gap-4 mb-6 pb-6 border-b border-slate-800/80">
             <div>
-              <div className="text-xs font-mono uppercase tracking-widest text-cyan-400">
+              <div className="text-xs font-mono uppercase tracking-widest text-emerald-400">
                 Strategic Scale & Hierarchy
               </div>
               <h2 className="text-xl sm:text-2xl font-display font-bold text-white mt-1">
@@ -165,7 +165,7 @@ export const AutomationView: React.FC<AutomationViewProps> = ({
                   onClick={() => setSelectedLevel(isSelected ? 'all' : lvl.level)}
                   className={`p-4 rounded-2xl text-left transition-all duration-300 border flex flex-col justify-between cursor-pointer relative group ${
                     isSelected
-                      ? 'bg-blue-950/80 border-cyan-400/80 shadow-[0_0_20px_rgba(6,182,212,0.25)]'
+                      ? 'bg-emerald-950/80 border-emerald-400/80 shadow-[0_0_20px_rgba(16, 185, 129,0.25)]'
                       : 'bg-slate-950/60 border-slate-800/90 hover:border-slate-700 hover:bg-slate-900/60'
                   }`}
                 >
@@ -193,7 +193,7 @@ export const AutomationView: React.FC<AutomationViewProps> = ({
 
                   <div className="mt-4 pt-3 border-t border-slate-800/80 flex items-center justify-between text-[11px] font-mono text-slate-400">
                     <span className="truncate">{lvl.targetFit.split(',')[0]}</span>
-                    <ChevronRight className="w-3.5 h-3.5 text-cyan-400 group-hover:translate-x-1 transition-transform shrink-0" />
+                    <ChevronRight className="w-3.5 h-3.5 text-emerald-400 group-hover:translate-x-1 transition-transform shrink-0" />
                   </div>
                 </button>
               );
@@ -205,7 +205,7 @@ export const AutomationView: React.FC<AutomationViewProps> = ({
         <div id="automation-explorer" className="space-y-8">
           <div className="flex flex-col lg:flex-row lg:items-end justify-between gap-6">
             <div>
-              <div className="text-xs font-mono uppercase tracking-widest text-cyan-400">
+              <div className="text-xs font-mono uppercase tracking-widest text-emerald-400">
                 Full Capability Directory
               </div>
               <h2 className="text-2xl sm:text-3xl font-display font-extrabold text-white mt-1">
@@ -226,7 +226,7 @@ export const AutomationView: React.FC<AutomationViewProps> = ({
                   placeholder="Search WhatsApp, CRM, Invoices..."
                   value={searchQuery}
                   onChange={(e) => setSearchQuery(e.target.value)}
-                  className="w-full pl-9 pr-3 py-2 text-xs rounded-xl bg-slate-900 border border-slate-700/80 text-white placeholder-slate-500 focus:outline-none focus:border-cyan-400 transition-colors"
+                  className="w-full pl-9 pr-3 py-2 text-xs rounded-xl bg-slate-900 border border-slate-700/80 text-white placeholder-slate-500 focus:outline-none focus:border-emerald-400 transition-colors"
                 />
                 {searchQuery && (
                   <button 
@@ -246,7 +246,7 @@ export const AutomationView: React.FC<AutomationViewProps> = ({
                     onClick={() => setSelectedScale(tier === 'all' ? 'all' : tier)}
                     className={`px-3 py-1.5 rounded-lg font-medium transition-colors cursor-pointer ${
                       (selectedScale === tier || (selectedScale === 'all' && tier === 'all'))
-                        ? 'bg-blue-600 text-white'
+                        ? 'bg-emerald-600 text-white'
                         : 'text-slate-400 hover:text-white'
                     }`}
                   >
@@ -267,7 +267,7 @@ export const AutomationView: React.FC<AutomationViewProps> = ({
                   onClick={() => setSelectedCategory(cat.id)}
                   className={`px-3.5 py-1.5 rounded-full text-xs font-medium whitespace-nowrap transition-all duration-200 cursor-pointer flex items-center gap-1.5 ${
                     isActive
-                      ? 'bg-cyan-500/20 text-cyan-300 border border-cyan-400/50 shadow-[0_0_12px_rgba(6,182,212,0.2)]'
+                      ? 'bg-emerald-500/20 text-emerald-300 border border-emerald-400/50 shadow-[0_0_12px_rgba(16, 185, 129,0.2)]'
                       : 'bg-slate-900/80 text-slate-400 hover:text-slate-200 border border-slate-800'
                   }`}
                 >
@@ -279,9 +279,9 @@ export const AutomationView: React.FC<AutomationViewProps> = ({
 
           {/* Filter Status Reset Bar if active */}
           {(selectedLevel !== 'all' || selectedCategory !== 'all' || selectedScale !== 'all' || searchQuery) && (
-            <div className="flex items-center justify-between p-3 rounded-xl bg-blue-950/30 border border-blue-500/20 text-xs text-slate-300">
+            <div className="flex items-center justify-between p-3 rounded-xl bg-emerald-950/30 border border-emerald-500/20 text-xs text-slate-300">
               <div className="flex items-center gap-2">
-                <Filter className="w-3.5 h-3.5 text-cyan-400" />
+                <Filter className="w-3.5 h-3.5 text-emerald-400" />
                 <span>
                   Showing <strong>{filteredAutomations.length}</strong> matching capabilities
                   {selectedLevel !== 'all' && ` • Level ${selectedLevel}`}
@@ -296,7 +296,7 @@ export const AutomationView: React.FC<AutomationViewProps> = ({
                   setSelectedScale('all');
                   setSearchQuery('');
                 }}
-                className="text-cyan-400 hover:underline font-mono text-[11px] cursor-pointer"
+                className="text-emerald-400 hover:underline font-mono text-[11px] cursor-pointer"
               >
                 Reset All Filters
               </button>
@@ -308,12 +308,12 @@ export const AutomationView: React.FC<AutomationViewProps> = ({
             {filteredAutomations.map((item) => (
               <div
                 key={item.id}
-                className="p-6 rounded-2xl bg-[#090C16] border border-slate-800/80 hover:border-blue-500/40 transition-all duration-300 flex flex-col justify-between group hover:shadow-[0_10px_30px_rgba(0,102,255,0.1)] relative"
+                className="p-6 rounded-2xl bg-[#090C16] border border-slate-800/80 hover:border-emerald-500/40 transition-all duration-300 flex flex-col justify-between group hover:shadow-[0_10px_30px_rgba(16, 185, 129,0.1)] relative"
               >
                 <div className="space-y-4">
                   {/* Card Header: Level Badge & Dept */}
                   <div className="flex items-center justify-between gap-2">
-                    <span className="text-[10px] font-mono px-2.5 py-0.5 rounded bg-blue-950 text-cyan-300 border border-blue-500/30 uppercase font-semibold">
+                    <span className="text-[10px] font-mono px-2.5 py-0.5 rounded bg-emerald-950 text-emerald-300 border border-emerald-500/30 uppercase font-semibold">
                       Level {item.level} • {item.levelName.split(' ')[0]}
                     </span>
                     <span className="text-[11px] font-mono text-slate-400">
@@ -323,7 +323,7 @@ export const AutomationView: React.FC<AutomationViewProps> = ({
 
                   {/* Title & Tagline */}
                   <div>
-                    <h3 className="text-lg font-display font-bold text-white group-hover:text-cyan-300 transition-colors">
+                    <h3 className="text-lg font-display font-bold text-white group-hover:text-emerald-300 transition-colors">
                       {item.title}
                     </h3>
                     <p className="text-xs text-slate-400 mt-1 line-clamp-2 leading-relaxed">
@@ -349,7 +349,7 @@ export const AutomationView: React.FC<AutomationViewProps> = ({
                     <div className="flex flex-wrap gap-1.5">
                       {item.keyFeatures.slice(0, 3).map((feat, idx) => (
                         <span key={idx} className="text-[11px] px-2 py-0.5 rounded bg-slate-900 text-slate-300 border border-slate-800 flex items-center gap-1">
-                          <CheckCircle2 className="w-2.5 h-2.5 text-cyan-400 shrink-0" />
+                          <CheckCircle2 className="w-2.5 h-2.5 text-emerald-400 shrink-0" />
                           <span className="truncate max-w-[190px]">{feat}</span>
                         </span>
                       ))}
@@ -369,7 +369,7 @@ export const AutomationView: React.FC<AutomationViewProps> = ({
                   </span>
                   <button
                     onClick={() => setSelectedAutomation(item)}
-                    className="text-cyan-400 hover:text-cyan-300 font-medium flex items-center gap-1 group/btn cursor-pointer"
+                    className="text-emerald-400 hover:text-emerald-300 font-medium flex items-center gap-1 group/btn cursor-pointer"
                   >
                     <span>View Architecture</span>
                     <ArrowRight className="w-3.5 h-3.5 group-hover/btn:translate-x-1 transition-transform" />
@@ -381,7 +381,7 @@ export const AutomationView: React.FC<AutomationViewProps> = ({
 
           {filteredAutomations.length === 0 && (
             <div className="text-center py-16 p-8 rounded-2xl bg-slate-900/40 border border-slate-800 space-y-3">
-              <AlertCircle className="w-8 h-8 text-cyan-400 mx-auto opacity-70" />
+              <AlertCircle className="w-8 h-8 text-emerald-400 mx-auto opacity-70" />
               <div className="text-base font-semibold text-white">No automation capabilities matched your filter</div>
               <p className="text-xs text-slate-400 max-w-sm mx-auto">
                 Try clearing your search query or selecting "All Automations" to view the complete catalog.
@@ -393,7 +393,7 @@ export const AutomationView: React.FC<AutomationViewProps> = ({
                   setSelectedScale('all');
                   setSearchQuery('');
                 }}
-                className="mt-2 px-4 py-2 rounded-lg bg-blue-600 hover:bg-blue-500 text-white text-xs font-medium cursor-pointer"
+                className="mt-2 px-4 py-2 rounded-lg bg-emerald-600 hover:bg-emerald-500 text-white text-xs font-medium cursor-pointer"
               >
                 Show All Capabilities
               </button>
@@ -405,7 +405,7 @@ export const AutomationView: React.FC<AutomationViewProps> = ({
         <div className="p-6 sm:p-10 rounded-3xl bg-[#090C17] border border-slate-800 space-y-8">
           <div className="flex flex-col md:flex-row md:items-end justify-between gap-4">
             <div>
-              <div className="text-xs font-mono uppercase tracking-widest text-cyan-400">
+              <div className="text-xs font-mono uppercase tracking-widest text-emerald-400">
                 Level 2 • Integrated Workflows
               </div>
               <h2 className="text-2xl sm:text-3xl font-display font-extrabold text-white mt-1">
@@ -424,7 +424,7 @@ export const AutomationView: React.FC<AutomationViewProps> = ({
                   onClick={() => setActiveWorkflowId(wf.id)}
                   className={`px-3.5 py-2 rounded-lg font-medium whitespace-nowrap transition-colors cursor-pointer ${
                     activeWorkflowId === wf.id
-                      ? 'bg-blue-600 text-white shadow'
+                      ? 'bg-emerald-600 text-white shadow'
                       : 'text-slate-400 hover:text-slate-200'
                   }`}
                 >
@@ -438,7 +438,7 @@ export const AutomationView: React.FC<AutomationViewProps> = ({
           <div className="p-6 sm:p-8 rounded-2xl bg-slate-950/80 border border-slate-800/80 space-y-6">
             <div className="flex flex-col sm:flex-row sm:items-center justify-between gap-4 pb-4 border-b border-slate-800">
               <div>
-                <span className="text-xs font-mono text-cyan-400 uppercase tracking-wider">
+                <span className="text-xs font-mono text-emerald-400 uppercase tracking-wider">
                   Active Workflow Architecture
                 </span>
                 <h3 className="text-xl font-display font-bold text-white mt-0.5">
@@ -449,7 +449,7 @@ export const AutomationView: React.FC<AutomationViewProps> = ({
                 </p>
               </div>
 
-              <div className="p-3 rounded-xl bg-blue-950/40 border border-blue-500/20 text-xs font-mono text-cyan-300 sm:text-right">
+              <div className="p-3 rounded-xl bg-emerald-950/40 border border-emerald-500/20 text-xs font-mono text-emerald-300 sm:text-right">
                 <div>Deployment Velocity: {activeWorkflow.implementationDuration}</div>
                 <div className="text-[11px] text-slate-400 mt-0.5">Zero Downtime Migration</div>
               </div>
@@ -465,15 +465,15 @@ export const AutomationView: React.FC<AutomationViewProps> = ({
                 {activeWorkflow.steps.map((step) => (
                   <div
                     key={step.step}
-                    className="p-3.5 rounded-xl bg-[#0C0F1E] border border-slate-800 flex flex-col justify-between relative group hover:border-cyan-500/40 transition-colors"
+                    className="p-3.5 rounded-xl bg-[#0C0F1E] border border-slate-800 flex flex-col justify-between relative group hover:border-emerald-500/40 transition-colors"
                   >
                     <div>
                       <div className="flex items-center justify-between">
-                        <span className="w-5 h-5 rounded-full bg-blue-950 text-cyan-400 border border-blue-500/40 text-[10px] font-mono flex items-center justify-center font-bold">
+                        <span className="w-5 h-5 rounded-full bg-emerald-950 text-emerald-400 border border-emerald-500/40 text-[10px] font-mono flex items-center justify-center font-bold">
                           {step.step}
                         </span>
                         {step.aiPowered && (
-                          <span className="text-[9px] font-mono px-1.5 py-0.5 rounded bg-indigo-950 text-indigo-300 border border-indigo-500/30">
+                          <span className="text-[9px] font-mono px-1.5 py-0.5 rounded bg-emerald-950 text-emerald-300 border border-emerald-500/30">
                             AI
                           </span>
                         )}
@@ -488,7 +488,7 @@ export const AutomationView: React.FC<AutomationViewProps> = ({
                         {step.title}
                       </div>
 
-                      <div className="text-[10px] font-mono text-cyan-300 mt-1">
+                      <div className="text-[10px] font-mono text-emerald-300 mt-1">
                         {step.system}
                       </div>
 
@@ -515,7 +515,7 @@ export const AutomationView: React.FC<AutomationViewProps> = ({
         {/* ===================== FOLLOW-UP CADENCE VISUALIZER (DAY 0 TO REACTIVATION) ===================== */}
         <div className="p-6 sm:p-10 rounded-3xl bg-gradient-to-br from-[#0B0E1D] to-[#070912] border border-slate-800 space-y-6">
           <div className="max-w-3xl">
-            <div className="text-xs font-mono uppercase tracking-widest text-cyan-400">
+            <div className="text-xs font-mono uppercase tracking-widest text-emerald-400">
               Systematic Cadence Engine
             </div>
             <h2 className="text-2xl sm:text-3xl font-display font-extrabold text-white mt-1">
@@ -539,7 +539,7 @@ export const AutomationView: React.FC<AutomationViewProps> = ({
               <div key={idx} className="p-4 rounded-2xl bg-slate-950/80 border border-slate-800 flex flex-col justify-between">
                 <div>
                   <div className="flex items-center justify-between">
-                    <span className="text-xs font-mono font-bold text-cyan-300 px-2 py-0.5 rounded bg-blue-950 border border-blue-500/30">
+                    <span className="text-xs font-mono font-bold text-emerald-300 px-2 py-0.5 rounded bg-emerald-950 border border-emerald-500/30">
                       {step.day}
                     </span>
                     <span className="text-[10px] font-mono text-slate-500">
@@ -569,7 +569,7 @@ export const AutomationView: React.FC<AutomationViewProps> = ({
         <div className="p-6 sm:p-10 rounded-3xl bg-[#080B15] border border-slate-800 space-y-8">
           <div className="flex flex-col md:flex-row md:items-end justify-between gap-4">
             <div>
-              <div className="text-xs font-mono uppercase tracking-widest text-cyan-400">
+              <div className="text-xs font-mono uppercase tracking-widest text-emerald-400">
                 Level 4 • Agentic Swarms
               </div>
               <h2 className="text-2xl sm:text-3xl font-display font-extrabold text-white mt-1">
@@ -587,7 +587,7 @@ export const AutomationView: React.FC<AutomationViewProps> = ({
                   onClick={() => setActiveSwarmId(swarm.id)}
                   className={`px-3.5 py-2 rounded-lg font-medium whitespace-nowrap transition-colors cursor-pointer ${
                     activeSwarmId === swarm.id
-                      ? 'bg-cyan-600 text-white shadow'
+                      ? 'bg-emerald-600 text-white shadow'
                       : 'text-slate-400 hover:text-slate-200'
                   }`}
                 >
@@ -599,7 +599,7 @@ export const AutomationView: React.FC<AutomationViewProps> = ({
 
           <div className="p-6 sm:p-8 rounded-2xl bg-slate-950/80 border border-slate-800/80 space-y-6">
             <div>
-              <span className="text-xs font-mono text-cyan-400 uppercase tracking-wider">
+              <span className="text-xs font-mono text-emerald-400 uppercase tracking-wider">
                 Autonomous Swarm Objective
               </span>
               <h3 className="text-xl font-display font-bold text-white mt-0.5">
@@ -618,7 +618,7 @@ export const AutomationView: React.FC<AutomationViewProps> = ({
                     <div className="font-display font-bold text-sm text-white">
                       {agent.name}
                     </div>
-                    <span className="text-[10px] font-mono px-2 py-0.5 rounded bg-blue-950 text-cyan-300 border border-blue-500/30">
+                    <span className="text-[10px] font-mono px-2 py-0.5 rounded bg-emerald-950 text-emerald-300 border border-emerald-500/30">
                       {agent.role}
                     </span>
                   </div>
@@ -642,9 +642,9 @@ export const AutomationView: React.FC<AutomationViewProps> = ({
             </div>
 
             {/* Execution Flow & Impact */}
-            <div className="p-4 rounded-xl bg-blue-950/20 border border-blue-500/30 flex flex-col sm:flex-row sm:items-center justify-between gap-4 text-xs">
+            <div className="p-4 rounded-xl bg-emerald-950/20 border border-emerald-500/30 flex flex-col sm:flex-row sm:items-center justify-between gap-4 text-xs">
               <div className="space-y-1">
-                <span className="font-mono text-cyan-400 uppercase font-semibold">Swarm Execution Impact:</span>
+                <span className="font-mono text-emerald-400 uppercase font-semibold">Swarm Execution Impact:</span>
                 <p className="text-slate-200">{activeSwarm.impact}</p>
               </div>
               <Button
@@ -662,7 +662,7 @@ export const AutomationView: React.FC<AutomationViewProps> = ({
         <div className="p-6 sm:p-10 rounded-3xl bg-[#090C18] border border-slate-800 space-y-8">
           <div className="flex flex-col md:flex-row md:items-end justify-between gap-4">
             <div>
-              <div className="text-xs font-mono uppercase tracking-widest text-cyan-400">
+              <div className="text-xs font-mono uppercase tracking-widest text-emerald-400">
                 Organizational Benchmark
               </div>
               <h2 className="text-2xl sm:text-3xl font-display font-extrabold text-white mt-1">
@@ -681,7 +681,7 @@ export const AutomationView: React.FC<AutomationViewProps> = ({
                   onClick={() => setActiveMaturityDept(m.department)}
                   className={`px-3.5 py-2 rounded-lg font-medium whitespace-nowrap transition-colors cursor-pointer ${
                     activeMaturityDept === m.department
-                      ? 'bg-blue-600 text-white shadow'
+                      ? 'bg-emerald-600 text-white shadow'
                       : 'text-slate-400 hover:text-slate-200'
                   }`}
                 >
@@ -700,7 +700,7 @@ export const AutomationView: React.FC<AutomationViewProps> = ({
               >
                 <div className="space-y-2.5">
                   <div className="flex items-center justify-between">
-                    <span className="text-[11px] font-mono font-bold text-cyan-400">
+                    <span className="text-[11px] font-mono font-bold text-emerald-400">
                       LEVEL {lvl.level}
                     </span>
                   </div>
@@ -717,7 +717,7 @@ export const AutomationView: React.FC<AutomationViewProps> = ({
                     <div className="text-[10px] font-mono text-slate-500 uppercase">Core Capabilities:</div>
                     {lvl.keyCapabilities.slice(0, 3).map((k, i) => (
                       <div key={i} className="text-[11px] text-slate-300 flex items-start gap-1 font-mono">
-                        <span className="text-cyan-400">•</span>
+                        <span className="text-emerald-400">•</span>
                         <span className="line-clamp-1">{k}</span>
                       </div>
                     ))}
@@ -734,7 +734,7 @@ export const AutomationView: React.FC<AutomationViewProps> = ({
         </div>
 
         {/* ===================== LEVEL 5: CLOSED-LOOP AUTONOMOUS OPERATIONS ===================== */}
-        <div className="p-6 sm:p-10 rounded-3xl bg-gradient-to-r from-blue-950/40 via-slate-900 to-indigo-950/40 border border-blue-500/30 space-y-8">
+        <div className="p-6 sm:p-10 rounded-3xl bg-gradient-to-r from-emerald-950/40 via-slate-900 to-emerald-950/40 border border-emerald-500/30 space-y-8">
           <div className="max-w-3xl">
             <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-emerald-950 text-emerald-400 border border-emerald-500/30 text-xs font-mono">
               <ShieldCheck className="w-3.5 h-3.5" />
@@ -758,7 +758,7 @@ export const AutomationView: React.FC<AutomationViewProps> = ({
               { step: '05', name: 'Continuous Learning', desc: 'Records execution outcome in audit ledger and refines system heuristics.' }
             ].map((node) => (
               <div key={node.step} className="p-4 rounded-2xl bg-slate-950/80 border border-slate-800 space-y-2">
-                <div className="text-xs font-mono font-bold text-cyan-400">
+                <div className="text-xs font-mono font-bold text-emerald-400">
                   PHASE {node.step}
                 </div>
                 <div className="font-display font-bold text-sm text-white">
@@ -773,12 +773,12 @@ export const AutomationView: React.FC<AutomationViewProps> = ({
 
           <div className="p-4 rounded-xl bg-slate-950 border border-slate-800 flex flex-col sm:flex-row sm:items-center justify-between gap-4 text-xs">
             <div className="flex items-center gap-2 text-slate-300">
-              <Lock className="w-4 h-4 text-cyan-400" />
+              <Lock className="w-4 h-4 text-emerald-400" />
               <span>Full cryptographic audit trails • Zero autonomous action without policy compliance</span>
             </div>
             <button
               onClick={() => onNavigate('zyntara-one')}
-              className="text-cyan-400 hover:text-cyan-300 font-mono flex items-center gap-1 cursor-pointer"
+              className="text-emerald-400 hover:text-emerald-300 font-mono flex items-center gap-1 cursor-pointer"
             >
               <span>Explore Zyntara One™ Architecture</span>
               <ArrowRight className="w-3.5 h-3.5" />
@@ -788,7 +788,7 @@ export const AutomationView: React.FC<AutomationViewProps> = ({
 
         {/* ===================== ZYNTARA ONE ARCHITECTURE CONNECTION ===================== */}
         <div className="p-6 sm:p-10 rounded-3xl bg-[#070A14] border border-slate-800 text-center space-y-6">
-          <div className="text-xs font-mono uppercase tracking-widest text-cyan-400">
+          <div className="text-xs font-mono uppercase tracking-widest text-emerald-400">
             Unified Enterprise Architecture
           </div>
           <h2 className="text-2xl sm:text-3xl font-display font-extrabold text-white">
@@ -800,7 +800,7 @@ export const AutomationView: React.FC<AutomationViewProps> = ({
           <div className="flex flex-wrap items-center justify-center gap-2 max-w-4xl mx-auto pt-2 text-xs font-mono">
             {['DATA FABRIC', 'AI COGNITION', 'AUTOMATION', 'AGENTIC SWARMS', 'CRM / ERP', 'CUSTOMER EXPERIENCE', 'REVENUE ENGINE', 'AUTONOMOUS OPS'].map((layer, idx) => (
               <React.Fragment key={idx}>
-                <span className="px-3 py-1.5 rounded-lg bg-blue-950/60 border border-blue-500/30 text-cyan-300 font-semibold">
+                <span className="px-3 py-1.5 rounded-lg bg-emerald-950/60 border border-emerald-500/30 text-emerald-300 font-semibold">
                   {layer}
                 </span>
                 {idx < 7 && <ArrowRight className="w-3.5 h-3.5 text-slate-600 shrink-0" />}
@@ -841,7 +841,7 @@ export const AutomationView: React.FC<AutomationViewProps> = ({
             {/* Modal Header */}
             <div className="space-y-2 pr-10">
               <div className="flex items-center gap-2">
-                <span className="text-xs font-mono px-2.5 py-0.5 rounded bg-blue-950 text-cyan-300 border border-blue-500/30 uppercase font-semibold">
+                <span className="text-xs font-mono px-2.5 py-0.5 rounded bg-emerald-950 text-emerald-300 border border-emerald-500/30 uppercase font-semibold">
                   Level {selectedAutomation.level} • {selectedAutomation.levelName}
                 </span>
                 <span className="text-xs font-mono text-slate-400">
@@ -853,7 +853,7 @@ export const AutomationView: React.FC<AutomationViewProps> = ({
                 {selectedAutomation.title}
               </h2>
 
-              <p className="text-sm text-cyan-300 font-normal">
+              <p className="text-sm text-emerald-300 font-normal">
                 {selectedAutomation.tagline}
               </p>
             </div>
@@ -870,7 +870,7 @@ export const AutomationView: React.FC<AutomationViewProps> = ({
               </div>
 
               <div className="p-4 rounded-xl bg-slate-950 border border-slate-800 space-y-1.5">
-                <div className="text-xs font-mono text-cyan-400 uppercase font-semibold">
+                <div className="text-xs font-mono text-emerald-400 uppercase font-semibold">
                   Primary Trigger Event:
                 </div>
                 <p className="text-xs text-slate-300 leading-relaxed">
@@ -881,13 +881,13 @@ export const AutomationView: React.FC<AutomationViewProps> = ({
 
             {/* Step-by-Step Workflow Steps */}
             <div className="space-y-3">
-              <div className="text-xs font-mono text-cyan-400 uppercase font-bold">
+              <div className="text-xs font-mono text-emerald-400 uppercase font-bold">
                 Automated Execution Workflow:
               </div>
               <div className="space-y-2">
                 {selectedAutomation.workflowSteps.map((step, idx) => (
                   <div key={idx} className="p-3 rounded-xl bg-[#0C0F20] border border-slate-800 flex items-start gap-3 text-xs text-slate-300">
-                    <span className="w-5 h-5 rounded-full bg-blue-950 text-cyan-400 border border-blue-500/40 font-mono text-[10px] flex items-center justify-center shrink-0 font-bold mt-0.5">
+                    <span className="w-5 h-5 rounded-full bg-emerald-950 text-emerald-400 border border-emerald-500/40 font-mono text-[10px] flex items-center justify-center shrink-0 font-bold mt-0.5">
                       {idx + 1}
                     </span>
                     <span className="leading-relaxed">{step}</span>
@@ -898,13 +898,13 @@ export const AutomationView: React.FC<AutomationViewProps> = ({
 
             {/* Key Capabilities */}
             <div className="space-y-2">
-              <div className="text-xs font-mono text-cyan-400 uppercase font-bold">
+              <div className="text-xs font-mono text-emerald-400 uppercase font-bold">
                 Included Features & Capabilities:
               </div>
               <div className="grid grid-cols-1 sm:grid-cols-2 gap-2">
                 {selectedAutomation.keyFeatures.map((feat, idx) => (
                   <div key={idx} className="text-xs text-slate-300 flex items-start gap-2">
-                    <CheckCircle2 className="w-3.5 h-3.5 text-cyan-400 shrink-0 mt-0.5" />
+                    <CheckCircle2 className="w-3.5 h-3.5 text-emerald-400 shrink-0 mt-0.5" />
                     <span>{feat}</span>
                   </div>
                 ))}
@@ -941,7 +941,7 @@ export const AutomationView: React.FC<AutomationViewProps> = ({
 
               <div className="space-y-1">
                 <span className="text-slate-400 font-mono">Zyntara One™ Layer:</span>
-                <div className="text-cyan-300 font-mono text-[11px]">
+                <div className="text-emerald-300 font-mono text-[11px]">
                   {selectedAutomation.zyntaraOneLayer}
                 </div>
               </div>

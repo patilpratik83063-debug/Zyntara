@@ -85,7 +85,7 @@ export const BusinessAutomationSection: React.FC<BusinessAutomationSectionProps>
   return (
     <section id="business-automation-section" className="py-28 px-4 sm:px-6 lg:px-8 bg-[#090B10] border-t border-white/[0.08] relative overflow-hidden">
       {/* Background glow */}
-      <div className="absolute top-1/2 right-1/4 w-[600px] h-[400px] bg-[#8B7CFF]/06 blur-[150px] pointer-events-none" />
+      <div className="absolute top-1/2 right-1/4 w-[600px] h-[400px] bg-[#34D399]/06 blur-[150px] pointer-events-none" />
 
       <div className="max-w-7xl mx-auto">
         
@@ -118,9 +118,9 @@ export const BusinessAutomationSection: React.FC<BusinessAutomationSectionProps>
         </div>
 
         {/* Business Explanation Card */}
-        <div className="mt-10 p-8 rounded-3xl bg-gradient-to-r from-[#121624] via-[#0E111A] to-[#121624] border border-[#8B7CFF]/30 shadow-2xl max-w-5xl mx-auto text-left relative overflow-hidden">
+        <div className="mt-10 p-8 rounded-3xl bg-gradient-to-r from-[#121624] via-[#0E111A] to-[#121624] border border-[#34D399]/30 shadow-2xl max-w-5xl mx-auto text-left relative overflow-hidden">
           <div className="flex items-start gap-4">
-            <div className="w-10 h-10 rounded-xl bg-[#8B7CFF]/20 border border-[#8B7CFF]/40 flex items-center justify-center shrink-0 mt-1">
+            <div className="w-10 h-10 rounded-xl bg-[#34D399]/20 border border-[#34D399]/40 flex items-center justify-center shrink-0 mt-1">
               <Sparkles className="w-5 h-5 text-[#D6B77A]" />
             </div>
             <div>
@@ -137,7 +137,7 @@ export const BusinessAutomationSection: React.FC<BusinessAutomationSectionProps>
         {/* Automation Maturity Model (Level 01 to Level 05) */}
         <div className="mt-20">
           <div className="text-center mb-8">
-            <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-[#181D2A] text-xs font-mono text-[#8B7CFF] border border-[#8B7CFF]/30 mb-2">
+            <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-[#181D2A] text-xs font-mono text-[#34D399] border border-[#34D399]/30 mb-2">
               <Gauge className="w-3.5 h-3.5 text-[#D6B77A]" />
               <span>5-Stage Automation Maturity Model</span>
             </div>
@@ -169,7 +169,7 @@ export const BusinessAutomationSection: React.FC<BusinessAutomationSectionProps>
                     }`}>
                       LEVEL 0{lvl.level}
                     </span>
-                    {isSelected && <span className="w-2 h-2 rounded-full bg-[#59D6C4] animate-ping" />}
+                    {isSelected && <span className="w-2 h-2 rounded-full bg-[#2DD4BF] animate-ping" />}
                   </div>
 
                   <div className="font-display font-bold text-sm text-[#F5F3EE] mt-1">
@@ -210,7 +210,7 @@ export const BusinessAutomationSection: React.FC<BusinessAutomationSectionProps>
                 </div>
 
                 <div className="p-3.5 rounded-xl bg-[#141824] border border-white/[0.06]">
-                  <span className="text-[10px] font-mono text-[#59D6C4] uppercase font-semibold">
+                  <span className="text-[10px] font-mono text-[#2DD4BF] uppercase font-semibold">
                     Measurable Operational Impact:
                   </span>
                   <p className="text-xs text-[#E0E2EC] mt-1">
@@ -226,7 +226,7 @@ export const BusinessAutomationSection: React.FC<BusinessAutomationSectionProps>
                 <div className="flex flex-wrap gap-2">
                   {currentLevelData.examples.map((ex, idx) => (
                     <span key={idx} className="px-3 py-1 rounded-lg text-xs font-mono bg-[#181D2A] text-[#F5F3EE] border border-white/10 flex items-center gap-1.5">
-                      <CheckCircle2 className="w-3.5 h-3.5 text-[#8B7CFF]" />
+                      <CheckCircle2 className="w-3.5 h-3.5 text-[#34D399]" />
                       <span>{ex}</span>
                     </span>
                   ))}

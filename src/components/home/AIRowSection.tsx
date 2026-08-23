@@ -126,14 +126,14 @@ export const AIRowSection: React.FC<AIRowSectionProps> = ({ onNavigate }) => {
             {operationsSteps.map((op, idx) => (
               <div
                 key={idx}
-                className="p-7 rounded-3xl bg-[#0D1018]/90 border border-white/10 hover:border-[#8B7CFF]/40 transition-all duration-300 flex flex-col justify-between group shadow-lg"
+                className="p-7 rounded-3xl bg-[#0D1018]/90 border border-white/10 hover:border-[#34D399]/40 transition-all duration-300 flex flex-col justify-between group shadow-lg"
               >
                 <div>
                   <div className="flex items-center justify-between mb-4">
                     <span className="font-mono text-xs font-bold text-[#D6B77A] px-2 py-0.5 rounded-md bg-[#181D2A] border border-[#D6B77A]/25">
                       STEP {op.step}
                     </span>
-                    <span className="w-2 h-2 rounded-full bg-[#8B7CFF]" />
+                    <span className="w-2 h-2 rounded-full bg-[#34D399]" />
                   </div>
 
                   <h3 className="text-lg font-display font-bold text-[#F5F3EE] group-hover:text-white transition-colors">
@@ -146,7 +146,7 @@ export const AIRowSection: React.FC<AIRowSectionProps> = ({ onNavigate }) => {
 
                 <div className="mt-6 pt-4 border-t border-white/[0.06] flex items-center justify-between text-[11px] font-mono text-[#7E8491]">
                   <span>Operational Standard</span>
-                  <CheckCircle2 className="w-3.5 h-3.5 text-[#59D6C4]" />
+                  <CheckCircle2 className="w-3.5 h-3.5 text-[#2DD4BF]" />
                 </div>
               </div>
             ))}

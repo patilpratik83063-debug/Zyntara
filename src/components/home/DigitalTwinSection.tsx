@@ -93,7 +93,7 @@ export const DigitalTwinSection: React.FC<DigitalTwinSectionProps> = ({ onNaviga
               <div className="mt-6 space-y-2">
                 <div className="flex items-center justify-between text-xs font-mono">
                   <span className="text-[#B6BAC4]">Macro Market Demand Shift:</span>
-                  <span className={`font-bold ${demandShift >= 0 ? 'text-[#59D6C4]' : 'text-rose-400'}`}>
+                  <span className={`font-bold ${demandShift >= 0 ? 'text-[#2DD4BF]' : 'text-rose-400'}`}>
                     {demandShift > 0 ? `+${demandShift}%` : `${demandShift}%`}
                   </span>
                 </div>
@@ -103,7 +103,7 @@ export const DigitalTwinSection: React.FC<DigitalTwinSectionProps> = ({ onNaviga
                   max="40"
                   value={demandShift}
                   onChange={(e) => setDemandShift(Number(e.target.value))}
-                  className="w-full accent-[#8B7CFF] bg-[#181D2A] h-2 rounded-lg cursor-pointer"
+                  className="w-full accent-[#34D399] bg-[#181D2A] h-2 rounded-lg cursor-pointer"
                 />
               </div>
 
@@ -129,7 +129,7 @@ export const DigitalTwinSection: React.FC<DigitalTwinSectionProps> = ({ onNaviga
               <div className="mt-6 space-y-2">
                 <div className="flex items-center justify-between text-xs font-mono">
                   <span className="text-[#B6BAC4]">Autonomous OEE & Supply Efficiency:</span>
-                  <span className="font-bold text-[#8B7CFF]">
+                  <span className="font-bold text-[#34D399]">
                     {supplyEfficiency}%
                   </span>
                 </div>
@@ -139,7 +139,7 @@ export const DigitalTwinSection: React.FC<DigitalTwinSectionProps> = ({ onNaviga
                   max="99"
                   value={supplyEfficiency}
                   onChange={(e) => setSupplyEfficiency(Number(e.target.value))}
-                  className="w-full accent-[#8B7CFF] bg-[#181D2A] h-2 rounded-lg cursor-pointer"
+                  className="w-full accent-[#34D399] bg-[#181D2A] h-2 rounded-lg cursor-pointer"
                 />
               </div>
             </div>
@@ -161,13 +161,13 @@ export const DigitalTwinSection: React.FC<DigitalTwinSectionProps> = ({ onNaviga
             <div className="space-y-6">
               <div className="flex items-center justify-between pb-4 border-b border-white/[0.08]">
                 <div className="flex items-center gap-2">
-                  <BarChart3 className="w-4 h-4 text-[#8B7CFF]" />
+                  <BarChart3 className="w-4 h-4 text-[#34D399]" />
                   <h3 className="font-display font-bold text-base text-[#F5F3EE]">
                     Simulated Financial Impact
                   </h3>
                 </div>
-                <span className="text-xs font-mono text-[#59D6C4] flex items-center gap-1.5">
-                  <span className="w-1.5 h-1.5 rounded-full bg-[#59D6C4] animate-ping" />
+                <span className="text-xs font-mono text-[#2DD4BF] flex items-center gap-1.5">
+                  <span className="w-1.5 h-1.5 rounded-full bg-[#2DD4BF] animate-ping" />
                   Live Re-Calculation
                 </span>
               </div>
@@ -182,7 +182,7 @@ export const DigitalTwinSection: React.FC<DigitalTwinSectionProps> = ({ onNaviga
                 </div>
                 <div className="text-xs text-[#B6BAC4] mt-1 flex items-center gap-1">
                   <span>Delta vs Baseline (24.5%):</span>
-                  <span className={`font-mono font-bold ${Number(calculatedMargin) >= 24.5 ? 'text-[#59D6C4]' : 'text-rose-400'}`}>
+                  <span className={`font-mono font-bold ${Number(calculatedMargin) >= 24.5 ? 'text-[#2DD4BF]' : 'text-rose-400'}`}>
                     {Number(calculatedMargin) >= 24.5 ? `+${(Number(calculatedMargin) - 24.5).toFixed(1)}%` : `${(Number(calculatedMargin) - 24.5).toFixed(1)}%`}
                   </span>
                 </div>

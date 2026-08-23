@@ -34,7 +34,7 @@ export const CaseStudiesView: React.FC<CaseStudiesViewProps> = ({
         
         {/* Header */}
         <div className="text-center max-w-4xl mx-auto space-y-4">
-          <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-blue-950/70 border border-blue-500/30 text-xs font-mono text-cyan-300">
+          <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-emerald-950/70 border border-emerald-500/30 text-xs font-mono text-emerald-300">
             <TrendingUp className="w-3.5 h-3.5" />
             <span>MEASURABLE ENTERPRISE IMPACT</span>
           </div>
@@ -58,12 +58,12 @@ export const CaseStudiesView: React.FC<CaseStudiesViewProps> = ({
                 onClick={() => setSelectedCaseStudyId(cs.id)}
                 className={`p-4 rounded-xl border text-left transition-all duration-300 cursor-pointer flex flex-col justify-between ${
                   isSelected
-                    ? 'bg-blue-950/80 border-cyan-400 text-white shadow-[0_0_20px_rgba(0,210,255,0.25)]'
+                    ? 'bg-emerald-950/80 border-emerald-400 text-white shadow-[0_0_20px_rgba(0,210,255,0.25)]'
                     : 'bg-slate-900/60 border-slate-800 text-slate-400 hover:text-slate-200 hover:border-slate-700'
                 }`}
               >
                 <div>
-                  <div className="text-[10px] font-mono uppercase text-cyan-400">
+                  <div className="text-[10px] font-mono uppercase text-emerald-400">
                     {cs.industry}
                   </div>
                   <div className="font-display font-bold text-xs mt-1 text-white line-clamp-2">
@@ -79,13 +79,13 @@ export const CaseStudiesView: React.FC<CaseStudiesViewProps> = ({
         </div>
 
         {/* Detailed Case Study Card */}
-        <div className="p-8 sm:p-12 rounded-3xl bg-[#090C16] border border-blue-500/30 shadow-2xl space-y-10">
+        <div className="p-8 sm:p-12 rounded-3xl bg-[#090C16] border border-emerald-500/30 shadow-2xl space-y-10">
           
           {/* Header Info */}
           <div className="flex flex-col lg:flex-row lg:items-center justify-between gap-6 pb-8 border-b border-slate-800">
             <div>
               <div className="flex items-center gap-3">
-                <span className="text-xs font-mono px-3 py-1 rounded bg-blue-950 text-cyan-300 border border-blue-500/30 uppercase">
+                <span className="text-xs font-mono px-3 py-1 rounded bg-emerald-950 text-emerald-300 border border-emerald-500/30 uppercase">
                   {activeStudy.industry}
                 </span>
                 <span className="text-xs font-mono text-slate-400">
@@ -111,7 +111,7 @@ export const CaseStudiesView: React.FC<CaseStudiesViewProps> = ({
           <div className="grid grid-cols-1 sm:grid-cols-3 gap-6">
             {activeStudy.verifiedOutcomes.map((m, idx) => (
               <div key={idx} className="p-6 rounded-2xl bg-[#0B0E1B] border border-slate-800">
-                <div className="text-lg font-display font-extrabold text-cyan-300">
+                <div className="text-lg font-display font-extrabold text-emerald-300">
                   {m.label}
                 </div>
                 <div className="text-xs text-slate-300 mt-2 leading-relaxed">
@@ -132,8 +132,8 @@ export const CaseStudiesView: React.FC<CaseStudiesViewProps> = ({
               </p>
             </div>
 
-            <div className="p-6 sm:p-8 rounded-2xl bg-blue-950/20 border border-cyan-500/30 space-y-3">
-              <div className="text-xs font-mono text-cyan-400 uppercase font-bold">
+            <div className="p-6 sm:p-8 rounded-2xl bg-emerald-950/20 border border-emerald-500/30 space-y-3">
+              <div className="text-xs font-mono text-emerald-400 uppercase font-bold">
                 Zyntara One™ Architecture Deployed:
               </div>
               <p className="text-sm text-slate-200 leading-relaxed">
@@ -149,8 +149,8 @@ export const CaseStudiesView: React.FC<CaseStudiesViewProps> = ({
             </div>
             <div className="flex flex-wrap gap-2">
               {activeStudy.systemArchitecture.map((layer, idx) => (
-                <span key={idx} className="px-3 py-1.5 rounded-lg text-xs font-mono bg-slate-950 text-cyan-300 border border-slate-800 flex items-center gap-1.5">
-                  <CheckCircle2 className="w-3.5 h-3.5 text-cyan-400" />
+                <span key={idx} className="px-3 py-1.5 rounded-lg text-xs font-mono bg-slate-950 text-emerald-300 border border-slate-800 flex items-center gap-1.5">
+                  <CheckCircle2 className="w-3.5 h-3.5 text-emerald-400" />
                   <span>{layer}</span>
                 </span>
               ))}

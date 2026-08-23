@@ -39,7 +39,7 @@ export const FinalCTASection: React.FC<FinalCTASectionProps> = ({ onNavigate }) 
         whileInView={{ opacity: 1 }}
         viewport={{ once: true }}
         transition={{ duration: 1.4 }}
-        className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[800px] h-[400px] bg-gradient-to-r from-[#695CF6]/15 via-[#D6B77A]/10 to-[#8B7CFF]/15 blur-[160px] pointer-events-none rounded-full"
+        className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[800px] h-[400px] bg-gradient-to-r from-[#10B981]/15 via-[#D6B77A]/10 to-[#34D399]/15 blur-[160px] pointer-events-none rounded-full"
       />
 
       <motion.div
@@ -59,7 +59,7 @@ export const FinalCTASection: React.FC<FinalCTASectionProps> = ({ onNavigate }) 
         {/* Section 42 Headline & Narrative */}
         <motion.h2 variants={item} className="text-3xl sm:text-5xl lg:text-6xl font-display font-extrabold text-[#F5F3EE] tracking-tight leading-[1.1]">
           TRANSFORM HOW YOUR{' '}
-          <span className="text-transparent bg-clip-text bg-gradient-to-r from-[#D6B77A] via-[#F5F3EE] to-[#8B7CFF] bg-[length:200%_auto] animate-gradient-pan">
+          <span className="text-transparent bg-clip-text bg-gradient-to-r from-[#D6B77A] via-[#F5F3EE] to-[#34D399] bg-[length:200%_auto] animate-gradient-pan">
             BUSINESS OPERATES.
           </span>
         </motion.h2>
@@ -99,7 +99,7 @@ export const FinalCTASection: React.FC<FinalCTASectionProps> = ({ onNavigate }) 
         {/* Enterprise Trust Micro-Badges */}
         <motion.div variants={item} className="mt-14 pt-8 border-t border-white/[0.08] flex flex-wrap items-center justify-center gap-6 sm:gap-10 text-xs font-mono text-[#7E8491]">
           <div className="flex items-center gap-2">
-            <ShieldCheck className="w-4 h-4 text-[#59D6C4]" />
+            <ShieldCheck className="w-4 h-4 text-[#2DD4BF]" />
             <span>Sovereign & Air-Gapped Security</span>
           </div>
           <div className="flex items-center gap-2">
@@ -107,11 +107,11 @@ export const FinalCTASection: React.FC<FinalCTASectionProps> = ({ onNavigate }) 
             <span>Full Source Code Ownership</span>
           </div>
           <div className="flex items-center gap-2">
-            <Clock className="w-4 h-4 text-[#8B7CFF]" />
+            <Clock className="w-4 h-4 text-[#34D399]" />
             <span>Production Deployment in Weeks</span>
           </div>
           <div className="flex items-center gap-2">
-            <Lock className="w-4 h-4 text-[#59D6C4]" />
+            <Lock className="w-4 h-4 text-[#2DD4BF]" />
             <span>Zero Data Retention for Training</span>
           </div>
         </motion.div>

@@ -42,8 +42,8 @@ const ViewLoader: React.FC = () => (
   <div className="flex items-center justify-center min-h-[70vh]">
     <div className="flex flex-col items-center gap-4">
       <div className="relative w-12 h-12">
-        <div className="absolute inset-0 rounded-full border-2 border-[#8B7CFF]/20" />
-        <div className="absolute inset-0 rounded-full border-2 border-transparent border-t-[#8B7CFF] animate-spin" />
+        <div className="absolute inset-0 rounded-full border-2 border-[#34D399]/20" />
+        <div className="absolute inset-0 rounded-full border-2 border-transparent border-t-[#34D399] animate-spin" />
         <div className="absolute inset-2 rounded-full border-2 border-transparent border-b-[#D6B77A] animate-spin [animation-direction:reverse] animate-[spin_1.2s_linear_infinite_reverse]" />
       </div>
       <span className="font-mono text-xs tracking-[0.3em] text-[#7E8491] uppercase">
@@ -210,7 +210,7 @@ export default function App() {
   };
 
   return (
-    <div className="min-h-screen bg-[#050506] text-slate-100 selection:bg-[#695CF6] selection:text-white relative overflow-x-hidden font-sans grain-overlay">
+    <div className="min-h-screen bg-[#050506] text-slate-100 selection:bg-[#10B981] selection:text-white relative overflow-x-hidden font-sans grain-overlay">
       {/* Background Interactive Mesh Nodes */}
       <InteractiveCanvas />
 

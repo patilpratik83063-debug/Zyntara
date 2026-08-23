@@ -69,7 +69,7 @@ export const ZyntaraOneView: React.FC<ZyntaraOneViewProps> = ({
         
         {/* Page Hero Header with Official Brand Identity */}
         <div className="text-center max-w-4xl mx-auto space-y-6">
-          <div className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-[#121622] border border-[#59D6C4]/30 text-xs font-mono text-[#59D6C4] shadow-[0_0_15px_rgba(89,214,196,0.2)]">
+          <div className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-[#121622] border border-[#2DD4BF]/30 text-xs font-mono text-[#2DD4BF] shadow-[0_0_15px_rgba(45, 212, 191,0.2)]">
             <img 
               src={ZENTARA_LOGO_ICON} 
               alt="Zentara" 
@@ -83,7 +83,7 @@ export const ZyntaraOneView: React.FC<ZyntaraOneViewProps> = ({
             ZENTARA ONE™
           </h1>
 
-          <p className="text-xl sm:text-2xl font-display font-semibold text-cyan-300">
+          <p className="text-xl sm:text-2xl font-display font-semibold text-emerald-300">
             "One AI Architecture. Your Entire Business."
           </p>
 
@@ -111,10 +111,10 @@ export const ZyntaraOneView: React.FC<ZyntaraOneViewProps> = ({
         </div>
 
         {/* 8-Layer Interactive Architecture Deep Dive */}
-        <div className="p-6 sm:p-10 rounded-3xl bg-[#090C16] border border-blue-500/30 shadow-2xl">
+        <div className="p-6 sm:p-10 rounded-3xl bg-[#090C16] border border-emerald-500/30 shadow-2xl">
           <div className="flex flex-col md:flex-row md:items-center justify-between gap-4 pb-8 border-b border-slate-800">
             <div>
-              <span className="text-xs font-mono text-cyan-400 uppercase tracking-widest">
+              <span className="text-xs font-mono text-emerald-400 uppercase tracking-widest">
                 System Specification
               </span>
               <h2 className="text-2xl sm:text-3xl font-display font-bold text-white mt-1">
@@ -137,7 +137,7 @@ export const ZyntaraOneView: React.FC<ZyntaraOneViewProps> = ({
                   onClick={() => setActiveLayerIndex(idx)}
                   className={`p-3 rounded-xl border text-center transition-all duration-300 flex flex-col items-center justify-center cursor-pointer ${
                     isSelected
-                      ? 'bg-blue-600 text-white border-cyan-300 shadow-[0_0_15px_#38bdf8] scale-105'
+                      ? 'bg-emerald-600 text-white border-emerald-300 shadow-[0_0_15px_#34d399] scale-105'
                       : 'bg-slate-900/80 text-slate-400 border-slate-800 hover:text-slate-200 hover:border-slate-700'
                   }`}
                 >
@@ -152,14 +152,14 @@ export const ZyntaraOneView: React.FC<ZyntaraOneViewProps> = ({
           <div className="mt-8 p-6 sm:p-8 rounded-2xl bg-[#0B0E1B] border border-slate-800 space-y-6">
             <div className="flex flex-wrap items-center justify-between gap-4">
               <div className="flex items-center gap-3">
-                <span className="font-mono text-xs font-bold px-3 py-1 rounded bg-blue-600 text-white">
+                <span className="font-mono text-xs font-bold px-3 py-1 rounded bg-emerald-600 text-white">
                   LAYER {currentLayer.number}
                 </span>
                 <h3 className="text-2xl font-display font-bold text-white">
                   {currentLayer.name}: {currentLayer.subtitle}
                 </h3>
               </div>
-              <span className="text-xs font-mono text-cyan-300 px-3 py-1 rounded bg-blue-950/80 border border-blue-500/30">
+              <span className="text-xs font-mono text-emerald-300 px-3 py-1 rounded bg-emerald-950/80 border border-emerald-500/30">
                 STATE: {currentLayer.status.toUpperCase()}
               </span>
             </div>
@@ -172,13 +172,13 @@ export const ZyntaraOneView: React.FC<ZyntaraOneViewProps> = ({
               {/* Technical Specifications */}
               <div className="space-y-3">
                 <h4 className="text-xs font-mono text-slate-400 uppercase font-semibold flex items-center gap-1.5">
-                  <Terminal className="w-3.5 h-3.5 text-cyan-400" />
+                  <Terminal className="w-3.5 h-3.5 text-emerald-400" />
                   <span>Technical Components & Protocols</span>
                 </h4>
                 <div className="space-y-2">
                   {currentLayer.technicalDetails.map((spec, i) => (
                     <div key={i} className="p-3 rounded-lg bg-slate-900/70 border border-slate-800 text-xs text-slate-300 flex items-start gap-2">
-                      <CheckCircle2 className="w-3.5 h-3.5 text-cyan-400 shrink-0 mt-0.5" />
+                      <CheckCircle2 className="w-3.5 h-3.5 text-emerald-400 shrink-0 mt-0.5" />
                       <span>{spec}</span>
                     </div>
                   ))}
@@ -188,13 +188,13 @@ export const ZyntaraOneView: React.FC<ZyntaraOneViewProps> = ({
               {/* Enterprise Benefits */}
               <div className="space-y-3">
                 <h4 className="text-xs font-mono text-slate-400 uppercase font-semibold flex items-center gap-1.5">
-                  <ShieldCheck className="w-3.5 h-3.5 text-blue-400" />
+                  <ShieldCheck className="w-3.5 h-3.5 text-emerald-400" />
                   <span>Enterprise Business Advantage</span>
                 </h4>
-                <div className="p-4 rounded-xl bg-blue-950/30 border border-blue-500/20 space-y-2.5">
+                <div className="p-4 rounded-xl bg-emerald-950/30 border border-emerald-500/20 space-y-2.5">
                   {currentLayer.enterpriseBenefits.map((b, i) => (
                     <div key={i} className="text-xs text-slate-200 flex items-start gap-2">
-                      <span className="text-cyan-400 font-bold">•</span>
+                      <span className="text-emerald-400 font-bold">•</span>
                       <span>{b}</span>
                     </div>
                   ))}
@@ -206,7 +206,7 @@ export const ZyntaraOneView: React.FC<ZyntaraOneViewProps> = ({
                   </div>
                   <div className="flex flex-wrap gap-1.5">
                     {currentLayer.connectedSystems.map((s, idx) => (
-                      <span key={idx} className="px-2.5 py-1 rounded text-[11px] font-mono bg-slate-900 text-cyan-300 border border-slate-800">
+                      <span key={idx} className="px-2.5 py-1 rounded text-[11px] font-mono bg-slate-900 text-emerald-300 border border-slate-800">
                         {s}
                       </span>
                     ))}
@@ -232,13 +232,13 @@ export const ZyntaraOneView: React.FC<ZyntaraOneViewProps> = ({
             {deploymentModels.map((model, idx) => (
               <div
                 key={idx}
-                className="p-8 rounded-2xl bg-slate-900/40 border border-slate-800/80 hover:border-cyan-400/40 transition-all duration-300 flex flex-col justify-between group shadow-xl"
+                className="p-8 rounded-2xl bg-slate-900/40 border border-slate-800/80 hover:border-emerald-400/40 transition-all duration-300 flex flex-col justify-between group shadow-xl"
               >
                 <div>
-                  <span className="text-[10px] font-mono px-2.5 py-1 rounded bg-blue-950 text-cyan-300 border border-blue-500/30 uppercase">
+                  <span className="text-[10px] font-mono px-2.5 py-1 rounded bg-emerald-950 text-emerald-300 border border-emerald-500/30 uppercase">
                     {model.badge}
                   </span>
-                  <h3 className="text-xl font-display font-bold text-white mt-4 group-hover:text-cyan-200 transition-colors">
+                  <h3 className="text-xl font-display font-bold text-white mt-4 group-hover:text-emerald-200 transition-colors">
                     {model.title}
                   </h3>
                   <p className="text-xs text-slate-300 mt-3 leading-relaxed">
@@ -248,7 +248,7 @@ export const ZyntaraOneView: React.FC<ZyntaraOneViewProps> = ({
                   <div className="mt-6 space-y-2">
                     {model.features.map((f, fIdx) => (
                       <div key={fIdx} className="text-xs text-slate-300 flex items-center gap-2">
-                        <CheckCircle2 className="w-3.5 h-3.5 text-cyan-400 shrink-0" />
+                        <CheckCircle2 className="w-3.5 h-3.5 text-emerald-400 shrink-0" />
                         <span>{f}</span>
                       </div>
                     ))}
@@ -256,7 +256,7 @@ export const ZyntaraOneView: React.FC<ZyntaraOneViewProps> = ({
                 </div>
 
                 <div className="mt-8 pt-4 border-t border-slate-800/80 flex items-center gap-2 text-xs font-mono text-slate-400">
-                  <Lock className="w-3.5 h-3.5 text-cyan-400" />
+                  <Lock className="w-3.5 h-3.5 text-emerald-400" />
                   <span>Enterprise Security Standard</span>
                 </div>
               </div>
@@ -275,7 +275,7 @@ export const ZyntaraOneView: React.FC<ZyntaraOneViewProps> = ({
                 Direct bi-directional event drivers without brittle screen scraping
               </p>
             </div>
-            <span className="text-xs font-mono text-cyan-300">
+            <span className="text-xs font-mono text-emerald-300">
               Zero Downtime Microservice Adapters
             </span>
           </div>
@@ -287,7 +287,7 @@ export const ZyntaraOneView: React.FC<ZyntaraOneViewProps> = ({
                   <div className="text-sm font-semibold text-white">{c.name}</div>
                   <div className="text-xs text-slate-400 mt-0.5">{c.category}</div>
                 </div>
-                <span className="text-[10px] font-mono px-2 py-0.5 rounded bg-blue-950 text-cyan-300 border border-blue-500/30">
+                <span className="text-[10px] font-mono px-2 py-0.5 rounded bg-emerald-950 text-emerald-300 border border-emerald-500/30">
                   {c.protocol}
                 </span>
               </div>
@@ -296,7 +296,7 @@ export const ZyntaraOneView: React.FC<ZyntaraOneViewProps> = ({
         </div>
 
         {/* Bottom Strategy Callout */}
-        <div className="p-8 rounded-3xl bg-gradient-to-r from-blue-950/60 via-slate-900 to-blue-950/60 border border-cyan-400/30 text-center space-y-6">
+        <div className="p-8 rounded-3xl bg-gradient-to-r from-emerald-950/60 via-slate-900 to-emerald-950/60 border border-emerald-400/30 text-center space-y-6">
           <h3 className="text-2xl sm:text-3xl font-display font-bold text-white">
             Transform your enterprise systems into a unified cognitive operating engine.
           </h3>

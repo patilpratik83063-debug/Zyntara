@@ -30,7 +30,7 @@ export const Footer: React.FC<FooterProps> = ({
   return (
     <footer id="zyntara-footer" className="bg-[#050506] text-[#B6BAC4] border-t border-white/[0.08] relative overflow-hidden">
       {/* Top Accent Line */}
-      <div className="h-[2px] w-full bg-gradient-to-r from-transparent via-[#8B7CFF]/50 to-transparent" />
+      <div className="h-[2px] w-full bg-gradient-to-r from-transparent via-[#34D399]/50 to-transparent" />
 
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 pt-20 pb-12">
         <Reveal y={24}>
@@ -48,14 +48,14 @@ export const Footer: React.FC<FooterProps> = ({
             <div className="p-4 rounded-2xl bg-gradient-to-br from-[#0F131D] to-[#07090E] border border-white/10 text-xs shadow-lg space-y-2">
               <div className="flex items-center justify-between">
                 <span className="font-mono text-[#D6B77A] font-bold text-[10px] tracking-wider uppercase">Enterprise Brand</span>
-                <span className="text-[10px] font-mono text-[#59D6C4] bg-[#181D2A] px-2 py-0.5 rounded border border-[#59D6C4]/30">AI • AUTOMATION</span>
+                <span className="text-[10px] font-mono text-[#2DD4BF] bg-[#181D2A] px-2 py-0.5 rounded border border-[#2DD4BF]/30">AI • AUTOMATION</span>
               </div>
               <div className="font-display font-bold text-[#F5F3EE] text-sm">Zentara Technology</div>
               <div className="text-[11px] text-[#A99A7A] italic">"Building Intelligent Systems For A Better Tomorrow"</div>
             </div>
 
-            <div className="flex items-center gap-2 text-xs font-mono text-[#59D6C4]">
-              <span className="w-2 h-2 rounded-full bg-[#59D6C4] animate-ping" />
+            <div className="flex items-center gap-2 text-xs font-mono text-[#2DD4BF]">
+              <span className="w-2 h-2 rounded-full bg-[#2DD4BF] animate-ping" />
               <span>All Systems Operational • Enterprise Grade</span>
             </div>
           </div>
@@ -78,7 +78,7 @@ export const Footer: React.FC<FooterProps> = ({
               <li>
                 <button
                   onClick={() => handleLinkClick('automation')}
-                  className="hover:text-[#F5F3EE] text-[#8B7CFF] font-mono transition-colors flex items-center gap-1"
+                  className="hover:text-[#F5F3EE] text-[#34D399] font-mono transition-colors flex items-center gap-1"
                 >
                   <Zap className="w-3 h-3 text-[#D6B77A]" />
                   <span>Automation (L1-L5)</span>
@@ -196,7 +196,7 @@ export const Footer: React.FC<FooterProps> = ({
 
             <button
               onClick={() => handleLinkClick('contact')}
-              className="w-full py-2.5 px-4 rounded-xl text-xs font-mono text-white bg-gradient-to-r from-[#695CF6] to-[#5143E0] hover:from-[#7B6FF7] hover:to-[#6052ED] border border-[#9D91FF]/30 transition-all flex items-center justify-center gap-2 cursor-pointer shadow-md"
+              className="w-full py-2.5 px-4 rounded-xl text-xs font-mono text-white bg-gradient-to-r from-[#10B981] to-[#059669] hover:from-[#34D399] hover:to-[#059669] border border-[#34D399]/30 transition-all flex items-center justify-center gap-2 cursor-pointer shadow-md"
             >
               <span>Schedule Strategy Briefing</span>
               <ArrowRight className="w-3.5 h-3.5" />
@@ -217,7 +217,7 @@ export const Footer: React.FC<FooterProps> = ({
         <div className="pt-8 flex flex-col sm:flex-row items-center justify-between gap-4 text-xs font-mono text-[#7E8491]">
           <div className="flex flex-wrap items-center gap-4">
             <span className="flex items-center gap-1 text-[#B6BAC4]">
-              <ShieldCheck className="w-3.5 h-3.5 text-[#8B7CFF]" />
+              <ShieldCheck className="w-3.5 h-3.5 text-[#34D399]" />
               <span>SOC2 Type II Ready</span>
             </span>
             <span className="flex items-center gap-1 text-[#B6BAC4]">
@@ -225,7 +225,7 @@ export const Footer: React.FC<FooterProps> = ({
               <span>Zero Data Retention Architecture</span>
             </span>
             <span className="flex items-center gap-1 text-[#B6BAC4]">
-              <Globe className="w-3.5 h-3.5 text-[#59D6C4]" />
+              <Globe className="w-3.5 h-3.5 text-[#2DD4BF]" />
               <span>Air-Gapped Sovereign Deployment</span>
             </span>
           </div>

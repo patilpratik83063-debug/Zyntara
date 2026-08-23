@@ -68,7 +68,7 @@ export const ContactView: React.FC<ContactViewProps> = ({
         
         {/* Header with Official Logo Badge */}
         <div className="text-center max-w-4xl mx-auto space-y-4">
-          <div className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-[#121622] border border-[#59D6C4]/30 text-xs font-mono text-[#59D6C4] shadow-[0_0_15px_rgba(89,214,196,0.2)]">
+          <div className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-[#121622] border border-[#2DD4BF]/30 text-xs font-mono text-[#2DD4BF] shadow-[0_0_15px_rgba(45, 212, 191,0.2)]">
             <img 
               src={ZENTARA_LOGO_ICON} 
               alt="Zentara" 
@@ -92,7 +92,7 @@ export const ContactView: React.FC<ContactViewProps> = ({
           
           {/* Left Column: What to Expect & Enterprise Guarantees (5 cols) */}
           <div className="lg:col-span-5 space-y-8">
-            <div className="p-8 rounded-3xl bg-[#090C16] border border-blue-500/30 shadow-2xl space-y-6">
+            <div className="p-8 rounded-3xl bg-[#090C16] border border-emerald-500/30 shadow-2xl space-y-6">
               <h2 className="text-2xl font-display font-bold text-white">
                 What Happens Next
               </h2>
@@ -102,7 +102,7 @@ export const ContactView: React.FC<ContactViewProps> = ({
 
               <div className="space-y-4">
                 <div className="p-4 rounded-xl bg-slate-900/60 border border-slate-800 flex items-start gap-3.5">
-                  <div className="w-7 h-7 rounded-full bg-blue-600 text-white font-mono text-xs font-bold flex items-center justify-center shrink-0">
+                  <div className="w-7 h-7 rounded-full bg-emerald-600 text-white font-mono text-xs font-bold flex items-center justify-center shrink-0">
                     1
                   </div>
                   <div>
@@ -114,7 +114,7 @@ export const ContactView: React.FC<ContactViewProps> = ({
                 </div>
 
                 <div className="p-4 rounded-xl bg-slate-900/60 border border-slate-800 flex items-start gap-3.5">
-                  <div className="w-7 h-7 rounded-full bg-blue-600 text-white font-mono text-xs font-bold flex items-center justify-center shrink-0">
+                  <div className="w-7 h-7 rounded-full bg-emerald-600 text-white font-mono text-xs font-bold flex items-center justify-center shrink-0">
                     2
                   </div>
                   <div>
@@ -126,7 +126,7 @@ export const ContactView: React.FC<ContactViewProps> = ({
                 </div>
 
                 <div className="p-4 rounded-xl bg-slate-900/60 border border-slate-800 flex items-start gap-3.5">
-                  <div className="w-7 h-7 rounded-full bg-blue-600 text-white font-mono text-xs font-bold flex items-center justify-center shrink-0">
+                  <div className="w-7 h-7 rounded-full bg-emerald-600 text-white font-mono text-xs font-bold flex items-center justify-center shrink-0">
                     3
                   </div>
                   <div>
@@ -138,8 +138,8 @@ export const ContactView: React.FC<ContactViewProps> = ({
                 </div>
               </div>
 
-              <div className="p-4 rounded-xl bg-blue-950/40 border border-blue-500/20 text-xs text-slate-300 space-y-2">
-                <div className="flex items-center gap-2 text-cyan-300 font-mono font-semibold">
+              <div className="p-4 rounded-xl bg-emerald-950/40 border border-emerald-500/20 text-xs text-slate-300 space-y-2">
+                <div className="flex items-center gap-2 text-emerald-300 font-mono font-semibold">
                   <ShieldCheck className="w-4 h-4" />
                   <span>Enterprise Data Guarantee</span>
                 </div>
@@ -150,14 +150,14 @@ export const ContactView: React.FC<ContactViewProps> = ({
             </div>
 
             {/* Quick Readiness Assessment Callout */}
-            <div className="p-6 rounded-2xl bg-gradient-to-r from-blue-950/40 to-slate-900 border border-slate-800 flex items-center justify-between">
+            <div className="p-6 rounded-2xl bg-gradient-to-r from-emerald-950/40 to-slate-900 border border-slate-800 flex items-center justify-between">
               <div>
                 <div className="text-sm font-semibold text-white">Need an immediate diagnostic?</div>
                 <div className="text-xs text-slate-400 mt-0.5">Run our interactive 6-stage audit tool</div>
               </div>
               <button
                 onClick={onOpenAssessment}
-                className="px-4 py-2 rounded-lg bg-slate-800 hover:bg-slate-700 text-cyan-300 text-xs font-mono border border-slate-700"
+                className="px-4 py-2 rounded-lg bg-slate-800 hover:bg-slate-700 text-emerald-300 text-xs font-mono border border-slate-700"
               >
                 Readiness Audit →
               </button>
@@ -167,8 +167,8 @@ export const ContactView: React.FC<ContactViewProps> = ({
           {/* Right Column: Interactive Form or Success State (7 cols) */}
           <div className="lg:col-span-7">
             {isSubmitted ? (
-              <div className="p-8 sm:p-10 rounded-3xl bg-[#090C16] border border-cyan-400/40 shadow-2xl space-y-6 text-center">
-                <div className="w-16 h-16 rounded-full bg-blue-950 border border-cyan-400 text-cyan-300 flex items-center justify-center mx-auto shadow-[0_0_20px_#38bdf8]">
+              <div className="p-8 sm:p-10 rounded-3xl bg-[#090C16] border border-emerald-400/40 shadow-2xl space-y-6 text-center">
+                <div className="w-16 h-16 rounded-full bg-emerald-950 border border-emerald-400 text-emerald-300 flex items-center justify-center mx-auto shadow-[0_0_20px_#34d399]">
                   <CheckCircle2 className="w-8 h-8" />
                 </div>
 
@@ -177,12 +177,12 @@ export const ContactView: React.FC<ContactViewProps> = ({
                     Engagement Request Received
                   </h3>
                   <p className="text-sm text-slate-300 max-w-md mx-auto">
-                    Thank you, <span className="text-cyan-300 font-semibold">{formData.fullName}</span>. A Managing Partner and Principal Systems Architect from our {formData.industry} practice have received your briefing.
+                    Thank you, <span className="text-emerald-300 font-semibold">{formData.fullName}</span>. A Managing Partner and Principal Systems Architect from our {formData.industry} practice have received your briefing.
                   </p>
                 </div>
 
                 <div className="p-6 rounded-2xl bg-slate-900/80 border border-slate-800 text-left space-y-4 max-w-md mx-auto">
-                  <div className="text-xs font-mono text-cyan-400 uppercase">
+                  <div className="text-xs font-mono text-emerald-400 uppercase">
                     Direct Calendar Reservation (Optional):
                   </div>
                   <div className="space-y-2">
@@ -192,7 +192,7 @@ export const ContactView: React.FC<ContactViewProps> = ({
                         onClick={() => setSelectedSlot(slot)}
                         className={`w-full text-left p-3 rounded-xl text-xs font-mono transition-all border cursor-pointer ${
                           selectedSlot === slot
-                            ? 'bg-blue-600 text-white border-cyan-300 shadow-[0_0_12px_#38bdf8]'
+                            ? 'bg-emerald-600 text-white border-emerald-300 shadow-[0_0_12px_#34d399]'
                             : 'bg-slate-950 text-slate-300 border-slate-800 hover:border-slate-700'
                         }`}
                       >
@@ -234,12 +234,12 @@ export const ContactView: React.FC<ContactViewProps> = ({
                 </div>
               </div>
             ) : (
-              <form onSubmit={handleSubmit} className="p-8 sm:p-10 rounded-3xl bg-[#090C16] border border-blue-500/30 shadow-2xl space-y-6">
+              <form onSubmit={handleSubmit} className="p-8 sm:p-10 rounded-3xl bg-[#090C16] border border-emerald-500/30 shadow-2xl space-y-6">
                 <div className="flex items-center justify-between pb-4 border-b border-slate-800">
                   <h3 className="text-xl font-display font-bold text-white">
                     Executive Scoping Form
                   </h3>
-                  <span className="text-xs font-mono text-cyan-400">
+                  <span className="text-xs font-mono text-emerald-400">
                     Average Response Time: &lt; 2 Hours
                   </span>
                 </div>
@@ -253,7 +253,7 @@ export const ContactView: React.FC<ContactViewProps> = ({
                       placeholder="e.g. Katherine Sterling"
                       value={formData.fullName}
                       onChange={(e) => setFormData({ ...formData, fullName: e.target.value })}
-                      className="w-full px-4 py-2.5 rounded-xl bg-slate-900 border border-slate-800 text-xs text-white placeholder-slate-500 focus:border-blue-500 focus:outline-none"
+                      className="w-full px-4 py-2.5 rounded-xl bg-slate-900 border border-slate-800 text-xs text-white placeholder-slate-500 focus:border-emerald-500 focus:outline-none"
                     />
                   </div>
 
@@ -265,7 +265,7 @@ export const ContactView: React.FC<ContactViewProps> = ({
                       placeholder="name@company.com"
                       value={formData.workEmail}
                       onChange={(e) => setFormData({ ...formData, workEmail: e.target.value })}
-                      className="w-full px-4 py-2.5 rounded-xl bg-slate-900 border border-slate-800 text-xs text-white placeholder-slate-500 focus:border-blue-500 focus:outline-none"
+                      className="w-full px-4 py-2.5 rounded-xl bg-slate-900 border border-slate-800 text-xs text-white placeholder-slate-500 focus:border-emerald-500 focus:outline-none"
                     />
                   </div>
 
@@ -277,7 +277,7 @@ export const ContactView: React.FC<ContactViewProps> = ({
                       placeholder="e.g. Global Dynamics Corp"
                       value={formData.companyName}
                       onChange={(e) => setFormData({ ...formData, companyName: e.target.value })}
-                      className="w-full px-4 py-2.5 rounded-xl bg-slate-900 border border-slate-800 text-xs text-white placeholder-slate-500 focus:border-blue-500 focus:outline-none"
+                      className="w-full px-4 py-2.5 rounded-xl bg-slate-900 border border-slate-800 text-xs text-white placeholder-slate-500 focus:border-emerald-500 focus:outline-none"
                     />
                   </div>
 
@@ -289,7 +289,7 @@ export const ContactView: React.FC<ContactViewProps> = ({
                       placeholder="e.g. Chief Operating Officer"
                       value={formData.jobTitle}
                       onChange={(e) => setFormData({ ...formData, jobTitle: e.target.value })}
-                      className="w-full px-4 py-2.5 rounded-xl bg-slate-900 border border-slate-800 text-xs text-white placeholder-slate-500 focus:border-blue-500 focus:outline-none"
+                      className="w-full px-4 py-2.5 rounded-xl bg-slate-900 border border-slate-800 text-xs text-white placeholder-slate-500 focus:border-emerald-500 focus:outline-none"
                     />
                   </div>
 
@@ -298,7 +298,7 @@ export const ContactView: React.FC<ContactViewProps> = ({
                     <select
                       value={formData.industry}
                       onChange={(e) => setFormData({ ...formData, industry: e.target.value })}
-                      className="w-full px-4 py-2.5 rounded-xl bg-slate-900 border border-slate-800 text-xs text-white focus:border-blue-500 focus:outline-none"
+                      className="w-full px-4 py-2.5 rounded-xl bg-slate-900 border border-slate-800 text-xs text-white focus:border-emerald-500 focus:outline-none"
                     >
                       <option>Manufacturing & Industrial</option>
                       <option>Financial Services & Banking</option>
@@ -316,7 +316,7 @@ export const ContactView: React.FC<ContactViewProps> = ({
                     <select
                       value={formData.companySize}
                       onChange={(e) => setFormData({ ...formData, companySize: e.target.value })}
-                      className="w-full px-4 py-2.5 rounded-xl bg-slate-900 border border-slate-800 text-xs text-white focus:border-blue-500 focus:outline-none"
+                      className="w-full px-4 py-2.5 rounded-xl bg-slate-900 border border-slate-800 text-xs text-white focus:border-emerald-500 focus:outline-none"
                     >
                       <option>Under 250 employees</option>
                       <option>250 - 1,000 employees</option>
@@ -334,7 +334,7 @@ export const ContactView: React.FC<ContactViewProps> = ({
                     placeholder="e.g. SAP S/4HANA, Salesforce CRM, Snowflake, Workday"
                     value={formData.currentStack}
                     onChange={(e) => setFormData({ ...formData, currentStack: e.target.value })}
-                    className="w-full px-4 py-2.5 rounded-xl bg-slate-900 border border-slate-800 text-xs text-white placeholder-slate-500 focus:border-blue-500 focus:outline-none"
+                    className="w-full px-4 py-2.5 rounded-xl bg-slate-900 border border-slate-800 text-xs text-white placeholder-slate-500 focus:border-emerald-500 focus:outline-none"
                   />
                 </div>
 
@@ -344,7 +344,7 @@ export const ContactView: React.FC<ContactViewProps> = ({
                     <select
                       value={formData.primaryGoal}
                       onChange={(e) => setFormData({ ...formData, primaryGoal: e.target.value })}
-                      className="w-full px-4 py-2.5 rounded-xl bg-slate-900 border border-slate-800 text-xs text-white focus:border-blue-500 focus:outline-none"
+                      className="w-full px-4 py-2.5 rounded-xl bg-slate-900 border border-slate-800 text-xs text-white focus:border-emerald-500 focus:outline-none"
                     >
                       <option>Zyntara One™ Architecture Deployment</option>
                       <option>Autonomous Multi-Agent Workforce</option>
@@ -360,7 +360,7 @@ export const ContactView: React.FC<ContactViewProps> = ({
                     <select
                       value={formData.timeline}
                       onChange={(e) => setFormData({ ...formData, timeline: e.target.value })}
-                      className="w-full px-4 py-2.5 rounded-xl bg-slate-900 border border-slate-800 text-xs text-white focus:border-blue-500 focus:outline-none"
+                      className="w-full px-4 py-2.5 rounded-xl bg-slate-900 border border-slate-800 text-xs text-white focus:border-emerald-500 focus:outline-none"
                     >
                       <option>Immediate / Next 30 Days</option>
                       <option>1 - 3 Months</option>
@@ -377,7 +377,7 @@ export const ContactView: React.FC<ContactViewProps> = ({
                     placeholder="Briefly describe your high-friction operational workflows, target EBITDA impact, or integration requirements..."
                     value={formData.message}
                     onChange={(e) => setFormData({ ...formData, message: e.target.value })}
-                    className="w-full px-4 py-2.5 rounded-xl bg-slate-900 border border-slate-800 text-xs text-white placeholder-slate-500 focus:border-blue-500 focus:outline-none"
+                    className="w-full px-4 py-2.5 rounded-xl bg-slate-900 border border-slate-800 text-xs text-white placeholder-slate-500 focus:border-emerald-500 focus:outline-none"
                   />
                 </div>
 

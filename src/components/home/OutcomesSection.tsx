@@ -48,13 +48,13 @@ export const OutcomesSection: React.FC<OutcomesSectionProps> = ({ onNavigate }) 
         {/* Header with High-Contrast Editorial Typography */}
         <div className="text-center max-w-4xl mx-auto mb-16">
           <div className="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-[#EAE7DE] border border-[#D5D1C5] text-xs font-mono text-[#4A4E58] mb-4">
-            <BarChart3 className="w-3.5 h-3.5 text-[#5143E0]" />
+            <BarChart3 className="w-3.5 h-3.5 text-[#059669]" />
             <span className="font-semibold uppercase tracking-wider">Enterprise Performance Metric</span>
           </div>
 
           <h2 className="text-3xl sm:text-4xl lg:text-5xl font-display font-extrabold text-[#0A0D14] tracking-tight leading-tight">
             WE DON'T MEASURE AI BY DEMOS.{' '}
-            <span className="text-[#5143E0]">
+            <span className="text-[#059669]">
               WE MEASURE IT BY BUSINESS OUTCOMES.
             </span>
           </h2>
@@ -67,11 +67,11 @@ export const OutcomesSection: React.FC<OutcomesSectionProps> = ({ onNavigate }) 
         {/* Section 35: THINK ABOUT THE WORK YOU REPEAT */}
         <div className="mb-16 p-8 sm:p-10 rounded-3xl bg-white border border-[#E0DCD0] shadow-[0_10px_40px_rgba(0,0,0,0.04)]">
           <div className="flex items-center gap-3 mb-6">
-            <div className="w-9 h-9 rounded-xl bg-[#5143E0]/10 flex items-center justify-center text-[#5143E0]">
+            <div className="w-9 h-9 rounded-xl bg-[#059669]/10 flex items-center justify-center text-[#059669]">
               <HelpCircle className="w-5 h-5" />
             </div>
             <div>
-              <span className="text-xs font-mono text-[#5143E0] uppercase font-bold tracking-wider">
+              <span className="text-xs font-mono text-[#059669] uppercase font-bold tracking-wider">
                 Operational Audit
               </span>
               <h3 className="text-xl sm:text-2xl font-display font-bold text-[#0A0D14]">
@@ -92,8 +92,8 @@ export const OutcomesSection: React.FC<OutcomesSectionProps> = ({ onNavigate }) 
                       {item.impact}
                     </p>
                   </div>
-                  <div className="pt-3 border-t border-[#E8E4DA] text-xs font-mono text-[#5143E0] font-medium flex items-center gap-1.5">
-                    <CheckCircle2 className="w-3.5 h-3.5 text-[#5143E0] shrink-0" />
+                  <div className="pt-3 border-t border-[#E8E4DA] text-xs font-mono text-[#059669] font-medium flex items-center gap-1.5">
+                    <CheckCircle2 className="w-3.5 h-3.5 text-[#059669] shrink-0" />
                     <span>{item.systemSolution}</span>
                   </div>
                 </div>
@@ -114,7 +114,7 @@ export const OutcomesSection: React.FC<OutcomesSectionProps> = ({ onNavigate }) 
 
                 <button
                   onClick={() => onNavigate('contact')}
-                  className="w-full py-2.5 rounded-xl bg-gradient-to-r from-[#695CF6] to-[#5143E0] text-xs font-mono font-bold text-white shadow-md hover:scale-[1.02] transition-transform cursor-pointer text-center"
+                  className="w-full py-2.5 rounded-xl bg-gradient-to-r from-[#10B981] to-[#059669] text-xs font-mono font-bold text-white shadow-md hover:scale-[1.02] transition-transform cursor-pointer text-center"
                 >
                   Audit Your Workflows
                 </button>
@@ -126,8 +126,8 @@ export const OutcomesSection: React.FC<OutcomesSectionProps> = ({ onNavigate }) 
         {/* 3 Rigorous Enterprise Impact Principles */}
         <StaggerGroup className="grid grid-cols-1 md:grid-cols-3 gap-6" stagger={0.12}>
           <StaggerItem className="h-full">
-            <div className="p-6 rounded-2xl bg-white border border-[#E0DCD0] h-full transition-all duration-300 hover:-translate-y-1 hover:border-[#5143E0]/30 hover:shadow-[0_14px_34px_rgba(81,67,224,0.08)]">
-              <div className="font-mono text-xs font-bold text-[#5143E0] uppercase tracking-wider mb-2">
+            <div className="p-6 rounded-2xl bg-white border border-[#E0DCD0] h-full transition-all duration-300 hover:-translate-y-1 hover:border-[#059669]/30 hover:shadow-[0_14px_34px_rgba(5, 150, 105,0.08)]">
+              <div className="font-mono text-xs font-bold text-[#059669] uppercase tracking-wider mb-2">
                 01 • Operational Velocity
               </div>
               <h4 className="text-lg font-display font-bold text-[#0A0D14]">
@@ -140,8 +140,8 @@ export const OutcomesSection: React.FC<OutcomesSectionProps> = ({ onNavigate }) 
           </StaggerItem>
 
           <StaggerItem className="h-full">
-            <div className="p-6 rounded-2xl bg-white border border-[#E0DCD0] h-full transition-all duration-300 hover:-translate-y-1 hover:border-[#5143E0]/30 hover:shadow-[0_14px_34px_rgba(81,67,224,0.08)]">
-              <div className="font-mono text-xs font-bold text-[#5143E0] uppercase tracking-wider mb-2">
+            <div className="p-6 rounded-2xl bg-white border border-[#E0DCD0] h-full transition-all duration-300 hover:-translate-y-1 hover:border-[#059669]/30 hover:shadow-[0_14px_34px_rgba(5, 150, 105,0.08)]">
+              <div className="font-mono text-xs font-bold text-[#059669] uppercase tracking-wider mb-2">
                 02 • Headcount Leverage
               </div>
               <h4 className="text-lg font-display font-bold text-[#0A0D14]">
@@ -154,8 +154,8 @@ export const OutcomesSection: React.FC<OutcomesSectionProps> = ({ onNavigate }) 
           </StaggerItem>
 
           <StaggerItem className="h-full">
-            <div className="p-6 rounded-2xl bg-white border border-[#E0DCD0] h-full transition-all duration-300 hover:-translate-y-1 hover:border-[#5143E0]/30 hover:shadow-[0_14px_34px_rgba(81,67,224,0.08)]">
-              <div className="font-mono text-xs font-bold text-[#5143E0] uppercase tracking-wider mb-2">
+            <div className="p-6 rounded-2xl bg-white border border-[#E0DCD0] h-full transition-all duration-300 hover:-translate-y-1 hover:border-[#059669]/30 hover:shadow-[0_14px_34px_rgba(5, 150, 105,0.08)]">
+              <div className="font-mono text-xs font-bold text-[#059669] uppercase tracking-wider mb-2">
                 03 • Compounding Data Asset
               </div>
               <h4 className="text-lg font-display font-bold text-[#0A0D14]">

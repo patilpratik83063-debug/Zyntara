@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react';
-import { motion, AnimatePresence } from 'motion/react';
+import { motion, AnimatePresence, useScroll, useSpring } from 'motion/react';
 import { ViewType } from '../../types';
 import { BrandLogo } from '../common/BrandLogo';
 import { Button } from '../common/Button';
@@ -22,6 +22,10 @@ export const Navbar: React.FC<NavbarProps> = ({
 }) => {
   const [scrolled, setScrolled] = useState(false);
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
+
+  // Smooth reading-progress bar (emerald → gold)
+  const { scrollYProgress } = useScroll();
+  const progress = useSpring(scrollYProgress, { stiffness: 120, damping: 30, mass: 0.4 });
 
   useEffect(() => {
     const handleScroll = () => {
@@ -77,13 +81,13 @@ export const Navbar: React.FC<NavbarProps> = ({
                 onClick={() => handleNavClick(item.view)}
                 className={`relative px-3.5 py-2 text-xs font-medium tracking-wider uppercase transition-all duration-200 rounded-lg cursor-pointer flex items-center gap-1.5 ${
                   isActive
-                    ? 'text-[#F5F3EE] bg-white/[0.06] border border-white/10 shadow-[0_0_15px_rgba(139,124,255,0.15)]'
+                    ? 'text-[#F5F3EE] bg-white/[0.06] border border-white/10 shadow-[0_0_15px_rgba(52, 211, 153,0.15)]'
                     : 'text-[#B6BAC4] hover:text-[#F5F3EE] hover:bg-white/[0.03]'
                 } ${item.highlight ? 'font-semibold text-[#D6B77A]' : ''}`}
               >
                 <span>{item.label}</span>
                 {item.badge && (
-                  <span className="text-[9px] font-mono px-1.5 py-0.2 rounded bg-[#181D2A] text-[#8B7CFF] border border-[#8B7CFF]/30 font-bold">
+                  <span className="text-[9px] font-mono px-1.5 py-0.2 rounded bg-[#181D2A] text-[#34D399] border border-[#34D399]/30 font-bold">
                     {item.badge}
                   </span>
                 )}
@@ -91,7 +95,7 @@ export const Navbar: React.FC<NavbarProps> = ({
                   <motion.span
                     layoutId="nav-active-indicator"
                     transition={{ type: 'spring', stiffness: 380, damping: 30 }}
-                    className="absolute bottom-0 left-1/2 -translate-x-1/2 w-4 h-0.5 bg-gradient-to-r from-[#8B7CFF] to-[#D6B77A] rounded-full shadow-[0_0_8px_rgba(214,183,122,0.8)]"
+                    className="absolute bottom-0 left-1/2 -translate-x-1/2 w-4 h-0.5 bg-gradient-to-r from-[#34D399] to-[#D6B77A] rounded-full shadow-[0_0_8px_rgba(214,183,122,0.8)]"
                   />
                 )}
               </button>
@@ -118,6 +122,12 @@ export const Navbar: React.FC<NavbarProps> = ({
             Start Transformation
           </Button>
         </div>
+
+        {/* Reading progress bar — emerald → gold */}
+        <motion.div
+          style={{ scaleX: progress }}
+          className="absolute bottom-0 left-0 right-0 h-[2px] origin-left bg-gradient-to-r from-[#34D399] via-[#2DD4BF] to-[#D6B77A] shadow-[0_0_10px_rgba(52,211,153,0.6)]"
+        />
 
         {/* Mobile Hamburger Button */}
         <div className="flex lg:hidden items-center gap-2">
@@ -156,7 +166,7 @@ export const Navbar: React.FC<NavbarProps> = ({
                     onClick={() => handleNavClick(item.view)}
                     className={`w-full text-left px-4 py-3 rounded-xl text-sm font-medium transition-all flex items-center justify-between ${
                       isActive
-                        ? 'bg-[#181D2A] text-[#F5F3EE] border border-[#8B7CFF]/30 font-semibold'
+                        ? 'bg-[#181D2A] text-[#F5F3EE] border border-[#34D399]/30 font-semibold'
                         : 'text-[#B6BAC4] hover:bg-white/[0.04] hover:text-[#F5F3EE]'
                     }`}
                   >
@@ -164,7 +174,7 @@ export const Navbar: React.FC<NavbarProps> = ({
                       {item.label}
                     </span>
                     {item.badge && (
-                      <span className="text-[10px] font-mono px-2 py-0.5 rounded bg-[#121622] text-[#8B7CFF] border border-[#8B7CFF]/30">
+                      <span className="text-[10px] font-mono px-2 py-0.5 rounded bg-[#121622] text-[#34D399] border border-[#34D399]/30">
                         {item.badge}
                       </span>
                     )}
