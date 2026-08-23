@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { ZENTARA_LOGO_ICON, ZENTARA_LOGO_EMBLEM } from '../../assets/logo';
+import { ZYNTARA_LOGO_ICON, ZYNTARA_LOGO_EMBLEM } from '../../assets/logo';
 
 interface BrandLogoProps {
   className?: string;
@@ -36,12 +36,12 @@ export const BrandLogo: React.FC<BrandLogoProps> = ({
         onClick={onClick}
         className={`inline-flex flex-col items-center select-none cursor-pointer group ${className}`}
         role="banner"
-        aria-label="Zentara Technology"
+        aria-label="Zyntara Technology"
       >
         <div className="relative rounded-2xl p-1 bg-gradient-to-b from-[#1C2333] via-[#0E121A] to-[#06080D] border border-[#34D399]/30 group-hover:border-[#D6B77A]/60 shadow-[0_8px_30px_rgba(0,0,0,0.8)] group-hover:shadow-[0_0_35px_rgba(45, 212, 191,0.3)] transition-all duration-300 overflow-hidden">
           <img 
-            src={ZENTARA_LOGO_EMBLEM} 
-            alt="Zentara Technology Logo" 
+            src={ZYNTARA_LOGO_EMBLEM} 
+            alt="Zyntara Technology Logo" 
             referrerPolicy="no-referrer"
             className="w-full max-w-[280px] h-auto object-cover rounded-xl group-hover:scale-105 transition-transform duration-500"
           />
@@ -59,7 +59,7 @@ export const BrandLogo: React.FC<BrandLogoProps> = ({
         className={`relative inline-flex items-center justify-center select-none cursor-pointer group ${className}`}
         style={{ width: currentSize.icon, height: currentSize.icon }}
         role="banner"
-        aria-label="Zentara Technology"
+        aria-label="Zyntara Technology"
       >
         {/* Outer glowing orbital energy halo */}
         <div className="absolute -inset-1 rounded-full bg-gradient-to-r from-[#34D399]/30 via-[#2DD4BF]/30 to-[#D6B77A]/30 blur-sm group-hover:blur-md opacity-70 group-hover:opacity-100 transition-all duration-500" />
@@ -68,8 +68,8 @@ export const BrandLogo: React.FC<BrandLogoProps> = ({
         <div className="relative w-full h-full rounded-full bg-[#080A10] border border-[#34D399]/40 group-hover:border-[#D6B77A]/80 overflow-hidden shadow-[0_0_15px_rgba(52, 211, 153,0.4)] flex items-center justify-center">
           {!imageError ? (
             <img 
-              src={ZENTARA_LOGO_ICON} 
-              alt="Zentara Logo"
+              src={ZYNTARA_LOGO_ICON} 
+              alt="Zyntara Logo"
               referrerPolicy="no-referrer"
               onError={() => setImageError(true)}
               className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-300"
@@ -88,7 +88,7 @@ export const BrandLogo: React.FC<BrandLogoProps> = ({
       onClick={onClick}
       className={`inline-flex items-center gap-3 select-none cursor-pointer group ${className}`}
       role="banner"
-      aria-label="Zentara Technology"
+      aria-label="Zyntara Technology"
     >
       {/* Precision Orbital System & Luxury 3D Emblem Container */}
       <div 
@@ -105,8 +105,8 @@ export const BrandLogo: React.FC<BrandLogoProps> = ({
         <div className="w-full h-full rounded-xl bg-gradient-to-br from-[#121622] via-[#080A0E] to-[#1C2030] border border-white/15 group-hover:border-[#34D399]/50 flex items-center justify-center shadow-[0_4px_16px_rgba(0,0,0,0.6)] group-hover:shadow-[0_4px_20px_rgba(52, 211, 153,0.35)] transition-all duration-300 overflow-hidden p-0.5">
           {!imageError ? (
             <img 
-              src={ZENTARA_LOGO_ICON} 
-              alt="Zentara Logo"
+              src={ZYNTARA_LOGO_ICON} 
+              alt="Zyntara Logo"
               referrerPolicy="no-referrer"
               onError={() => setImageError(true)}
               className="w-full h-full object-cover rounded-lg group-hover:scale-110 transition-transform duration-300"
@@ -135,7 +135,7 @@ export const BrandLogo: React.FC<BrandLogoProps> = ({
       <div className="flex flex-col">
         <div className="flex items-center gap-1.5">
           <span className={`font-display font-extrabold tracking-wider text-[#F5F3EE] group-hover:text-white transition-colors ${currentSize.text}`}>
-            ZENTARA
+            ZYNTARA
           </span>
           <span className="font-display font-semibold tracking-widest text-[#D6B77A] text-[9px] px-1.5 py-0.5 rounded-md bg-[#181D2A] border border-[#D6B77A]/30">
             TECHNOLOGY

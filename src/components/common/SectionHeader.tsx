@@ -1,5 +1,6 @@
 import React from 'react';
 import { motion } from 'motion/react';
+import { AnimatedText } from './AnimatedText';
 
 interface SectionHeaderProps {
   eyebrow?: string;
@@ -40,6 +41,10 @@ export const SectionHeader: React.FC<SectionHeaderProps> = ({
     },
   };
 
+  const headingGradient = isLight
+    ? 'bg-gradient-to-r from-[#059669] via-[#10B981] to-[#059669] bg-[length:200%_auto] animate-gradient-pan'
+    : 'bg-gradient-to-r from-[#6EE7B7] via-[#34D399] to-[#D6B77A] bg-[length:200%_auto] animate-gradient-pan';
+
   return (
     <motion.div
       variants={stagger}
@@ -67,22 +72,24 @@ export const SectionHeader: React.FC<SectionHeaderProps> = ({
         )}
       </motion.div>
 
-      {/* Main Heading with mathematical typography scale */}
+      {/* Main Heading — word-by-word masked reveal */}
       <motion.h2
         variants={item}
         className={`text-3xl md:text-4xl lg:text-5xl font-display font-extrabold tracking-tight leading-[1.12] ${
           isLight ? 'text-[#111216]' : 'text-[#F5F3EE]'
         }`}
       >
-        {title}{' '}
+        <AnimatedText text={title} stagger={0.045} delay={0.05} />
         {highlightText && (
-          <span className={`text-transparent bg-clip-text animate-gradient-pan bg-[length:200%_auto] ${
-            isLight
-              ? 'bg-gradient-to-r from-[#059669] via-[#34D399] to-[#059669]'
-              : 'bg-gradient-to-r from-[#6EE7B7] via-[#34D399] to-[#D6B77A]'
-          }`}>
-            {highlightText}
-          </span>
+          <>
+            {' '}
+            <AnimatedText
+              text={highlightText}
+              wordClassName={`text-transparent bg-clip-text ${headingGradient}`}
+              stagger={0.045}
+              delay={0.3}
+            />
+          </>
         )}
       </motion.h2>
 

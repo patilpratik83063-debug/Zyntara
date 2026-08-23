@@ -6,8 +6,8 @@ Enterprise AI Transformation & Intelligent Business Systems — one AI architect
 
 - **React 19** + **Vite 6** + **TypeScript**
 - **Tailwind CSS 4** (custom luxury design system — deep emerald & mint with champagne gold on obsidian)
-- **Motion** (Framer Motion 12) for scroll reveals, view transitions, and micro-interactions
-- **Lucide** icons, canvas-confetti, custom particle canvas
+- **Motion** (Framer Motion 12) for scroll reveals, view transitions, magnetic buttons, tilt cards, and count-ups
+- **Lenis** buttery smooth scrolling, **Space Grotesk** display type, Lucide icons, canvas-confetti, custom particle canvas
 
 ## Run Locally
 

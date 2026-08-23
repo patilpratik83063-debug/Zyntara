@@ -41,7 +41,7 @@ export const Footer: React.FC<FooterProps> = ({
             <BrandLogo size="lg" showTagline />
 
             <p className="text-sm text-[#B6BAC4] leading-relaxed max-w-sm font-normal">
-              Zentara Technology architects, deploys, and operates intelligent business systems, autonomous AI agent swarms, and unified enterprise cognitive architectures.
+              Zyntara Technology architects, deploys, and operates intelligent business systems, autonomous AI agent swarms, and unified enterprise cognitive architectures.
             </p>
 
             {/* Official Mission Lockup */}
@@ -50,7 +50,7 @@ export const Footer: React.FC<FooterProps> = ({
                 <span className="font-mono text-[#D6B77A] font-bold text-[10px] tracking-wider uppercase">Enterprise Brand</span>
                 <span className="text-[10px] font-mono text-[#2DD4BF] bg-[#181D2A] px-2 py-0.5 rounded border border-[#2DD4BF]/30">AI • AUTOMATION</span>
               </div>
-              <div className="font-display font-bold text-[#F5F3EE] text-sm">Zentara Technology</div>
+              <div className="font-display font-bold text-[#F5F3EE] text-sm">Zyntara Technology</div>
               <div className="text-[11px] text-[#A99A7A] italic">"Building Intelligent Systems For A Better Tomorrow"</div>
             </div>
 

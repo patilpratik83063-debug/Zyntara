@@ -3,13 +3,14 @@
  * SPDX-License-Identifier: Apache-2.0
  */
 
-import React, { useState, Suspense, lazy } from 'react';
+import React, { useState, Suspense, lazy, useEffect } from 'react';
 import { AnimatePresence, motion } from 'motion/react';
 import { ViewType } from './types';
 import { Navbar } from './components/layout/Navbar';
 import { Footer } from './components/layout/Footer';
 import { InteractiveCanvas } from './components/common/InteractiveCanvas';
 import { CustomCursor } from './components/common/CustomCursor';
+import { initLenis, destroyLenis, smoothScrollTo } from './lib/lenis';
 
 // Home Page Sections (Ordered exactly according to Section 44)
 import { HeroSection } from './components/home/HeroSection';
@@ -69,10 +70,16 @@ export default function App() {
   const [activeView, setActiveView] = useState<ViewType>('home');
   const [isAssessmentOpen, setIsAssessmentOpen] = useState<boolean>(false);
 
+  // Luxury smooth scrolling
+  useEffect(() => {
+    initLenis();
+    return () => destroyLenis();
+  }, []);
+
   // Scroll to top when view changes
   const handleNavigate = (view: ViewType) => {
     setActiveView(view);
-    window.scrollTo({ top: 0, behavior: 'instant' as ScrollBehavior });
+    smoothScrollTo(0);
   };
 
   const handleOpenAssessment = () => {

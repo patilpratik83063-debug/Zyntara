@@ -1,9 +1,10 @@
 import React, { useState, useRef } from 'react';
-import { motion } from 'motion/react';
+import { motion, useScroll, useTransform } from 'motion/react';
 import { ViewType } from '../../types';
 import { Button } from '../common/Button';
 import { InteractiveCanvas } from '../common/InteractiveCanvas';
-import { ZENTARA_LOGO_ICON } from '../../assets/logo';
+import { AnimatedText } from '../common/AnimatedText';
+import { ZYNTARA_LOGO_ICON } from '../../assets/logo';
 import { 
   Zap, 
   ChevronRight
@@ -32,6 +33,14 @@ export const HeroSection: React.FC<HeroSectionProps> = ({
   const [activeNode, setActiveNode] = useState<string | null>('ai-agents');
   const [mouseShift, setMouseShift] = useState({ x: 0, y: 0 });
   const containerRef = useRef<HTMLDivElement | null>(null);
+
+  // Calm parallax — hero drifts away as you scroll past
+  const { scrollYProgress } = useScroll({
+    target: containerRef,
+    offset: ['start start', 'end start'],
+  });
+  const parallaxY = useTransform(scrollYProgress, [0, 1], [0, 140]);
+  const parallaxOpacity = useTransform(scrollYProgress, [0, 0.7], [1, 0.3]);
 
   const trustChips = [
     'AI TRANSFORMATION',
@@ -117,6 +126,7 @@ export const HeroSection: React.FC<HeroSectionProps> = ({
         
         {/* Left Col: Executive Headline & Narrative (6 cols) */}
         <motion.div
+          style={{ y: parallaxY, opacity: parallaxOpacity }}
           variants={stagger}
           initial="hidden"
           animate="visible"
@@ -126,23 +136,30 @@ export const HeroSection: React.FC<HeroSectionProps> = ({
           {/* Eyebrow badge with official logo icon */}
           <motion.div variants={item} className="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-[#121622]/90 border border-[#D6B77A]/25 text-xs font-mono text-[#D6B77A] shadow-[0_2px_12px_rgba(0,0,0,0.5)]">
             <img 
-              src={ZENTARA_LOGO_ICON} 
-              alt="Zentara" 
+              src={ZYNTARA_LOGO_ICON} 
+              alt="Zyntara" 
               referrerPolicy="no-referrer"
               className="w-4 h-4 rounded-full object-cover shadow-[0_0_6px_rgba(45, 212, 191,0.8)]"
             />
-            <span className="tracking-[0.16em] uppercase font-bold text-[#F5F3EE]">ZENTARA TECHNOLOGY</span>
+            <span className="tracking-[0.16em] uppercase font-bold text-[#F5F3EE]">ZYNTARA TECHNOLOGY</span>
             <span className="text-white/20">•</span>
             <span className="text-[#2DD4BF] font-medium">AI • AUTOMATION • INTELLIGENT SYSTEMS</span>
           </motion.div>
 
-          {/* Main Headline */}
-          <motion.h1 variants={item} className="text-4xl sm:text-5xl lg:text-6xl xl:text-7xl font-display font-extrabold text-[#F5F3EE] tracking-tight leading-[1.05]">
-            BUILD AN{' '}
-            <span className="text-transparent bg-clip-text bg-gradient-to-r from-[#6EE7B7] via-[#34D399] to-[#D6B77A] bg-[length:200%_auto] animate-gradient-pan">
-              AI-POWERED
-            </span>{' '}
-            ENTERPRISE.
+          {/* Main Headline — cinematic word reveal */}
+          <motion.h1 className="text-4xl sm:text-5xl lg:text-6xl xl:text-7xl font-display font-extrabold text-[#F5F3EE] tracking-tight leading-[1.05]">
+            <AnimatedText
+              text="BUILD AN"
+              stagger={0.06}
+              delay={0.2}
+            />{' '}
+            <AnimatedText
+              text="AI-POWERED"
+              wordClassName="text-transparent bg-clip-text bg-gradient-to-r from-[#6EE7B7] via-[#34D399] to-[#D6B77A] bg-[length:200%_auto] animate-gradient-pan"
+              stagger={0.06}
+              delay={0.55}
+            />{' '}
+            <AnimatedText text="ENTERPRISE." stagger={0.06} delay={0.85} />
           </motion.h1>
 
           {/* Supporting Executive Statement */}
@@ -151,7 +168,7 @@ export const HeroSection: React.FC<HeroSectionProps> = ({
           </motion.p>
 
           {/* Flagship Ecosystem Callout */}
-          <motion.div variants={item} className="flex flex-wrap items-center gap-3 py-2 px-4 rounded-xl bg-[#10131B] border border-white/10 text-xs text-[#F5F3EE]">
+          <motion.div variants={item} className="conic-border flex flex-wrap items-center gap-3 py-2 px-4 rounded-xl bg-[#10131B] border border-white/10 text-xs text-[#F5F3EE]">
             <span className="font-mono text-[#D6B77A] font-semibold uppercase tracking-wider">Flagship:</span>
             <span className="font-semibold text-white tracking-wide">ZYNTARA ONE™</span>
             <span className="text-white/20 hidden sm:inline">|</span>
@@ -223,6 +240,7 @@ export const HeroSection: React.FC<HeroSectionProps> = ({
           transition={{ duration: 1.1, delay: 0.4, ease: [0.16, 1, 0.3, 1] }}
           className="lg:col-span-6 flex flex-col items-center justify-center relative"
         >
+          <motion.div style={{ y: parallaxY, opacity: parallaxOpacity }} className="w-full flex flex-col items-center">
           
           {/* Main Visual Stage in Frosted Obsidian Glass */}
           <div className="relative w-full max-w-[500px] animate-float-slow">
@@ -280,15 +298,15 @@ export const HeroSection: React.FC<HeroSectionProps> = ({
                 {/* Official Logo Emblem Avatar */}
                 <div className="relative w-14 h-14 rounded-xl overflow-hidden border border-[#2DD4BF]/50 shadow-[0_0_15px_rgba(45, 212, 191,0.6)] mb-1 bg-[#05070B] p-0.5">
                   <img 
-                    src={ZENTARA_LOGO_ICON} 
-                    alt="Zentara Core" 
+                    src={ZYNTARA_LOGO_ICON} 
+                    alt="Zyntara Core" 
                     referrerPolicy="no-referrer"
                     className="w-full h-full object-cover rounded-lg group-hover:scale-110 transition-transform duration-300"
                   />
                 </div>
 
                 <span className="font-display font-extrabold text-[11px] tracking-wider text-[#F5F3EE]">
-                  ZENTARA ONE™
+                  ZYNTARA ONE™
                 </span>
                 <span className="font-mono text-[8px] tracking-widest text-[#D6B77A] font-bold">
                   INTELLIGENCE HUB
@@ -356,6 +374,7 @@ export const HeroSection: React.FC<HeroSectionProps> = ({
             </div>
           </div>
 
+        </motion.div>
         </motion.div>
       </div>
 

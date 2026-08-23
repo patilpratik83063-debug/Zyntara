@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import { SOLUTIONS_DATA } from '../../data/solutionsData';
 import { SectionHeader } from '../common/SectionHeader';
 import { Button } from '../common/Button';
-import { ZENTARA_LOGO_ICON } from '../../assets/logo';
+import { ZYNTARA_LOGO_ICON } from '../../assets/logo';
 import { ViewType, SolutionItem } from '../../types';
 import { 
   Compass, 
@@ -55,12 +55,12 @@ export const SolutionsView: React.FC<SolutionsViewProps> = ({
         <div className="text-center max-w-4xl mx-auto space-y-4">
           <div className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-[#121622] border border-[#2DD4BF]/30 text-xs font-mono text-[#2DD4BF] shadow-[0_0_15px_rgba(45, 212, 191,0.2)]">
             <img 
-              src={ZENTARA_LOGO_ICON} 
-              alt="Zentara" 
+              src={ZYNTARA_LOGO_ICON} 
+              alt="Zyntara" 
               referrerPolicy="no-referrer"
               className="w-4 h-4 rounded-full object-cover"
             />
-            <span>ZENTARA TECHNOLOGY • ENTERPRISE SOLUTIONS DIRECTORY</span>
+            <span>ZYNTARA TECHNOLOGY • ENTERPRISE SOLUTIONS DIRECTORY</span>
           </div>
 
           <h1 className="text-4xl sm:text-5xl lg:text-6xl font-display font-extrabold text-white tracking-tight">

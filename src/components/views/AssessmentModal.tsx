@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import { ViewType } from '../../types';
 import { Button } from '../common/Button';
-import { ZENTARA_LOGO_ICON } from '../../assets/logo';
+import { ZYNTARA_LOGO_ICON } from '../../assets/logo';
 import { 
   X, 
   CheckCircle2, 
@@ -90,13 +90,13 @@ export const AssessmentModal: React.FC<AssessmentModalProps> = ({
         <div className="mb-6">
           <div className="flex items-center gap-2.5 mb-1.5">
             <img 
-              src={ZENTARA_LOGO_ICON} 
-              alt="Zentara" 
+              src={ZYNTARA_LOGO_ICON} 
+              alt="Zyntara" 
               referrerPolicy="no-referrer"
               className="w-5 h-5 rounded-full object-cover shadow-[0_0_8px_rgba(45, 212, 191,0.6)]"
             />
             <span className="font-mono text-xs text-[#2DD4BF] tracking-wider uppercase font-semibold">
-              Zentara Technology • Executive Assessment Engine
+              Zyntara Technology • Executive Assessment Engine
             </span>
           </div>
           <h3 className="text-2xl sm:text-3xl font-display font-bold text-white">

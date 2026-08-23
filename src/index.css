@@ -2,7 +2,7 @@
 
 @layer base {
   :root {
-    --font-display: 'Outfit', sans-serif;
+    --font-display: 'Space Grotesk', sans-serif;
     --font-body: 'Plus Jakarta Sans', sans-serif;
     --font-mono: 'JetBrains Mono', monospace;
 
@@ -163,6 +163,26 @@
 }
 
 /* ============================================================
+   Lenis smooth scrolling
+   ============================================================ */
+html.lenis,
+html.lenis body {
+  height: auto;
+}
+
+.lenis.lenis-smooth {
+  scroll-behavior: auto !important;
+}
+
+.lenis.lenis-smooth [data-lenis-prevent] {
+  overscroll-behavior: contain;
+}
+
+.lenis.lenis-stopped {
+  overflow: hidden;
+}
+
+/* ============================================================
    Premium Motion System
    ============================================================ */
 
@@ -226,6 +246,40 @@
 
 .animate-pulse-glow {
   animation: pulse-glow 3.2s ease-in-out infinite;
+}
+
+/* Rotating conic border (emerald → gold) for flagship elements */
+@keyframes conic-spin {
+  to { transform: rotate(360deg); }
+}
+
+.conic-border {
+  position: relative;
+  isolation: isolate;
+}
+
+.conic-border::before {
+  content: '';
+  position: absolute;
+  z-index: -1;
+  inset: -1.5px;
+  border-radius: inherit;
+  background: conic-gradient(
+    from 0deg,
+    transparent 5%,
+    rgba(52, 211, 153, 0.9) 18%,
+    rgba(45, 212, 191, 0.6) 26%,
+    rgba(214, 183, 122, 0.95) 40%,
+    transparent 55%,
+    transparent 100%
+  );
+  animation: conic-spin 6s linear infinite;
+  opacity: 0.55;
+  transition: opacity 0.5s;
+}
+
+.conic-border:hover::before {
+  opacity: 1;
 }
 
 /* Luxury film grain overlay */

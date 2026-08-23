@@ -1,6 +1,7 @@
 import React from 'react';
 import { SectionHeader } from '../common/SectionHeader';
 import { Button } from '../common/Button';
+import { TiltCard } from '../common/TiltCard';
 import { ViewType } from '../../types';
 import { 
   ShieldCheck, 
@@ -101,37 +102,39 @@ export const WhyZyntaraSection: React.FC<WhyZyntaraSectionProps> = ({ onNavigate
         {/* 5 Core Principles Grid */}
         <div className="mt-14 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
           {fivePrinciples.map((p, idx) => (
-            <div
+            <TiltCard
               key={idx}
-              className={`p-8 rounded-3xl bg-[#0D1018]/90 border border-white/10 shadow-xl flex flex-col justify-between space-y-4 hover:border-[#D6B77A]/40 transition-colors ${
-                idx === 4 ? 'md:col-span-2 lg:col-span-2' : ''
-              }`}
+              className={`rounded-3xl ${idx === 4 ? 'md:col-span-2 lg:col-span-2' : ''}`}
             >
-              <div>
-                <div className="flex items-center justify-between mb-3">
-                  <span className="font-mono text-xs font-bold px-2.5 py-1 rounded-md bg-[#181D2A] text-[#D6B77A] border border-[#D6B77A]/30">
-                    PRINCIPLE {p.num}
-                  </span>
-                  <Sparkles className="w-4 h-4 text-[#34D399]" />
+              <div
+                className={`p-8 rounded-3xl bg-[#0D1018]/90 border border-white/10 shadow-xl flex flex-col justify-between space-y-4 hover:border-[#D6B77A]/40 transition-colors h-full`}
+              >
+                <div>
+                  <div className="flex items-center justify-between mb-3">
+                    <span className="font-mono text-xs font-bold px-2.5 py-1 rounded-md bg-[#181D2A] text-[#D6B77A] border border-[#D6B77A]/30">
+                      PRINCIPLE {p.num}
+                    </span>
+                    <Sparkles className="w-4 h-4 text-[#34D399]" />
+                  </div>
+
+                  <h3 className="font-display font-extrabold text-lg sm:text-xl text-[#F5F3EE]">
+                    {p.title}
+                  </h3>
+                  <div className="text-xs font-mono text-[#34D399] font-medium mt-1">
+                    {p.tagline}
+                  </div>
+
+                  <p className="text-xs sm:text-sm text-[#B6BAC4] mt-3 leading-relaxed">
+                    {p.description}
+                  </p>
                 </div>
 
-                <h3 className="font-display font-extrabold text-lg sm:text-xl text-[#F5F3EE]">
-                  {p.title}
-                </h3>
-                <div className="text-xs font-mono text-[#34D399] font-medium mt-1">
-                  {p.tagline}
+                <div className="pt-2 flex items-center gap-1 text-xs font-mono text-[#2DD4BF]">
+                  <CheckCircle2 className="w-3.5 h-3.5" />
+                  <span>Enterprise Standard</span>
                 </div>
-
-                <p className="text-xs sm:text-sm text-[#B6BAC4] mt-3 leading-relaxed">
-                  {p.description}
-                </p>
               </div>
-
-              <div className="pt-2 flex items-center gap-1 text-xs font-mono text-[#2DD4BF]">
-                <CheckCircle2 className="w-3.5 h-3.5" />
-                <span>Enterprise Standard</span>
-              </div>
-            </div>
+            </TiltCard>
           ))}
         </div>
 

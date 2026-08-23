@@ -51,7 +51,7 @@ export const FinalCTASection: React.FC<FinalCTASectionProps> = ({ onNavigate }) 
       >
         
         {/* Badge */}
-        <motion.div variants={item} className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-[#121622] border border-[#D6B77A]/30 text-xs font-mono text-[#D6B77A] mb-8 shadow-lg">
+        <motion.div variants={item} className="conic-border inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-[#121622] border border-[#D6B77A]/30 text-xs font-mono text-[#D6B77A] mb-8 shadow-lg">
           <Sparkles className="w-3.5 h-3.5 text-[#D6B77A]" />
           <span>Enterprise AI Architecture & Business Automation</span>
         </motion.div>

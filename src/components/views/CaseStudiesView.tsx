@@ -2,6 +2,7 @@ import React, { useState } from 'react';
 import { CASE_STUDIES_DATA } from '../../data/caseStudiesData';
 import { SectionHeader } from '../common/SectionHeader';
 import { Button } from '../common/Button';
+import { CountUp } from '../common/CountUp';
 import { ViewType, CaseStudyItem } from '../../types';
 import { 
   Building2, 
@@ -19,6 +20,13 @@ interface CaseStudiesViewProps {
   onNavigate: (view: ViewType) => void;
   onOpenAssessment: () => void;
 }
+
+/** Counts up when the metric is a clean number (e.g. "38% Increase", "4 Hours"). */
+const MetricCountUp: React.FC<{ value: string }> = ({ value }) => {
+  const match = value.match(/^(\d+)(.*)$/);
+  if (!match) return <>{value}</>;
+  return <CountUp to={Number(match[1])} suffix={match[2]} />;
+};
 
 export const CaseStudiesView: React.FC<CaseStudiesViewProps> = ({
   onNavigate,
@@ -71,7 +79,7 @@ export const CaseStudiesView: React.FC<CaseStudiesViewProps> = ({
                   </div>
                 </div>
                 <div className="text-[11px] font-mono text-emerald-400 mt-3 font-semibold">
-                  {cs.verifiedOutcomes[0].label}
+                  {cs.theResult[0]?.metric ?? cs.industry}
                 </div>
               </button>
             );
@@ -109,13 +117,16 @@ export const CaseStudiesView: React.FC<CaseStudiesViewProps> = ({
 
           {/* Quantified Outcomes Metrics Bar */}
           <div className="grid grid-cols-1 sm:grid-cols-3 gap-6">
-            {activeStudy.verifiedOutcomes.map((m, idx) => (
+            {activeStudy.theResult.map((m, idx) => (
               <div key={idx} className="p-6 rounded-2xl bg-[#0B0E1B] border border-slate-800">
                 <div className="text-lg font-display font-extrabold text-emerald-300">
-                  {m.label}
+                  <MetricCountUp value={m.metric} />
                 </div>
                 <div className="text-xs text-slate-300 mt-2 leading-relaxed">
-                  {m.description}
+                  {m.label}
+                </div>
+                <div className="text-[11px] text-slate-500 mt-1 font-mono">
+                  {m.detail}
                 </div>
               </div>
             ))}

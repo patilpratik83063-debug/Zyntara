@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import { ARCHITECTURE_LAYERS } from '../../data/architectureLayers';
 import { SectionHeader } from '../common/SectionHeader';
 import { Button } from '../common/Button';
-import { ZENTARA_LOGO_ICON, ZENTARA_LOGO_EMBLEM } from '../../assets/logo';
+import { ZYNTARA_LOGO_ICON, ZYNTARA_LOGO_EMBLEM } from '../../assets/logo';
 import { ViewType } from '../../types';
 import { 
   Layers, 
@@ -71,16 +71,16 @@ export const ZyntaraOneView: React.FC<ZyntaraOneViewProps> = ({
         <div className="text-center max-w-4xl mx-auto space-y-6">
           <div className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-[#121622] border border-[#2DD4BF]/30 text-xs font-mono text-[#2DD4BF] shadow-[0_0_15px_rgba(45, 212, 191,0.2)]">
             <img 
-              src={ZENTARA_LOGO_ICON} 
-              alt="Zentara" 
+              src={ZYNTARA_LOGO_ICON} 
+              alt="Zyntara" 
               referrerPolicy="no-referrer"
               className="w-4 h-4 rounded-full object-cover"
             />
-            <span>ZENTARA TECHNOLOGY • FLAGSHIP ENTERPRISE ENGINE</span>
+            <span>ZYNTARA TECHNOLOGY • FLAGSHIP ENTERPRISE ENGINE</span>
           </div>
 
           <h1 className="text-4xl sm:text-5xl lg:text-6xl font-display font-extrabold text-white tracking-tight leading-[1.1]">
-            ZENTARA ONE™
+            ZYNTARA ONE™
           </h1>
 
           <p className="text-xl sm:text-2xl font-display font-semibold text-emerald-300">
@@ -88,7 +88,7 @@ export const ZyntaraOneView: React.FC<ZyntaraOneViewProps> = ({
           </p>
 
           <p className="text-base sm:text-lg text-slate-300 max-w-2xl mx-auto leading-relaxed">
-            Zentara One™ is the foundational cognitive architecture that unifies data, intelligence, autonomous multi-agent swarms, and enterprise business systems into a cohesive operating engine.
+            Zyntara One™ is the foundational cognitive architecture that unifies data, intelligence, autonomous multi-agent swarms, and enterprise business systems into a cohesive operating engine.
           </p>
 
           <div className="pt-4 flex flex-wrap items-center justify-center gap-4">

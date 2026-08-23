@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import { SectionHeader } from '../common/SectionHeader';
 import { Button } from '../common/Button';
-import { ZENTARA_LOGO_ICON, ZENTARA_LOGO_EMBLEM } from '../../assets/logo';
+import { ZYNTARA_LOGO_ICON, ZYNTARA_LOGO_EMBLEM } from '../../assets/logo';
 import { ViewType, ContactSubmission } from '../../types';
 import { 
   Building2, 
@@ -70,12 +70,12 @@ export const ContactView: React.FC<ContactViewProps> = ({
         <div className="text-center max-w-4xl mx-auto space-y-4">
           <div className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-[#121622] border border-[#2DD4BF]/30 text-xs font-mono text-[#2DD4BF] shadow-[0_0_15px_rgba(45, 212, 191,0.2)]">
             <img 
-              src={ZENTARA_LOGO_ICON} 
-              alt="Zentara" 
+              src={ZYNTARA_LOGO_ICON} 
+              alt="Zyntara" 
               referrerPolicy="no-referrer"
               className="w-4 h-4 rounded-full object-cover"
             />
-            <span>ZENTARA TECHNOLOGY • ENTERPRISE ENGAGEMENT</span>
+            <span>ZYNTARA TECHNOLOGY • ENTERPRISE ENGAGEMENT</span>
           </div>
 
           <h1 className="text-4xl sm:text-5xl lg:text-6xl font-display font-extrabold text-white tracking-tight leading-[1.1]">
@@ -83,7 +83,7 @@ export const ContactView: React.FC<ContactViewProps> = ({
           </h1>
 
           <p className="text-base sm:text-lg text-slate-300 max-w-2xl mx-auto">
-            Engage directly with Zentara Technology's enterprise transformation partners and systems architects to scope your organization's transition to an autonomous operating model.
+            Engage directly with Zyntara Technology's enterprise transformation partners and systems architects to scope your organization's transition to an autonomous operating model.
           </p>
         </div>
 

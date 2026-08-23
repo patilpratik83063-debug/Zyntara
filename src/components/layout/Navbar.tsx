@@ -8,6 +8,7 @@ import {
   X, 
   Zap
 } from 'lucide-react';
+import { smoothScrollTo } from '../../lib/lenis';
 
 interface NavbarProps {
   activeView: ViewType;
@@ -21,10 +22,11 @@ export const Navbar: React.FC<NavbarProps> = ({
   onOpenAssessment
 }) => {
   const [scrolled, setScrolled] = useState(false);
+  const [hidden, setHidden] = useState(false);
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
 
   // Smooth reading-progress bar (emerald → gold)
-  const { scrollYProgress } = useScroll();
+  const { scrollY, scrollYProgress } = useScroll();
   const progress = useSpring(scrollYProgress, { stiffness: 120, damping: 30, mass: 0.4 });
 
   useEffect(() => {
@@ -34,6 +36,16 @@ export const Navbar: React.FC<NavbarProps> = ({
     window.addEventListener('scroll', handleScroll);
     return () => window.removeEventListener('scroll', handleScroll);
   }, []);
+
+  // Auto-hide on scroll down, reveal on scroll up (calm luxury pattern)
+  useEffect(() => {
+    return scrollY.on('change', (latest) => {
+      const prev = scrollY.getPrevious() ?? 0;
+      const delta = latest - prev;
+      if (Math.abs(delta) < 8) return;
+      setHidden(delta > 0 && latest > 140);
+    });
+  }, [scrollY]);
 
   const navItems: { label: string; view: ViewType; highlight?: boolean; badge?: string }[] = [
     { label: 'Zyntara One™', view: 'zyntara-one', highlight: true },
@@ -49,16 +61,20 @@ export const Navbar: React.FC<NavbarProps> = ({
   const handleNavClick = (view: ViewType) => {
     onNavigate(view);
     setMobileMenuOpen(false);
-    window.scrollTo({ top: 0, behavior: 'smooth' });
+    setHidden(false);
+    smoothScrollTo(0);
   };
 
   return (
     <motion.header
       id="zyntara-navbar"
       initial={{ y: -80, opacity: 0 }}
-      animate={{ y: 0, opacity: 1 }}
-      transition={{ duration: 0.8, ease: [0.16, 1, 0.3, 1] }}
-      className={`fixed top-0 left-0 right-0 z-40 transition-all duration-500 ${
+      animate={{ y: hidden ? '-100%' : 0, opacity: 1 }}
+      transition={{
+        y: { type: 'spring', stiffness: 300, damping: 32 },
+        opacity: { duration: 0.8, ease: [0.16, 1, 0.3, 1] },
+      }}
+      className={`fixed top-0 left-0 right-0 z-40 transition-colors duration-500 ${
         scrolled
           ? 'bg-[#050506]/85 backdrop-blur-2xl border-b border-white/[0.08] py-3.5 shadow-[0_12px_40px_rgba(0,0,0,0.7)]'
           : 'bg-transparent py-5'

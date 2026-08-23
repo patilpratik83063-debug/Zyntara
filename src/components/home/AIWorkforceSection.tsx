@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import { SectionHeader } from '../common/SectionHeader';
 import { Button } from '../common/Button';
+import { CountUp } from '../common/CountUp';
 import { ViewType } from '../../types';
 import { 
   Users, 
@@ -24,6 +25,18 @@ import {
 interface AIWorkforceSectionProps {
   onNavigate: (view: ViewType) => void;
 }
+
+/** Counts up numeric outcomes like "40%+", "65%" when scrolled into view. */
+const OutcomeCountUp: React.FC<{ value: string }> = ({ value }) => {
+  const match = value.match(/^(\d+)(%\+?)(.*)$/);
+  if (!match) return <>{value}</>;
+  return (
+    <>
+      <CountUp to={Number(match[1])} suffix={match[2]} />
+      {match[3]}
+    </>
+  );
+};
 
 export const AIWorkforceSection: React.FC<AIWorkforceSectionProps> = ({ onNavigate }) => {
   const [activeDepartment, setActiveDepartment] = useState<'sales' | 'support' | 'finance' | 'procurement'>('sales');
@@ -232,7 +245,7 @@ export const AIWorkforceSection: React.FC<AIWorkforceSectionProps> = ({ onNaviga
               </div>
 
               <div className="text-xs font-mono text-[#D6B77A] shrink-0">
-                Verified Outcome: {activeSwarm.outcome}
+                Verified Outcome: <OutcomeCountUp value={activeSwarm.outcome} />
               </div>
             </div>
 

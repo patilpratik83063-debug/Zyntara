@@ -1,10 +1,10 @@
 import React, { useState } from 'react';
+import { motion, AnimatePresence } from 'motion/react';
 import { SectionHeader } from '../common/SectionHeader';
 import { Button } from '../common/Button';
 import { ViewType } from '../../types';
 import { 
   ChevronDown, 
-  ChevronUp, 
   HelpCircle, 
   Sparkles, 
   MessageSquare, 
@@ -107,19 +107,34 @@ export const FAQSection: React.FC<FAQSectionProps> = ({ onNavigate }) => {
                     </span>
                   </div>
 
-                  <div className="shrink-0 text-[#7E8491]">
-                    {isOpen ? <ChevronUp className="w-5 h-5 text-[#D6B77A]" /> : <ChevronDown className="w-5 h-5" />}
-                  </div>
+                  <motion.div
+                    animate={{ rotate: isOpen ? 180 : 0 }}
+                    transition={{ duration: 0.35, ease: [0.16, 1, 0.3, 1] }}
+                    className={`shrink-0 text-[#7E8491] ${isOpen ? 'text-[#D6B77A]' : ''}`}
+                  >
+                    <ChevronDown className="w-5 h-5" />
+                  </motion.div>
                 </button>
 
-                {isOpen && (
-                  <div className="px-6 pb-6 pt-1 text-sm sm:text-base text-[#B6BAC4] leading-relaxed border-t border-white/[0.04]">
-                    <p>{faq.a}</p>
-                    <div className="mt-4 flex items-center gap-2 text-xs font-mono text-[#34D399]">
-                      <span>Category: {faq.category}</span>
-                    </div>
-                  </div>
-                )}
+                <AnimatePresence initial={false}>
+                  {isOpen && (
+                    <motion.div
+                      key="faq-answer"
+                      initial={{ height: 0, opacity: 0 }}
+                      animate={{ height: 'auto', opacity: 1 }}
+                      exit={{ height: 0, opacity: 0 }}
+                      transition={{ duration: 0.45, ease: [0.16, 1, 0.3, 1] }}
+                      className="overflow-hidden"
+                    >
+                      <div className="px-6 pb-6 pt-1 text-sm sm:text-base text-[#B6BAC4] leading-relaxed border-t border-white/[0.04]">
+                        <p>{faq.a}</p>
+                        <div className="mt-4 flex items-center gap-2 text-xs font-mono text-[#34D399]">
+                          <span>Category: {faq.category}</span>
+                        </div>
+                      </div>
+                    </motion.div>
+                  )}
+                </AnimatePresence>
               </div>
             );
           })}

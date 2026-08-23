@@ -2,6 +2,7 @@ import React, { useState } from 'react';
 import { SOLUTIONS_DATA } from '../../data/solutionsData';
 import { SectionHeader } from '../common/SectionHeader';
 import { Button } from '../common/Button';
+import { TiltCard } from '../common/TiltCard';
 import { ViewType, SolutionItem } from '../../types';
 import { 
   Compass, 
@@ -77,45 +78,46 @@ export const SolutionsSection: React.FC<SolutionsSectionProps> = ({ onNavigate }
             const isSelected = solution.id === selectedSolutionId;
 
             return (
-              <div
-                key={solution.id}
-                onClick={() => setSelectedSolutionId(solution.id)}
-                className={`p-7 rounded-3xl transition-all duration-300 flex flex-col justify-between border cursor-pointer group ${
-                  isSelected
-                    ? 'bg-[#181D2E] border-[#D6B77A] shadow-[0_8px_30px_rgba(214,183,122,0.15)] ring-1 ring-[#D6B77A]/30'
-                    : 'bg-[#0D1018]/90 border-white/[0.06] hover:border-white/15 hover:bg-[#121622]'
-                }`}
-              >
-                <div>
-                  {/* Top Bar with Number and Status */}
-                  <div className="flex items-center justify-between mb-4">
-                    <span className="font-mono text-xs font-bold px-2 py-0.5 rounded-md bg-[#141824] text-[#D6B77A] border border-[#D6B77A]/25">
-                      {solution.number}
-                    </span>
-                    <span className="text-[10px] font-mono text-[#7E8491] uppercase">
-                      {solution.category}
-                    </span>
+              <TiltCard key={solution.id} className="rounded-3xl">
+                <div
+                  onClick={() => setSelectedSolutionId(solution.id)}
+                  className={`p-7 rounded-3xl transition-all duration-300 flex flex-col justify-between border cursor-pointer group h-full ${
+                    isSelected
+                      ? 'bg-[#181D2E] border-[#D6B77A] shadow-[0_8px_30px_rgba(214,183,122,0.15)] ring-1 ring-[#D6B77A]/30'
+                      : 'bg-[#0D1018]/90 border-white/[0.06] hover:border-white/15 hover:bg-[#121622]'
+                  }`}
+                >
+                  <div>
+                    {/* Top Bar with Number and Status */}
+                    <div className="flex items-center justify-between mb-4">
+                      <span className="font-mono text-xs font-bold px-2 py-0.5 rounded-md bg-[#141824] text-[#D6B77A] border border-[#D6B77A]/25">
+                        {solution.number}
+                      </span>
+                      <span className="text-[10px] font-mono text-[#7E8491] uppercase">
+                        {solution.category}
+                      </span>
+                    </div>
+
+                    <h3 className="font-display font-bold text-lg text-[#F5F3EE] group-hover:text-white transition-colors">
+                      {solution.title}
+                    </h3>
+                    <div className="text-xs font-mono text-[#34D399] font-medium mt-1">
+                      {solution.tagline}
+                    </div>
+
+                    <p className="text-xs text-[#B6BAC4] mt-3 leading-relaxed line-clamp-3">
+                      {solution.description}
+                    </p>
                   </div>
 
-                  <h3 className="font-display font-bold text-lg text-[#F5F3EE] group-hover:text-white transition-colors">
-                    {solution.title}
-                  </h3>
-                  <div className="text-xs font-mono text-[#34D399] font-medium mt-1">
-                    {solution.tagline}
+                  <div className="mt-6 pt-4 border-t border-white/[0.06] flex items-center justify-between">
+                    <span className="text-xs font-mono text-[#2DD4BF] line-clamp-1">
+                      {solution.businessOutcomes[0]}
+                    </span>
+                    <ArrowRight className="w-4 h-4 text-[#7E8491] group-hover:text-[#D6B77A] group-hover:translate-x-1 transition-all shrink-0 ml-2" />
                   </div>
-
-                  <p className="text-xs text-[#B6BAC4] mt-3 leading-relaxed line-clamp-3">
-                    {solution.description}
-                  </p>
                 </div>
-
-                <div className="mt-6 pt-4 border-t border-white/[0.06] flex items-center justify-between">
-                  <span className="text-xs font-mono text-[#2DD4BF] line-clamp-1">
-                    {solution.businessOutcomes[0]}
-                  </span>
-                  <ArrowRight className="w-4 h-4 text-[#7E8491] group-hover:text-[#D6B77A] group-hover:translate-x-1 transition-all shrink-0 ml-2" />
-                </div>
-              </div>
+              </TiltCard>
             );
           })}
         </div>

@@ -2,7 +2,7 @@ import React from 'react';
 import { SectionHeader } from '../common/SectionHeader';
 import { Button } from '../common/Button';
 import { BrandLogo } from '../common/BrandLogo';
-import { ZENTARA_LOGO_EMBLEM, ZENTARA_LOGO_ICON } from '../../assets/logo';
+import { ZYNTARA_LOGO_EMBLEM, ZYNTARA_LOGO_ICON } from '../../assets/logo';
 import { ViewType } from '../../types';
 import { 
   Building2, 
@@ -85,12 +85,12 @@ export const AboutView: React.FC<AboutViewProps> = ({
         <div className="text-center max-w-4xl mx-auto space-y-6">
           <div className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-[#121622] border border-[#2DD4BF]/30 text-xs font-mono text-[#2DD4BF] shadow-[0_0_15px_rgba(45, 212, 191,0.2)]">
             <img 
-              src={ZENTARA_LOGO_ICON} 
-              alt="Zentara" 
+              src={ZYNTARA_LOGO_ICON} 
+              alt="Zyntara" 
               referrerPolicy="no-referrer" 
               className="w-4 h-4 rounded-full object-cover"
             />
-            <span>ZENTARA TECHNOLOGY • ENTERPRISE ARCHITECTURE</span>
+            <span>ZYNTARA TECHNOLOGY • ENTERPRISE ARCHITECTURE</span>
           </div>
 
           <h1 className="text-4xl sm:text-5xl lg:text-6xl font-display font-extrabold text-white tracking-tight leading-[1.1]">
@@ -98,7 +98,7 @@ export const AboutView: React.FC<AboutViewProps> = ({
           </h1>
 
           <p className="text-base sm:text-lg text-slate-300 max-w-2xl mx-auto leading-relaxed">
-            Zentara Technology exists to bridge the vast gap between experimental AI prototypes and enterprise-grade, revenue-generating autonomous business systems.
+            Zyntara Technology exists to bridge the vast gap between experimental AI prototypes and enterprise-grade, revenue-generating autonomous business systems.
           </p>
 
           {/* Official Brand Identity Showcase Banner */}
@@ -106,15 +106,15 @@ export const AboutView: React.FC<AboutViewProps> = ({
             <div className="flex items-center gap-5">
               <div className="relative w-24 h-24 sm:w-28 sm:h-28 rounded-2xl p-1 bg-gradient-to-b from-[#1E2638] to-[#0A0D15] border border-[#2DD4BF]/40 shadow-[0_0_25px_rgba(45, 212, 191,0.3)] shrink-0 overflow-hidden">
                 <img 
-                  src={ZENTARA_LOGO_EMBLEM} 
-                  alt="Zentara Technology Official Emblem"
+                  src={ZYNTARA_LOGO_EMBLEM} 
+                  alt="Zyntara Technology Official Emblem"
                   referrerPolicy="no-referrer"
                   className="w-full h-full object-cover rounded-xl"
                 />
               </div>
               <div className="space-y-1.5">
                 <div className="flex items-center gap-2">
-                  <span className="font-display font-extrabold text-2xl text-white tracking-wide">ZENTARA</span>
+                  <span className="font-display font-extrabold text-2xl text-white tracking-wide">ZYNTARA</span>
                   <span className="font-mono text-xs text-[#D6B77A] px-2 py-0.5 rounded bg-[#181D2A] border border-[#D6B77A]/30">TECHNOLOGY</span>
                 </div>
                 <div className="text-xs font-mono text-[#2DD4BF] flex items-center gap-2">

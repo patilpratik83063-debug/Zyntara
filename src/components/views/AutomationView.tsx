@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import { ViewType, AutomationItem } from '../../types';
-import { ZENTARA_LOGO_ICON } from '../../assets/logo';
+import { ZYNTARA_LOGO_ICON } from '../../assets/logo';
 import { 
   AUTOMATION_LEVELS_META, 
   AUTOMATION_CATEGORIES, 
@@ -99,12 +99,12 @@ export const AutomationView: React.FC<AutomationViewProps> = ({
         <div className="text-center space-y-6 pt-4 max-w-4xl mx-auto">
           <div className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-[#121622] border border-[#2DD4BF]/30 text-xs font-mono text-[#2DD4BF] shadow-[0_0_15px_rgba(45, 212, 191,0.2)]">
             <img 
-              src={ZENTARA_LOGO_ICON} 
-              alt="Zentara" 
+              src={ZYNTARA_LOGO_ICON} 
+              alt="Zyntara" 
               referrerPolicy="no-referrer"
               className="w-4 h-4 rounded-full object-cover"
             />
-            <span>ZENTARA TECHNOLOGY • AUTOMATION ARCHITECTURE (L1-L5)</span>
+            <span>ZYNTARA TECHNOLOGY • AUTOMATION ARCHITECTURE (L1-L5)</span>
           </div>
 
           <h1 className="text-4xl sm:text-5xl lg:text-6xl font-display font-extrabold text-white tracking-tight leading-[1.1]">
@@ -115,7 +115,7 @@ export const AutomationView: React.FC<AutomationViewProps> = ({
           </h1>
 
           <p className="text-base sm:text-lg text-slate-300 max-w-2xl mx-auto leading-relaxed">
-            From simple workflow automation to AI-powered autonomous operations, Zentara Technology builds automation systems around the way your business actually works.
+            From simple workflow automation to AI-powered autonomous operations, Zyntara Technology builds automation systems around the way your business actually works.
           </p>
 
           {/* Quick CTA row */}
