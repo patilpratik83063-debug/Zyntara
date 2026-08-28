@@ -217,7 +217,7 @@ export default function App() {
   };
 
   return (
-    <div className="min-h-screen bg-[#050506] text-slate-100 selection:bg-[#10B981] selection:text-white relative overflow-x-hidden font-sans grain-overlay">
+    <div className="min-h-screen bg-[#0F1219] text-slate-100 selection:bg-[#10B981] selection:text-white relative overflow-x-hidden font-sans grain-overlay">
       {/* Background Interactive Mesh Nodes */}
       <InteractiveCanvas />
 

@@ -92,12 +92,12 @@ export const AutomationView: React.FC<AutomationViewProps> = ({
   const activeSwarm = MULTI_AGENT_DEPARTMENT_SWARMS.find(s => s.id === activeSwarmId) || MULTI_AGENT_DEPARTMENT_SWARMS[0];
 
   return (
-    <div className="pt-28 pb-24 px-4 sm:px-6 lg:px-8 bg-[#07090E] min-h-screen text-slate-100 selection:bg-emerald-600">
+    <div className="pt-28 pb-24 px-4 sm:px-6 lg:px-8 bg-[#111520] min-h-screen text-slate-100 selection:bg-emerald-600">
       <div className="max-w-7xl mx-auto space-y-24">
 
         {/* ===================== HERO SECTION ===================== */}
         <div className="text-center space-y-6 pt-4 max-w-4xl mx-auto">
-          <div className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-[#121622] border border-[#2DD4BF]/30 text-xs font-mono text-[#2DD4BF] shadow-[0_0_15px_rgba(45, 212, 191,0.2)]">
+          <div className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-[#1E2638] border border-[#2DD4BF]/30 text-xs font-mono text-[#2DD4BF] shadow-[0_0_15px_rgba(45, 212, 191,0.2)]">
             <img 
               src={ZYNTARA_LOGO_ICON} 
               alt="Zyntara" 
@@ -308,7 +308,7 @@ export const AutomationView: React.FC<AutomationViewProps> = ({
             {filteredAutomations.map((item) => (
               <div
                 key={item.id}
-                className="p-6 rounded-2xl bg-[#090C16] border border-slate-800/80 hover:border-emerald-500/40 transition-all duration-300 flex flex-col justify-between group hover:shadow-[0_10px_30px_rgba(16, 185, 129,0.1)] relative"
+                className="p-6 rounded-2xl bg-[#141A26] border border-slate-800/80 hover:border-emerald-500/40 transition-all duration-300 flex flex-col justify-between group hover:shadow-[0_10px_30px_rgba(16, 185, 129,0.1)] relative"
               >
                 <div className="space-y-4">
                   {/* Card Header: Level Badge & Dept */}

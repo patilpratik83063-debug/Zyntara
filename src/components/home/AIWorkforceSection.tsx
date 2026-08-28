@@ -110,7 +110,7 @@ export const AIWorkforceSection: React.FC<AIWorkforceSectionProps> = ({ onNaviga
   const activeSwarm = swarms[activeDepartment];
 
   return (
-    <section id="ai-workforce-section" className="py-28 px-4 sm:px-6 lg:px-8 bg-[#050506] relative overflow-hidden border-t border-white/[0.08]">
+    <section id="ai-workforce-section" className="py-28 px-4 sm:px-6 lg:px-8 bg-[#0F1219] relative overflow-hidden border-t border-white/[0.08]">
       {/* Ambient background glow */}
       <div className="absolute top-1/3 left-1/4 w-[700px] h-[500px] bg-[#34D399]/06 blur-[160px] pointer-events-none" />
 
@@ -127,7 +127,7 @@ export const AIWorkforceSection: React.FC<AIWorkforceSectionProps> = ({ onNaviga
         />
 
         {/* Section 26: WHEN RULES AREN'T ENOUGH, ADD INTELLIGENCE */}
-        <div className="mt-14 p-6 sm:p-8 rounded-3xl bg-[#0D1018]/90 border border-white/10 shadow-xl max-w-5xl mx-auto">
+        <div className="mt-14 p-6 sm:p-8 rounded-3xl bg-[#1A2030]/90 border border-white/10 shadow-xl max-w-5xl mx-auto">
           <div className="text-center mb-6">
             <span className="text-xs font-mono text-[#D6B77A] uppercase tracking-widest font-semibold">
               Cognitive Evolution: Beyond Static If-This-Then-That Rules
@@ -142,7 +142,7 @@ export const AIWorkforceSection: React.FC<AIWorkforceSectionProps> = ({ onNaviga
 
           <div className="grid grid-cols-2 sm:grid-cols-4 gap-3">
             {cognitiveCapabilities.map((cap, idx) => (
-              <div key={idx} className="p-3.5 rounded-xl bg-[#141824] border border-white/[0.06] flex flex-col justify-between">
+              <div key={idx} className="p-3.5 rounded-xl bg-[#222A3A] border border-white/[0.06] flex flex-col justify-between">
                 <span className="font-mono text-xs font-bold text-[#34D399]">{cap.name}</span>
                 <span className="text-[11px] text-[#7E8491] mt-1">{cap.desc}</span>
               </div>
@@ -153,7 +153,7 @@ export const AIWorkforceSection: React.FC<AIWorkforceSectionProps> = ({ onNaviga
         {/* Section 28: ONE AI AGENT IS USEFUL. AN AI WORKFORCE IS TRANSFORMATIVE. */}
         <div className="mt-20">
           <div className="text-center mb-8">
-            <div className="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-[#121622] text-xs font-mono text-[#2DD4BF] border border-[#2DD4BF]/30 mb-2">
+            <div className="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-[#1E2638] text-xs font-mono text-[#2DD4BF] border border-[#2DD4BF]/30 mb-2">
               <Users className="w-3.5 h-3.5 text-[#2DD4BF]" />
               <span>Multi-Agent Swarm Orchestration</span>
             </div>
@@ -167,7 +167,7 @@ export const AIWorkforceSection: React.FC<AIWorkforceSectionProps> = ({ onNaviga
 
           {/* Department Selection Tabs */}
           <div className="flex justify-center mb-10">
-            <div className="p-1.5 rounded-2xl bg-[#0D1018] border border-white/10 flex flex-wrap gap-1 shadow-lg">
+            <div className="p-1.5 rounded-2xl bg-[#1A2030] border border-white/10 flex flex-wrap gap-1 shadow-lg">
               {[
                 { id: 'sales', label: 'AI Sales Workforce' },
                 { id: 'support', label: 'AI Support Workforce' },
@@ -190,7 +190,7 @@ export const AIWorkforceSection: React.FC<AIWorkforceSectionProps> = ({ onNaviga
           </div>
 
           {/* Active Swarm Architecture Box */}
-          <div className="p-8 sm:p-10 rounded-3xl bg-[#0D1018]/95 border border-white/10 shadow-2xl backdrop-blur-xl space-y-8">
+          <div className="p-8 sm:p-10 rounded-3xl bg-[#1A2030]/95 border border-white/10 shadow-2xl backdrop-blur-xl space-y-8">
             <div className="flex flex-col lg:flex-row lg:items-center justify-between gap-4 pb-6 border-b border-white/[0.08]">
               <div>
                 <span className="text-xs font-mono text-[#D6B77A] uppercase font-bold tracking-wider">
@@ -218,7 +218,7 @@ export const AIWorkforceSection: React.FC<AIWorkforceSectionProps> = ({ onNaviga
               </span>
               <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-5 gap-3.5">
                 {activeSwarm.agents.map((agent, idx) => (
-                  <div key={idx} className="p-4 rounded-2xl bg-[#141824] border border-white/[0.06] flex flex-col justify-between space-y-2">
+                  <div key={idx} className="p-4 rounded-2xl bg-[#222A3A] border border-white/[0.06] flex flex-col justify-between space-y-2">
                     <div className="flex items-center gap-2">
                       <div className="w-6 h-6 rounded-lg bg-[#1D2335] flex items-center justify-center text-[#D6B77A]">
                         <Bot className="w-3.5 h-3.5" />
@@ -234,12 +234,12 @@ export const AIWorkforceSection: React.FC<AIWorkforceSectionProps> = ({ onNaviga
             </div>
 
             {/* Swarm Execution Flow */}
-            <div className="p-4 rounded-2xl bg-[#141824]/60 border border-white/[0.06] flex flex-col sm:flex-row sm:items-center justify-between gap-4">
+            <div className="p-4 rounded-2xl bg-[#222A3A]/60 border border-white/[0.06] flex flex-col sm:flex-row sm:items-center justify-between gap-4">
               <div>
                 <span className="text-[10px] font-mono text-[#7E8491] uppercase tracking-wider block">
                   End-to-End Swarm Execution Sequence:
                 </span>
-                <div className="font-mono text-xs text-[#2DD4BF] mt-1">
+                <div className="font-mono text-xs text-[#2DD4BF] mt-1 break-words">
                   {activeSwarm.flow}
                 </div>
               </div>
@@ -254,8 +254,8 @@ export const AIWorkforceSection: React.FC<AIWorkforceSectionProps> = ({ onNaviga
         </div>
 
         {/* Section 29: AUTONOMOUS OPERATIONS & HUMAN OVERSIGHT */}
-        <div className="mt-20 p-8 rounded-3xl bg-[#0D1018] border border-white/10 shadow-xl max-w-5xl mx-auto flex flex-col sm:flex-row items-center gap-6">
-          <div className="w-14 h-14 rounded-2xl bg-[#181D2A] border border-[#D6B77A]/40 flex items-center justify-center shrink-0 text-[#D6B77A]">
+        <div className="mt-20 p-8 rounded-3xl bg-[#1A2030] border border-white/10 shadow-xl max-w-5xl mx-auto flex flex-col sm:flex-row items-center gap-6">
+          <div className="w-14 h-14 rounded-2xl bg-[#262E40] border border-[#D6B77A]/40 flex items-center justify-center shrink-0 text-[#D6B77A]">
             <ShieldCheck className="w-7 h-7" />
           </div>
           <div>

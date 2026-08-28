@@ -28,7 +28,7 @@ export const Footer: React.FC<FooterProps> = ({
   };
 
   return (
-    <footer id="zyntara-footer" className="bg-[#050506] text-[#B6BAC4] border-t border-white/[0.08] relative overflow-hidden">
+    <footer id="zyntara-footer" className="bg-[#0F1219] text-[#B6BAC4] border-t border-white/[0.08] relative overflow-hidden">
       {/* Top Accent Line */}
       <div className="h-[2px] w-full bg-gradient-to-r from-transparent via-[#34D399]/50 to-transparent" />
 
@@ -45,10 +45,10 @@ export const Footer: React.FC<FooterProps> = ({
             </p>
 
             {/* Official Mission Lockup */}
-            <div className="p-4 rounded-2xl bg-gradient-to-br from-[#0F131D] to-[#07090E] border border-white/10 text-xs shadow-lg space-y-2">
+            <div className="p-4 rounded-2xl bg-gradient-to-br from-[#0F131D] to-[#111520] border border-white/10 text-xs shadow-lg space-y-2">
               <div className="flex items-center justify-between">
                 <span className="font-mono text-[#D6B77A] font-bold text-[10px] tracking-wider uppercase">Enterprise Brand</span>
-                <span className="text-[10px] font-mono text-[#2DD4BF] bg-[#181D2A] px-2 py-0.5 rounded border border-[#2DD4BF]/30">AI • AUTOMATION</span>
+                <span className="text-[10px] font-mono text-[#2DD4BF] bg-[#262E40] px-2 py-0.5 rounded border border-[#2DD4BF]/30">AI • AUTOMATION</span>
               </div>
               <div className="font-display font-bold text-[#F5F3EE] text-sm">Zyntara Technology</div>
               <div className="text-[11px] text-[#A99A7A] italic">"Building Intelligent Systems For A Better Tomorrow"</div>
@@ -188,7 +188,7 @@ export const Footer: React.FC<FooterProps> = ({
 
             <button
               onClick={onOpenAssessment}
-              className="w-full py-2.5 px-4 rounded-xl text-xs font-mono text-[#D6B77A] bg-[#121622] hover:bg-[#181D2A] border border-[#D6B77A]/30 transition-all flex items-center justify-center gap-2 cursor-pointer"
+              className="w-full py-2.5 px-4 rounded-xl text-xs font-mono text-[#D6B77A] bg-[#1E2638] hover:bg-[#262E40] border border-[#D6B77A]/30 transition-all flex items-center justify-center gap-2 cursor-pointer"
             >
               <Zap className="w-3.5 h-3.5 text-[#D6B77A]" />
               <span>Audit AI Readiness Score</span>

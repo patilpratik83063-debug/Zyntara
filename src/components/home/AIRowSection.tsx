@@ -61,7 +61,7 @@ export const AIRowSection: React.FC<AIRowSectionProps> = ({ onNavigate }) => {
           />
 
           {/* Interactive 9-Stage Revenue Journey Flow */}
-          <div className="mt-14 p-6 sm:p-8 rounded-3xl bg-[#0D1018]/95 border border-white/10 shadow-2xl backdrop-blur-xl">
+          <div className="mt-14 p-6 sm:p-8 rounded-3xl bg-[#1A2030]/95 border border-white/10 shadow-2xl backdrop-blur-xl">
             <div className="text-xs font-mono text-[#D6B77A] uppercase mb-4 text-center tracking-wider">
               End-to-End Autonomous Revenue Lifecycle (Click Stage to Inspect)
             </div>
@@ -77,7 +77,7 @@ export const AIRowSection: React.FC<AIRowSectionProps> = ({ onNavigate }) => {
                     className={`p-3 rounded-2xl border text-center transition-all duration-300 flex flex-col items-center justify-center cursor-pointer ${
                       isActive
                         ? 'bg-gradient-to-b from-[#181D2E] to-[#121624] border-[#D6B77A] text-[#F5F3EE] shadow-[0_4px_20px_rgba(214,183,122,0.25)] scale-105'
-                        : 'bg-[#121622]/60 border-white/[0.06] text-[#7E8491] hover:text-white hover:border-white/15'
+                        : 'bg-[#1E2638]/60 border-white/[0.06] text-[#7E8491] hover:text-white hover:border-white/15'
                     }`}
                   >
                     <span className="font-mono text-[10px] opacity-70">0{idx + 1}</span>
@@ -88,7 +88,7 @@ export const AIRowSection: React.FC<AIRowSectionProps> = ({ onNavigate }) => {
             </div>
 
             {/* Active Stage Detail Banner */}
-            <div className="mt-6 p-5 rounded-2xl bg-[#141824]/90 border border-white/[0.08] flex flex-col sm:flex-row sm:items-center justify-between gap-4">
+            <div className="mt-6 p-5 rounded-2xl bg-[#222A3A]/90 border border-white/[0.08] flex flex-col sm:flex-row sm:items-center justify-between gap-4">
               <div>
                 <div className="text-xs font-mono text-[#D6B77A] font-semibold uppercase">
                   STAGE {activeRevenueStage + 1}: {revenueJourney[activeRevenueStage].label}
@@ -126,11 +126,11 @@ export const AIRowSection: React.FC<AIRowSectionProps> = ({ onNavigate }) => {
             {operationsSteps.map((op, idx) => (
               <div
                 key={idx}
-                className="p-7 rounded-3xl bg-[#0D1018]/90 border border-white/10 hover:border-[#34D399]/40 transition-all duration-300 flex flex-col justify-between group shadow-lg"
+                className="p-7 rounded-3xl bg-[#1A2030]/90 border border-white/10 hover:border-[#34D399]/40 transition-all duration-300 flex flex-col justify-between group shadow-lg"
               >
                 <div>
                   <div className="flex items-center justify-between mb-4">
-                    <span className="font-mono text-xs font-bold text-[#D6B77A] px-2 py-0.5 rounded-md bg-[#181D2A] border border-[#D6B77A]/25">
+                    <span className="font-mono text-xs font-bold text-[#D6B77A] px-2 py-0.5 rounded-md bg-[#262E40] border border-[#D6B77A]/25">
                       STEP {op.step}
                     </span>
                     <span className="w-2 h-2 rounded-full bg-[#34D399]" />

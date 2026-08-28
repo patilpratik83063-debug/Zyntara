@@ -107,11 +107,11 @@ export const WhyZyntaraSection: React.FC<WhyZyntaraSectionProps> = ({ onNavigate
               className={`rounded-3xl ${idx === 4 ? 'md:col-span-2 lg:col-span-2' : ''}`}
             >
               <div
-                className={`p-8 rounded-3xl bg-[#0D1018]/90 border border-white/10 shadow-xl flex flex-col justify-between space-y-4 hover:border-[#D6B77A]/40 transition-colors h-full`}
+                className={`p-8 rounded-3xl bg-[#1A2030]/90 border border-white/10 shadow-xl flex flex-col justify-between space-y-4 hover:border-[#D6B77A]/40 transition-colors h-full`}
               >
                 <div>
                   <div className="flex items-center justify-between mb-3">
-                    <span className="font-mono text-xs font-bold px-2.5 py-1 rounded-md bg-[#181D2A] text-[#D6B77A] border border-[#D6B77A]/30">
+                    <span className="font-mono text-xs font-bold px-2.5 py-1 rounded-md bg-[#262E40] text-[#D6B77A] border border-[#D6B77A]/30">
                       PRINCIPLE {p.num}
                     </span>
                     <Sparkles className="w-4 h-4 text-[#34D399]" />
@@ -139,7 +139,7 @@ export const WhyZyntaraSection: React.FC<WhyZyntaraSectionProps> = ({ onNavigate
         </div>
 
         {/* Section 37: NOT ANOTHER AUTOMATION TOOL (DIFFERENTIATION) */}
-        <div className="mt-24 p-8 sm:p-12 rounded-3xl bg-gradient-to-b from-[#0D1018] to-[#07090F] border border-white/10 shadow-2xl">
+        <div className="mt-24 p-8 sm:p-12 rounded-3xl bg-gradient-to-b from-[#1A2030] to-[#07090F] border border-white/10 shadow-2xl">
           <div className="text-center max-w-3xl mx-auto mb-10">
             <span className="text-xs font-mono text-[#D6B77A] uppercase tracking-widest font-semibold">
               Clear Differentiation
@@ -188,7 +188,7 @@ export const WhyZyntaraSection: React.FC<WhyZyntaraSectionProps> = ({ onNavigate
                   <span className="font-mono text-xs font-bold text-[#D6B77A] uppercase tracking-wider">
                     ZYNTARA ENTERPRISE ARCHITECTURE
                   </span>
-                  <span className="text-[10px] font-mono text-[#050506] bg-[#D6B77A] px-2 py-0.5 rounded font-bold">
+                  <span className="text-[10px] font-mono text-[#0F1219] bg-[#D6B77A] px-2 py-0.5 rounded font-bold">
                     Turnkey System
                   </span>
                 </div>
@@ -212,7 +212,7 @@ export const WhyZyntaraSection: React.FC<WhyZyntaraSectionProps> = ({ onNavigate
         </div>
 
         {/* Section 41: ENTERPRISE TECHNOLOGY, HUMAN OVERSIGHT (TRUST) */}
-        <div className="mt-24 p-8 sm:p-10 rounded-3xl bg-[#0D1018]/90 border border-white/10 shadow-2xl">
+        <div className="mt-24 p-8 sm:p-10 rounded-3xl bg-[#1A2030]/90 border border-white/10 shadow-2xl">
           <div className="flex flex-col lg:flex-row lg:items-center justify-between gap-6 pb-8 border-b border-white/[0.08]">
             <div className="space-y-1">
               <div className="flex items-center gap-2">
@@ -240,7 +240,7 @@ export const WhyZyntaraSection: React.FC<WhyZyntaraSectionProps> = ({ onNavigate
 
           <div className="mt-8 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4">
             {trustPillars.map((p, idx) => (
-              <div key={idx} className="p-4 rounded-2xl bg-[#141824] border border-white/[0.06] space-y-1.5">
+              <div key={idx} className="p-4 rounded-2xl bg-[#222A3A] border border-white/[0.06] space-y-1.5">
                 <span className="font-display font-bold text-sm text-[#F5F3EE] block">
                   {p.name}
                 </span>

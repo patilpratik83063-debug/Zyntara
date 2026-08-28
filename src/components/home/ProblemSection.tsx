@@ -78,7 +78,7 @@ export const ProblemSection: React.FC<ProblemSectionProps> = ({ onNavigate }) =>
         />
 
         {/* Visual Transformation from 10 Disconnected Pieces to ONE INTELLIGENT ARCHITECTURE */}
-        <div className="mt-14 p-8 rounded-3xl bg-[#0D1018]/90 border border-white/10 shadow-2xl relative overflow-hidden">
+        <div className="mt-14 p-8 rounded-3xl bg-[#1A2030]/90 border border-white/10 shadow-2xl relative overflow-hidden">
           <div className="text-center mb-6">
             <span className="text-xs font-mono text-[#D6B77A] uppercase tracking-widest font-semibold">
               The Architecture Shift
@@ -95,7 +95,7 @@ export const ProblemSection: React.FC<ProblemSectionProps> = ({ onNavigate }) =>
               return (
                 <div 
                   key={idx}
-                  className="p-3.5 rounded-2xl bg-[#141824]/80 border border-white/[0.06] flex flex-col items-center text-center space-y-1.5 hover:border-[#34D399]/40 transition-colors"
+                  className="p-3.5 rounded-2xl bg-[#222A3A]/80 border border-white/[0.06] flex flex-col items-center text-center space-y-1.5 hover:border-[#34D399]/40 transition-colors"
                 >
                   <div className="w-8 h-8 rounded-lg bg-[#1D2335] flex items-center justify-center text-[#34D399]">
                     <Icon className="w-4 h-4" />
@@ -114,7 +114,7 @@ export const ProblemSection: React.FC<ProblemSectionProps> = ({ onNavigate }) =>
           {/* Arrow / Bridge Indicator */}
           <div className="my-6 flex items-center justify-center gap-4">
             <div className="h-[1px] flex-1 bg-gradient-to-r from-transparent via-white/20 to-[#D6B77A]" />
-            <div className="px-5 py-2 rounded-full bg-gradient-to-r from-[#0F2219] to-[#121622] border border-[#D6B77A]/40 text-xs font-mono font-bold text-[#D6B77A] shadow-[0_0_15px_rgba(214,183,122,0.3)] flex items-center gap-2">
+            <div className="px-5 py-2 rounded-full bg-gradient-to-r from-[#0F2219] to-[#1E2638] border border-[#D6B77A]/40 text-xs font-mono font-bold text-[#D6B77A] shadow-[0_0_15px_rgba(214,183,122,0.3)] flex items-center gap-2">
               <span>UNIFIED BY ZYNTARA</span>
               <ArrowRight className="w-3.5 h-3.5 text-[#D6B77A]" />
             </div>
@@ -124,7 +124,7 @@ export const ProblemSection: React.FC<ProblemSectionProps> = ({ onNavigate }) =>
           {/* Destination: ONE INTELLIGENT ARCHITECTURE Banner */}
           <div className="p-6 rounded-2xl bg-gradient-to-r from-[#181D2E] via-[#101420] to-[#181D2E] border border-[#D6B77A]/50 flex flex-col sm:flex-row items-center justify-between gap-4 text-center sm:text-left shadow-lg">
             <div className="flex items-center gap-4">
-              <div className="w-12 h-12 rounded-xl bg-[#D6B77A] text-[#050506] flex items-center justify-center shadow-[0_0_20px_rgba(214,183,122,0.5)] shrink-0">
+              <div className="w-12 h-12 rounded-xl bg-[#D6B77A] text-[#0F1219] flex items-center justify-center shadow-[0_0_20px_rgba(214,183,122,0.5)] shrink-0">
                 <Cpu className="w-6 h-6" />
               </div>
               <div>
@@ -153,7 +153,7 @@ export const ProblemSection: React.FC<ProblemSectionProps> = ({ onNavigate }) =>
 
         {/* Interactive Comparison Toggle: Fragmented vs Unified */}
         <div className="mt-14 flex justify-center">
-          <div className="p-1.5 rounded-2xl bg-[#0D1018] border border-white/10 flex items-center gap-1 shadow-xl">
+          <div className="p-1.5 rounded-2xl bg-[#1A2030] border border-white/10 flex flex-wrap items-center justify-center gap-1 shadow-xl">
             <button
               onClick={() => setViewState('fragmented')}
               className={`px-5 py-2.5 rounded-xl text-xs font-mono font-semibold tracking-wider transition-all duration-300 flex items-center gap-2 cursor-pointer ${
@@ -187,7 +187,7 @@ export const ProblemSection: React.FC<ProblemSectionProps> = ({ onNavigate }) =>
           <div className={`p-8 rounded-3xl transition-all duration-500 border ${
             viewState === 'fragmented'
               ? 'bg-[#120E12] border-rose-500/40 shadow-[0_8px_30px_rgba(244,63,94,0.15)] ring-1 ring-rose-500/30'
-              : 'bg-[#0D1018]/50 border-white/[0.04] opacity-50'
+              : 'bg-[#1A2030]/50 border-white/[0.04] opacity-50'
           }`}>
             <div className="flex items-center justify-between pb-6 border-b border-white/[0.08]">
               <div className="flex items-center gap-2.5">
@@ -223,7 +223,7 @@ export const ProblemSection: React.FC<ProblemSectionProps> = ({ onNavigate }) =>
           <div className={`p-8 rounded-3xl transition-all duration-500 border ${
             viewState === 'unified'
               ? 'bg-[#101A14] border-[#D6B77A]/60 shadow-[0_8px_30px_rgba(214,183,122,0.15)] ring-1 ring-[#D6B77A]/40'
-              : 'bg-[#0D1018]/50 border-white/[0.04] opacity-50'
+              : 'bg-[#1A2030]/50 border-white/[0.04] opacity-50'
           }`}>
             <div className="flex items-center justify-between pb-6 border-b border-white/[0.08]">
               <div className="flex items-center gap-2.5">

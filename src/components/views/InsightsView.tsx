@@ -35,7 +35,7 @@ export const InsightsView: React.FC<InsightsViewProps> = ({
     : INSIGHTS_DATA.filter(i => i.category === selectedCategory);
 
   return (
-    <div className="pt-28 pb-24 px-4 sm:px-6 lg:px-8 bg-[#07090E] min-h-screen text-slate-100">
+    <div className="pt-28 pb-24 px-4 sm:px-6 lg:px-8 bg-[#111520] min-h-screen text-slate-100">
       <div className="max-w-7xl mx-auto space-y-16">
         
         {/* Header */}
@@ -77,7 +77,7 @@ export const InsightsView: React.FC<InsightsViewProps> = ({
             <div
               key={item.id}
               onClick={() => setSelectedArticle(item)}
-              className="p-8 rounded-3xl bg-[#090C16] border border-slate-800 hover:border-emerald-400/40 transition-all duration-300 flex flex-col justify-between group shadow-xl cursor-pointer"
+              className="p-8 rounded-3xl bg-[#141A26] border border-slate-800 hover:border-emerald-400/40 transition-all duration-300 flex flex-col justify-between group shadow-xl cursor-pointer"
             >
               <div className="space-y-4">
                 <div className="flex items-center justify-between">
@@ -123,7 +123,7 @@ export const InsightsView: React.FC<InsightsViewProps> = ({
         {/* Active Article Full Reader Modal */}
         {selectedArticle && (
           <div className="fixed inset-0 z-50 flex items-center justify-center p-4 bg-black/85 backdrop-blur-md">
-            <div className="w-full max-w-4xl max-h-[90vh] overflow-y-auto rounded-3xl bg-[#090C16] border border-emerald-500/40 p-6 sm:p-10 space-y-8 shadow-2xl relative scrollbar-thin">
+            <div className="w-full max-w-4xl max-h-[90vh] overflow-y-auto rounded-3xl bg-[#141A26] border border-emerald-500/40 p-6 sm:p-10 space-y-8 shadow-2xl relative scrollbar-thin">
               
               {/* Close Button */}
               <button

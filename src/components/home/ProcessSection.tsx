@@ -106,7 +106,7 @@ export const ProcessSection: React.FC<ProcessSectionProps> = ({ onNavigate }) =>
   const StepIcon = current.icon;
 
   return (
-    <section id="process-section" className="py-28 px-4 sm:px-6 lg:px-8 bg-[#050506] border-t border-white/[0.08] relative overflow-hidden">
+    <section id="process-section" className="py-28 px-4 sm:px-6 lg:px-8 bg-[#0F1219] border-t border-white/[0.08] relative overflow-hidden">
       {/* Ambient background lighting */}
       <div className="absolute top-1/3 right-1/4 w-[600px] h-[500px] bg-[#10B981]/06 blur-[180px] pointer-events-none" />
 
@@ -133,7 +133,7 @@ export const ProcessSection: React.FC<ProcessSectionProps> = ({ onNavigate }) =>
                 className={`p-4 rounded-2xl text-left transition-all duration-300 border cursor-pointer ${
                   isSelected
                     ? 'bg-[#181D2E] border-[#D6B77A] shadow-[0_4px_20px_rgba(214,183,122,0.15)] ring-1 ring-[#D6B77A]/30'
-                    : 'bg-[#0D1018] border-white/[0.06] hover:border-white/15 hover:bg-[#121622]'
+                    : 'bg-[#1A2030] border-white/[0.06] hover:border-white/15 hover:bg-[#1E2638]'
                 }`}
               >
                 <div className="flex items-center justify-between mb-2">
@@ -151,10 +151,10 @@ export const ProcessSection: React.FC<ProcessSectionProps> = ({ onNavigate }) =>
         </div>
 
         {/* Detailed Active Stage Showcase */}
-        <div className="mt-10 p-8 sm:p-12 rounded-3xl bg-[#0D1018]/95 border border-white/10 shadow-2xl backdrop-blur-xl max-w-5xl mx-auto space-y-8">
+        <div className="mt-10 p-8 sm:p-12 rounded-3xl bg-[#1A2030]/95 border border-white/10 shadow-2xl backdrop-blur-xl max-w-5xl mx-auto space-y-8">
           <div className="flex flex-col lg:flex-row lg:items-center justify-between gap-6 pb-6 border-b border-white/[0.08]">
             <div className="flex items-start gap-4">
-              <div className="w-12 h-12 rounded-2xl bg-[#181D2A] border border-[#D6B77A]/30 flex items-center justify-center text-[#D6B77A] shrink-0">
+              <div className="w-12 h-12 rounded-2xl bg-[#262E40] border border-[#D6B77A]/30 flex items-center justify-center text-[#D6B77A] shrink-0">
                 <StepIcon className="w-6 h-6" />
               </div>
               <div>
@@ -190,7 +190,7 @@ export const ProcessSection: React.FC<ProcessSectionProps> = ({ onNavigate }) =>
             </span>
             <div className="grid grid-cols-1 sm:grid-cols-2 gap-3">
               {current.deliverables.map((deliv, idx) => (
-                <div key={idx} className="p-3.5 rounded-xl bg-[#141824] border border-white/[0.06] flex items-start gap-2.5">
+                <div key={idx} className="p-3.5 rounded-xl bg-[#222A3A] border border-white/[0.06] flex items-start gap-2.5">
                   <CheckCircle2 className="w-4 h-4 text-[#2DD4BF] shrink-0 mt-0.5" />
                   <span className="text-xs font-mono text-[#E0E2EC] leading-relaxed">
                     {deliv}
@@ -201,7 +201,7 @@ export const ProcessSection: React.FC<ProcessSectionProps> = ({ onNavigate }) =>
           </div>
 
           {/* Bottom Callout */}
-          <div className="p-4 rounded-xl bg-[#121622] border-l-2 border-[#D6B77A] flex items-center justify-between text-xs font-mono text-[#E0E2EC]">
+          <div className="p-4 rounded-xl bg-[#1E2638] border-l-2 border-[#D6B77A] flex items-center justify-between text-xs font-mono text-[#E0E2EC]">
             <span>Every stage is backed by verifiable governance, rollback mechanisms, and complete code ownership.</span>
             <button
               onClick={() => onNavigate('about')}

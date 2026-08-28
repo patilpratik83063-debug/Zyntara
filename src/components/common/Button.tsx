@@ -51,9 +51,9 @@ export const Button: React.FC<ButtonProps> = ({
 
   const variantClasses = {
     primary: 'bg-gradient-to-r from-[#10B981] to-[#059669] hover:from-[#34D399] hover:to-[#059669] text-white font-semibold border border-[#34D399]/30 shadow-[0_4px_24px_rgba(16, 185, 129,0.3)] hover:shadow-[0_8px_32px_rgba(16, 185, 129,0.48)] active:scale-[0.98]',
-    glow: 'bg-gradient-to-r from-[#34D399] via-[#059669] to-[#D6B77A] hover:brightness-110 text-[#050506] font-bold border border-[#F5E7CA]/40 shadow-[0_4px_24px_rgba(214,183,122,0.32)] hover:shadow-[0_8px_36px_rgba(214,183,122,0.5)] active:scale-[0.98]',
-    champagne: 'bg-gradient-to-r from-[#D6B77A] to-[#C1A05E] hover:from-[#E2C78E] hover:to-[#CFB06E] text-[#050506] font-bold border border-[#F8EED8]/60 shadow-[0_4px_20px_rgba(214,183,122,0.3)] active:scale-[0.98]',
-    secondary: 'bg-[#121622]/90 hover:bg-[#181E2E] text-[#F5F3EE] font-medium border border-white/10 hover:border-white/20 shadow-sm active:scale-[0.98]',
+    glow: 'bg-gradient-to-r from-[#34D399] via-[#059669] to-[#D6B77A] hover:brightness-110 text-[#0F1219] font-bold border border-[#F5E7CA]/40 shadow-[0_4px_24px_rgba(214,183,122,0.32)] hover:shadow-[0_8px_36px_rgba(214,183,122,0.5)] active:scale-[0.98]',
+    champagne: 'bg-gradient-to-r from-[#D6B77A] to-[#C1A05E] hover:from-[#E2C78E] hover:to-[#CFB06E] text-[#0F1219] font-bold border border-[#F8EED8]/60 shadow-[0_4px_20px_rgba(214,183,122,0.3)] active:scale-[0.98]',
+    secondary: 'bg-[#1E2638]/90 hover:bg-[#181E2E] text-[#F5F3EE] font-medium border border-white/10 hover:border-white/20 shadow-sm active:scale-[0.98]',
     outline: 'bg-transparent hover:bg-white/[0.04] text-[#E0E2EC] hover:text-white font-medium border border-white/15 hover:border-[#34D399]/50 active:scale-[0.98]',
     ghost: 'bg-transparent hover:bg-white/[0.05] text-[#B6BAC4] hover:text-[#F5F3EE] font-medium active:scale-[0.98]'
   };

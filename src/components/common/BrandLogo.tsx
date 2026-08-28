@@ -45,7 +45,7 @@ export const BrandLogo: React.FC<BrandLogoProps> = ({
             referrerPolicy="no-referrer"
             className="w-full max-w-[280px] h-auto object-cover rounded-xl group-hover:scale-105 transition-transform duration-500"
           />
-          <div className="absolute inset-0 bg-gradient-to-t from-[#050506]/40 via-transparent to-transparent pointer-events-none" />
+          <div className="absolute inset-0 bg-gradient-to-t from-[#0F1219]/40 via-transparent to-transparent pointer-events-none" />
         </div>
       </div>
     );
@@ -95,14 +95,8 @@ export const BrandLogo: React.FC<BrandLogoProps> = ({
         className="relative flex items-center justify-center shrink-0"
         style={{ width: currentSize.icon, height: currentSize.icon }}
       >
-        {/* Outer subtle orbital ring with blue/champagne shimmer */}
-        <div className="absolute -inset-0.5 rounded-full border border-[#34D399]/30 group-hover:border-[#2DD4BF]/60 transition-colors duration-500 animate-[spin_20s_linear_infinite]" />
-        
-        {/* Orbital celestial particle */}
-        <div className="absolute -top-0.5 left-1/2 -translate-x-1/2 w-1.5 h-1.5 rounded-full bg-[#2DD4BF] shadow-[0_0_8px_rgba(45, 212, 191,0.9)] group-hover:scale-125 transition-transform" />
-        
         {/* Inner geometric core container with logo image */}
-        <div className="w-full h-full rounded-xl bg-gradient-to-br from-[#121622] via-[#080A0E] to-[#1C2030] border border-white/15 group-hover:border-[#34D399]/50 flex items-center justify-center shadow-[0_4px_16px_rgba(0,0,0,0.6)] group-hover:shadow-[0_4px_20px_rgba(52, 211, 153,0.35)] transition-all duration-300 overflow-hidden p-0.5">
+        <div className="w-full h-full rounded-xl bg-gradient-to-br from-[#1E2638] via-[#080A0E] to-[#1C2030] border border-white/15 group-hover:border-[#34D399]/50 flex items-center justify-center shadow-[0_4px_16px_rgba(0,0,0,0.6)] group-hover:shadow-[0_4px_20px_rgba(52, 211, 153,0.35)] transition-all duration-300 overflow-hidden p-0.5">
           {!imageError ? (
             <img 
               src={ZYNTARA_LOGO_ICON} 
@@ -137,7 +131,7 @@ export const BrandLogo: React.FC<BrandLogoProps> = ({
           <span className={`font-display font-extrabold tracking-wider text-[#F5F3EE] group-hover:text-white transition-colors ${currentSize.text}`}>
             ZYNTARA
           </span>
-          <span className="font-display font-semibold tracking-widest text-[#D6B77A] text-[9px] px-1.5 py-0.5 rounded-md bg-[#181D2A] border border-[#D6B77A]/30">
+          <span className="font-display font-semibold tracking-widest text-[#D6B77A] text-[9px] px-1.5 py-0.5 rounded-md bg-[#262E40] border border-[#D6B77A]/30">
             TECHNOLOGY
           </span>
         </div>

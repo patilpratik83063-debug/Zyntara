@@ -78,12 +78,12 @@ export const AboutView: React.FC<AboutViewProps> = ({
   ];
 
   return (
-    <div className="pt-28 pb-24 px-4 sm:px-6 lg:px-8 bg-[#07090E] min-h-screen text-slate-100">
+    <div className="pt-28 pb-24 px-4 sm:px-6 lg:px-8 bg-[#111520] min-h-screen text-slate-100">
       <div className="max-w-7xl mx-auto space-y-20">
         
         {/* Header with Official Logo Spotlight */}
         <div className="text-center max-w-4xl mx-auto space-y-6">
-          <div className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-[#121622] border border-[#2DD4BF]/30 text-xs font-mono text-[#2DD4BF] shadow-[0_0_15px_rgba(45, 212, 191,0.2)]">
+          <div className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-[#1E2638] border border-[#2DD4BF]/30 text-xs font-mono text-[#2DD4BF] shadow-[0_0_15px_rgba(45, 212, 191,0.2)]">
             <img 
               src={ZYNTARA_LOGO_ICON} 
               alt="Zyntara" 
@@ -102,7 +102,7 @@ export const AboutView: React.FC<AboutViewProps> = ({
           </p>
 
           {/* Official Brand Identity Showcase Banner */}
-          <div className="mt-8 p-6 sm:p-8 rounded-3xl bg-gradient-to-br from-[#0E1B14] via-[#090C16] to-[#05070B] border border-white/10 shadow-[0_20px_50px_rgba(0,0,0,0.8)] flex flex-col md:flex-row items-center justify-between gap-8 text-left">
+          <div className="mt-8 p-6 sm:p-8 rounded-3xl bg-gradient-to-br from-[#0E1B14] via-[#141A26] to-[#05070B] border border-white/10 shadow-[0_20px_50px_rgba(0,0,0,0.8)] flex flex-col md:flex-row items-center justify-between gap-8 text-left">
             <div className="flex items-center gap-5">
               <div className="relative w-24 h-24 sm:w-28 sm:h-28 rounded-2xl p-1 bg-gradient-to-b from-[#1E2638] to-[#0A0D15] border border-[#2DD4BF]/40 shadow-[0_0_25px_rgba(45, 212, 191,0.3)] shrink-0 overflow-hidden">
                 <img 
@@ -115,7 +115,7 @@ export const AboutView: React.FC<AboutViewProps> = ({
               <div className="space-y-1.5">
                 <div className="flex items-center gap-2">
                   <span className="font-display font-extrabold text-2xl text-white tracking-wide">ZYNTARA</span>
-                  <span className="font-mono text-xs text-[#D6B77A] px-2 py-0.5 rounded bg-[#181D2A] border border-[#D6B77A]/30">TECHNOLOGY</span>
+                  <span className="font-mono text-xs text-[#D6B77A] px-2 py-0.5 rounded bg-[#262E40] border border-[#D6B77A]/30">TECHNOLOGY</span>
                 </div>
                 <div className="text-xs font-mono text-[#2DD4BF] flex items-center gap-2">
                   <span>AI</span>
@@ -142,7 +142,7 @@ export const AboutView: React.FC<AboutViewProps> = ({
               </Button>
               <button
                 onClick={onOpenAssessment}
-                className="w-full sm:w-auto px-4 py-2 rounded-xl text-xs font-mono text-[#D6B77A] bg-[#121622] hover:bg-[#181D2A] border border-[#D6B77A]/30 transition-all cursor-pointer"
+                className="w-full sm:w-auto px-4 py-2 rounded-xl text-xs font-mono text-[#D6B77A] bg-[#1E2638] hover:bg-[#262E40] border border-[#D6B77A]/30 transition-all cursor-pointer"
               >
                 Audit AI Readiness
               </button>
@@ -152,7 +152,7 @@ export const AboutView: React.FC<AboutViewProps> = ({
 
         {/* Mission & Vision Bento */}
         <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
-          <div className="p-8 sm:p-10 rounded-3xl bg-[#090C16] border border-emerald-500/30 shadow-2xl space-y-4">
+          <div className="p-8 sm:p-10 rounded-3xl bg-[#141A26] border border-emerald-500/30 shadow-2xl space-y-4">
             <div className="w-10 h-10 rounded-xl bg-emerald-950 border border-emerald-500/40 text-emerald-400 flex items-center justify-center">
               <Target className="w-5 h-5" />
             </div>
@@ -162,7 +162,7 @@ export const AboutView: React.FC<AboutViewProps> = ({
             </p>
           </div>
 
-          <div className="p-8 sm:p-10 rounded-3xl bg-[#090C16] border border-emerald-400/30 shadow-2xl space-y-4">
+          <div className="p-8 sm:p-10 rounded-3xl bg-[#141A26] border border-emerald-400/30 shadow-2xl space-y-4">
             <div className="w-10 h-10 rounded-xl bg-emerald-950 border border-emerald-400/40 text-emerald-300 flex items-center justify-center">
               <Sparkles className="w-5 h-5" />
             </div>
@@ -208,7 +208,7 @@ export const AboutView: React.FC<AboutViewProps> = ({
 
           <div className="mt-12 grid grid-cols-1 md:grid-cols-2 gap-8">
             {leadership.map((l, idx) => (
-              <div key={idx} className="p-8 rounded-3xl bg-[#090C16] border border-slate-800 space-y-4">
+              <div key={idx} className="p-8 rounded-3xl bg-[#141A26] border border-slate-800 space-y-4">
                 <div className="flex items-center justify-between">
                   <div>
                     <h3 className="text-xl font-display font-bold text-white">{l.name}</h3>
@@ -227,7 +227,7 @@ export const AboutView: React.FC<AboutViewProps> = ({
         </div>
 
         {/* Global Hubs */}
-        <div className="p-8 sm:p-10 rounded-3xl bg-[#090C16] border border-slate-800 space-y-6">
+        <div className="p-8 sm:p-10 rounded-3xl bg-[#141A26] border border-slate-800 space-y-6">
           <div className="flex flex-wrap items-center justify-between gap-4 pb-4 border-b border-slate-800">
             <div>
               <h3 className="text-2xl font-display font-bold text-white">Global Practice Locations</h3>

@@ -65,7 +65,7 @@ export const SectionHeader: React.FC<SectionHeaderProps> = ({
           <span className={`inline-flex items-center px-2.5 py-0.5 rounded-full text-[10px] font-mono tracking-wider ${
             isLight
               ? 'bg-[#111216]/5 text-[#111216] border border-[#111216]/10 font-semibold'
-              : 'bg-[#141824]/80 text-[#EBD9B3] border border-[#D6B77A]/25'
+              : 'bg-[#222A3A]/80 text-[#EBD9B3] border border-[#D6B77A]/25'
           }`}>
             {badge}
           </span>

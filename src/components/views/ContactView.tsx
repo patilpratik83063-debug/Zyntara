@@ -63,12 +63,12 @@ export const ContactView: React.FC<ContactViewProps> = ({
   ];
 
   return (
-    <div className="pt-28 pb-24 px-4 sm:px-6 lg:px-8 bg-[#07090E] min-h-screen text-slate-100">
+    <div className="pt-28 pb-24 px-4 sm:px-6 lg:px-8 bg-[#111520] min-h-screen text-slate-100">
       <div className="max-w-7xl mx-auto space-y-16">
         
         {/* Header with Official Logo Badge */}
         <div className="text-center max-w-4xl mx-auto space-y-4">
-          <div className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-[#121622] border border-[#2DD4BF]/30 text-xs font-mono text-[#2DD4BF] shadow-[0_0_15px_rgba(45, 212, 191,0.2)]">
+          <div className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-[#1E2638] border border-[#2DD4BF]/30 text-xs font-mono text-[#2DD4BF] shadow-[0_0_15px_rgba(45, 212, 191,0.2)]">
             <img 
               src={ZYNTARA_LOGO_ICON} 
               alt="Zyntara" 
@@ -92,7 +92,7 @@ export const ContactView: React.FC<ContactViewProps> = ({
           
           {/* Left Column: What to Expect & Enterprise Guarantees (5 cols) */}
           <div className="lg:col-span-5 space-y-8">
-            <div className="p-8 rounded-3xl bg-[#090C16] border border-emerald-500/30 shadow-2xl space-y-6">
+            <div className="p-8 rounded-3xl bg-[#141A26] border border-emerald-500/30 shadow-2xl space-y-6">
               <h2 className="text-2xl font-display font-bold text-white">
                 What Happens Next
               </h2>
@@ -167,7 +167,7 @@ export const ContactView: React.FC<ContactViewProps> = ({
           {/* Right Column: Interactive Form or Success State (7 cols) */}
           <div className="lg:col-span-7">
             {isSubmitted ? (
-              <div className="p-8 sm:p-10 rounded-3xl bg-[#090C16] border border-emerald-400/40 shadow-2xl space-y-6 text-center">
+              <div className="p-8 sm:p-10 rounded-3xl bg-[#141A26] border border-emerald-400/40 shadow-2xl space-y-6 text-center">
                 <div className="w-16 h-16 rounded-full bg-emerald-950 border border-emerald-400 text-emerald-300 flex items-center justify-center mx-auto shadow-[0_0_20px_#34d399]">
                   <CheckCircle2 className="w-8 h-8" />
                 </div>
@@ -234,7 +234,7 @@ export const ContactView: React.FC<ContactViewProps> = ({
                 </div>
               </div>
             ) : (
-              <form onSubmit={handleSubmit} className="p-8 sm:p-10 rounded-3xl bg-[#090C16] border border-emerald-500/30 shadow-2xl space-y-6">
+              <form onSubmit={handleSubmit} className="p-8 sm:p-10 rounded-3xl bg-[#141A26] border border-emerald-500/30 shadow-2xl space-y-6">
                 <div className="flex items-center justify-between pb-4 border-b border-slate-800">
                   <h3 className="text-xl font-display font-bold text-white">
                     Executive Scoping Form

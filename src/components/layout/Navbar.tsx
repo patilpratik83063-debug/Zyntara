@@ -76,7 +76,7 @@ export const Navbar: React.FC<NavbarProps> = ({
       }}
       className={`fixed top-0 left-0 right-0 z-40 transition-colors duration-500 ${
         scrolled
-          ? 'bg-[#050506]/85 backdrop-blur-2xl border-b border-white/[0.08] py-3.5 shadow-[0_12px_40px_rgba(0,0,0,0.7)]'
+          ? 'bg-[#0F1219]/85 backdrop-blur-2xl border-b border-white/[0.08] py-3.5 shadow-[0_12px_40px_rgba(0,0,0,0.7)]'
           : 'bg-transparent py-5'
       }`}
     >
@@ -88,7 +88,7 @@ export const Navbar: React.FC<NavbarProps> = ({
         />
 
         {/* Center: Desktop Navigation Links */}
-        <nav className="hidden lg:flex items-center gap-1 xl:gap-2">
+        <nav className="hidden lg:flex items-center flex-wrap gap-1 xl:gap-2">
           {navItems.map((item) => {
             const isActive = currentView === item.view;
             return (
@@ -103,7 +103,7 @@ export const Navbar: React.FC<NavbarProps> = ({
               >
                 <span>{item.label}</span>
                 {item.badge && (
-                  <span className="text-[9px] font-mono px-1.5 py-0.2 rounded bg-[#181D2A] text-[#34D399] border border-[#34D399]/30 font-bold">
+                  <span className="text-[9px] font-mono px-1.5 py-0.2 rounded bg-[#262E40] text-[#34D399] border border-[#34D399]/30 font-bold">
                     {item.badge}
                   </span>
                 )}
@@ -149,13 +149,13 @@ export const Navbar: React.FC<NavbarProps> = ({
         <div className="flex lg:hidden items-center gap-2">
           <button
             onClick={onOpenAssessment}
-            className="px-2.5 py-1.5 rounded-lg text-[10px] font-mono text-[#D6B77A] bg-[#121622] border border-[#D6B77A]/30"
+            className="px-2.5 py-1.5 rounded-lg text-[10px] font-mono text-[#D6B77A] bg-[#1E2638] border border-[#D6B77A]/30"
           >
             Audit
           </button>
           <button
             onClick={() => setMobileMenuOpen(!mobileMenuOpen)}
-            className="p-2 rounded-lg bg-[#121622] text-[#F5F3EE] hover:bg-[#181E2E] border border-white/10 transition-colors"
+            className="p-2 rounded-lg bg-[#1E2638] text-[#F5F3EE] hover:bg-[#181E2E] border border-white/10 transition-colors"
             aria-label="Toggle menu"
           >
             {mobileMenuOpen ? <X className="w-5 h-5" /> : <Menu className="w-5 h-5" />}
@@ -171,7 +171,7 @@ export const Navbar: React.FC<NavbarProps> = ({
             animate={{ opacity: 1, y: 0, filter: 'blur(0px)' }}
             exit={{ opacity: 0, y: -12, filter: 'blur(6px)' }}
             transition={{ duration: 0.3, ease: [0.16, 1, 0.3, 1] }}
-            className="lg:hidden fixed inset-x-0 top-[65px] bg-[#050506]/98 border-b border-white/10 backdrop-blur-2xl p-6 shadow-2xl max-h-[85vh] overflow-y-auto"
+            className="lg:hidden fixed inset-x-0 top-[65px] bg-[#0F1219]/98 border-b border-white/10 backdrop-blur-2xl p-6 shadow-2xl max-h-[85vh] overflow-y-auto"
           >
             <div className="flex flex-col space-y-3">
               {navItems.map((item) => {
@@ -182,7 +182,7 @@ export const Navbar: React.FC<NavbarProps> = ({
                     onClick={() => handleNavClick(item.view)}
                     className={`w-full text-left px-4 py-3 rounded-xl text-sm font-medium transition-all flex items-center justify-between ${
                       isActive
-                        ? 'bg-[#181D2A] text-[#F5F3EE] border border-[#34D399]/30 font-semibold'
+                        ? 'bg-[#262E40] text-[#F5F3EE] border border-[#34D399]/30 font-semibold'
                         : 'text-[#B6BAC4] hover:bg-white/[0.04] hover:text-[#F5F3EE]'
                     }`}
                   >
@@ -190,7 +190,7 @@ export const Navbar: React.FC<NavbarProps> = ({
                       {item.label}
                     </span>
                     {item.badge && (
-                      <span className="text-[10px] font-mono px-2 py-0.5 rounded bg-[#121622] text-[#34D399] border border-[#34D399]/30">
+                      <span className="text-[10px] font-mono px-2 py-0.5 rounded bg-[#1E2638] text-[#34D399] border border-[#34D399]/30">
                         {item.badge}
                       </span>
                     )}
@@ -214,7 +214,7 @@ export const Navbar: React.FC<NavbarProps> = ({
                     setMobileMenuOpen(false);
                     onOpenAssessment();
                   }}
-                  className="w-full py-3 rounded-xl text-xs font-mono text-center text-[#D6B77A] bg-[#121622] border border-[#D6B77A]/30"
+                  className="w-full py-3 rounded-xl text-xs font-mono text-center text-[#D6B77A] bg-[#1E2638] border border-[#D6B77A]/30"
                 >
                   Calculate Enterprise AI Maturity Score
                 </button>

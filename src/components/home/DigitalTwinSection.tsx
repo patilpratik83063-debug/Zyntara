@@ -53,19 +53,19 @@ export const DigitalTwinSection: React.FC<DigitalTwinSectionProps> = ({ onNaviga
           <span className="text-xs font-mono text-[#7E8491] mr-2">Scenario Presets:</span>
           <button
             onClick={() => resetToPreset(-20, 0, 80)}
-            className="px-3.5 py-1.5 rounded-xl text-xs font-mono bg-[#101420] hover:bg-[#181D2A] text-[#B6BAC4] border border-white/[0.06] transition-colors"
+            className="px-3.5 py-1.5 rounded-xl text-xs font-mono bg-[#101420] hover:bg-[#262E40] text-[#B6BAC4] border border-white/[0.06] transition-colors"
           >
             "Demand Drops 20%"
           </button>
           <button
             onClick={() => resetToPreset(0, 7, 92)}
-            className="px-3.5 py-1.5 rounded-xl text-xs font-mono bg-[#101420] hover:bg-[#181D2A] text-[#D6B77A] border border-[#D6B77A]/25 transition-colors"
+            className="px-3.5 py-1.5 rounded-xl text-xs font-mono bg-[#101420] hover:bg-[#262E40] text-[#D6B77A] border border-[#D6B77A]/25 transition-colors"
           >
             "Increase Price 7% + High Efficiency"
           </button>
           <button
             onClick={() => resetToPreset(-10, -5, 95)}
-            className="px-3.5 py-1.5 rounded-xl text-xs font-mono bg-[#101420] hover:bg-[#181D2A] text-[#B6BAC4] border border-white/[0.06] transition-colors"
+            className="px-3.5 py-1.5 rounded-xl text-xs font-mono bg-[#101420] hover:bg-[#262E40] text-[#B6BAC4] border border-white/[0.06] transition-colors"
           >
             "Competitive Price War Stress-Test"
           </button>
@@ -75,7 +75,7 @@ export const DigitalTwinSection: React.FC<DigitalTwinSectionProps> = ({ onNaviga
         <div className="mt-10 grid grid-cols-1 lg:grid-cols-12 gap-8 items-stretch">
           
           {/* Controls Sandbox (6 cols) */}
-          <div className="lg:col-span-6 p-6 sm:p-8 rounded-3xl bg-[#0D1018]/95 border border-white/10 shadow-xl space-y-6 flex flex-col justify-between backdrop-blur-xl">
+          <div className="lg:col-span-6 p-6 sm:p-8 rounded-3xl bg-[#1A2030]/95 border border-white/10 shadow-xl space-y-6 flex flex-col justify-between backdrop-blur-xl">
             <div>
               <div className="flex items-center justify-between pb-4 border-b border-white/[0.08]">
                 <div className="flex items-center gap-2">
@@ -103,7 +103,7 @@ export const DigitalTwinSection: React.FC<DigitalTwinSectionProps> = ({ onNaviga
                   max="40"
                   value={demandShift}
                   onChange={(e) => setDemandShift(Number(e.target.value))}
-                  className="w-full accent-[#34D399] bg-[#181D2A] h-2 rounded-lg cursor-pointer"
+                  className="w-full accent-[#34D399] bg-[#262E40] h-2 rounded-lg cursor-pointer"
                 />
               </div>
 
@@ -121,7 +121,7 @@ export const DigitalTwinSection: React.FC<DigitalTwinSectionProps> = ({ onNaviga
                   max="20"
                   value={priceShift}
                   onChange={(e) => setPriceShift(Number(e.target.value))}
-                  className="w-full accent-[#D6B77A] bg-[#181D2A] h-2 rounded-lg cursor-pointer"
+                  className="w-full accent-[#D6B77A] bg-[#262E40] h-2 rounded-lg cursor-pointer"
                 />
               </div>
 
@@ -139,7 +139,7 @@ export const DigitalTwinSection: React.FC<DigitalTwinSectionProps> = ({ onNaviga
                   max="99"
                   value={supplyEfficiency}
                   onChange={(e) => setSupplyEfficiency(Number(e.target.value))}
-                  className="w-full accent-[#34D399] bg-[#181D2A] h-2 rounded-lg cursor-pointer"
+                  className="w-full accent-[#34D399] bg-[#262E40] h-2 rounded-lg cursor-pointer"
                 />
               </div>
             </div>
@@ -157,7 +157,7 @@ export const DigitalTwinSection: React.FC<DigitalTwinSectionProps> = ({ onNaviga
           </div>
 
           {/* Results Analytics Stage (6 cols) */}
-          <div className="lg:col-span-6 p-6 sm:p-8 rounded-3xl bg-[#0D1018]/95 border border-white/10 shadow-xl flex flex-col justify-between backdrop-blur-xl relative overflow-hidden">
+          <div className="lg:col-span-6 p-6 sm:p-8 rounded-3xl bg-[#1A2030]/95 border border-white/10 shadow-xl flex flex-col justify-between backdrop-blur-xl relative overflow-hidden">
             <div className="space-y-6">
               <div className="flex items-center justify-between pb-4 border-b border-white/[0.08]">
                 <div className="flex items-center gap-2">
@@ -173,11 +173,11 @@ export const DigitalTwinSection: React.FC<DigitalTwinSectionProps> = ({ onNaviga
               </div>
 
               {/* Metric 1: Simulated Operating Margin */}
-              <div className="p-5 rounded-2xl bg-[#121622]/90 border border-white/[0.08]">
+              <div className="p-5 rounded-2xl bg-[#1E2638]/90 border border-white/[0.08]">
                 <div className="text-xs font-mono text-[#7E8491] uppercase">
                   Projected Enterprise EBITDA Margin
                 </div>
-                <div className="text-4xl font-display font-extrabold text-[#F5F3EE] mt-1">
+                <div className="text-3xl sm:text-4xl font-display font-extrabold text-[#F5F3EE] mt-1">
                   {calculatedMargin}%
                 </div>
                 <div className="text-xs text-[#B6BAC4] mt-1 flex items-center gap-1">
@@ -190,7 +190,7 @@ export const DigitalTwinSection: React.FC<DigitalTwinSectionProps> = ({ onNaviga
 
               {/* Key Indicators Grid */}
               <div className="grid grid-cols-2 gap-4">
-                <div className="p-4 rounded-2xl bg-[#121622]/80 border border-white/[0.06]">
+                <div className="p-4 rounded-2xl bg-[#1E2638]/80 border border-white/[0.06]">
                   <div className="text-[11px] font-mono text-[#7E8491] uppercase">
                     Working Capital Shift
                   </div>
@@ -199,7 +199,7 @@ export const DigitalTwinSection: React.FC<DigitalTwinSectionProps> = ({ onNaviga
                   </div>
                 </div>
 
-                <div className="p-4 rounded-2xl bg-[#121622]/80 border border-white/[0.06]">
+                <div className="p-4 rounded-2xl bg-[#1E2638]/80 border border-white/[0.06]">
                   <div className="text-[11px] font-mono text-[#7E8491] uppercase">
                     Model Risk Exposure
                   </div>

@@ -106,7 +106,7 @@ export const HeroSection: React.FC<HeroSectionProps> = ({
       id="hero-section"
       ref={containerRef}
       onMouseMove={handleMouseMove}
-      className="relative min-h-[92vh] lg:min-h-screen flex flex-col justify-center items-center pt-28 pb-16 px-4 sm:px-6 lg:px-8 overflow-hidden bg-[#050506]"
+      className="relative min-h-[92vh] lg:min-h-screen flex flex-col justify-center items-center pt-28 pb-16 px-4 sm:px-6 lg:px-8 overflow-hidden bg-[#0F1219]"
     >
       {/* Background Interactive Particle Canvas */}
       <InteractiveCanvas nodeCount={42} />
@@ -134,7 +134,7 @@ export const HeroSection: React.FC<HeroSectionProps> = ({
         >
           
           {/* Eyebrow badge with official logo icon */}
-          <motion.div variants={item} className="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-[#121622]/90 border border-[#D6B77A]/25 text-xs font-mono text-[#D6B77A] shadow-[0_2px_12px_rgba(0,0,0,0.5)]">
+          <motion.div variants={item} className="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-[#1E2638]/90 border border-[#D6B77A]/25 text-xs font-mono text-[#D6B77A] shadow-[0_2px_12px_rgba(0,0,0,0.5)]">
             <img 
               src={ZYNTARA_LOGO_ICON} 
               alt="Zyntara" 
@@ -147,7 +147,7 @@ export const HeroSection: React.FC<HeroSectionProps> = ({
           </motion.div>
 
           {/* Main Headline — cinematic word reveal */}
-          <motion.h1 className="text-4xl sm:text-5xl lg:text-6xl xl:text-7xl font-display font-extrabold text-[#F5F3EE] tracking-tight leading-[1.05]">
+          <motion.h1 className="text-3xl sm:text-5xl lg:text-6xl xl:text-7xl font-display font-extrabold text-[#F5F3EE] tracking-tight leading-[1.05]">
             <AnimatedText
               text="BUILD AN"
               stagger={0.06}
@@ -168,7 +168,7 @@ export const HeroSection: React.FC<HeroSectionProps> = ({
           </motion.p>
 
           {/* Flagship Ecosystem Callout */}
-          <motion.div variants={item} className="conic-border flex flex-wrap items-center gap-3 py-2 px-4 rounded-xl bg-[#10131B] border border-white/10 text-xs text-[#F5F3EE]">
+          <motion.div variants={item} className="conic-border flex flex-wrap items-center gap-3 py-2 px-4 rounded-xl bg-[#1D2434] border border-white/10 text-xs text-[#F5F3EE]">
             <span className="font-mono text-[#D6B77A] font-semibold uppercase tracking-wider">Flagship:</span>
             <span className="font-semibold text-white tracking-wide">ZYNTARA ONE™</span>
             <span className="text-white/20 hidden sm:inline">|</span>
@@ -196,7 +196,7 @@ export const HeroSection: React.FC<HeroSectionProps> = ({
 
             <button
               onClick={() => onNavigate('automation')}
-              className="px-4 py-3.5 rounded-xl bg-[#121622] hover:bg-[#181D2A] border border-[#34D399]/30 text-xs font-mono text-[#34D399] hover:text-white transition-all flex items-center justify-center gap-2 cursor-pointer shadow-sm hover:border-[#34D399]/60"
+              className="px-4 py-3.5 rounded-xl bg-[#1E2638] hover:bg-[#262E40] border border-[#34D399]/30 text-xs font-mono text-[#34D399] hover:text-white transition-all flex items-center justify-center gap-2 cursor-pointer shadow-sm hover:border-[#34D399]/60"
             >
               <Zap className="w-3.5 h-3.5 text-[#D6B77A]" />
               <span>Automate a Workflow</span>
@@ -250,9 +250,6 @@ export const HeroSection: React.FC<HeroSectionProps> = ({
                 transform: `perspective(1000px) rotateY(${mouseShift.x * 0.35}deg) rotateX(${-mouseShift.y * 0.35}deg)`
               }}
             >
-              {/* Orbital concentric guide tracks */}
-              <div className="absolute w-[80%] h-[80%] rounded-full border border-[#34D399]/15 animate-[spin_45s_linear_infinite]" />
-              <div className="absolute w-[60%] h-[60%] rounded-full border border-[#D6B77A]/15 animate-[spin_30s_linear_infinite_reverse]" />
               
               {/* Animated Dynamic Connection Lines to Center */}
               <svg className="absolute inset-0 w-full h-full pointer-events-none" viewBox="0 0 500 500">
@@ -350,7 +347,7 @@ export const HeroSection: React.FC<HeroSectionProps> = ({
           {/* Active Node Live Telemetry Card Below Architecture Stage */}
           <div className="w-full max-w-[500px] mt-4 p-4 rounded-2xl bg-[#0D1017]/95 border border-white/10 backdrop-blur-xl flex items-center justify-between gap-4 shadow-xl">
             <div className="flex items-center gap-3">
-              <div className="w-9 h-9 rounded-xl bg-[#181D2A] border border-[#D6B77A]/30 flex items-center justify-center shrink-0">
+              <div className="w-9 h-9 rounded-xl bg-[#262E40] border border-[#D6B77A]/30 flex items-center justify-center shrink-0">
                 <Zap className="w-4 h-4 text-[#D6B77A]" />
               </div>
               <div>
@@ -358,7 +355,7 @@ export const HeroSection: React.FC<HeroSectionProps> = ({
                   <span className="font-display font-bold text-sm text-[#F5F3EE]">
                     {selectedNodeData.name} NODE
                   </span>
-                  <span className="text-[10px] font-mono px-2 py-0.5 rounded-md bg-[#181D2A] text-[#34D399] border border-[#34D399]/30 font-semibold">
+                  <span className="text-[10px] font-mono px-2 py-0.5 rounded-md bg-[#262E40] text-[#34D399] border border-[#34D399]/30 font-semibold">
                     {selectedNodeData.category}
                   </span>
                 </div>
@@ -401,7 +398,7 @@ export const HeroSection: React.FC<HeroSectionProps> = ({
               <button
                 key={index}
                 onClick={() => handleChipClick(chip)}
-                className="px-3.5 py-1.5 rounded-xl bg-[#0D1018] hover:bg-[#151928] border border-white/[0.08] hover:border-[#D6B77A]/40 text-xs font-mono text-[#B6BAC4] hover:text-[#F5F3EE] transition-all cursor-pointer shadow-sm hover:scale-[1.02] shrink-0"
+                className="px-3.5 py-1.5 rounded-xl bg-[#1A2030] hover:bg-[#151928] border border-white/[0.08] hover:border-[#D6B77A]/40 text-xs font-mono text-[#B6BAC4] hover:text-[#F5F3EE] transition-all cursor-pointer shadow-sm hover:scale-[1.02] shrink-0"
               >
                 {chip}
               </button>

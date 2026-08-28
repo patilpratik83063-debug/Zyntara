@@ -37,7 +37,7 @@ export const CaseStudiesView: React.FC<CaseStudiesViewProps> = ({
   const activeStudy = CASE_STUDIES_DATA.find(c => c.id === selectedCaseStudyId) || CASE_STUDIES_DATA[0];
 
   return (
-    <div className="pt-28 pb-24 px-4 sm:px-6 lg:px-8 bg-[#07090E] min-h-screen text-slate-100">
+    <div className="pt-28 pb-24 px-4 sm:px-6 lg:px-8 bg-[#111520] min-h-screen text-slate-100">
       <div className="max-w-7xl mx-auto space-y-16">
         
         {/* Header */}
@@ -87,7 +87,7 @@ export const CaseStudiesView: React.FC<CaseStudiesViewProps> = ({
         </div>
 
         {/* Detailed Case Study Card */}
-        <div className="p-8 sm:p-12 rounded-3xl bg-[#090C16] border border-emerald-500/30 shadow-2xl space-y-10">
+        <div className="p-8 sm:p-12 rounded-3xl bg-[#141A26] border border-emerald-500/30 shadow-2xl space-y-10">
           
           {/* Header Info */}
           <div className="flex flex-col lg:flex-row lg:items-center justify-between gap-6 pb-8 border-b border-slate-800">
@@ -118,7 +118,7 @@ export const CaseStudiesView: React.FC<CaseStudiesViewProps> = ({
           {/* Quantified Outcomes Metrics Bar */}
           <div className="grid grid-cols-1 sm:grid-cols-3 gap-6">
             {activeStudy.theResult.map((m, idx) => (
-              <div key={idx} className="p-6 rounded-2xl bg-[#0B0E1B] border border-slate-800">
+              <div key={idx} className="p-6 rounded-2xl bg-[#171E2A] border border-slate-800">
                 <div className="text-lg font-display font-extrabold text-emerald-300">
                   <MetricCountUp value={m.metric} />
                 </div>

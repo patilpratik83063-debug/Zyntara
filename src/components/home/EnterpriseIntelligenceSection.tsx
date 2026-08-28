@@ -62,7 +62,7 @@ export const EnterpriseIntelligenceSection: React.FC<EnterpriseIntelligenceSecti
   ];
 
   return (
-    <section id="intelligence-section" className="py-28 px-4 sm:px-6 lg:px-8 bg-[#050506] relative overflow-hidden border-t border-white/[0.08]">
+    <section id="intelligence-section" className="py-28 px-4 sm:px-6 lg:px-8 bg-[#0F1219] relative overflow-hidden border-t border-white/[0.08]">
       <div className="max-w-7xl mx-auto">
         <SectionHeader
           eyebrow="Enterprise Cognitive Layer"
@@ -84,14 +84,14 @@ export const EnterpriseIntelligenceSection: React.FC<EnterpriseIntelligenceSecti
               <span>{sys}</span>
             </span>
           ))}
-          <span className="px-3 py-1.5 rounded-xl text-xs font-mono font-bold bg-[#181D2A] text-[#D6B77A] border border-[#D6B77A]/30 shadow-[0_2px_12px_rgba(214,183,122,0.2)] flex items-center gap-1.5">
+          <span className="px-3 py-1.5 rounded-xl text-xs font-mono font-bold bg-[#262E40] text-[#D6B77A] border border-[#D6B77A]/30 shadow-[0_2px_12px_rgba(214,183,122,0.2)] flex items-center gap-1.5">
             <Sparkles className="w-3 h-3 text-[#D6B77A]" />
             <span>→ ENTERPRISE INTELLIGENCE LAYER</span>
           </span>
         </div>
 
         {/* Interactive Query Simulator Box */}
-        <div className="mt-12 max-w-4xl mx-auto rounded-3xl bg-[#0D1018]/95 border border-white/10 p-6 sm:p-8 shadow-[0_20px_50px_rgba(0,0,0,0.7)] backdrop-blur-xl space-y-6">
+        <div className="mt-12 max-w-4xl mx-auto rounded-3xl bg-[#1A2030]/95 border border-white/10 p-6 sm:p-8 shadow-[0_20px_50px_rgba(0,0,0,0.7)] backdrop-blur-xl space-y-6">
           
           {/* Query Selector Tabs */}
           <div>
@@ -106,7 +106,7 @@ export const EnterpriseIntelligenceSection: React.FC<EnterpriseIntelligenceSecti
                   className={`p-3 rounded-2xl text-left text-xs font-medium transition-all duration-300 border flex-1 cursor-pointer ${
                     activeQueryIndex === idx
                       ? 'bg-[#181D2E] text-[#F5F3EE] border-[#D6B77A] shadow-[0_2px_14px_rgba(214,183,122,0.2)]'
-                      : 'bg-[#121622]/60 text-[#7E8491] border-white/[0.06] hover:text-[#B6BAC4] hover:bg-[#141824]'
+                      : 'bg-[#1E2638]/60 text-[#7E8491] border-white/[0.06] hover:text-[#B6BAC4] hover:bg-[#222A3A]'
                   }`}
                 >
                   <span className="line-clamp-2">"{q.query}"</span>
@@ -116,7 +116,7 @@ export const EnterpriseIntelligenceSection: React.FC<EnterpriseIntelligenceSecti
           </div>
 
           {/* Active Query Output View */}
-          <div className={`p-6 rounded-2xl bg-[#121622]/90 border border-white/[0.08] space-y-4 transition-opacity duration-300 ${isSynthesizing ? 'opacity-40' : 'opacity-100'}`}>
+          <div className={`p-6 rounded-2xl bg-[#1E2638]/90 border border-white/[0.08] space-y-4 transition-opacity duration-300 ${isSynthesizing ? 'opacity-40' : 'opacity-100'}`}>
             
             {/* Header info */}
             <div className="flex items-center justify-between border-b border-white/[0.08] pb-3">
@@ -126,7 +126,7 @@ export const EnterpriseIntelligenceSection: React.FC<EnterpriseIntelligenceSecti
                   Synthesized Executive Intelligence Brief
                 </span>
               </div>
-              <span className="text-[10px] font-mono text-[#2DD4BF] px-2 py-0.5 rounded-md bg-[#181D2A] border border-[#2DD4BF]/30 font-semibold">
+              <span className="text-[10px] font-mono text-[#2DD4BF] px-2 py-0.5 rounded-md bg-[#262E40] border border-[#2DD4BF]/30 font-semibold">
                 {current.confidence}
               </span>
             </div>
@@ -145,7 +145,7 @@ export const EnterpriseIntelligenceSection: React.FC<EnterpriseIntelligenceSecti
                 {current.sources.map((src, idx) => (
                   <span
                     key={idx}
-                    className="px-2.5 py-1 rounded-md text-[11px] font-mono bg-[#181D2A] text-[#34D399] border border-white/[0.06] flex items-center gap-1"
+                    className="px-2.5 py-1 rounded-md text-[11px] font-mono bg-[#262E40] text-[#34D399] border border-white/[0.06] flex items-center gap-1"
                   >
                     <FileText className="w-3 h-3 text-[#D6B77A]" />
                     <span>{src}</span>

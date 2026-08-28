@@ -29,7 +29,7 @@ export const IndustriesView: React.FC<IndustriesViewProps> = ({
   const current = INDUSTRIES_DATA.find(i => i.id === selectedIndustryId) || INDUSTRIES_DATA[0];
 
   return (
-    <div className="pt-28 pb-24 px-4 sm:px-6 lg:px-8 bg-[#07090E] min-h-screen text-slate-100">
+    <div className="pt-28 pb-24 px-4 sm:px-6 lg:px-8 bg-[#111520] min-h-screen text-slate-100">
       <div className="max-w-7xl mx-auto space-y-16">
         
         {/* Header */}
@@ -71,7 +71,7 @@ export const IndustriesView: React.FC<IndustriesViewProps> = ({
         </div>
 
         {/* Active Industry Comprehensive Profile */}
-        <div className="p-8 sm:p-10 rounded-3xl bg-[#090C16] border border-emerald-500/30 shadow-2xl space-y-8">
+        <div className="p-8 sm:p-10 rounded-3xl bg-[#141A26] border border-emerald-500/30 shadow-2xl space-y-8">
           {/* Top Headline & Opportunity */}
           <div className="flex flex-col lg:flex-row lg:items-center justify-between gap-6 pb-6 border-b border-slate-800">
             <div>

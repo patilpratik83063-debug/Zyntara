@@ -177,17 +177,17 @@ export const AutomationExamplesSection: React.FC<AutomationExamplesSectionProps>
   const activeFlowData = whatsAppFlows[whatsAppFlowType];
 
   return (
-    <section id="automation-examples-section" className="py-28 px-4 sm:px-6 lg:px-8 bg-[#050506] border-t border-white/[0.08] relative overflow-hidden">
+    <section id="automation-examples-section" className="py-28 px-4 sm:px-6 lg:px-8 bg-[#0F1219] border-t border-white/[0.08] relative overflow-hidden">
       <div className="max-w-7xl mx-auto">
         
         {/* Section 11: WHY AUTOMATION MATTERS */}
         <div className="text-center max-w-4xl mx-auto mb-16">
-          <div className="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-[#121622] border border-[#D6B77A]/30 text-xs font-mono text-[#D6B77A] mb-4">
+          <div className="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-[#1E2638] border border-[#D6B77A]/30 text-xs font-mono text-[#D6B77A] mb-4">
             <HelpCircle className="w-3.5 h-3.5 text-[#D6B77A]" />
             <span>Why Automation Matters</span>
           </div>
 
-          <h2 className="text-3xl sm:text-4xl lg:text-5xl font-display font-extrabold text-[#F5F3EE] tracking-tight leading-tight">
+          <h2 className="text-2xl sm:text-3xl lg:text-5xl font-display font-extrabold text-[#F5F3EE] tracking-tight leading-tight">
             WHAT WOULD YOUR TEAM STOP DOING{' '}
             <span className="text-transparent bg-clip-text bg-gradient-to-r from-[#D6B77A] to-[#34D399]">
               IF THE SYSTEM DID IT AUTOMATICALLY?
@@ -205,9 +205,9 @@ export const AutomationExamplesSection: React.FC<AutomationExamplesSectionProps>
               return (
                 <div 
                   key={idx}
-                  className="p-4 rounded-2xl bg-[#0D1018] border border-white/[0.06] hover:border-[#D6B77A]/40 transition-colors flex items-start gap-3 group"
+                  className="p-4 rounded-2xl bg-[#1A2030] border border-white/[0.06] hover:border-[#D6B77A]/40 transition-colors flex items-start gap-3 group"
                 >
-                  <div className="w-8 h-8 rounded-xl bg-[#181D2A] border border-white/10 flex items-center justify-center shrink-0 group-hover:border-[#D6B77A]/50 transition-colors">
+                  <div className="w-8 h-8 rounded-xl bg-[#262E40] border border-white/10 flex items-center justify-center shrink-0 group-hover:border-[#D6B77A]/50 transition-colors">
                     <Icon className="w-4 h-4 text-[#34D399] group-hover:text-[#D6B77A] transition-colors" />
                   </div>
                   <span className="text-xs font-mono text-[#E0E2EC] leading-relaxed">
@@ -219,7 +219,7 @@ export const AutomationExamplesSection: React.FC<AutomationExamplesSectionProps>
           </div>
 
           {/* Punchline Banner */}
-          <div className="mt-8 p-5 rounded-2xl bg-gradient-to-r from-[#181D2E] via-[#101420] to-[#181D2E] border border-[#D6B77A]/40 inline-flex items-center gap-3 shadow-lg">
+          <div className="mt-8 p-5 rounded-2xl bg-gradient-to-r from-[#181D2E] via-[#101420] to-[#181D2E] border border-[#D6B77A]/40 flex flex-wrap items-center justify-center gap-3 shadow-lg">
             <Sparkles className="w-5 h-5 text-[#D6B77A]" />
             <span className="font-display font-extrabold text-sm sm:text-base text-[#F5F3EE] tracking-wide uppercase">
               ZYNTARA AUTOMATES THE SYSTEM BEHIND THE WORK.
@@ -228,7 +228,7 @@ export const AutomationExamplesSection: React.FC<AutomationExamplesSectionProps>
         </div>
 
         {/* Section 34: HIGH-CONVERSION BEFORE / AFTER */}
-        <div className="mt-20 p-8 sm:p-10 rounded-3xl bg-[#0D1018]/90 border border-white/10 shadow-2xl relative overflow-hidden">
+        <div className="mt-20 p-8 sm:p-10 rounded-3xl bg-[#1A2030]/90 border border-white/10 shadow-2xl relative overflow-hidden">
           <div className="text-center mb-8">
             <span className="text-xs font-mono text-[#2DD4BF] uppercase tracking-widest font-semibold">
               Operational Contrast
@@ -279,7 +279,7 @@ export const AutomationExamplesSection: React.FC<AutomationExamplesSectionProps>
                   <span className="font-mono text-xs font-bold text-[#2DD4BF] uppercase tracking-wider">
                     AFTER ZYNTARA (AUTOMATED OPERATING ENGINE)
                   </span>
-                  <span className="text-[10px] font-mono text-[#050506] bg-[#2DD4BF] px-2 py-0.5 rounded font-bold">
+                  <span className="text-[10px] font-mono text-[#0F1219] bg-[#2DD4BF] px-2 py-0.5 rounded font-bold">
                     Sub-Second Sync
                   </span>
                 </div>
@@ -322,7 +322,7 @@ export const AutomationExamplesSection: React.FC<AutomationExamplesSectionProps>
           </div>
 
           {/* Tabs */}
-          <div className="flex flex-wrap justify-center gap-1.5 p-1.5 rounded-2xl bg-[#0D1018] border border-white/10 max-w-4xl mx-auto mb-10">
+          <div className="flex flex-wrap justify-center gap-1.5 p-1.5 rounded-2xl bg-[#1A2030] border border-white/10 max-w-4xl mx-auto mb-10">
             {channelCards.map((tab) => (
               <button
                 key={tab.id}
@@ -342,7 +342,7 @@ export const AutomationExamplesSection: React.FC<AutomationExamplesSectionProps>
           <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 items-start">
             
             {/* Left: Active Channel Specification (7 cols) */}
-            <div className="lg:col-span-7 p-8 rounded-3xl bg-[#0D1018]/95 border border-white/10 shadow-2xl space-y-6">
+            <div className="lg:col-span-7 p-8 rounded-3xl bg-[#1A2030]/95 border border-white/10 shadow-2xl space-y-6">
               <div>
                 <span className="font-mono text-xs text-[#D6B77A] uppercase font-bold tracking-wider">
                   {activeCard.title}
@@ -364,7 +364,7 @@ export const AutomationExamplesSection: React.FC<AutomationExamplesSectionProps>
                   </span>
                   <div className="flex flex-wrap gap-2">
                     {activeCard.tags.map((tag, idx) => (
-                      <span key={idx} className="px-3 py-1 rounded-lg text-xs font-mono bg-[#141824] text-[#34D399] border border-[#34D399]/20">
+                      <span key={idx} className="px-3 py-1 rounded-lg text-xs font-mono bg-[#222A3A] text-[#34D399] border border-[#34D399]/20">
                         {tag}
                       </span>
                     ))}
@@ -380,7 +380,7 @@ export const AutomationExamplesSection: React.FC<AutomationExamplesSectionProps>
                   <div className="flex flex-wrap items-center gap-1.5 text-xs font-mono text-[#F5F3EE]">
                     {activeCard.flow.map((item, idx) => (
                       <React.Fragment key={idx}>
-                        <span className="px-2.5 py-1 rounded-md bg-[#181D2A] border border-white/10 text-[#D6B77A]">
+                        <span className="px-2.5 py-1 rounded-md bg-[#262E40] border border-white/10 text-[#D6B77A]">
                           {item}
                         </span>
                         {idx < activeCard.flow!.length - 1 && (
@@ -393,7 +393,7 @@ export const AutomationExamplesSection: React.FC<AutomationExamplesSectionProps>
               )}
 
               {/* Quote */}
-              <div className="p-4 rounded-xl bg-[#141824] border-l-2 border-[#D6B77A] text-xs font-mono text-[#E0E2EC] italic">
+              <div className="p-4 rounded-xl bg-[#222A3A] border-l-2 border-[#D6B77A] text-xs font-mono text-[#E0E2EC] italic">
                 "{activeCard.quote}"
               </div>
 
@@ -434,15 +434,15 @@ export const AutomationExamplesSection: React.FC<AutomationExamplesSectionProps>
                   </div>
                 </div>
 
-                <div className="flex gap-1">
+                <div className="flex flex-wrap gap-1">
                   {(['lead', 'appointment', 'support', 'payment'] as const).map((type) => (
                     <button
                       key={type}
                       onClick={() => setWhatsAppFlowType(type)}
                       className={`px-2 py-1 rounded text-[10px] font-mono uppercase transition-colors ${
                         whatsAppFlowType === type
-                          ? 'bg-[#25D366] text-[#050506] font-bold'
-                          : 'bg-[#141824] text-[#7E8491] hover:text-white'
+                          ? 'bg-[#25D366] text-[#0F1219] font-bold'
+                          : 'bg-[#222A3A] text-[#7E8491] hover:text-white'
                       }`}
                     >
                       {type}
@@ -452,9 +452,9 @@ export const AutomationExamplesSection: React.FC<AutomationExamplesSectionProps>
               </div>
 
               {/* Chat Window */}
-              <div className="space-y-3 min-h-[300px] flex flex-col justify-start overflow-y-auto">
+              <div className="space-y-3 min-h-[300px] max-h-[400px] flex flex-col justify-start overflow-y-auto">
                 <div className="text-center my-1">
-                  <span className="text-[10px] font-mono text-[#7E8491] bg-[#121622] px-2.5 py-0.5 rounded-full">
+                  <span className="text-[10px] font-mono text-[#7E8491] bg-[#1E2638] px-2.5 py-0.5 rounded-full">
                     Flow: {activeFlowData.title}
                   </span>
                 </div>
@@ -471,7 +471,7 @@ export const AutomationExamplesSection: React.FC<AutomationExamplesSectionProps>
                     }`}
                   >
                     {msg.system ? (
-                      <div className="p-2.5 rounded-lg bg-[#141824] border border-[#2DD4BF]/30 text-[10px] font-mono text-[#2DD4BF] text-center w-full shadow-sm">
+                      <div className="p-2.5 rounded-lg bg-[#222A3A] border border-[#2DD4BF]/30 text-[10px] font-mono text-[#2DD4BF] text-center w-full shadow-sm">
                         {msg.text}
                       </div>
                     ) : (
@@ -509,9 +509,9 @@ export const AutomationExamplesSection: React.FC<AutomationExamplesSectionProps>
         </div>
 
         {/* Section 33: "WHAT CAN WE AUTOMATE?" INTERACTIVE TOOL */}
-        <div className="mt-28 p-8 sm:p-12 rounded-3xl bg-gradient-to-b from-[#0D1018] to-[#080A10] border border-white/10 shadow-2xl relative overflow-hidden">
+        <div className="mt-28 p-8 sm:p-12 rounded-3xl bg-gradient-to-b from-[#1A2030] to-[#080A10] border border-white/10 shadow-2xl relative overflow-hidden">
           <div className="text-center max-w-3xl mx-auto mb-10">
-            <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-[#181D2A] text-xs font-mono text-[#D6B77A] border border-[#D6B77A]/30 mb-2">
+            <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-[#262E40] text-xs font-mono text-[#D6B77A] border border-[#D6B77A]/30 mb-2">
               <Sparkles className="w-3.5 h-3.5 text-[#D6B77A]" />
               <span>Interactive Workflow Blueprint Generator</span>
             </div>
@@ -544,8 +544,8 @@ export const AutomationExamplesSection: React.FC<AutomationExamplesSectionProps>
                     }}
                     className={`px-4 py-2 rounded-xl text-xs font-mono transition-all cursor-pointer ${
                       selectedDept === dept
-                        ? 'bg-[#D6B77A] text-[#050506] font-bold shadow-[0_0_15px_rgba(214,183,122,0.4)]'
-                        : 'bg-[#141824] text-[#B6BAC4] hover:text-white border border-white/[0.06]'
+                        ? 'bg-[#D6B77A] text-[#0F1219] font-bold shadow-[0_0_15px_rgba(214,183,122,0.4)]'
+                        : 'bg-[#222A3A] text-[#B6BAC4] hover:text-white border border-white/[0.06]'
                     }`}
                   >
                     {dept}
@@ -559,7 +559,7 @@ export const AutomationExamplesSection: React.FC<AutomationExamplesSectionProps>
               <span className="text-xs font-mono text-[#7E8491] uppercase tracking-wider block mb-2">
                 2. Target Friction Point:
               </span>
-              <div className="p-3 rounded-xl bg-[#141824] border border-white/10 text-xs font-mono text-[#F5F3EE] flex items-center justify-between">
+              <div className="p-3 rounded-xl bg-[#222A3A] border border-white/10 text-xs font-mono text-[#F5F3EE] flex items-center justify-between">
                 <span>{selectedPainPoint}</span>
                 <span className="text-[10px] text-[#2DD4BF] bg-[#102420] px-2 py-0.5 rounded font-mono">
                   Target Workflow
@@ -580,27 +580,27 @@ export const AutomationExamplesSection: React.FC<AutomationExamplesSectionProps>
 
               {/* Flow: TRIGGER → PROCESS → SYSTEM → AI → ACTION → HUMAN APPROVAL */}
               <div className="grid grid-cols-2 sm:grid-cols-6 gap-2 text-center text-xs font-mono">
-                <div className="p-2.5 rounded-lg bg-[#181D2A] border border-white/10">
+                <div className="p-2.5 rounded-lg bg-[#262E40] border border-white/10">
                   <div className="text-[9px] text-[#7E8491]">TRIGGER</div>
                   <div className="font-bold text-[#F5F3EE] mt-0.5">Event Detected</div>
                 </div>
-                <div className="p-2.5 rounded-lg bg-[#181D2A] border border-white/10">
+                <div className="p-2.5 rounded-lg bg-[#262E40] border border-white/10">
                   <div className="text-[9px] text-[#7E8491]">PROCESS</div>
                   <div className="font-bold text-[#F5F3EE] mt-0.5">Validation</div>
                 </div>
-                <div className="p-2.5 rounded-lg bg-[#181D2A] border border-white/10">
+                <div className="p-2.5 rounded-lg bg-[#262E40] border border-white/10">
                   <div className="text-[9px] text-[#7E8491]">SYSTEM</div>
                   <div className="font-bold text-[#34D399] mt-0.5">CRM / ERP Sync</div>
                 </div>
-                <div className="p-2.5 rounded-lg bg-[#181D2A] border border-white/10">
+                <div className="p-2.5 rounded-lg bg-[#262E40] border border-white/10">
                   <div className="text-[9px] text-[#7E8491]">AI</div>
                   <div className="font-bold text-[#D6B77A] mt-0.5">Intent Reasoning</div>
                 </div>
-                <div className="p-2.5 rounded-lg bg-[#181D2A] border border-white/10">
+                <div className="p-2.5 rounded-lg bg-[#262E40] border border-white/10">
                   <div className="text-[9px] text-[#7E8491]">ACTION</div>
                   <div className="font-bold text-[#2DD4BF] mt-0.5">Auto Handoff</div>
                 </div>
-                <div className="p-2.5 rounded-lg bg-[#181D2A] border border-white/10">
+                <div className="p-2.5 rounded-lg bg-[#262E40] border border-white/10">
                   <div className="text-[9px] text-[#7E8491]">OVERSIGHT</div>
                   <div className="font-bold text-white mt-0.5">Human Approval</div>
                 </div>

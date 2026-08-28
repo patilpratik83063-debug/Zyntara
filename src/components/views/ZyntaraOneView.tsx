@@ -64,12 +64,12 @@ export const ZyntaraOneView: React.FC<ZyntaraOneViewProps> = ({
   ];
 
   return (
-    <div className="pt-28 pb-24 px-4 sm:px-6 lg:px-8 bg-[#07090E] min-h-screen text-slate-100">
+    <div className="pt-28 pb-24 px-4 sm:px-6 lg:px-8 bg-[#111520] min-h-screen text-slate-100">
       <div className="max-w-7xl mx-auto space-y-24">
         
         {/* Page Hero Header with Official Brand Identity */}
         <div className="text-center max-w-4xl mx-auto space-y-6">
-          <div className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-[#121622] border border-[#2DD4BF]/30 text-xs font-mono text-[#2DD4BF] shadow-[0_0_15px_rgba(45, 212, 191,0.2)]">
+          <div className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-[#1E2638] border border-[#2DD4BF]/30 text-xs font-mono text-[#2DD4BF] shadow-[0_0_15px_rgba(45, 212, 191,0.2)]">
             <img 
               src={ZYNTARA_LOGO_ICON} 
               alt="Zyntara" 
@@ -111,7 +111,7 @@ export const ZyntaraOneView: React.FC<ZyntaraOneViewProps> = ({
         </div>
 
         {/* 8-Layer Interactive Architecture Deep Dive */}
-        <div className="p-6 sm:p-10 rounded-3xl bg-[#090C16] border border-emerald-500/30 shadow-2xl">
+        <div className="p-6 sm:p-10 rounded-3xl bg-[#141A26] border border-emerald-500/30 shadow-2xl">
           <div className="flex flex-col md:flex-row md:items-center justify-between gap-4 pb-8 border-b border-slate-800">
             <div>
               <span className="text-xs font-mono text-emerald-400 uppercase tracking-widest">
@@ -149,7 +149,7 @@ export const ZyntaraOneView: React.FC<ZyntaraOneViewProps> = ({
           </div>
 
           {/* Selected Layer Technical Schematic */}
-          <div className="mt-8 p-6 sm:p-8 rounded-2xl bg-[#0B0E1B] border border-slate-800 space-y-6">
+          <div className="mt-8 p-6 sm:p-8 rounded-2xl bg-[#171E2A] border border-slate-800 space-y-6">
             <div className="flex flex-wrap items-center justify-between gap-4">
               <div className="flex items-center gap-3">
                 <span className="font-mono text-xs font-bold px-3 py-1 rounded bg-emerald-600 text-white">
@@ -265,7 +265,7 @@ export const ZyntaraOneView: React.FC<ZyntaraOneViewProps> = ({
         </div>
 
         {/* Certified ERP/CRM Connectors Matrix */}
-        <div className="p-8 rounded-3xl bg-[#090C16] border border-slate-800 space-y-6">
+        <div className="p-8 rounded-3xl bg-[#141A26] border border-slate-800 space-y-6">
           <div className="flex flex-wrap items-center justify-between gap-4 pb-4 border-b border-slate-800">
             <div>
               <h3 className="text-xl font-display font-bold text-white">

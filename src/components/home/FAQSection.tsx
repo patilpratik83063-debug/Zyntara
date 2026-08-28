@@ -68,7 +68,7 @@ export const FAQSection: React.FC<FAQSectionProps> = ({ onNavigate }) => {
   };
 
   return (
-    <section id="faq-section" className="py-28 px-4 sm:px-6 lg:px-8 bg-[#07090E] border-t border-white/[0.08] relative overflow-hidden">
+    <section id="faq-section" className="py-28 px-4 sm:px-6 lg:px-8 bg-[#111520] border-t border-white/[0.08] relative overflow-hidden">
       <div className="max-w-5xl mx-auto">
         
         {/* Section Header */}
@@ -91,18 +91,18 @@ export const FAQSection: React.FC<FAQSectionProps> = ({ onNavigate }) => {
                 className={`rounded-2xl transition-all duration-300 border overflow-hidden ${
                   isOpen
                     ? 'bg-[#101A14] border-[#D6B77A]/50 shadow-[0_4px_25px_rgba(214,183,122,0.1)]'
-                    : 'bg-[#0D1018]/90 border-white/[0.06] hover:border-white/15'
+                    : 'bg-[#1A2030]/90 border-white/[0.06] hover:border-white/15'
                 }`}
               >
                 <button
                   onClick={() => toggleFAQ(idx)}
                   className="w-full p-6 text-left flex items-center justify-between gap-4 cursor-pointer"
                 >
-                  <div className="flex items-center gap-3">
-                    <span className="font-mono text-xs font-bold text-[#D6B77A] px-2 py-0.5 rounded bg-[#181D2A] border border-[#D6B77A]/20">
+                  <div className="flex items-center gap-3 min-w-0 flex-1">
+                    <span className="font-mono text-xs font-bold text-[#D6B77A] px-2 py-0.5 rounded bg-[#262E40] border border-[#D6B77A]/20 shrink-0">
                       0{idx + 1}
                     </span>
-                    <span className="font-display font-bold text-base sm:text-lg text-[#F5F3EE]">
+                    <span className="font-display font-bold text-base sm:text-lg text-[#F5F3EE] min-w-0">
                       {faq.q}
                     </span>
                   </div>
@@ -126,7 +126,7 @@ export const FAQSection: React.FC<FAQSectionProps> = ({ onNavigate }) => {
                       transition={{ duration: 0.45, ease: [0.16, 1, 0.3, 1] }}
                       className="overflow-hidden"
                     >
-                      <div className="px-6 pb-6 pt-1 text-sm sm:text-base text-[#B6BAC4] leading-relaxed border-t border-white/[0.04]">
+                      <div className="px-6 pb-6 pt-1 text-sm sm:text-base text-[#B6BAC4] leading-relaxed border-t border-white/[0.04] break-words">
                         <p>{faq.a}</p>
                         <div className="mt-4 flex items-center gap-2 text-xs font-mono text-[#34D399]">
                           <span>Category: {faq.category}</span>
@@ -141,7 +141,7 @@ export const FAQSection: React.FC<FAQSectionProps> = ({ onNavigate }) => {
         </div>
 
         {/* Bottom Contact Prompt */}
-        <div className="mt-14 p-6 rounded-2xl bg-[#0D1018] border border-white/10 flex flex-col sm:flex-row items-center justify-between gap-4 text-center sm:text-left">
+        <div className="mt-14 p-6 rounded-2xl bg-[#1A2030] border border-white/10 flex flex-col sm:flex-row items-center justify-between gap-4 text-center sm:text-left">
           <div>
             <div className="font-display font-bold text-sm text-[#F5F3EE]">
               Have a specific technical or security question not listed here?

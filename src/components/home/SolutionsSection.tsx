@@ -37,7 +37,7 @@ export const SolutionsSection: React.FC<SolutionsSectionProps> = ({ onNavigate }
   const activeSolution = SOLUTIONS_DATA.find(s => s.id === selectedSolutionId) || SOLUTIONS_DATA[0];
 
   return (
-    <section id="solutions-section" className="py-28 px-4 sm:px-6 lg:px-8 bg-[#07090E] relative overflow-hidden border-t border-white/[0.08]">
+    <section id="solutions-section" className="py-28 px-4 sm:px-6 lg:px-8 bg-[#111520] relative overflow-hidden border-t border-white/[0.08]">
       <div className="max-w-7xl mx-auto">
         <SectionHeader
           eyebrow="Enterprise Solution Portfolio"
@@ -50,7 +50,7 @@ export const SolutionsSection: React.FC<SolutionsSectionProps> = ({ onNavigate }
 
         {/* Filter Tabs */}
         <div className="mt-12 flex justify-center">
-          <div className="p-1.5 rounded-2xl bg-[#0D1018] border border-white/10 flex flex-wrap items-center gap-1 shadow-lg">
+          <div className="p-1.5 rounded-2xl bg-[#1A2030] border border-white/10 flex flex-wrap items-center gap-1 shadow-lg">
             {[
               { id: 'all', label: 'All 8 Solutions' },
               { id: 'core', label: 'Core Transformation' },
@@ -84,13 +84,13 @@ export const SolutionsSection: React.FC<SolutionsSectionProps> = ({ onNavigate }
                   className={`p-7 rounded-3xl transition-all duration-300 flex flex-col justify-between border cursor-pointer group h-full ${
                     isSelected
                       ? 'bg-[#181D2E] border-[#D6B77A] shadow-[0_8px_30px_rgba(214,183,122,0.15)] ring-1 ring-[#D6B77A]/30'
-                      : 'bg-[#0D1018]/90 border-white/[0.06] hover:border-white/15 hover:bg-[#121622]'
+                      : 'bg-[#1A2030]/90 border-white/[0.06] hover:border-white/15 hover:bg-[#1E2638]'
                   }`}
                 >
                   <div>
                     {/* Top Bar with Number and Status */}
                     <div className="flex items-center justify-between mb-4">
-                      <span className="font-mono text-xs font-bold px-2 py-0.5 rounded-md bg-[#141824] text-[#D6B77A] border border-[#D6B77A]/25">
+                      <span className="font-mono text-xs font-bold px-2 py-0.5 rounded-md bg-[#222A3A] text-[#D6B77A] border border-[#D6B77A]/25">
                         {solution.number}
                       </span>
                       <span className="text-[10px] font-mono text-[#7E8491] uppercase">
@@ -123,11 +123,11 @@ export const SolutionsSection: React.FC<SolutionsSectionProps> = ({ onNavigate }
         </div>
 
         {/* Selected Solution Full Executive Specification Card (Section 39 Copy) */}
-        <div className="mt-12 p-8 sm:p-10 rounded-3xl bg-[#0D1018]/95 border border-white/10 shadow-2xl backdrop-blur-xl space-y-6">
+        <div className="mt-12 p-8 sm:p-10 rounded-3xl bg-[#1A2030]/95 border border-white/10 shadow-2xl backdrop-blur-xl space-y-6">
           <div className="flex flex-col lg:flex-row lg:items-center justify-between gap-4 pb-6 border-b border-white/[0.08]">
             <div>
               <div className="flex items-center gap-2.5 mb-1.5">
-                <span className="font-mono text-xs font-bold text-[#D6B77A] px-2 py-0.5 rounded-md bg-[#181D2A] border border-[#D6B77A]/30">
+                <span className="font-mono text-xs font-bold text-[#D6B77A] px-2 py-0.5 rounded-md bg-[#262E40] border border-[#D6B77A]/30">
                   SOLUTION {activeSolution.number}
                 </span>
                 <span className="text-xs font-mono text-[#34D399] uppercase font-semibold">
@@ -165,7 +165,7 @@ export const SolutionsSection: React.FC<SolutionsSectionProps> = ({ onNavigate }
           {/* Section 39 Specific Details Matrix */}
           <div className="grid grid-cols-1 md:grid-cols-3 gap-4 pt-2">
             
-            <div className="p-4 rounded-2xl bg-[#141824]/80 border border-white/[0.06] space-y-1.5">
+            <div className="p-4 rounded-2xl bg-[#222A3A]/80 border border-white/[0.06] space-y-1.5">
               <span className="text-[10px] font-mono text-[#D6B77A] uppercase font-bold tracking-wider">
                 What We Build & Automate:
               </span>
@@ -174,7 +174,7 @@ export const SolutionsSection: React.FC<SolutionsSectionProps> = ({ onNavigate }
               </p>
             </div>
 
-            <div className="p-4 rounded-2xl bg-[#141824]/80 border border-white/[0.06] space-y-1.5">
+            <div className="p-4 rounded-2xl bg-[#222A3A]/80 border border-white/[0.06] space-y-1.5">
               <span className="text-[10px] font-mono text-[#34D399] uppercase font-bold tracking-wider">
                 Where It Fits In Your Business:
               </span>
@@ -183,7 +183,7 @@ export const SolutionsSection: React.FC<SolutionsSectionProps> = ({ onNavigate }
               </p>
             </div>
 
-            <div className="p-4 rounded-2xl bg-[#141824]/80 border border-white/[0.06] space-y-1.5">
+            <div className="p-4 rounded-2xl bg-[#222A3A]/80 border border-white/[0.06] space-y-1.5">
               <span className="text-[10px] font-mono text-[#2DD4BF] uppercase font-bold tracking-wider">
                 AI Cognitive Capability:
               </span>
@@ -216,7 +216,7 @@ export const SolutionsSection: React.FC<SolutionsSectionProps> = ({ onNavigate }
               </span>
               <div className="flex flex-wrap gap-2">
                 {activeSolution.connectedSystems.map((sys, idx) => (
-                  <span key={idx} className="px-3 py-1 rounded-lg text-xs font-mono bg-[#181D2A] text-[#F5F3EE] border border-white/10">
+                  <span key={idx} className="px-3 py-1 rounded-lg text-xs font-mono bg-[#262E40] text-[#F5F3EE] border border-white/10">
                     {sys}
                   </span>
                 ))}

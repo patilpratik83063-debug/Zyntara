@@ -7,11 +7,11 @@
     --font-mono: 'JetBrains Mono', monospace;
 
     /* Palette tokens — Deep Emerald & Champagne */
-    --color-obsidian: #050506;
+    --color-obsidian: #0F1219;
     --color-midnight: #090B10;
     --color-section: #0D1017;
     --color-surface: #121620;
-    --color-surface-soft: #181D2A;
+    --color-surface-soft: #262E40;
     --color-ivory: #F5F3EE;
     --color-champagne: #D6B77A;
     --color-champagne-light: #EBD9B3;
@@ -29,7 +29,7 @@
 
   body {
     font-family: var(--font-body);
-    background-color: #050506;
+    background-color: #0F1219;
     color: #F5F3EE;
     overflow-x: hidden;
     letter-spacing: -0.01em;
@@ -64,7 +64,7 @@
 
 /* Luxury Material Systems */
 .bg-obsidian-gradient {
-  background: radial-gradient(1200px 800px at 50% 0%, rgba(52, 211, 153, 0.07) 0%, rgba(214, 183, 122, 0.03) 40%, rgba(5, 5, 6, 0.98) 100%), #050506;
+  background: radial-gradient(1200px 800px at 50% 0%, rgba(52, 211, 153, 0.07) 0%, rgba(214, 183, 122, 0.03) 40%, rgba(5, 5, 6, 0.98) 100%), #0F1219;
 }
 
 .bg-hero-glow {
@@ -150,7 +150,7 @@
 }
 
 ::-webkit-scrollbar-track {
-  background: #050506;
+  background: #0F1219;
 }
 
 ::-webkit-scrollbar-thumb {

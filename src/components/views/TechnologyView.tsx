@@ -45,12 +45,12 @@ export const TechnologyView: React.FC<TechnologyViewProps> = ({
   });
 
   return (
-    <div className="pt-28 pb-24 px-4 sm:px-6 lg:px-8 bg-[#07090E] min-h-screen text-slate-100">
+    <div className="pt-28 pb-24 px-4 sm:px-6 lg:px-8 bg-[#111520] min-h-screen text-slate-100">
       <div className="max-w-7xl mx-auto space-y-16">
         
         {/* Header with Official Logo Badge */}
         <div className="text-center max-w-4xl mx-auto space-y-4">
-          <div className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-[#121622] border border-[#2DD4BF]/30 text-xs font-mono text-[#2DD4BF] shadow-[0_0_15px_rgba(45, 212, 191,0.2)]">
+          <div className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-[#1E2638] border border-[#2DD4BF]/30 text-xs font-mono text-[#2DD4BF] shadow-[0_0_15px_rgba(45, 212, 191,0.2)]">
             <img 
               src={ZYNTARA_LOGO_ICON} 
               alt="Zyntara" 
@@ -104,7 +104,7 @@ export const TechnologyView: React.FC<TechnologyViewProps> = ({
           {filtered.map((cap) => (
             <div
               key={cap.id}
-              className="p-6 rounded-2xl bg-[#090C16] border border-slate-800 hover:border-emerald-400/40 transition-all duration-300 flex flex-col justify-between group shadow-lg"
+              className="p-6 rounded-2xl bg-[#141A26] border border-slate-800 hover:border-emerald-400/40 transition-all duration-300 flex flex-col justify-between group shadow-lg"
             >
               <div>
                 <div className="flex items-center justify-between mb-3">

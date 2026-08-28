@@ -54,7 +54,7 @@ export const ZyntaraOneSection: React.FC<ZyntaraOneSectionProps> = ({ onNavigate
         />
 
         {/* Narrative Connection Bridge */}
-        <div className="mt-10 p-6 rounded-2xl bg-[#0D1018]/90 border border-white/[0.08] max-w-5xl mx-auto">
+        <div className="mt-10 p-6 rounded-2xl bg-[#1A2030]/90 border border-white/[0.08] max-w-5xl mx-auto">
           <div className="text-center mb-4">
             <span className="text-xs font-mono text-[#D6B77A] uppercase tracking-widest font-semibold">
               How Zyntara One Unifies Workflows Across Departments:
@@ -62,7 +62,7 @@ export const ZyntaraOneSection: React.FC<ZyntaraOneSectionProps> = ({ onNavigate
           </div>
           <div className="grid grid-cols-1 sm:grid-cols-5 gap-2 text-center">
             {crossLayerFlow.map((flow, idx) => (
-              <div key={idx} className="p-3 rounded-xl bg-[#141824]/70 border border-white/[0.04] flex flex-col justify-between">
+              <div key={idx} className="p-3 rounded-xl bg-[#222A3A]/70 border border-white/[0.04] flex flex-col justify-between">
                 <div className="text-xs font-mono font-bold text-[#F5F3EE]">{flow.from}</div>
                 <div className="my-1.5 flex justify-center">
                   <ArrowRight className="w-3.5 h-3.5 text-[#34D399]" />
@@ -104,14 +104,14 @@ export const ZyntaraOneSection: React.FC<ZyntaraOneSectionProps> = ({ onNavigate
                   className={`w-full p-4 rounded-2xl text-left transition-all duration-300 flex items-center justify-between border cursor-pointer group ${
                     isSelected
                       ? 'bg-gradient-to-r from-[#181D2E] to-[#101A14] border-[#D6B77A]/50 shadow-[0_8px_30px_rgba(214,183,122,0.15)] scale-[1.02]'
-                      : 'bg-[#0E1119]/80 border-white/[0.06] hover:border-white/15 hover:bg-[#141824]'
+                      : 'bg-[#0E1119]/80 border-white/[0.06] hover:border-white/15 hover:bg-[#222A3A]'
                   }`}
                 >
                   <div className="flex items-center gap-3.5">
                     <span className={`font-mono text-xs font-bold px-2 py-1 rounded-lg ${
                       isSelected 
-                        ? 'bg-[#D6B77A] text-[#050506] shadow-[0_0_10px_rgba(214,183,122,0.6)]' 
-                        : 'bg-[#181D2A] text-[#7E8491]'
+                        ? 'bg-[#D6B77A] text-[#0F1219] shadow-[0_0_10px_rgba(214,183,122,0.6)]' 
+                        : 'bg-[#262E40] text-[#7E8491]'
                     }`}>
                       {layer.number}
                     </span>
@@ -145,7 +145,7 @@ export const ZyntaraOneSection: React.FC<ZyntaraOneSectionProps> = ({ onNavigate
           </div>
 
           {/* Right Column: Active Layer Live Inspection & Capabilities (7 cols) */}
-          <div className="lg:col-span-7 p-6 sm:p-8 rounded-3xl bg-[#0D1018]/95 border border-white/10 shadow-[0_20px_50px_rgba(0,0,0,0.6)] backdrop-blur-xl relative overflow-hidden space-y-6">
+          <div className="lg:col-span-7 p-6 sm:p-8 rounded-3xl bg-[#1A2030]/95 border border-white/10 shadow-[0_20px_50px_rgba(0,0,0,0.6)] backdrop-blur-xl relative overflow-hidden space-y-6">
             
             {/* Subtle layer background glow */}
             <div className="absolute top-0 right-0 w-80 h-80 bg-[#34D399]/08 rounded-full blur-[100px] pointer-events-none" />
@@ -154,7 +154,7 @@ export const ZyntaraOneSection: React.FC<ZyntaraOneSectionProps> = ({ onNavigate
             <div className="flex flex-col sm:flex-row sm:items-center justify-between gap-4 pb-6 border-b border-white/[0.08]">
               <div>
                 <div className="flex items-center gap-2.5 mb-1.5">
-                  <span className="font-mono text-xs font-bold text-[#D6B77A] px-2 py-0.5 rounded-md bg-[#181D2A] border border-[#D6B77A]/25">
+                  <span className="font-mono text-xs font-bold text-[#D6B77A] px-2 py-0.5 rounded-md bg-[#262E40] border border-[#D6B77A]/25">
                     {currentLayer.number}
                   </span>
                   <span className="font-mono text-xs text-[#34D399] uppercase tracking-wider">
@@ -167,7 +167,7 @@ export const ZyntaraOneSection: React.FC<ZyntaraOneSectionProps> = ({ onNavigate
               </div>
 
               <div className="flex items-center gap-2 shrink-0">
-                <span className="inline-flex items-center px-3 py-1 rounded-full text-xs font-mono bg-[#141824] text-[#2DD4BF] border border-[#2DD4BF]/30">
+                <span className="inline-flex items-center px-3 py-1 rounded-full text-xs font-mono bg-[#222A3A] text-[#2DD4BF] border border-[#2DD4BF]/30">
                   <span className="w-1.5 h-1.5 rounded-full bg-[#2DD4BF] animate-ping mr-1.5" />
                   Status: {currentLayer.status.toUpperCase()}
                 </span>
@@ -188,7 +188,7 @@ export const ZyntaraOneSection: React.FC<ZyntaraOneSectionProps> = ({ onNavigate
                 {currentLayer.technicalDetails.map((detail, idx) => (
                   <div 
                     key={idx}
-                    className="p-3.5 rounded-xl bg-[#141824]/70 border border-white/[0.06] flex items-center gap-3"
+                    className="p-3.5 rounded-xl bg-[#222A3A]/70 border border-white/[0.06] flex items-center gap-3"
                   >
                     <div className="w-2 h-2 rounded-full bg-[#34D399] shrink-0" />
                     <span className="text-xs font-mono text-[#E0E2EC]">{detail}</span>
@@ -206,7 +206,7 @@ export const ZyntaraOneSection: React.FC<ZyntaraOneSectionProps> = ({ onNavigate
                 {currentLayer.enterpriseBenefits.map((benefit, idx) => (
                   <span
                     key={idx}
-                    className="px-3 py-1 rounded-lg text-xs font-mono bg-[#181D2A] text-[#F5F3EE] border border-white/10 flex items-center gap-1.5"
+                    className="px-3 py-1 rounded-lg text-xs font-mono bg-[#262E40] text-[#F5F3EE] border border-white/10 flex items-center gap-1.5"
                   >
                     <CheckCircle2 className="w-3.5 h-3.5 text-[#D6B77A]" />
                     <span>{benefit}</span>
@@ -217,9 +217,9 @@ export const ZyntaraOneSection: React.FC<ZyntaraOneSectionProps> = ({ onNavigate
 
             {/* Connected Systems & Actions */}
             <div className="pt-4 border-t border-white/[0.08] flex flex-wrap items-center justify-between gap-4">
-              <div className="text-xs font-mono text-[#7E8491] flex items-center gap-2">
+              <div className="text-xs font-mono text-[#7E8491] flex flex-wrap items-center gap-2 min-w-0">
                 <span>Integrated Protocols:</span>
-                <span className="text-[#34D399]">{currentLayer.connectedSystems.join(', ')}</span>
+                <span className="text-[#34D399] break-words">{currentLayer.connectedSystems.join(', ')}</span>
               </div>
 
               <Button

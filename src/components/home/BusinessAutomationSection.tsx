@@ -100,7 +100,7 @@ export const BusinessAutomationSection: React.FC<BusinessAutomationSectionProps>
         />
 
         {/* Transformation Pipeline Highlight */}
-        <div className="mt-12 p-6 rounded-2xl bg-[#0D1018] border border-white/10 max-w-4xl mx-auto shadow-xl">
+        <div className="mt-12 p-6 rounded-2xl bg-[#1A2030] border border-white/10 max-w-4xl mx-auto shadow-xl">
           <div className="text-center mb-3">
             <span className="text-xs font-mono text-[#D6B77A] uppercase tracking-widest font-semibold">
               The Value Progression:
@@ -108,7 +108,7 @@ export const BusinessAutomationSection: React.FC<BusinessAutomationSectionProps>
           </div>
           <div className="grid grid-cols-2 sm:grid-cols-5 gap-3">
             {transformationSequence.map((item, idx) => (
-              <div key={idx} className="p-3.5 rounded-xl bg-[#141824] border border-white/[0.06] flex flex-col items-center text-center">
+              <div key={idx} className="p-3.5 rounded-xl bg-[#222A3A] border border-white/[0.06] flex flex-col items-center text-center">
                 <span className="text-[10px] font-mono text-[#D6B77A] font-bold">STEP {item.step}</span>
                 <span className="font-display font-extrabold text-sm text-[#F5F3EE] mt-0.5">{item.title}</span>
                 <span className="text-[10px] text-[#7E8491] mt-1">{item.desc}</span>
@@ -137,7 +137,7 @@ export const BusinessAutomationSection: React.FC<BusinessAutomationSectionProps>
         {/* Automation Maturity Model (Level 01 to Level 05) */}
         <div className="mt-20">
           <div className="text-center mb-8">
-            <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-[#181D2A] text-xs font-mono text-[#34D399] border border-[#34D399]/30 mb-2">
+            <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-[#262E40] text-xs font-mono text-[#34D399] border border-[#34D399]/30 mb-2">
               <Gauge className="w-3.5 h-3.5 text-[#D6B77A]" />
               <span>5-Stage Automation Maturity Model</span>
             </div>
@@ -160,12 +160,12 @@ export const BusinessAutomationSection: React.FC<BusinessAutomationSectionProps>
                   className={`p-4 rounded-2xl text-left transition-all duration-300 border cursor-pointer flex flex-col justify-between ${
                     isSelected
                       ? 'bg-gradient-to-b from-[#1E2438] to-[#121624] border-[#D6B77A] shadow-[0_4px_20px_rgba(214,183,122,0.2)] scale-[1.03]'
-                      : 'bg-[#0D1018] border-white/[0.06] hover:border-white/20 hover:bg-[#141824]'
+                      : 'bg-[#1A2030] border-white/[0.06] hover:border-white/20 hover:bg-[#222A3A]'
                   }`}
                 >
                   <div className="flex items-center justify-between mb-2">
                     <span className={`text-xs font-mono font-bold px-2 py-0.5 rounded-md ${
-                      isSelected ? 'bg-[#D6B77A] text-[#050506]' : 'bg-[#181D2A] text-[#7E8491]'
+                      isSelected ? 'bg-[#D6B77A] text-[#0F1219]' : 'bg-[#262E40] text-[#7E8491]'
                     }`}>
                       LEVEL 0{lvl.level}
                     </span>
@@ -184,10 +184,10 @@ export const BusinessAutomationSection: React.FC<BusinessAutomationSectionProps>
           </div>
 
           {/* Selected Level Deep Dive Card */}
-          <div className="mt-8 p-8 rounded-3xl bg-[#0D1018]/95 border border-white/10 shadow-2xl flex flex-col lg:flex-row items-start justify-between gap-8 backdrop-blur-xl">
+          <div className="mt-8 p-8 rounded-3xl bg-[#1A2030]/95 border border-white/10 shadow-2xl flex flex-col lg:flex-row items-start justify-between gap-8 backdrop-blur-xl">
             <div className="space-y-4 flex-1">
               <div className="flex items-center gap-3">
-                <span className="px-3 py-1 rounded-lg text-xs font-mono font-bold bg-[#D6B77A] text-[#050506]">
+                <span className="px-3 py-1 rounded-lg text-xs font-mono font-bold bg-[#D6B77A] text-[#0F1219]">
                   LEVEL 0{currentLevelData.level}
                 </span>
                 <h4 className="text-xl sm:text-2xl font-display font-bold text-[#F5F3EE]">
@@ -200,7 +200,7 @@ export const BusinessAutomationSection: React.FC<BusinessAutomationSectionProps>
               </p>
 
               <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 pt-2">
-                <div className="p-3.5 rounded-xl bg-[#141824] border border-white/[0.06]">
+                <div className="p-3.5 rounded-xl bg-[#222A3A] border border-white/[0.06]">
                   <span className="text-[10px] font-mono text-[#D6B77A] uppercase font-semibold">
                     Human Oversight & Role:
                   </span>
@@ -209,7 +209,7 @@ export const BusinessAutomationSection: React.FC<BusinessAutomationSectionProps>
                   </p>
                 </div>
 
-                <div className="p-3.5 rounded-xl bg-[#141824] border border-white/[0.06]">
+                <div className="p-3.5 rounded-xl bg-[#222A3A] border border-white/[0.06]">
                   <span className="text-[10px] font-mono text-[#2DD4BF] uppercase font-semibold">
                     Measurable Operational Impact:
                   </span>
@@ -225,7 +225,7 @@ export const BusinessAutomationSection: React.FC<BusinessAutomationSectionProps>
                 </span>
                 <div className="flex flex-wrap gap-2">
                   {currentLevelData.examples.map((ex, idx) => (
-                    <span key={idx} className="px-3 py-1 rounded-lg text-xs font-mono bg-[#181D2A] text-[#F5F3EE] border border-white/10 flex items-center gap-1.5">
+                    <span key={idx} className="px-3 py-1 rounded-lg text-xs font-mono bg-[#262E40] text-[#F5F3EE] border border-white/10 flex items-center gap-1.5">
                       <CheckCircle2 className="w-3.5 h-3.5 text-[#34D399]" />
                       <span>{ex}</span>
                     </span>
@@ -234,7 +234,7 @@ export const BusinessAutomationSection: React.FC<BusinessAutomationSectionProps>
               </div>
             </div>
 
-            <div className="lg:w-72 shrink-0 p-6 rounded-2xl bg-[#141824] border border-white/[0.08] flex flex-col justify-between space-y-4 w-full">
+            <div className="lg:w-72 shrink-0 p-6 rounded-2xl bg-[#222A3A] border border-white/[0.08] flex flex-col justify-between space-y-4 w-full">
               <div>
                 <span className="text-xs font-mono text-[#D6B77A] uppercase font-bold">
                   Deploy This Maturity Level
