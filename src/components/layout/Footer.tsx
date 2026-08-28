@@ -10,7 +10,8 @@ import {
   MapPin, 
   Phone,
   Zap,
-  Globe
+  Globe,
+  MessageCircle
 } from 'lucide-react';
 
 interface FooterProps {
@@ -201,6 +202,16 @@ export const Footer: React.FC<FooterProps> = ({
               <span>Schedule Strategy Briefing</span>
               <ArrowRight className="w-3.5 h-3.5" />
             </button>
+
+            <a
+              href="https://wa.me/919151696922"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="w-full py-2.5 px-4 rounded-xl text-xs font-mono text-[#25D366] bg-[#25D366]/10 hover:bg-[#25D366]/20 border border-[#25D366]/30 transition-all flex items-center justify-center gap-2 cursor-pointer"
+            >
+              <MessageCircle className="w-3.5 h-3.5" />
+              <span>Chat on WhatsApp</span>
+            </a>
 
             <div className="pt-2 flex items-center gap-4 text-xs text-[#7E8491]">
               <button onClick={() => handleLinkClick('about')} className="hover:text-[#F5F3EE]">About</button>

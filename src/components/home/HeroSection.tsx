@@ -7,7 +7,8 @@ import { AnimatedText } from '../common/AnimatedText';
 import { ZYNTARA_LOGO_ICON } from '../../assets/logo';
 import { 
   Zap, 
-  ChevronRight
+  ChevronRight,
+  MessageCircle
 } from 'lucide-react';
 
 interface HeroSectionProps {
@@ -168,7 +169,7 @@ export const HeroSection: React.FC<HeroSectionProps> = ({
           </motion.p>
 
           {/* Flagship Ecosystem Callout */}
-          <motion.div variants={item} className="conic-border flex flex-wrap items-center gap-3 py-2 px-4 rounded-xl bg-[#1D2434] border border-white/10 text-xs text-[#F5F3EE]">
+          <motion.div variants={item} className="flex flex-wrap items-center gap-3 py-2 px-4 rounded-xl bg-[#1D2434] border border-white/10 text-xs text-[#F5F3EE]">
             <span className="font-mono text-[#D6B77A] font-semibold uppercase tracking-wider">Flagship:</span>
             <span className="font-semibold text-white tracking-wide">ZYNTARA ONE™</span>
             <span className="text-white/20 hidden sm:inline">|</span>
@@ -201,6 +202,16 @@ export const HeroSection: React.FC<HeroSectionProps> = ({
               <Zap className="w-3.5 h-3.5 text-[#D6B77A]" />
               <span>Automate a Workflow</span>
             </button>
+
+            <a
+              href="https://wa.me/919151696922"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="px-4 py-3.5 rounded-xl bg-[#25D366]/15 hover:bg-[#25D366]/25 border border-[#25D366]/40 text-xs font-mono text-[#25D366] hover:text-white transition-all flex items-center justify-center gap-2 cursor-pointer shadow-sm hover:border-[#25D366]/70"
+            >
+              <MessageCircle className="w-3.5 h-3.5" />
+              <span>Chat on WhatsApp</span>
+            </a>
           </motion.div>
 
           {/* Conversion Microcopy */}

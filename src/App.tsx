@@ -10,6 +10,7 @@ import { Navbar } from './components/layout/Navbar';
 import { Footer } from './components/layout/Footer';
 import { InteractiveCanvas } from './components/common/InteractiveCanvas';
 import { CustomCursor } from './components/common/CustomCursor';
+import { FloatingWhatsApp } from './components/common/FloatingWhatsApp';
 import { initLenis, destroyLenis, smoothScrollTo } from './lib/lenis';
 
 // Home Page Sections (Ordered exactly according to Section 44)
@@ -223,6 +224,9 @@ export default function App() {
 
       {/* Subtle Custom Cursor Follower */}
       <CustomCursor />
+
+      {/* Floating WhatsApp CTA */}
+      <FloatingWhatsApp />
 
       {/* Global Navigation Bar */}
       <Navbar

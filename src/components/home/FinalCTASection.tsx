@@ -7,7 +7,8 @@ import {
   ShieldCheck, 
   Clock, 
   CheckCircle2, 
-  Lock
+  Lock,
+  MessageCircle
 } from 'lucide-react';
 
 interface FinalCTASectionProps {
@@ -51,7 +52,7 @@ export const FinalCTASection: React.FC<FinalCTASectionProps> = ({ onNavigate }) 
       >
         
         {/* Badge */}
-        <motion.div variants={item} className="conic-border inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-[#1E2638] border border-[#D6B77A]/30 text-xs font-mono text-[#D6B77A] mb-8 shadow-lg">
+        <motion.div variants={item} className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-[#1E2638] border border-[#D6B77A]/30 text-xs font-mono text-[#D6B77A] mb-8 shadow-lg">
           <Sparkles className="w-3.5 h-3.5 text-[#D6B77A]" />
           <span>Enterprise AI Architecture & Business Automation</span>
         </motion.div>
@@ -94,6 +95,16 @@ export const FinalCTASection: React.FC<FinalCTASectionProps> = ({ onNavigate }) 
           >
             Explore Zyntara One™ →
           </Button>
+
+          <a
+            href="https://wa.me/919151696922"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="inline-flex items-center gap-2 px-6 py-3.5 rounded-xl bg-[#25D366]/15 hover:bg-[#25D366]/25 border border-[#25D366]/40 text-sm font-mono text-[#25D366] hover:text-white transition-all cursor-pointer shadow-sm hover:border-[#25D366]/70"
+          >
+            <MessageCircle className="w-4 h-4" />
+            <span>Chat on WhatsApp</span>
+          </a>
         </motion.div>
 
         {/* Enterprise Trust Micro-Badges */}
