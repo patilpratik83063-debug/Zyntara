@@ -25,6 +25,7 @@ import { ProcessSection } from './components/home/ProcessSection';
 import { OutcomesSection } from './components/home/OutcomesSection';
 import { WhyZyntaraSection } from './components/home/WhyZyntaraSection';
 import { FAQSection } from './components/home/FAQSection';
+import { TestimonialsSection } from './components/home/TestimonialsSection';
 import { FinalCTASection } from './components/home/FinalCTASection';
 
 // Dedicated Views — code-split for fast first load
@@ -135,7 +136,10 @@ export default function App() {
               {/* 11 EXECUTIVE & PRACTICAL FAQ */}
               <FAQSection onNavigate={handleNavigate} />
 
-              {/* 12 FINAL CTA */}
+              {/* 12 CLIENT TRUST & PROVEN RESULTS */}
+              <TestimonialsSection onNavigate={handleNavigate} />
+
+              {/* 13 FINAL CTA */}
               <FinalCTASection onNavigate={handleNavigate} />
             </motion.div>
           </Suspense>

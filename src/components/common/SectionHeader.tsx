@@ -42,8 +42,8 @@ export const SectionHeader: React.FC<SectionHeaderProps> = ({
   };
 
   const headingGradient = isLight
-    ? 'bg-gradient-to-r from-[#059669] via-[#10B981] to-[#059669] bg-[length:200%_auto] animate-gradient-pan'
-    : 'bg-gradient-to-r from-[#6EE7B7] via-[#34D399] to-[#D6B77A] bg-[length:200%_auto] animate-gradient-pan';
+    ? 'bg-gradient-to-r from-[#059669] via-[#10B981] to-[#059669]'
+    : 'bg-gradient-to-r from-[#6EE7B7] via-[#34D399] to-[#D6B77A]';
 
   return (
     <motion.div

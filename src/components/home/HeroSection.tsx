@@ -156,7 +156,7 @@ export const HeroSection: React.FC<HeroSectionProps> = ({
             />{' '}
             <AnimatedText
               text="AI-POWERED"
-              wordClassName="text-transparent bg-clip-text bg-gradient-to-r from-[#6EE7B7] via-[#34D399] to-[#D6B77A] bg-[length:200%_auto] animate-gradient-pan"
+              wordClassName="text-transparent bg-clip-text bg-gradient-to-r from-[#6EE7B7] via-[#34D399] to-[#D6B77A]"
               stagger={0.06}
               delay={0.55}
             />{' '}

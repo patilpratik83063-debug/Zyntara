@@ -60,7 +60,7 @@ export const FinalCTASection: React.FC<FinalCTASectionProps> = ({ onNavigate }) 
         {/* Section 42 Headline & Narrative */}
         <motion.h2 variants={item} className="text-3xl sm:text-5xl lg:text-6xl font-display font-extrabold text-[#F5F3EE] tracking-tight leading-[1.1]">
           TRANSFORM HOW YOUR{' '}
-          <span className="text-transparent bg-clip-text bg-gradient-to-r from-[#D6B77A] via-[#F5F3EE] to-[#34D399] bg-[length:200%_auto] animate-gradient-pan">
+          <span className="text-transparent bg-clip-text bg-gradient-to-r from-[#D6B77A] via-[#F5F3EE] to-[#34D399]">
             BUSINESS OPERATES.
           </span>
         </motion.h2>

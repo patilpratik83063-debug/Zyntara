@@ -1,10 +1,14 @@
-import React, { useEffect, useState } from 'react';
+import React, { useEffect, useRef, useState } from 'react';
 
 export const CustomCursor: React.FC = () => {
   const [position, setPosition] = useState({ x: -100, y: -100 });
   const [trailingPos, setTrailingPos] = useState({ x: -100, y: -100 });
   const [isHovering, setIsHovering] = useState(false);
   const [isVisible, setIsVisible] = useState(false);
+
+  // Refs mirror the state so the animation loop never needs to re-subscribe.
+  const posRef = useRef(position);
+  const isVisibleRef = useRef(false);
 
   useEffect(() => {
     // Disable on touch devices
@@ -13,8 +17,13 @@ export const CustomCursor: React.FC = () => {
     }
 
     const handleMouseMove = (e: MouseEvent) => {
-      setIsVisible(true);
-      setPosition({ x: e.clientX, y: e.clientY });
+      posRef.current = { x: e.clientX, y: e.clientY };
+      setPosition(posRef.current);
+
+      if (!isVisibleRef.current) {
+        isVisibleRef.current = true;
+        setIsVisible(true);
+      }
 
       // Check if hovering interactive target
       const target = e.target as HTMLElement | null;
@@ -25,19 +34,20 @@ export const CustomCursor: React.FC = () => {
     };
 
     const handleMouseLeave = () => {
+      isVisibleRef.current = false;
       setIsVisible(false);
     };
 
     window.addEventListener('mousemove', handleMouseMove);
     document.addEventListener('mouseleave', handleMouseLeave);
 
-    // Smooth trailing loop — only renders while the cursor is on the page
+    // Smooth trailing loop — registered once; reads refs, never re-subscribes.
     let animationId: number;
     const updateTrailing = () => {
-      if (isVisible) {
+      if (isVisibleRef.current) {
         setTrailingPos(prev => ({
-          x: prev.x + (position.x - prev.x) * 0.18,
-          y: prev.y + (position.y - prev.y) * 0.18
+          x: prev.x + (posRef.current.x - prev.x) * 0.18,
+          y: prev.y + (posRef.current.y - prev.y) * 0.18
         }));
       }
       animationId = requestAnimationFrame(updateTrailing);
@@ -49,7 +59,7 @@ export const CustomCursor: React.FC = () => {
       document.removeEventListener('mouseleave', handleMouseLeave);
       cancelAnimationFrame(animationId);
     };
-  }, [position.x, position.y]);
+  }, []);
 
   if (!isVisible) return null;
 

@@ -64,17 +64,19 @@ export const Button: React.FC<ButtonProps> = ({
       style={{ x: sx, y: sy }}
       onMouseMove={handleMouseMove}
       onMouseLeave={handleMouseLeave}
-      className={`group relative inline-flex items-center justify-center gap-2 rounded-xl transition-all duration-300 cursor-pointer select-none font-display overflow-hidden ${sizeClasses[size]} ${variantClasses[variant]} ${className}`}
+      className={`group relative inline-flex items-center justify-center gap-2 rounded-xl transition-all duration-300 cursor-pointer select-none font-display ${sizeClasses[size]} ${variantClasses[variant]} ${className}`}
       {...props}
     >
-      {/* Shine sweep on hover */}
+      {/* Shine sweep — clipped inside its own rounded mask, never clips the label */}
       <span
         aria-hidden
-        className="pointer-events-none absolute inset-0 -translate-x-full bg-gradient-to-r from-transparent via-white/25 to-transparent group-hover:animate-shine"
-      />
-      <span className="relative z-10 flex items-center gap-2">
+        className="pointer-events-none absolute inset-0 overflow-hidden rounded-xl"
+      >
+        <span className="absolute inset-y-0 -left-1/3 w-1/3 bg-gradient-to-r from-transparent via-white/25 to-transparent group-hover:animate-shine" />
+      </span>
+      <span className="relative z-10 flex items-center justify-center gap-2 min-w-0">
         {sparkle && <Sparkles className="w-4 h-4 text-[#D6B77A] shrink-0" />}
-        <span className="whitespace-nowrap">{children}</span>
+        <span>{children}</span>
         {icon && (
           <ArrowRight className="w-4 h-4 shrink-0 transition-transform duration-300 group-hover:translate-x-1.5 group-hover:-rotate-12" />
         )}
