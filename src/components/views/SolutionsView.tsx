@@ -53,7 +53,7 @@ export const SolutionsView: React.FC<SolutionsViewProps> = ({
         
         {/* Header with Official Logo Badge */}
         <div className="text-center max-w-4xl mx-auto space-y-4">
-          <div className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-[#1E2638] border border-[#2DD4BF]/30 text-xs font-mono text-[#2DD4BF] shadow-[0_0_15px_rgba(45, 212, 191,0.2)]">
+          <div className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-[#1E2638] border border-[#2DD4BF]/30 text-xs font-tag text-[#2DD4BF] shadow-[0_0_15px_rgba(45, 212, 191,0.2)]">
             <img 
               src={ZYNTARA_LOGO_ICON} 
               alt="Zyntara" 
@@ -131,7 +131,7 @@ export const SolutionsView: React.FC<SolutionsViewProps> = ({
 
                 {/* Capabilities */}
                 <div className="space-y-2">
-                  <div className="text-xs font-mono text-slate-400 uppercase tracking-wider">
+                  <div className="text-sm font-tag text-slate-400 uppercase tracking-wider">
                     Core Architectural Capabilities:
                   </div>
                   <div className="grid grid-cols-1 sm:grid-cols-2 gap-2">
@@ -146,7 +146,7 @@ export const SolutionsView: React.FC<SolutionsViewProps> = ({
 
                 {/* Business Outcomes */}
                 <div className="p-4 rounded-xl bg-emerald-950/30 border border-emerald-500/20 space-y-1.5">
-                  <div className="text-xs font-mono text-emerald-400 uppercase font-semibold">
+                  <div className="text-sm font-tag text-emerald-400 uppercase font-semibold">
                     Measurable Enterprise Outcomes:
                   </div>
                   {sol.businessOutcomes.map((out, i) => (

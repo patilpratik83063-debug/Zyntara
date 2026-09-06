@@ -83,7 +83,7 @@ export const AboutView: React.FC<AboutViewProps> = ({
         
         {/* Header with Official Logo Spotlight */}
         <div className="text-center max-w-4xl mx-auto space-y-6">
-          <div className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-[#1E2638] border border-[#2DD4BF]/30 text-xs font-mono text-[#2DD4BF] shadow-[0_0_15px_rgba(45, 212, 191,0.2)]">
+          <div className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-[#1E2638] border border-[#2DD4BF]/30 text-xs font-tag text-[#2DD4BF] shadow-[0_0_15px_rgba(45, 212, 191,0.2)]">
             <img 
               src={ZYNTARA_LOGO_ICON} 
               alt="Zyntara" 
@@ -115,7 +115,7 @@ export const AboutView: React.FC<AboutViewProps> = ({
               <div className="space-y-1.5">
                 <div className="flex items-center gap-2">
                   <span className="font-display font-extrabold text-2xl text-white tracking-wide">ZYNTARA</span>
-                  <span className="font-mono text-xs text-[#D6B77A] px-2 py-0.5 rounded bg-[#262E40] border border-[#D6B77A]/30">TECHNOLOGY</span>
+                  <span className="font-tag text-xs text-[#D6B77A] px-2 py-0.5 rounded bg-[#262E40] border border-[#D6B77A]/30">TECHNOLOGY</span>
                 </div>
                 <div className="text-xs font-mono text-[#2DD4BF] flex items-center gap-2">
                   <span>AI</span>
@@ -244,7 +244,7 @@ export const AboutView: React.FC<AboutViewProps> = ({
               <div key={idx} className="p-4 rounded-xl bg-slate-900/60 border border-slate-800/80">
                 <div className="flex items-center justify-between">
                   <span className="text-sm font-semibold text-white">{hub.city}</span>
-                  <span className="text-[10px] font-mono px-2 py-0.5 rounded bg-emerald-950 text-emerald-300 border border-emerald-500/30">{hub.region}</span>
+                  <span className="text-xs font-tag px-2 py-0.5 rounded bg-emerald-950 text-emerald-300 border border-emerald-500/30">{hub.region}</span>
                 </div>
                 <div className="text-xs text-slate-400 mt-1">{hub.role}</div>
               </div>

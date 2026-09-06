@@ -97,7 +97,7 @@ export const AutomationView: React.FC<AutomationViewProps> = ({
 
         {/* ===================== HERO SECTION ===================== */}
         <div className="text-center space-y-6 pt-4 max-w-4xl mx-auto">
-          <div className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-[#1E2638] border border-[#2DD4BF]/30 text-xs font-mono text-[#2DD4BF] shadow-[0_0_15px_rgba(45, 212, 191,0.2)]">
+          <div className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-[#1E2638] border border-[#2DD4BF]/30 text-xs font-tag text-[#2DD4BF] shadow-[0_0_15px_rgba(45, 212, 191,0.2)]">
             <img 
               src={ZYNTARA_LOGO_ICON} 
               alt="Zyntara" 
@@ -142,7 +142,7 @@ export const AutomationView: React.FC<AutomationViewProps> = ({
         <div className="p-6 sm:p-8 rounded-3xl bg-gradient-to-b from-slate-900/90 to-[#0A0D18]/90 border border-slate-800 shadow-2xl relative overflow-hidden">
           <div className="flex flex-col md:flex-row md:items-center justify-between gap-4 mb-6 pb-6 border-b border-slate-800/80">
             <div>
-              <div className="text-xs font-mono uppercase tracking-widest text-emerald-400">
+              <div className="text-sm font-tag uppercase tracking-widest text-emerald-400">
                 Strategic Scale & Hierarchy
               </div>
               <h2 className="text-xl sm:text-2xl font-display font-bold text-white mt-1">
@@ -172,7 +172,7 @@ export const AutomationView: React.FC<AutomationViewProps> = ({
                   <div>
                     <div className="flex items-center justify-between">
                       <span 
-                        className="text-[10px] font-mono px-2 py-0.5 rounded font-semibold uppercase"
+                        className="text-xs font-tag px-2 py-0.5 rounded font-semibold uppercase"
                         style={{ color: lvl.accentColor, backgroundColor: `${lvl.accentColor}18`, border: `1px solid ${lvl.accentColor}40` }}
                       >
                         {lvl.badge}
@@ -205,7 +205,7 @@ export const AutomationView: React.FC<AutomationViewProps> = ({
         <div id="automation-explorer" className="space-y-8">
           <div className="flex flex-col lg:flex-row lg:items-end justify-between gap-6">
             <div>
-              <div className="text-xs font-mono uppercase tracking-widest text-emerald-400">
+              <div className="text-sm font-tag uppercase tracking-widest text-emerald-400">
                 Full Capability Directory
               </div>
               <h2 className="text-2xl sm:text-3xl font-display font-extrabold text-white mt-1">
@@ -313,7 +313,7 @@ export const AutomationView: React.FC<AutomationViewProps> = ({
                 <div className="space-y-4">
                   {/* Card Header: Level Badge & Dept */}
                   <div className="flex items-center justify-between gap-2">
-                    <span className="text-[10px] font-mono px-2.5 py-0.5 rounded bg-emerald-950 text-emerald-300 border border-emerald-500/30 uppercase font-semibold">
+                    <span className="text-[10px] font-tag px-2.5 py-0.5 rounded bg-emerald-950 text-emerald-300 border border-emerald-500/30 uppercase font-semibold">
                       Level {item.level} • {item.levelName.split(' ')[0]}
                     </span>
                     <span className="text-[11px] font-mono text-slate-400">
@@ -343,7 +343,7 @@ export const AutomationView: React.FC<AutomationViewProps> = ({
 
                   {/* Key Capabilities Pills */}
                   <div className="space-y-1.5">
-                    <div className="text-[10px] font-mono uppercase tracking-wider text-slate-500">
+                    <div className="text-xs font-tag uppercase tracking-wider text-slate-500">
                       Included Capabilities:
                     </div>
                     <div className="flex flex-wrap gap-1.5">
@@ -405,7 +405,7 @@ export const AutomationView: React.FC<AutomationViewProps> = ({
         <div className="p-6 sm:p-10 rounded-3xl bg-[#090C17] border border-slate-800 space-y-8">
           <div className="flex flex-col md:flex-row md:items-end justify-between gap-4">
             <div>
-              <div className="text-xs font-mono uppercase tracking-widest text-emerald-400">
+              <div className="text-sm font-tag uppercase tracking-widest text-emerald-400">
                 Level 2 • Integrated Workflows
               </div>
               <h2 className="text-2xl sm:text-3xl font-display font-extrabold text-white mt-1">
@@ -438,7 +438,7 @@ export const AutomationView: React.FC<AutomationViewProps> = ({
           <div className="p-6 sm:p-8 rounded-2xl bg-slate-950/80 border border-slate-800/80 space-y-6">
             <div className="flex flex-col sm:flex-row sm:items-center justify-between gap-4 pb-4 border-b border-slate-800">
               <div>
-                <span className="text-xs font-mono text-emerald-400 uppercase tracking-wider">
+                <span className="text-sm font-tag text-emerald-400 uppercase tracking-wider">
                   Active Workflow Architecture
                 </span>
                 <h3 className="text-xl font-display font-bold text-white mt-0.5">
@@ -457,7 +457,7 @@ export const AutomationView: React.FC<AutomationViewProps> = ({
 
             {/* Step-by-Step Flow Diagrams */}
             <div className="space-y-3">
-              <div className="text-xs font-mono text-slate-400 uppercase">
+              <div className="text-sm font-tag text-slate-400 uppercase">
                 Trigger: <span className="text-slate-200 font-normal">{activeWorkflow.trigger}</span>
               </div>
 
@@ -473,12 +473,12 @@ export const AutomationView: React.FC<AutomationViewProps> = ({
                           {step.step}
                         </span>
                         {step.aiPowered && (
-                          <span className="text-[9px] font-mono px-1.5 py-0.5 rounded bg-emerald-950 text-emerald-300 border border-emerald-500/30">
+                          <span className="text-xs font-tag px-1.5 py-0.5 rounded bg-emerald-950 text-emerald-300 border border-emerald-500/30">
                             AI
                           </span>
                         )}
                         {step.humanApproval && (
-                          <span className="text-[9px] font-mono px-1.5 py-0.5 rounded bg-amber-950 text-amber-300 border border-amber-500/30">
+                          <span className="text-xs font-tag px-1.5 py-0.5 rounded bg-amber-950 text-amber-300 border border-amber-500/30">
                             Approval
                           </span>
                         )}
@@ -515,7 +515,7 @@ export const AutomationView: React.FC<AutomationViewProps> = ({
         {/* ===================== FOLLOW-UP CADENCE VISUALIZER (DAY 0 TO REACTIVATION) ===================== */}
         <div className="p-6 sm:p-10 rounded-3xl bg-gradient-to-br from-[#0B0E1D] to-[#070912] border border-slate-800 space-y-6">
           <div className="max-w-3xl">
-            <div className="text-xs font-mono uppercase tracking-widest text-emerald-400">
+            <div className="text-sm font-tag uppercase tracking-widest text-emerald-400">
               Systematic Cadence Engine
             </div>
             <h2 className="text-2xl sm:text-3xl font-display font-extrabold text-white mt-1">
@@ -569,7 +569,7 @@ export const AutomationView: React.FC<AutomationViewProps> = ({
         <div className="p-6 sm:p-10 rounded-3xl bg-[#080B15] border border-slate-800 space-y-8">
           <div className="flex flex-col md:flex-row md:items-end justify-between gap-4">
             <div>
-              <div className="text-xs font-mono uppercase tracking-widest text-emerald-400">
+              <div className="text-sm font-tag uppercase tracking-widest text-emerald-400">
                 Level 4 • Agentic Swarms
               </div>
               <h2 className="text-2xl sm:text-3xl font-display font-extrabold text-white mt-1">
@@ -599,7 +599,7 @@ export const AutomationView: React.FC<AutomationViewProps> = ({
 
           <div className="p-6 sm:p-8 rounded-2xl bg-slate-950/80 border border-slate-800/80 space-y-6">
             <div>
-              <span className="text-xs font-mono text-emerald-400 uppercase tracking-wider">
+              <span className="text-sm font-tag text-emerald-400 uppercase tracking-wider">
                 Autonomous Swarm Objective
               </span>
               <h3 className="text-xl font-display font-bold text-white mt-0.5">
@@ -644,7 +644,7 @@ export const AutomationView: React.FC<AutomationViewProps> = ({
             {/* Execution Flow & Impact */}
             <div className="p-4 rounded-xl bg-emerald-950/20 border border-emerald-500/30 flex flex-col sm:flex-row sm:items-center justify-between gap-4 text-xs">
               <div className="space-y-1">
-                <span className="font-mono text-emerald-400 uppercase font-semibold">Swarm Execution Impact:</span>
+                <span className="font-tag text-emerald-400 uppercase font-semibold">Swarm Execution Impact:</span>
                 <p className="text-slate-200">{activeSwarm.impact}</p>
               </div>
               <Button
@@ -662,7 +662,7 @@ export const AutomationView: React.FC<AutomationViewProps> = ({
         <div className="p-6 sm:p-10 rounded-3xl bg-[#090C18] border border-slate-800 space-y-8">
           <div className="flex flex-col md:flex-row md:items-end justify-between gap-4">
             <div>
-              <div className="text-xs font-mono uppercase tracking-widest text-emerald-400">
+              <div className="text-sm font-tag uppercase tracking-widest text-emerald-400">
                 Organizational Benchmark
               </div>
               <h2 className="text-2xl sm:text-3xl font-display font-extrabold text-white mt-1">
@@ -714,7 +714,7 @@ export const AutomationView: React.FC<AutomationViewProps> = ({
                   </p>
 
                   <div className="pt-2 border-t border-slate-900 space-y-1">
-                    <div className="text-[10px] font-mono text-slate-500 uppercase">Core Capabilities:</div>
+                    <div className="text-xs font-tag text-slate-500 uppercase">Core Capabilities:</div>
                     {lvl.keyCapabilities.slice(0, 3).map((k, i) => (
                       <div key={i} className="text-[11px] text-slate-300 flex items-start gap-1 font-mono">
                         <span className="text-emerald-400">•</span>
@@ -736,7 +736,7 @@ export const AutomationView: React.FC<AutomationViewProps> = ({
         {/* ===================== LEVEL 5: CLOSED-LOOP AUTONOMOUS OPERATIONS ===================== */}
         <div className="p-6 sm:p-10 rounded-3xl bg-gradient-to-r from-emerald-950/40 via-slate-900 to-emerald-950/40 border border-emerald-500/30 space-y-8">
           <div className="max-w-3xl">
-            <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-emerald-950 text-emerald-400 border border-emerald-500/30 text-xs font-mono">
+            <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-emerald-950 text-emerald-400 border border-emerald-500/30 text-xs font-tag">
               <ShieldCheck className="w-3.5 h-3.5" />
               <span>LEVEL 5 • AUTONOMOUS BUSINESS SYSTEMS</span>
             </div>
@@ -788,7 +788,7 @@ export const AutomationView: React.FC<AutomationViewProps> = ({
 
         {/* ===================== ZYNTARA ONE ARCHITECTURE CONNECTION ===================== */}
         <div className="p-6 sm:p-10 rounded-3xl bg-[#070A14] border border-slate-800 text-center space-y-6">
-          <div className="text-xs font-mono uppercase tracking-widest text-emerald-400">
+          <div className="text-sm font-tag uppercase tracking-widest text-emerald-400">
             Unified Enterprise Architecture
           </div>
           <h2 className="text-2xl sm:text-3xl font-display font-extrabold text-white">
@@ -841,7 +841,7 @@ export const AutomationView: React.FC<AutomationViewProps> = ({
             {/* Modal Header */}
             <div className="space-y-2 pr-10">
               <div className="flex items-center gap-2">
-                <span className="text-xs font-mono px-2.5 py-0.5 rounded bg-emerald-950 text-emerald-300 border border-emerald-500/30 uppercase font-semibold">
+                <span className="text-xs font-tag px-2.5 py-0.5 rounded bg-emerald-950 text-emerald-300 border border-emerald-500/30 uppercase font-semibold">
                   Level {selectedAutomation.level} • {selectedAutomation.levelName}
                 </span>
                 <span className="text-xs font-mono text-slate-400">
@@ -861,7 +861,7 @@ export const AutomationView: React.FC<AutomationViewProps> = ({
             {/* Description & Problem Solved */}
             <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
               <div className="p-4 rounded-xl bg-slate-950 border border-slate-800 space-y-1.5">
-                <div className="text-xs font-mono text-slate-400 uppercase font-semibold">
+                <div className="text-sm font-tag text-slate-400 uppercase font-semibold">
                   Business Problem Solved:
                 </div>
                 <p className="text-xs text-slate-300 leading-relaxed">
@@ -870,7 +870,7 @@ export const AutomationView: React.FC<AutomationViewProps> = ({
               </div>
 
               <div className="p-4 rounded-xl bg-slate-950 border border-slate-800 space-y-1.5">
-                <div className="text-xs font-mono text-emerald-400 uppercase font-semibold">
+                <div className="text-sm font-tag text-emerald-400 uppercase font-semibold">
                   Primary Trigger Event:
                 </div>
                 <p className="text-xs text-slate-300 leading-relaxed">
@@ -881,7 +881,7 @@ export const AutomationView: React.FC<AutomationViewProps> = ({
 
             {/* Step-by-Step Workflow Steps */}
             <div className="space-y-3">
-              <div className="text-xs font-mono text-emerald-400 uppercase font-bold">
+              <div className="text-sm font-tag text-emerald-400 uppercase font-bold">
                 Automated Execution Workflow:
               </div>
               <div className="space-y-2">
@@ -898,7 +898,7 @@ export const AutomationView: React.FC<AutomationViewProps> = ({
 
             {/* Key Capabilities */}
             <div className="space-y-2">
-              <div className="text-xs font-mono text-emerald-400 uppercase font-bold">
+              <div className="text-sm font-tag text-emerald-400 uppercase font-bold">
                 Included Features & Capabilities:
               </div>
               <div className="grid grid-cols-1 sm:grid-cols-2 gap-2">
@@ -913,7 +913,7 @@ export const AutomationView: React.FC<AutomationViewProps> = ({
 
             {/* Verified Outcomes */}
             <div className="p-4 rounded-xl bg-emerald-950/30 border border-emerald-500/30 space-y-1.5">
-              <div className="text-xs font-mono text-emerald-400 uppercase font-bold">
+              <div className="text-sm font-tag text-emerald-400 uppercase font-bold">
                 Quantified Outcomes:
               </div>
               <div className="grid grid-cols-1 sm:grid-cols-3 gap-2 text-xs text-slate-200">

@@ -102,7 +102,7 @@ export const BusinessAutomationSection: React.FC<BusinessAutomationSectionProps>
         {/* Transformation Pipeline Highlight */}
         <div className="mt-12 p-6 rounded-2xl bg-[#1A2030] border border-white/10 max-w-4xl mx-auto shadow-xl">
           <div className="text-center mb-3">
-            <span className="text-xs font-mono text-[#D6B77A] uppercase tracking-widest font-semibold">
+            <span className="text-sm font-tag text-[#D6B77A] uppercase tracking-widest font-semibold">
               The Value Progression:
             </span>
           </div>
@@ -124,7 +124,7 @@ export const BusinessAutomationSection: React.FC<BusinessAutomationSectionProps>
               <Sparkles className="w-5 h-5 text-[#D6B77A]" />
             </div>
             <div>
-              <span className="text-xs font-mono text-[#D6B77A] uppercase tracking-wider font-semibold">
+              <span className="text-sm font-tag text-[#D6B77A] uppercase tracking-wider font-semibold">
                 How Modern Business Automation Actually Works:
               </span>
               <p className="text-base sm:text-lg text-[#F5F3EE] mt-2 font-normal leading-relaxed">
@@ -137,7 +137,7 @@ export const BusinessAutomationSection: React.FC<BusinessAutomationSectionProps>
         {/* Automation Maturity Model (Level 01 to Level 05) */}
         <div className="mt-20">
           <div className="text-center mb-8">
-            <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-[#262E40] text-xs font-mono text-[#34D399] border border-[#34D399]/30 mb-2">
+            <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-[#262E40] text-xs font-tag text-[#34D399] border border-[#34D399]/30 mb-2">
               <Gauge className="w-3.5 h-3.5 text-[#D6B77A]" />
               <span>5-Stage Automation Maturity Model</span>
             </div>
@@ -201,7 +201,7 @@ export const BusinessAutomationSection: React.FC<BusinessAutomationSectionProps>
 
               <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 pt-2">
                 <div className="p-3.5 rounded-xl bg-[#222A3A] border border-white/[0.06]">
-                  <span className="text-[10px] font-mono text-[#D6B77A] uppercase font-semibold">
+                  <span className="text-xs font-tag text-[#D6B77A] uppercase font-semibold">
                     Human Oversight & Role:
                   </span>
                   <p className="text-xs text-[#E0E2EC] mt-1">
@@ -210,7 +210,7 @@ export const BusinessAutomationSection: React.FC<BusinessAutomationSectionProps>
                 </div>
 
                 <div className="p-3.5 rounded-xl bg-[#222A3A] border border-white/[0.06]">
-                  <span className="text-[10px] font-mono text-[#2DD4BF] uppercase font-semibold">
+                  <span className="text-xs font-tag text-[#2DD4BF] uppercase font-semibold">
                     Measurable Operational Impact:
                   </span>
                   <p className="text-xs text-[#E0E2EC] mt-1">
@@ -220,7 +220,7 @@ export const BusinessAutomationSection: React.FC<BusinessAutomationSectionProps>
               </div>
 
               <div>
-                <span className="text-xs font-mono text-[#7E8491] uppercase tracking-wider block mb-2">
+                <span className="text-sm font-tag text-[#7E8491] uppercase tracking-wider block mb-2">
                   Typical Production Automations:
                 </span>
                 <div className="flex flex-wrap gap-2">
@@ -236,7 +236,7 @@ export const BusinessAutomationSection: React.FC<BusinessAutomationSectionProps>
 
             <div className="lg:w-72 shrink-0 p-6 rounded-2xl bg-[#222A3A] border border-white/[0.08] flex flex-col justify-between space-y-4 w-full">
               <div>
-                <span className="text-xs font-mono text-[#D6B77A] uppercase font-bold">
+                <span className="text-sm font-tag text-[#D6B77A] uppercase font-bold">
                   Deploy This Maturity Level
                 </span>
                 <p className="text-xs text-[#B6BAC4] mt-1">

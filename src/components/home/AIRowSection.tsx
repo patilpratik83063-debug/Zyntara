@@ -62,7 +62,7 @@ export const AIRowSection: React.FC<AIRowSectionProps> = ({ onNavigate }) => {
 
           {/* Interactive 9-Stage Revenue Journey Flow */}
           <div className="mt-14 p-6 sm:p-8 rounded-3xl bg-[#1A2030]/95 border border-white/10 shadow-2xl backdrop-blur-xl">
-            <div className="text-xs font-mono text-[#D6B77A] uppercase mb-4 text-center tracking-wider">
+            <div className="text-sm font-tag text-[#D6B77A] uppercase mb-4 text-center tracking-wider">
               End-to-End Autonomous Revenue Lifecycle (Click Stage to Inspect)
             </div>
 
@@ -90,7 +90,7 @@ export const AIRowSection: React.FC<AIRowSectionProps> = ({ onNavigate }) => {
             {/* Active Stage Detail Banner */}
             <div className="mt-6 p-5 rounded-2xl bg-[#222A3A]/90 border border-white/[0.08] flex flex-col sm:flex-row sm:items-center justify-between gap-4">
               <div>
-                <div className="text-xs font-mono text-[#D6B77A] font-semibold uppercase">
+                <div className="text-sm font-tag text-[#D6B77A] font-semibold uppercase">
                   STAGE {activeRevenueStage + 1}: {revenueJourney[activeRevenueStage].label}
                 </div>
                 <div className="text-sm text-[#F5F3EE] mt-0.5 font-normal">

@@ -141,7 +141,7 @@ export const WhyZyntaraSection: React.FC<WhyZyntaraSectionProps> = ({ onNavigate
         {/* Section 37: NOT ANOTHER AUTOMATION TOOL (DIFFERENTIATION) */}
         <div className="mt-24 p-8 sm:p-12 rounded-3xl bg-gradient-to-b from-[#1A2030] to-[#07090F] border border-white/10 shadow-2xl">
           <div className="text-center max-w-3xl mx-auto mb-10">
-            <span className="text-xs font-mono text-[#D6B77A] uppercase tracking-widest font-semibold">
+            <span className="text-sm font-tag text-[#D6B77A] uppercase tracking-widest font-semibold">
               Clear Differentiation
             </span>
             <h3 className="text-2xl sm:text-4xl font-display font-extrabold text-[#F5F3EE] mt-1">
@@ -158,10 +158,10 @@ export const WhyZyntaraSection: React.FC<WhyZyntaraSectionProps> = ({ onNavigate
             <div className="p-8 rounded-2xl bg-[#120E12] border border-rose-500/30 flex flex-col justify-between">
               <div>
                 <div className="flex items-center justify-between pb-4 border-b border-rose-500/20 mb-4">
-                  <span className="font-mono text-xs font-bold text-rose-300 uppercase tracking-wider">
+                  <span className="font-tag text-sm font-bold text-rose-300 uppercase tracking-wider">
                     GENERIC NO-CODE TOOL (Piecemeal)
                   </span>
-                  <span className="text-[10px] font-mono text-rose-400 bg-rose-950 px-2 py-0.5 rounded">
+                  <span className="text-[10px] font-tag text-rose-400 bg-rose-950 px-2 py-0.5 rounded">
                     Fragmented
                   </span>
                 </div>
@@ -185,10 +185,10 @@ export const WhyZyntaraSection: React.FC<WhyZyntaraSectionProps> = ({ onNavigate
             <div className="p-8 rounded-2xl bg-[#101A14] border border-[#D6B77A]/50 shadow-[0_4px_30px_rgba(214,183,122,0.15)] flex flex-col justify-between">
               <div>
                 <div className="flex items-center justify-between pb-4 border-b border-[#D6B77A]/20 mb-4">
-                  <span className="font-mono text-xs font-bold text-[#D6B77A] uppercase tracking-wider">
+                  <span className="font-tag text-sm font-bold text-[#D6B77A] uppercase tracking-wider">
                     ZYNTARA ENTERPRISE ARCHITECTURE
                   </span>
-                  <span className="text-[10px] font-mono text-[#0F1219] bg-[#D6B77A] px-2 py-0.5 rounded font-bold">
+                  <span className="text-[10px] font-tag text-[#0F1219] bg-[#D6B77A] px-2 py-0.5 rounded font-bold">
                     Turnkey System
                   </span>
                 </div>
@@ -217,7 +217,7 @@ export const WhyZyntaraSection: React.FC<WhyZyntaraSectionProps> = ({ onNavigate
             <div className="space-y-1">
               <div className="flex items-center gap-2">
                 <ShieldCheck className="w-5 h-5 text-[#34D399]" />
-                <span className="text-xs font-mono text-[#34D399] uppercase font-bold tracking-wider">
+                <span className="text-sm font-tag text-[#34D399] uppercase font-bold tracking-wider">
                   Security & Enterprise Governance
                 </span>
               </div>

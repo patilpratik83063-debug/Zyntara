@@ -48,7 +48,7 @@ const ViewLoader: React.FC = () => (
         <div className="absolute inset-0 rounded-full border-2 border-transparent border-t-[#34D399] animate-spin" />
         <div className="absolute inset-2 rounded-full border-2 border-transparent border-b-[#D6B77A] animate-spin [animation-direction:reverse] animate-[spin_1.2s_linear_infinite_reverse]" />
       </div>
-      <span className="font-mono text-xs tracking-[0.3em] text-[#7E8491] uppercase">
+      <span className="font-tag text-xs tracking-[0.3em] text-[#7E8491] uppercase">
         Loading Intelligence
       </span>
     </div>

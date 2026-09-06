@@ -69,7 +69,7 @@ export const ZyntaraOneView: React.FC<ZyntaraOneViewProps> = ({
         
         {/* Page Hero Header with Official Brand Identity */}
         <div className="text-center max-w-4xl mx-auto space-y-6">
-          <div className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-[#1E2638] border border-[#2DD4BF]/30 text-xs font-mono text-[#2DD4BF] shadow-[0_0_15px_rgba(45, 212, 191,0.2)]">
+          <div className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-[#1E2638] border border-[#2DD4BF]/30 text-xs font-tag text-[#2DD4BF] shadow-[0_0_15px_rgba(45, 212, 191,0.2)]">
             <img 
               src={ZYNTARA_LOGO_ICON} 
               alt="Zyntara" 
@@ -114,7 +114,7 @@ export const ZyntaraOneView: React.FC<ZyntaraOneViewProps> = ({
         <div className="p-6 sm:p-10 rounded-3xl bg-[#141A26] border border-emerald-500/30 shadow-2xl">
           <div className="flex flex-col md:flex-row md:items-center justify-between gap-4 pb-8 border-b border-slate-800">
             <div>
-              <span className="text-xs font-mono text-emerald-400 uppercase tracking-widest">
+              <span className="text-sm font-tag text-emerald-400 uppercase tracking-widest">
                 System Specification
               </span>
               <h2 className="text-2xl sm:text-3xl font-display font-bold text-white mt-1">
@@ -159,7 +159,7 @@ export const ZyntaraOneView: React.FC<ZyntaraOneViewProps> = ({
                   {currentLayer.name}: {currentLayer.subtitle}
                 </h3>
               </div>
-              <span className="text-xs font-mono text-emerald-300 px-3 py-1 rounded bg-emerald-950/80 border border-emerald-500/30">
+              <span className="text-xs font-tag text-emerald-300 px-3 py-1 rounded bg-emerald-950/80 border border-emerald-500/30">
                 STATE: {currentLayer.status.toUpperCase()}
               </span>
             </div>
@@ -171,7 +171,7 @@ export const ZyntaraOneView: React.FC<ZyntaraOneViewProps> = ({
             <div className="grid grid-cols-1 md:grid-cols-2 gap-6 pt-4">
               {/* Technical Specifications */}
               <div className="space-y-3">
-                <h4 className="text-xs font-mono text-slate-400 uppercase font-semibold flex items-center gap-1.5">
+                <h4 className="text-sm font-tag text-slate-400 uppercase font-semibold flex items-center gap-1.5">
                   <Terminal className="w-3.5 h-3.5 text-emerald-400" />
                   <span>Technical Components & Protocols</span>
                 </h4>
@@ -187,7 +187,7 @@ export const ZyntaraOneView: React.FC<ZyntaraOneViewProps> = ({
 
               {/* Enterprise Benefits */}
               <div className="space-y-3">
-                <h4 className="text-xs font-mono text-slate-400 uppercase font-semibold flex items-center gap-1.5">
+                <h4 className="text-sm font-tag text-slate-400 uppercase font-semibold flex items-center gap-1.5">
                   <ShieldCheck className="w-3.5 h-3.5 text-emerald-400" />
                   <span>Enterprise Business Advantage</span>
                 </h4>
@@ -201,7 +201,7 @@ export const ZyntaraOneView: React.FC<ZyntaraOneViewProps> = ({
                 </div>
 
                 <div className="pt-2">
-                  <div className="text-xs font-mono text-slate-400 uppercase mb-2">
+                  <div className="text-sm font-tag text-slate-400 uppercase mb-2">
                     Verified Integrations:
                   </div>
                   <div className="flex flex-wrap gap-1.5">
@@ -235,7 +235,7 @@ export const ZyntaraOneView: React.FC<ZyntaraOneViewProps> = ({
                 className="p-8 rounded-2xl bg-slate-900/40 border border-slate-800/80 hover:border-emerald-400/40 transition-all duration-300 flex flex-col justify-between group shadow-xl"
               >
                 <div>
-                  <span className="text-[10px] font-mono px-2.5 py-1 rounded bg-emerald-950 text-emerald-300 border border-emerald-500/30 uppercase">
+                  <span className="text-xs font-tag px-2.5 py-1 rounded bg-emerald-950 text-emerald-300 border border-emerald-500/30 uppercase">
                     {model.badge}
                   </span>
                   <h3 className="text-xl font-display font-bold text-white mt-4 group-hover:text-emerald-200 transition-colors">

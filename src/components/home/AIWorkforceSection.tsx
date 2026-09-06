@@ -129,7 +129,7 @@ export const AIWorkforceSection: React.FC<AIWorkforceSectionProps> = ({ onNaviga
         {/* Section 26: WHEN RULES AREN'T ENOUGH, ADD INTELLIGENCE */}
         <div className="mt-14 p-6 sm:p-8 rounded-3xl bg-[#1A2030]/90 border border-white/10 shadow-xl max-w-5xl mx-auto">
           <div className="text-center mb-6">
-            <span className="text-xs font-mono text-[#D6B77A] uppercase tracking-widest font-semibold">
+            <span className="text-xs font-tag text-[#D6B77A] uppercase tracking-widest font-semibold">
               Cognitive Evolution: Beyond Static If-This-Then-That Rules
             </span>
             <h3 className="text-xl sm:text-2xl font-display font-bold text-[#F5F3EE] mt-1">
@@ -143,7 +143,7 @@ export const AIWorkforceSection: React.FC<AIWorkforceSectionProps> = ({ onNaviga
           <div className="grid grid-cols-2 sm:grid-cols-4 gap-3">
             {cognitiveCapabilities.map((cap, idx) => (
               <div key={idx} className="p-3.5 rounded-xl bg-[#222A3A] border border-white/[0.06] flex flex-col justify-between">
-                <span className="font-mono text-xs font-bold text-[#34D399]">{cap.name}</span>
+                <span className="font-tag text-xs font-bold text-[#34D399]">{cap.name}</span>
                 <span className="text-[11px] text-[#7E8491] mt-1">{cap.desc}</span>
               </div>
             ))}
@@ -153,7 +153,7 @@ export const AIWorkforceSection: React.FC<AIWorkforceSectionProps> = ({ onNaviga
         {/* Section 28: ONE AI AGENT IS USEFUL. AN AI WORKFORCE IS TRANSFORMATIVE. */}
         <div className="mt-20">
           <div className="text-center mb-8">
-            <div className="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-[#1E2638] text-xs font-mono text-[#2DD4BF] border border-[#2DD4BF]/30 mb-2">
+            <div className="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-[#1E2638] text-xs font-tag text-[#2DD4BF] border border-[#2DD4BF]/30 mb-2">
               <Users className="w-3.5 h-3.5 text-[#2DD4BF]" />
               <span>Multi-Agent Swarm Orchestration</span>
             </div>
@@ -193,7 +193,7 @@ export const AIWorkforceSection: React.FC<AIWorkforceSectionProps> = ({ onNaviga
           <div className="p-8 sm:p-10 rounded-3xl bg-[#1A2030]/95 border border-white/10 shadow-2xl backdrop-blur-xl space-y-8">
             <div className="flex flex-col lg:flex-row lg:items-center justify-between gap-4 pb-6 border-b border-white/[0.08]">
               <div>
-                <span className="text-xs font-mono text-[#D6B77A] uppercase font-bold tracking-wider">
+            <span className="text-xs font-tag text-[#D6B77A] uppercase font-bold tracking-wider">
                   Specialized Digital Team
                 </span>
                 <h4 className="text-2xl sm:text-3xl font-display font-bold text-[#F5F3EE] mt-0.5">
@@ -213,7 +213,7 @@ export const AIWorkforceSection: React.FC<AIWorkforceSectionProps> = ({ onNaviga
 
             {/* Specialized Agents in the Swarm */}
             <div>
-              <span className="text-xs font-mono text-[#7E8491] uppercase tracking-wider block mb-4">
+              <span className="text-sm font-tag text-[#7E8491] uppercase tracking-wider block mb-4">
                 Specialized Agents in This Workforce:
               </span>
               <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-5 gap-3.5">
@@ -236,7 +236,7 @@ export const AIWorkforceSection: React.FC<AIWorkforceSectionProps> = ({ onNaviga
             {/* Swarm Execution Flow */}
             <div className="p-4 rounded-2xl bg-[#222A3A]/60 border border-white/[0.06] flex flex-col sm:flex-row sm:items-center justify-between gap-4">
               <div>
-                <span className="text-[10px] font-mono text-[#7E8491] uppercase tracking-wider block">
+                <span className="text-xs font-tag text-[#7E8491] uppercase tracking-wider block">
                   End-to-End Swarm Execution Sequence:
                 </span>
                 <div className="font-mono text-xs text-[#2DD4BF] mt-1 break-words">
@@ -259,7 +259,7 @@ export const AIWorkforceSection: React.FC<AIWorkforceSectionProps> = ({ onNaviga
             <ShieldCheck className="w-7 h-7" />
           </div>
           <div>
-            <span className="text-xs font-mono text-[#D6B77A] uppercase font-bold tracking-wider">
+            <span className="text-sm font-tag text-[#D6B77A] uppercase font-bold tracking-wider">
               Enterprise Governance & Control
             </span>
             <h4 className="text-xl sm:text-2xl font-display font-bold text-[#F5F3EE] mt-0.5">

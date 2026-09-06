@@ -40,7 +40,7 @@ export const InsightsView: React.FC<InsightsViewProps> = ({
         
         {/* Header */}
         <div className="text-center max-w-4xl mx-auto space-y-4">
-          <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-emerald-950/70 border border-emerald-500/30 text-xs font-mono text-emerald-300">
+          <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-emerald-950/70 border border-emerald-500/30 text-xs font-tag text-emerald-300">
             <BookOpen className="w-3.5 h-3.5" />
             <span>RESEARCH & EXECUTIVE PUBLICATIONS</span>
           </div>
@@ -81,7 +81,7 @@ export const InsightsView: React.FC<InsightsViewProps> = ({
             >
               <div className="space-y-4">
                 <div className="flex items-center justify-between">
-                  <span className="text-[10px] font-mono px-2.5 py-1 rounded bg-emerald-950 text-emerald-300 border border-emerald-500/30 uppercase">
+                  <span className="text-xs font-tag px-2.5 py-1 rounded bg-emerald-950 text-emerald-300 border border-emerald-500/30 uppercase">
                     {item.category}
                   </span>
                   <div className="flex items-center gap-1.5 text-[11px] font-mono text-slate-500">
@@ -99,7 +99,7 @@ export const InsightsView: React.FC<InsightsViewProps> = ({
                 </p>
 
                 <div className="space-y-1.5 pt-2">
-                  <div className="text-[10px] font-mono text-slate-500 uppercase">Key Takeaways:</div>
+                  <div className="text-xs font-tag text-slate-500 uppercase">Key Takeaways:</div>
                   {item.keyInsights.slice(0, 3).map((k, i) => (
                     <div key={i} className="text-xs text-slate-300 flex items-start gap-1.5 font-mono">
                       <span className="text-emerald-400">•</span>
@@ -135,7 +135,7 @@ export const InsightsView: React.FC<InsightsViewProps> = ({
 
               <div className="space-y-4">
                 <div className="flex items-center gap-3">
-                  <span className="text-xs font-mono px-3 py-1 rounded bg-emerald-950 text-emerald-300 border border-emerald-500/30 uppercase">
+                  <span className="text-xs font-tag px-3 py-1 rounded bg-emerald-950 text-emerald-300 border border-emerald-500/30 uppercase">
                     {selectedArticle.category}
                   </span>
                   <span className="text-xs font-mono text-slate-400">
@@ -166,7 +166,7 @@ export const InsightsView: React.FC<InsightsViewProps> = ({
 
               {/* Key Takeaways */}
               <div className="p-6 rounded-2xl bg-slate-900/80 border border-slate-800 space-y-3">
-                <div className="text-xs font-mono text-emerald-400 uppercase font-bold">
+                <div className="text-sm font-tag text-emerald-400 uppercase font-bold">
                   Executive Recommendations & Key Takeaways:
                 </div>
                 <div className="space-y-2">

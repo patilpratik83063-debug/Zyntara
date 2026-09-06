@@ -182,7 +182,7 @@ export const AutomationExamplesSection: React.FC<AutomationExamplesSectionProps>
         
         {/* Section 11: WHY AUTOMATION MATTERS */}
         <div className="text-center max-w-4xl mx-auto mb-16">
-          <div className="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-[#1E2638] border border-[#D6B77A]/30 text-xs font-mono text-[#D6B77A] mb-4">
+          <div className="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-[#1E2638] border border-[#D6B77A]/30 text-xs font-tag text-[#D6B77A] mb-4">
             <HelpCircle className="w-3.5 h-3.5 text-[#D6B77A]" />
             <span>Why Automation Matters</span>
           </div>
@@ -230,7 +230,7 @@ export const AutomationExamplesSection: React.FC<AutomationExamplesSectionProps>
         {/* Section 34: HIGH-CONVERSION BEFORE / AFTER */}
         <div className="mt-20 p-8 sm:p-10 rounded-3xl bg-[#1A2030]/90 border border-white/10 shadow-2xl relative overflow-hidden">
           <div className="text-center mb-8">
-            <span className="text-xs font-mono text-[#2DD4BF] uppercase tracking-widest font-semibold">
+            <span className="text-xs font-tag text-[#2DD4BF] uppercase tracking-widest font-semibold">
               Operational Contrast
             </span>
             <h3 className="text-2xl sm:text-3xl font-display font-bold text-[#F5F3EE] mt-1">
@@ -244,10 +244,10 @@ export const AutomationExamplesSection: React.FC<AutomationExamplesSectionProps>
             <div className="p-6 rounded-2xl bg-[#120E12] border border-rose-500/30 flex flex-col justify-between">
               <div>
                 <div className="flex items-center justify-between pb-4 border-b border-rose-500/20 mb-4">
-                  <span className="font-mono text-xs font-bold text-rose-300 uppercase tracking-wider">
+                  <span className="font-tag text-xs font-bold text-rose-300 uppercase tracking-wider">
                     BEFORE ZYNTARA (MANUAL FRICTION)
                   </span>
-                  <span className="text-[10px] font-mono text-rose-400/80 bg-rose-950/80 px-2 py-0.5 rounded">
+                  <span className="text-[10px] font-tag text-rose-400/80 bg-rose-950/80 px-2 py-0.5 rounded">
                     High Latency
                   </span>
                 </div>
@@ -276,10 +276,10 @@ export const AutomationExamplesSection: React.FC<AutomationExamplesSectionProps>
             <div className="p-6 rounded-2xl bg-[#0B1B13] border border-[#2DD4BF]/40 flex flex-col justify-between shadow-[0_4px_25px_rgba(45, 212, 191,0.1)]">
               <div>
                 <div className="flex items-center justify-between pb-4 border-b border-[#2DD4BF]/20 mb-4">
-                  <span className="font-mono text-xs font-bold text-[#2DD4BF] uppercase tracking-wider">
+                  <span className="font-tag text-xs font-bold text-[#2DD4BF] uppercase tracking-wider">
                     AFTER ZYNTARA (AUTOMATED OPERATING ENGINE)
                   </span>
-                  <span className="text-[10px] font-mono text-[#0F1219] bg-[#2DD4BF] px-2 py-0.5 rounded font-bold">
+                  <span className="text-[10px] font-tag text-[#0F1219] bg-[#2DD4BF] px-2 py-0.5 rounded font-bold">
                     Sub-Second Sync
                   </span>
                 </div>
@@ -310,7 +310,7 @@ export const AutomationExamplesSection: React.FC<AutomationExamplesSectionProps>
         {/* Section 12-25: DEDICATED CHANNEL EXPLORER WITH WHATSAPP SIMULATOR */}
         <div className="mt-24">
           <div className="text-center mb-8">
-            <span className="text-xs font-mono text-[#D6B77A] uppercase tracking-widest font-semibold">
+            <span className="text-xs font-tag text-[#D6B77A] uppercase tracking-widest font-semibold">
               Channel & Workflow Directory
             </span>
             <h3 className="text-2xl sm:text-3xl font-display font-bold text-[#F5F3EE] mt-1">
@@ -344,7 +344,7 @@ export const AutomationExamplesSection: React.FC<AutomationExamplesSectionProps>
             {/* Left: Active Channel Specification (7 cols) */}
             <div className="lg:col-span-7 p-8 rounded-3xl bg-[#1A2030]/95 border border-white/10 shadow-2xl space-y-6">
               <div>
-                <span className="font-mono text-xs text-[#D6B77A] uppercase font-bold tracking-wider">
+                <span className="font-tag text-xs text-[#D6B77A] uppercase font-bold tracking-wider">
                   {activeCard.title}
                 </span>
                 <h4 className="text-xl sm:text-2xl font-display font-extrabold text-[#F5F3EE] mt-1">
@@ -359,12 +359,12 @@ export const AutomationExamplesSection: React.FC<AutomationExamplesSectionProps>
               {/* Tags or Flow */}
               {activeCard.tags && (
                 <div>
-                  <span className="text-xs font-mono text-[#7E8491] uppercase tracking-wider block mb-2">
+                  <span className="text-xs font-tag text-[#7E8491] uppercase tracking-wider block mb-2">
                     Core Capabilities:
                   </span>
                   <div className="flex flex-wrap gap-2">
                     {activeCard.tags.map((tag, idx) => (
-                      <span key={idx} className="px-3 py-1 rounded-lg text-xs font-mono bg-[#222A3A] text-[#34D399] border border-[#34D399]/20">
+                      <span key={idx} className="px-3 py-1 rounded-lg text-xs font-tag bg-[#222A3A] text-[#34D399] border border-[#34D399]/20">
                         {tag}
                       </span>
                     ))}
@@ -374,7 +374,7 @@ export const AutomationExamplesSection: React.FC<AutomationExamplesSectionProps>
 
               {activeCard.flow && (
                 <div>
-                  <span className="text-xs font-mono text-[#7E8491] uppercase tracking-wider block mb-2">
+                  <span className="text-xs font-tag text-[#7E8491] uppercase tracking-wider block mb-2">
                     Automated Pipeline Flow:
                   </span>
                   <div className="flex flex-wrap items-center gap-1.5 text-xs font-mono text-[#F5F3EE]">
@@ -454,7 +454,7 @@ export const AutomationExamplesSection: React.FC<AutomationExamplesSectionProps>
               {/* Chat Window */}
               <div className="space-y-3 min-h-[300px] max-h-[400px] flex flex-col justify-start overflow-y-auto">
                 <div className="text-center my-1">
-                  <span className="text-[10px] font-mono text-[#7E8491] bg-[#1E2638] px-2.5 py-0.5 rounded-full">
+                  <span className="text-[10px] font-tag text-[#7E8491] bg-[#1E2638] px-2.5 py-0.5 rounded-full">
                     Flow: {activeFlowData.title}
                   </span>
                 </div>
@@ -511,7 +511,7 @@ export const AutomationExamplesSection: React.FC<AutomationExamplesSectionProps>
         {/* Section 33: "WHAT CAN WE AUTOMATE?" INTERACTIVE TOOL */}
         <div className="mt-28 p-8 sm:p-12 rounded-3xl bg-gradient-to-b from-[#1A2030] to-[#080A10] border border-white/10 shadow-2xl relative overflow-hidden">
           <div className="text-center max-w-3xl mx-auto mb-10">
-            <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-[#262E40] text-xs font-mono text-[#D6B77A] border border-[#D6B77A]/30 mb-2">
+            <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-[#262E40] text-xs font-tag text-[#D6B77A] border border-[#D6B77A]/30 mb-2">
               <Sparkles className="w-3.5 h-3.5 text-[#D6B77A]" />
               <span>Interactive Workflow Blueprint Generator</span>
             </div>
@@ -526,7 +526,7 @@ export const AutomationExamplesSection: React.FC<AutomationExamplesSectionProps>
           {/* Step 1: Department Selector */}
           <div className="space-y-6 max-w-4xl mx-auto">
             <div>
-              <span className="text-xs font-mono text-[#7E8491] uppercase tracking-wider block mb-2">
+              <span className="text-xs font-tag text-[#7E8491] uppercase tracking-wider block mb-2">
                 1. Select Department:
               </span>
               <div className="flex flex-wrap gap-2">
@@ -556,12 +556,12 @@ export const AutomationExamplesSection: React.FC<AutomationExamplesSectionProps>
 
             {/* Step 2: Pain Point */}
             <div>
-              <span className="text-xs font-mono text-[#7E8491] uppercase tracking-wider block mb-2">
+              <span className="text-xs font-tag text-[#7E8491] uppercase tracking-wider block mb-2">
                 2. Target Friction Point:
               </span>
               <div className="p-3 rounded-xl bg-[#222A3A] border border-white/10 text-xs font-mono text-[#F5F3EE] flex items-center justify-between">
                 <span>{selectedPainPoint}</span>
-                <span className="text-[10px] text-[#2DD4BF] bg-[#102420] px-2 py-0.5 rounded font-mono">
+                <span className="text-[10px] text-[#2DD4BF] bg-[#102420] px-2 py-0.5 rounded font-tag">
                   Target Workflow
                 </span>
               </div>
@@ -570,7 +570,7 @@ export const AutomationExamplesSection: React.FC<AutomationExamplesSectionProps>
             {/* Output: YOUR AUTOMATION OPPORTUNITY BLUEPRINT */}
             <div className="mt-8 p-6 rounded-2xl bg-[#101A14] border border-[#34D399]/40 shadow-xl">
               <div className="flex items-center justify-between pb-3 border-b border-white/[0.08] mb-4">
-                <span className="text-xs font-mono font-bold text-[#D6B77A] uppercase tracking-wider">
+                <span className="text-sm font-tag font-bold text-[#D6B77A] uppercase tracking-wider">
                   YOUR AUTOMATION OPPORTUNITY: {selectedDept.toUpperCase()} PIPELINE
                 </span>
                 <span className="text-[10px] font-mono text-[#34D399]">

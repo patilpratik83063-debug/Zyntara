@@ -185,7 +185,7 @@ export const ProcessSection: React.FC<ProcessSectionProps> = ({ onNavigate }) =>
 
           {/* Key Deliverables */}
           <div>
-            <span className="text-xs font-mono text-[#7E8491] uppercase tracking-wider block mb-3">
+            <span className="text-sm font-tag text-[#7E8491] uppercase tracking-wider block mb-3">
               Core Technical Deliverables & Milestones:
             </span>
             <div className="grid grid-cols-1 sm:grid-cols-2 gap-3">

@@ -48,8 +48,8 @@ export const Footer: React.FC<FooterProps> = ({
             {/* Official Mission Lockup */}
             <div className="p-4 rounded-2xl bg-gradient-to-br from-[#0F131D] to-[#111520] border border-white/10 text-xs shadow-lg space-y-2">
               <div className="flex items-center justify-between">
-                <span className="font-mono text-[#D6B77A] font-bold text-[10px] tracking-wider uppercase">Enterprise Brand</span>
-                <span className="text-[10px] font-mono text-[#2DD4BF] bg-[#262E40] px-2 py-0.5 rounded border border-[#2DD4BF]/30">AI • AUTOMATION</span>
+                <span className="font-tag text-[#D6B77A] font-bold text-[10px] tracking-wider uppercase">Enterprise Brand</span>
+                <span className="text-[10px] font-tag text-[#2DD4BF] bg-[#262E40] px-2 py-0.5 rounded border border-[#2DD4BF]/30">AI • AUTOMATION</span>
               </div>
               <div className="font-display font-bold text-[#F5F3EE] text-sm">Zyntara Technology</div>
               <div className="text-[11px] text-[#A99A7A] italic">"Building Intelligent Systems For A Better Tomorrow"</div>
@@ -63,7 +63,7 @@ export const Footer: React.FC<FooterProps> = ({
 
           {/* Platform & Architecture Column (2 cols) */}
           <div className="lg:col-span-2 space-y-4">
-            <h4 className="font-mono text-xs font-bold uppercase tracking-[0.16em] text-[#D6B77A]">
+            <h4 className="font-tag text-xs font-bold uppercase tracking-[0.16em] text-[#D6B77A]">
               Platform
             </h4>
             <ul className="space-y-2.5 text-xs">
@@ -122,7 +122,7 @@ export const Footer: React.FC<FooterProps> = ({
 
           {/* Solutions & Services Column (3 cols) */}
           <div className="lg:col-span-3 space-y-4">
-            <h4 className="font-mono text-xs font-bold uppercase tracking-[0.16em] text-[#D6B77A]">
+            <h4 className="font-tag text-xs font-bold uppercase tracking-[0.16em] text-[#D6B77A]">
               Solutions & Services
             </h4>
             <ul className="space-y-2.5 text-xs">
@@ -179,7 +179,7 @@ export const Footer: React.FC<FooterProps> = ({
 
           {/* Company & Executive Column (3 cols) */}
           <div className="lg:col-span-3 space-y-4">
-            <h4 className="font-mono text-xs font-bold uppercase tracking-[0.16em] text-[#D6B77A]">
+            <h4 className="font-tag text-xs font-bold uppercase tracking-[0.16em] text-[#D6B77A]">
               Executive Action
             </h4>
             

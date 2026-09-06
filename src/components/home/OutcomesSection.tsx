@@ -47,7 +47,7 @@ export const OutcomesSection: React.FC<OutcomesSectionProps> = ({ onNavigate }) 
         
         {/* Header with High-Contrast Editorial Typography */}
         <div className="text-center max-w-4xl mx-auto mb-16">
-          <div className="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-[#EAE7DE] border border-[#D5D1C5] text-xs font-mono text-[#4A4E58] mb-4">
+          <div className="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-[#EAE7DE] border border-[#D5D1C5] text-xs font-tag text-[#4A4E58] mb-4">
             <BarChart3 className="w-3.5 h-3.5 text-[#059669]" />
             <span className="font-semibold uppercase tracking-wider">Enterprise Performance Metric</span>
           </div>
@@ -71,7 +71,7 @@ export const OutcomesSection: React.FC<OutcomesSectionProps> = ({ onNavigate }) 
               <HelpCircle className="w-5 h-5" />
             </div>
             <div>
-              <span className="text-xs font-mono text-[#059669] uppercase font-bold tracking-wider">
+              <span className="text-sm font-tag text-[#059669] uppercase font-bold tracking-wider">
                 Operational Audit
               </span>
               <h3 className="text-xl sm:text-2xl font-display font-bold text-[#0A0D14]">
@@ -104,7 +104,7 @@ export const OutcomesSection: React.FC<OutcomesSectionProps> = ({ onNavigate }) 
             <StaggerItem className="h-full">
               <div className="p-6 rounded-2xl bg-[#0F131E] text-white border border-[#23293D] flex flex-col justify-between space-y-4 shadow-lg h-full">
                 <div>
-                  <span className="text-[10px] font-mono text-[#D6B77A] uppercase tracking-widest font-bold">
+                  <span className="text-xs font-tag text-[#D6B77A] uppercase tracking-widest font-bold">
                     Core Economic Truth
                   </span>
                   <p className="text-sm font-display font-bold text-[#F5F3EE] mt-2 leading-relaxed">
@@ -127,7 +127,7 @@ export const OutcomesSection: React.FC<OutcomesSectionProps> = ({ onNavigate }) 
         <StaggerGroup className="grid grid-cols-1 md:grid-cols-3 gap-6" stagger={0.12}>
           <StaggerItem className="h-full">
             <div className="p-6 rounded-2xl bg-white border border-[#E0DCD0] h-full transition-all duration-300 hover:-translate-y-1 hover:border-[#059669]/30 hover:shadow-[0_14px_34px_rgba(5, 150, 105,0.08)]">
-              <div className="font-mono text-xs font-bold text-[#059669] uppercase tracking-wider mb-2">
+              <div className="font-tag text-sm font-bold text-[#059669] uppercase tracking-wider mb-2">
                 01 • Operational Velocity
               </div>
               <h4 className="text-lg font-display font-bold text-[#0A0D14]">
@@ -141,7 +141,7 @@ export const OutcomesSection: React.FC<OutcomesSectionProps> = ({ onNavigate }) 
 
           <StaggerItem className="h-full">
             <div className="p-6 rounded-2xl bg-white border border-[#E0DCD0] h-full transition-all duration-300 hover:-translate-y-1 hover:border-[#059669]/30 hover:shadow-[0_14px_34px_rgba(5, 150, 105,0.08)]">
-              <div className="font-mono text-xs font-bold text-[#059669] uppercase tracking-wider mb-2">
+              <div className="font-tag text-sm font-bold text-[#059669] uppercase tracking-wider mb-2">
                 02 • Headcount Leverage
               </div>
               <h4 className="text-lg font-display font-bold text-[#0A0D14]">
@@ -155,7 +155,7 @@ export const OutcomesSection: React.FC<OutcomesSectionProps> = ({ onNavigate }) 
 
           <StaggerItem className="h-full">
             <div className="p-6 rounded-2xl bg-white border border-[#E0DCD0] h-full transition-all duration-300 hover:-translate-y-1 hover:border-[#059669]/30 hover:shadow-[0_14px_34px_rgba(5, 150, 105,0.08)]">
-              <div className="font-mono text-xs font-bold text-[#059669] uppercase tracking-wider mb-2">
+              <div className="font-tag text-sm font-bold text-[#059669] uppercase tracking-wider mb-2">
                 03 • Compounding Data Asset
               </div>
               <h4 className="text-lg font-display font-bold text-[#0A0D14]">

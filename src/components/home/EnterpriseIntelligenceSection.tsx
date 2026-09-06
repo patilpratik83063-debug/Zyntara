@@ -95,7 +95,7 @@ export const EnterpriseIntelligenceSection: React.FC<EnterpriseIntelligenceSecti
           
           {/* Query Selector Tabs */}
           <div>
-            <div className="text-xs font-mono text-[#7E8491] uppercase tracking-wider mb-2.5">
+            <div className="text-sm font-tag text-[#7E8491] uppercase tracking-wider mb-2.5">
               Select Executive Strategic Query:
             </div>
             <div className="flex flex-col sm:flex-row gap-2">
@@ -126,7 +126,7 @@ export const EnterpriseIntelligenceSection: React.FC<EnterpriseIntelligenceSecti
                   Synthesized Executive Intelligence Brief
                 </span>
               </div>
-              <span className="text-[10px] font-mono text-[#2DD4BF] px-2 py-0.5 rounded-md bg-[#262E40] border border-[#2DD4BF]/30 font-semibold">
+              <span className="text-[10px] font-tag text-[#2DD4BF] px-2 py-0.5 rounded-md bg-[#262E40] border border-[#2DD4BF]/30 font-semibold">
                 {current.confidence}
               </span>
             </div>
@@ -138,7 +138,7 @@ export const EnterpriseIntelligenceSection: React.FC<EnterpriseIntelligenceSecti
 
             {/* Source Citations */}
             <div className="pt-2">
-              <div className="text-xs font-mono text-[#7E8491] uppercase tracking-wider mb-2">
+              <div className="text-sm font-tag text-[#7E8491] uppercase tracking-wider mb-2">
                 Verifiable Source Citations (Zero Hallucination):
               </div>
               <div className="flex flex-wrap gap-2">
@@ -158,7 +158,7 @@ export const EnterpriseIntelligenceSection: React.FC<EnterpriseIntelligenceSecti
             <div className="p-4 rounded-xl bg-[#181D2E]/80 border border-[#D6B77A]/30 flex items-start gap-3">
               <Sparkles className="w-4 h-4 text-[#D6B77A] shrink-0 mt-0.5" />
               <div>
-                <div className="text-xs font-mono text-[#D6B77A] font-semibold uppercase">
+                <div className="text-sm font-tag text-[#D6B77A] font-semibold uppercase">
                   Automated Next Action:
                 </div>
                 <div className="text-xs text-[#F5F3EE] mt-0.5">

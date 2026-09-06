@@ -174,7 +174,7 @@ export const DigitalTwinSection: React.FC<DigitalTwinSectionProps> = ({ onNaviga
 
               {/* Metric 1: Simulated Operating Margin */}
               <div className="p-5 rounded-2xl bg-[#1E2638]/90 border border-white/[0.08]">
-                <div className="text-xs font-mono text-[#7E8491] uppercase">
+                <div className="text-sm font-tag text-[#7E8491] uppercase">
                   Projected Enterprise EBITDA Margin
                 </div>
                 <div className="text-3xl sm:text-4xl font-display font-extrabold text-[#F5F3EE] mt-1">
@@ -191,7 +191,7 @@ export const DigitalTwinSection: React.FC<DigitalTwinSectionProps> = ({ onNaviga
               {/* Key Indicators Grid */}
               <div className="grid grid-cols-2 gap-4">
                 <div className="p-4 rounded-2xl bg-[#1E2638]/80 border border-white/[0.06]">
-                  <div className="text-[11px] font-mono text-[#7E8491] uppercase">
+                  <div className="text-xs font-tag text-[#7E8491] uppercase">
                     Working Capital Shift
                   </div>
                   <div className="text-xl font-display font-bold text-[#F5F3EE] mt-1">
@@ -200,7 +200,7 @@ export const DigitalTwinSection: React.FC<DigitalTwinSectionProps> = ({ onNaviga
                 </div>
 
                 <div className="p-4 rounded-2xl bg-[#1E2638]/80 border border-white/[0.06]">
-                  <div className="text-[11px] font-mono text-[#7E8491] uppercase">
+                  <div className="text-xs font-tag text-[#7E8491] uppercase">
                     Model Risk Exposure
                   </div>
                   <div className="text-xl font-display font-bold text-[#D6B77A] mt-1">

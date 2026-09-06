@@ -5,6 +5,7 @@
     --font-display: 'Space Grotesk', sans-serif;
     --font-body: 'Plus Jakarta Sans', sans-serif;
     --font-mono: 'JetBrains Mono', monospace;
+    --font-tag: 'Shrikhand', serif;
 
     /* Palette tokens — Deep Emerald & Champagne */
     --color-obsidian: #0F1219;
@@ -60,6 +61,10 @@
 
 .font-mono {
   font-family: var(--font-mono);
+}
+
+.font-tag {
+  font-family: var(--font-tag);
 }
 
 /* Luxury Material Systems */

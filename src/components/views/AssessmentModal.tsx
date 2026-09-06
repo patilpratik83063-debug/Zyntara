@@ -95,7 +95,7 @@ export const AssessmentModal: React.FC<AssessmentModalProps> = ({
               referrerPolicy="no-referrer"
               className="w-5 h-5 rounded-full object-cover shadow-[0_0_8px_rgba(45, 212, 191,0.6)]"
             />
-            <span className="font-mono text-xs text-[#2DD4BF] tracking-wider uppercase font-semibold">
+            <span className="font-tag text-sm text-[#2DD4BF] tracking-wider uppercase font-semibold">
               Zyntara Technology • Executive Assessment Engine
             </span>
           </div>
@@ -123,7 +123,7 @@ export const AssessmentModal: React.FC<AssessmentModalProps> = ({
         {step === 1 && (
           <div className="space-y-6">
             <div>
-              <label className="block text-xs font-mono uppercase text-slate-300 mb-2">
+              <label className="block text-xs font-tag uppercase text-slate-300 mb-2">
                 01. Enterprise Employee Scale
               </label>
               <div className="grid grid-cols-2 sm:grid-cols-4 gap-3">
@@ -145,7 +145,7 @@ export const AssessmentModal: React.FC<AssessmentModalProps> = ({
             </div>
 
             <div>
-              <label className="block text-xs font-mono uppercase text-slate-300 mb-2">
+              <label className="block text-xs font-tag uppercase text-slate-300 mb-2">
                 02. Core Industry Vertical
               </label>
               <select
@@ -176,7 +176,7 @@ export const AssessmentModal: React.FC<AssessmentModalProps> = ({
         {step === 2 && (
           <div className="space-y-6">
             <div>
-              <label className="block text-xs font-mono uppercase text-slate-300 mb-2">
+              <label className="block text-xs font-tag uppercase text-slate-300 mb-2">
                 03. Select Active Enterprise Systems of Record
               </label>
               <div className="grid grid-cols-1 sm:grid-cols-2 gap-3">
@@ -228,7 +228,7 @@ export const AssessmentModal: React.FC<AssessmentModalProps> = ({
         {step === 3 && (
           <div className="space-y-6">
             <div>
-              <label className="block text-xs font-mono uppercase text-slate-300 mb-2">
+              <label className="block text-xs font-tag uppercase text-slate-300 mb-2">
                 04. Primary Organizational AI Challenge
               </label>
               <div className="space-y-2.5">
@@ -296,7 +296,7 @@ export const AssessmentModal: React.FC<AssessmentModalProps> = ({
             <div className="p-5 rounded-xl bg-slate-900/90 border border-slate-800 space-y-3">
               <div className="flex items-center gap-2">
                 <Cpu className="w-4 h-4 text-emerald-400" />
-                <span className="font-mono text-xs text-emerald-300 uppercase">
+                <span className="text-sm font-tag text-emerald-300 uppercase">
                   Recommended Architecture Blueprint
                 </span>
               </div>

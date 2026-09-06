@@ -50,7 +50,7 @@ export const TechnologyView: React.FC<TechnologyViewProps> = ({
         
         {/* Header with Official Logo Badge */}
         <div className="text-center max-w-4xl mx-auto space-y-4">
-          <div className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-[#1E2638] border border-[#2DD4BF]/30 text-xs font-mono text-[#2DD4BF] shadow-[0_0_15px_rgba(45, 212, 191,0.2)]">
+          <div className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-[#1E2638] border border-[#2DD4BF]/30 text-xs font-tag text-[#2DD4BF] shadow-[0_0_15px_rgba(45, 212, 191,0.2)]">
             <img 
               src={ZYNTARA_LOGO_ICON} 
               alt="Zyntara" 
@@ -108,7 +108,7 @@ export const TechnologyView: React.FC<TechnologyViewProps> = ({
             >
               <div>
                 <div className="flex items-center justify-between mb-3">
-                  <span className="text-[10px] font-mono px-2 py-0.5 rounded bg-emerald-950 text-emerald-300 border border-emerald-500/30">
+                  <span className="text-xs font-tag px-2 py-0.5 rounded bg-emerald-950 text-emerald-300 border border-emerald-500/30">
                     {cap.category}
                   </span>
                   <span className="text-[10px] font-mono text-emerald-400 font-bold">
@@ -126,7 +126,7 @@ export const TechnologyView: React.FC<TechnologyViewProps> = ({
 
                 {/* Technical Specs List */}
                 <div className="mt-4 pt-3 border-t border-slate-800/80 space-y-1.5">
-                  <div className="text-[10px] font-mono text-slate-500 uppercase">
+                  <div className="text-xs font-tag text-slate-500 uppercase">
                     Technical Specifications:
                   </div>
                   {cap.technicalSpecs.map((spec, sIdx) => (

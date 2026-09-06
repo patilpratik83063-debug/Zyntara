@@ -56,7 +56,7 @@ export const ZyntaraOneSection: React.FC<ZyntaraOneSectionProps> = ({ onNavigate
         {/* Narrative Connection Bridge */}
         <div className="mt-10 p-6 rounded-2xl bg-[#1A2030]/90 border border-white/[0.08] max-w-5xl mx-auto">
           <div className="text-center mb-4">
-            <span className="text-xs font-mono text-[#D6B77A] uppercase tracking-widest font-semibold">
+            <span className="text-sm font-tag text-[#D6B77A] uppercase tracking-widest font-semibold">
               How Zyntara One Unifies Workflows Across Departments:
             </span>
           </div>
@@ -85,7 +85,7 @@ export const ZyntaraOneSection: React.FC<ZyntaraOneSectionProps> = ({ onNavigate
           {/* Left Column: The 8-Layer Interactive Architecture Stack (5 cols) */}
           <div className="lg:col-span-5 flex flex-col space-y-2.5">
             <div className="flex items-center justify-between px-2 mb-1">
-              <span className="text-xs font-mono text-[#7E8491] uppercase tracking-wider">
+              <span className="text-sm font-tag text-[#7E8491] uppercase tracking-wider">
                 Full-Stack Architecture (Top to Bottom)
               </span>
               <span className="text-xs font-mono text-[#D6B77A]">
@@ -135,7 +135,7 @@ export const ZyntaraOneSection: React.FC<ZyntaraOneSectionProps> = ({ onNavigate
                         ? 'bg-[#D6B77A] animate-pulse' 
                         : 'bg-[#34D399]'
                     }`} />
-                    <span className="text-[10px] font-mono text-[#7E8491] uppercase">
+                    <span className="text-xs font-tag text-[#7E8491] uppercase">
                       {layer.status}
                     </span>
                   </div>
@@ -157,7 +157,7 @@ export const ZyntaraOneSection: React.FC<ZyntaraOneSectionProps> = ({ onNavigate
                   <span className="font-mono text-xs font-bold text-[#D6B77A] px-2 py-0.5 rounded-md bg-[#262E40] border border-[#D6B77A]/25">
                     {currentLayer.number}
                   </span>
-                  <span className="font-mono text-xs text-[#34D399] uppercase tracking-wider">
+                  <span className="font-tag text-sm text-[#34D399] uppercase tracking-wider">
                     {currentLayer.subtitle}
                   </span>
                 </div>
@@ -167,7 +167,7 @@ export const ZyntaraOneSection: React.FC<ZyntaraOneSectionProps> = ({ onNavigate
               </div>
 
               <div className="flex items-center gap-2 shrink-0">
-                <span className="inline-flex items-center px-3 py-1 rounded-full text-xs font-mono bg-[#222A3A] text-[#2DD4BF] border border-[#2DD4BF]/30">
+                <span className="inline-flex items-center px-3 py-1 rounded-full text-xs font-tag bg-[#222A3A] text-[#2DD4BF] border border-[#2DD4BF]/30">
                   <span className="w-1.5 h-1.5 rounded-full bg-[#2DD4BF] animate-ping mr-1.5" />
                   Status: {currentLayer.status.toUpperCase()}
                 </span>
@@ -181,7 +181,7 @@ export const ZyntaraOneSection: React.FC<ZyntaraOneSectionProps> = ({ onNavigate
 
             {/* Architectural Sub-Components List */}
             <div>
-              <div className="text-xs font-mono text-[#D6B77A] uppercase tracking-wider mb-3">
+              <div className="text-sm font-tag text-[#D6B77A] uppercase tracking-wider mb-3">
                 Core Architectural Sub-Systems & Pipelines:
               </div>
               <div className="grid grid-cols-1 sm:grid-cols-2 gap-3">
@@ -199,7 +199,7 @@ export const ZyntaraOneSection: React.FC<ZyntaraOneSectionProps> = ({ onNavigate
 
             {/* Enterprise Benefits Chips */}
             <div>
-              <div className="text-xs font-mono text-[#7E8491] uppercase tracking-wider mb-3">
+              <div className="text-sm font-tag text-[#7E8491] uppercase tracking-wider mb-3">
                 Enterprise Business Benefits:
               </div>
               <div className="flex flex-wrap gap-2">

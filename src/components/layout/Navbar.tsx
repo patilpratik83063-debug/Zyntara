@@ -103,7 +103,7 @@ export const Navbar: React.FC<NavbarProps> = ({
               >
                 <span>{item.label}</span>
                 {item.badge && (
-                  <span className="text-[9px] font-mono px-1.5 py-0.2 rounded bg-[#262E40] text-[#34D399] border border-[#34D399]/30 font-bold">
+                  <span className="text-[9px] font-tag px-1.5 py-0.2 rounded bg-[#262E40] text-[#34D399] border border-[#34D399]/30 font-bold">
                     {item.badge}
                   </span>
                 )}
@@ -190,7 +190,7 @@ export const Navbar: React.FC<NavbarProps> = ({
                       {item.label}
                     </span>
                     {item.badge && (
-                      <span className="text-[10px] font-mono px-2 py-0.5 rounded bg-[#1E2638] text-[#34D399] border border-[#34D399]/30">
+                      <span className="text-[10px] font-tag px-2 py-0.5 rounded bg-[#1E2638] text-[#34D399] border border-[#34D399]/30">
                         {item.badge}
                       </span>
                     )}

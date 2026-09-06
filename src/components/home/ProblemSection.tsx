@@ -80,7 +80,7 @@ export const ProblemSection: React.FC<ProblemSectionProps> = ({ onNavigate }) =>
         {/* Visual Transformation from 10 Disconnected Pieces to ONE INTELLIGENT ARCHITECTURE */}
         <div className="mt-14 p-8 rounded-3xl bg-[#1A2030]/90 border border-white/10 shadow-2xl relative overflow-hidden">
           <div className="text-center mb-6">
-            <span className="text-xs font-mono text-[#D6B77A] uppercase tracking-widest font-semibold">
+            <span className="text-sm font-tag text-[#D6B77A] uppercase tracking-widest font-semibold">
               The Architecture Shift
             </span>
             <h3 className="text-xl sm:text-2xl font-display font-bold text-[#F5F3EE] mt-1">
@@ -100,7 +100,7 @@ export const ProblemSection: React.FC<ProblemSectionProps> = ({ onNavigate }) =>
                   <div className="w-8 h-8 rounded-lg bg-[#1D2335] flex items-center justify-center text-[#34D399]">
                     <Icon className="w-4 h-4" />
                   </div>
-                  <span className="font-mono text-xs font-bold text-[#F5F3EE] tracking-wider">
+                  <span className="font-tag text-xs font-bold text-[#F5F3EE] tracking-wider">
                     {piece.name}
                   </span>
                   <span className="text-[10px] text-[#7E8491] line-clamp-1">
@@ -114,7 +114,7 @@ export const ProblemSection: React.FC<ProblemSectionProps> = ({ onNavigate }) =>
           {/* Arrow / Bridge Indicator */}
           <div className="my-6 flex items-center justify-center gap-4">
             <div className="h-[1px] flex-1 bg-gradient-to-r from-transparent via-white/20 to-[#D6B77A]" />
-            <div className="px-5 py-2 rounded-full bg-gradient-to-r from-[#0F2219] to-[#1E2638] border border-[#D6B77A]/40 text-xs font-mono font-bold text-[#D6B77A] shadow-[0_0_15px_rgba(214,183,122,0.3)] flex items-center gap-2">
+            <div className="px-5 py-2 rounded-full bg-gradient-to-r from-[#0F2219] to-[#1E2638] border border-[#D6B77A]/40 text-xs font-tag font-bold text-[#D6B77A] shadow-[0_0_15px_rgba(214,183,122,0.3)] flex items-center gap-2">
               <span>UNIFIED BY ZYNTARA</span>
               <ArrowRight className="w-3.5 h-3.5 text-[#D6B77A]" />
             </div>
@@ -128,7 +128,7 @@ export const ProblemSection: React.FC<ProblemSectionProps> = ({ onNavigate }) =>
                 <Cpu className="w-6 h-6" />
               </div>
               <div>
-                <span className="font-mono text-xs text-[#D6B77A] font-bold tracking-widest uppercase">
+                <span className="font-tag text-sm text-[#D6B77A] font-bold tracking-widest uppercase">
                   Flagship Platform
                 </span>
                 <h4 className="text-xl sm:text-2xl font-display font-extrabold text-[#F5F3EE]">
@@ -199,7 +199,7 @@ export const ProblemSection: React.FC<ProblemSectionProps> = ({ onNavigate }) =>
                   <p className="text-xs text-[#7E8491]">Disconnected subscriptions & manual glue</p>
                 </div>
               </div>
-              <span className="font-mono text-xs px-2.5 py-1 rounded-full bg-rose-950/90 text-rose-300 border border-rose-500/30">
+              <span className="font-tag text-xs px-2.5 py-1 rounded-full bg-rose-950/90 text-rose-300 border border-rose-500/30">
                 High Friction
               </span>
             </div>
@@ -235,7 +235,7 @@ export const ProblemSection: React.FC<ProblemSectionProps> = ({ onNavigate }) =>
                   <p className="text-xs text-[#34D399]">Connected workflows, automation & AI</p>
                 </div>
               </div>
-              <span className="font-mono text-xs px-2.5 py-1 rounded-full bg-[#181D2E] text-[#D6B77A] border border-[#D6B77A]/40 font-semibold">
+              <span className="font-tag text-xs px-2.5 py-1 rounded-full bg-[#181D2E] text-[#D6B77A] border border-[#D6B77A]/40 font-semibold">
                 One System
               </span>
             </div>

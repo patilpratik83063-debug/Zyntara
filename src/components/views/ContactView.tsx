@@ -68,7 +68,7 @@ export const ContactView: React.FC<ContactViewProps> = ({
         
         {/* Header with Official Logo Badge */}
         <div className="text-center max-w-4xl mx-auto space-y-4">
-          <div className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-[#1E2638] border border-[#2DD4BF]/30 text-xs font-mono text-[#2DD4BF] shadow-[0_0_15px_rgba(45, 212, 191,0.2)]">
+          <div className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-[#1E2638] border border-[#2DD4BF]/30 text-xs font-tag text-[#2DD4BF] shadow-[0_0_15px_rgba(45, 212, 191,0.2)]">
             <img 
               src={ZYNTARA_LOGO_ICON} 
               alt="Zyntara" 
@@ -182,7 +182,7 @@ export const ContactView: React.FC<ContactViewProps> = ({
                 </div>
 
                 <div className="p-6 rounded-2xl bg-slate-900/80 border border-slate-800 text-left space-y-4 max-w-md mx-auto">
-                  <div className="text-xs font-mono text-emerald-400 uppercase">
+                  <div className="text-sm font-tag text-emerald-400 uppercase">
                     Direct Calendar Reservation (Optional):
                   </div>
                   <div className="space-y-2">
@@ -246,7 +246,7 @@ export const ContactView: React.FC<ContactViewProps> = ({
 
                 <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
                   <div className="space-y-1.5">
-                    <label className="text-xs font-mono text-slate-300">Full Name *</label>
+                    <label className="text-xs font-tag text-slate-300">Full Name *</label>
                     <input
                       type="text"
                       required
@@ -258,7 +258,7 @@ export const ContactView: React.FC<ContactViewProps> = ({
                   </div>
 
                   <div className="space-y-1.5">
-                    <label className="text-xs font-mono text-slate-300">Enterprise Work Email *</label>
+                    <label className="text-xs font-tag text-slate-300">Enterprise Work Email *</label>
                     <input
                       type="email"
                       required
@@ -270,7 +270,7 @@ export const ContactView: React.FC<ContactViewProps> = ({
                   </div>
 
                   <div className="space-y-1.5">
-                    <label className="text-xs font-mono text-slate-300">Company Name *</label>
+                    <label className="text-xs font-tag text-slate-300">Company Name *</label>
                     <input
                       type="text"
                       required
@@ -282,7 +282,7 @@ export const ContactView: React.FC<ContactViewProps> = ({
                   </div>
 
                   <div className="space-y-1.5">
-                    <label className="text-xs font-mono text-slate-300">Job Title / Role *</label>
+                    <label className="text-xs font-tag text-slate-300">Job Title / Role *</label>
                     <input
                       type="text"
                       required
@@ -294,7 +294,7 @@ export const ContactView: React.FC<ContactViewProps> = ({
                   </div>
 
                   <div className="space-y-1.5">
-                    <label className="text-xs font-mono text-slate-300">Industry Sector</label>
+                    <label className="text-xs font-tag text-slate-300">Industry Sector</label>
                     <select
                       value={formData.industry}
                       onChange={(e) => setFormData({ ...formData, industry: e.target.value })}
@@ -312,7 +312,7 @@ export const ContactView: React.FC<ContactViewProps> = ({
                   </div>
 
                   <div className="space-y-1.5">
-                    <label className="text-xs font-mono text-slate-300">Company Size</label>
+                    <label className="text-xs font-tag text-slate-300">Company Size</label>
                     <select
                       value={formData.companySize}
                       onChange={(e) => setFormData({ ...formData, companySize: e.target.value })}
@@ -328,7 +328,7 @@ export const ContactView: React.FC<ContactViewProps> = ({
                 </div>
 
                 <div className="space-y-1.5">
-                  <label className="text-xs font-mono text-slate-300">Current Core Stack (ERP, CRM, Databases)</label>
+                  <label className="text-xs font-tag text-slate-300">Current Core Stack (ERP, CRM, Databases)</label>
                   <input
                     type="text"
                     placeholder="e.g. SAP S/4HANA, Salesforce CRM, Snowflake, Workday"
@@ -340,7 +340,7 @@ export const ContactView: React.FC<ContactViewProps> = ({
 
                 <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
                   <div className="space-y-1.5">
-                    <label className="text-xs font-mono text-slate-300">Primary Transformation Goal</label>
+                    <label className="text-xs font-tag text-slate-300">Primary Transformation Goal</label>
                     <select
                       value={formData.primaryGoal}
                       onChange={(e) => setFormData({ ...formData, primaryGoal: e.target.value })}
@@ -356,7 +356,7 @@ export const ContactView: React.FC<ContactViewProps> = ({
                   </div>
 
                   <div className="space-y-1.5">
-                    <label className="text-xs font-mono text-slate-300">Target Timeline</label>
+                    <label className="text-xs font-tag text-slate-300">Target Timeline</label>
                     <select
                       value={formData.timeline}
                       onChange={(e) => setFormData({ ...formData, timeline: e.target.value })}
@@ -371,7 +371,7 @@ export const ContactView: React.FC<ContactViewProps> = ({
                 </div>
 
                 <div className="space-y-1.5">
-                  <label className="text-xs font-mono text-slate-300">Specific Challenges or Transformation Scope</label>
+                  <label className="text-xs font-tag text-slate-300">Specific Challenges or Transformation Scope</label>
                   <textarea
                     rows={3}
                     placeholder="Briefly describe your high-friction operational workflows, target EBITDA impact, or integration requirements..."

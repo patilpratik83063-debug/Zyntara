@@ -93,7 +93,7 @@ export const SolutionsSection: React.FC<SolutionsSectionProps> = ({ onNavigate }
                       <span className="font-mono text-xs font-bold px-2 py-0.5 rounded-md bg-[#222A3A] text-[#D6B77A] border border-[#D6B77A]/25">
                         {solution.number}
                       </span>
-                      <span className="text-[10px] font-mono text-[#7E8491] uppercase">
+                      <span className="text-xs font-tag text-[#7E8491] uppercase">
                         {solution.category}
                       </span>
                     </div>
@@ -130,7 +130,7 @@ export const SolutionsSection: React.FC<SolutionsSectionProps> = ({ onNavigate }
                 <span className="font-mono text-xs font-bold text-[#D6B77A] px-2 py-0.5 rounded-md bg-[#262E40] border border-[#D6B77A]/30">
                   SOLUTION {activeSolution.number}
                 </span>
-                <span className="text-xs font-mono text-[#34D399] uppercase font-semibold">
+                <span className="text-sm font-tag text-[#34D399] uppercase font-semibold">
                   {activeSolution.tagline}
                 </span>
               </div>
@@ -166,7 +166,7 @@ export const SolutionsSection: React.FC<SolutionsSectionProps> = ({ onNavigate }
           <div className="grid grid-cols-1 md:grid-cols-3 gap-4 pt-2">
             
             <div className="p-4 rounded-2xl bg-[#222A3A]/80 border border-white/[0.06] space-y-1.5">
-              <span className="text-[10px] font-mono text-[#D6B77A] uppercase font-bold tracking-wider">
+              <span className="text-xs font-tag text-[#D6B77A] uppercase font-bold tracking-wider">
                 What We Build & Automate:
               </span>
               <p className="text-xs text-[#E0E2EC] leading-relaxed">
@@ -175,7 +175,7 @@ export const SolutionsSection: React.FC<SolutionsSectionProps> = ({ onNavigate }
             </div>
 
             <div className="p-4 rounded-2xl bg-[#222A3A]/80 border border-white/[0.06] space-y-1.5">
-              <span className="text-[10px] font-mono text-[#34D399] uppercase font-bold tracking-wider">
+              <span className="text-xs font-tag text-[#34D399] uppercase font-bold tracking-wider">
                 Where It Fits In Your Business:
               </span>
               <p className="text-xs text-[#E0E2EC] leading-relaxed">
@@ -184,7 +184,7 @@ export const SolutionsSection: React.FC<SolutionsSectionProps> = ({ onNavigate }
             </div>
 
             <div className="p-4 rounded-2xl bg-[#222A3A]/80 border border-white/[0.06] space-y-1.5">
-              <span className="text-[10px] font-mono text-[#2DD4BF] uppercase font-bold tracking-wider">
+              <span className="text-xs font-tag text-[#2DD4BF] uppercase font-bold tracking-wider">
                 AI Cognitive Capability:
               </span>
               <p className="text-xs text-[#E0E2EC] leading-relaxed">
@@ -197,7 +197,7 @@ export const SolutionsSection: React.FC<SolutionsSectionProps> = ({ onNavigate }
           {/* Typical Use Cases & Connected Systems */}
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-6 pt-2">
             <div>
-              <span className="text-xs font-mono text-[#7E8491] uppercase tracking-wider block mb-2.5">
+              <span className="text-sm font-tag text-[#7E8491] uppercase tracking-wider block mb-2.5">
                 Typical Production Use Cases:
               </span>
               <div className="space-y-2">
@@ -211,7 +211,7 @@ export const SolutionsSection: React.FC<SolutionsSectionProps> = ({ onNavigate }
             </div>
 
             <div>
-              <span className="text-xs font-mono text-[#7E8491] uppercase tracking-wider block mb-2.5">
+              <span className="text-sm font-tag text-[#7E8491] uppercase tracking-wider block mb-2.5">
                 Connected Systems & Protocols:
               </span>
               <div className="flex flex-wrap gap-2">

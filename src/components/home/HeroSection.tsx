@@ -135,7 +135,7 @@ export const HeroSection: React.FC<HeroSectionProps> = ({
         >
           
           {/* Eyebrow badge with official logo icon */}
-          <motion.div variants={item} className="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-[#1E2638]/90 border border-[#D6B77A]/25 text-xs font-mono text-[#D6B77A] shadow-[0_2px_12px_rgba(0,0,0,0.5)]">
+          <motion.div variants={item} className="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-[#1E2638]/90 border border-[#D6B77A]/25 text-xs font-tag text-[#D6B77A] shadow-[0_2px_12px_rgba(0,0,0,0.5)]">
             <img 
               src={ZYNTARA_LOGO_ICON} 
               alt="Zyntara" 
@@ -170,7 +170,7 @@ export const HeroSection: React.FC<HeroSectionProps> = ({
 
           {/* Flagship Ecosystem Callout */}
           <motion.div variants={item} className="flex flex-wrap items-center gap-3 py-2 px-4 rounded-xl bg-[#1D2434] border border-white/10 text-xs text-[#F5F3EE]">
-            <span className="font-mono text-[#D6B77A] font-semibold uppercase tracking-wider">Flagship:</span>
+            <span className="font-tag text-[#D6B77A] font-semibold uppercase tracking-wider">Flagship:</span>
             <span className="font-semibold text-white tracking-wide">ZYNTARA ONE™</span>
             <span className="text-white/20 hidden sm:inline">|</span>
             <span className="italic text-[#B6BAC4]">"One AI Architecture. Your Entire Business."</span>
@@ -394,7 +394,7 @@ export const HeroSection: React.FC<HeroSectionProps> = ({
         className="relative z-10 max-w-7xl mx-auto w-full mt-12 pt-8 border-t border-white/[0.08]"
       >
         <div className="flex items-center justify-between gap-4 mb-3">
-          <span className="text-[11px] font-mono text-[#7E8491] uppercase tracking-widest font-semibold">
+          <span className="text-xs font-tag text-[#7E8491] uppercase tracking-widest font-semibold">
             Enterprise Architecture Domains:
           </span>
           <span className="text-[11px] font-mono text-[#D6B77A]">

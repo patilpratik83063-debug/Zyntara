@@ -42,7 +42,7 @@ export const CaseStudiesView: React.FC<CaseStudiesViewProps> = ({
         
         {/* Header */}
         <div className="text-center max-w-4xl mx-auto space-y-4">
-          <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-emerald-950/70 border border-emerald-500/30 text-xs font-mono text-emerald-300">
+          <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-emerald-950/70 border border-emerald-500/30 text-xs font-tag text-emerald-300">
             <TrendingUp className="w-3.5 h-3.5" />
             <span>MEASURABLE ENTERPRISE IMPACT</span>
           </div>
@@ -71,7 +71,7 @@ export const CaseStudiesView: React.FC<CaseStudiesViewProps> = ({
                 }`}
               >
                 <div>
-                  <div className="text-[10px] font-mono uppercase text-emerald-400">
+                  <div className="text-xs font-tag uppercase text-emerald-400">
                     {cs.industry}
                   </div>
                   <div className="font-display font-bold text-xs mt-1 text-white line-clamp-2">
@@ -93,7 +93,7 @@ export const CaseStudiesView: React.FC<CaseStudiesViewProps> = ({
           <div className="flex flex-col lg:flex-row lg:items-center justify-between gap-6 pb-8 border-b border-slate-800">
             <div>
               <div className="flex items-center gap-3">
-                <span className="text-xs font-mono px-3 py-1 rounded bg-emerald-950 text-emerald-300 border border-emerald-500/30 uppercase">
+                <span className="text-xs font-tag px-3 py-1 rounded bg-emerald-950 text-emerald-300 border border-emerald-500/30 uppercase">
                   {activeStudy.industry}
                 </span>
                 <span className="text-xs font-mono text-slate-400">
@@ -135,7 +135,7 @@ export const CaseStudiesView: React.FC<CaseStudiesViewProps> = ({
           {/* Problem vs Solution Architecture */}
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-8">
             <div className="p-6 sm:p-8 rounded-2xl bg-rose-950/15 border border-rose-500/30 space-y-3">
-              <div className="text-xs font-mono text-rose-400 uppercase font-bold">
+              <div className="text-sm font-tag text-rose-400 uppercase font-bold">
                 Legacy State & Architectural Bottleneck:
               </div>
               <p className="text-sm text-slate-200 leading-relaxed">
@@ -144,7 +144,7 @@ export const CaseStudiesView: React.FC<CaseStudiesViewProps> = ({
             </div>
 
             <div className="p-6 sm:p-8 rounded-2xl bg-emerald-950/20 border border-emerald-500/30 space-y-3">
-              <div className="text-xs font-mono text-emerald-400 uppercase font-bold">
+              <div className="text-sm font-tag text-emerald-400 uppercase font-bold">
                 Zyntara One™ Architecture Deployed:
               </div>
               <p className="text-sm text-slate-200 leading-relaxed">
@@ -155,7 +155,7 @@ export const CaseStudiesView: React.FC<CaseStudiesViewProps> = ({
 
           {/* Enterprise Architecture Topology Tags */}
           <div className="p-6 rounded-2xl bg-slate-900/60 border border-slate-800 space-y-3">
-            <div className="text-xs font-mono text-slate-400 uppercase">
+            <div className="text-sm font-tag text-slate-400 uppercase">
               Integrated Zyntara One™ Layers & Subsystems:
             </div>
             <div className="flex flex-wrap gap-2">

@@ -34,7 +34,7 @@ export const IndustriesView: React.FC<IndustriesViewProps> = ({
         
         {/* Header */}
         <div className="text-center max-w-4xl mx-auto space-y-4">
-          <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-emerald-950/70 border border-emerald-500/30 text-xs font-mono text-emerald-300">
+          <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-emerald-950/70 border border-emerald-500/30 text-xs font-tag text-emerald-300">
             <Building2 className="w-3.5 h-3.5" />
             <span>VERTICAL ENTERPRISE INTELLIGENCE</span>
           </div>
@@ -75,7 +75,7 @@ export const IndustriesView: React.FC<IndustriesViewProps> = ({
           {/* Top Headline & Opportunity */}
           <div className="flex flex-col lg:flex-row lg:items-center justify-between gap-6 pb-6 border-b border-slate-800">
             <div>
-              <span className="text-xs font-mono text-emerald-400 uppercase tracking-widest">
+              <span className="text-sm font-tag text-emerald-400 uppercase tracking-widest">
                 Target Industry Sector
               </span>
               <h2 className="text-3xl sm:text-4xl font-display font-extrabold text-white mt-1">
@@ -99,7 +99,7 @@ export const IndustriesView: React.FC<IndustriesViewProps> = ({
           {/* Core Problem vs AI Opportunity */}
           <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
             <div className="p-6 rounded-2xl bg-rose-950/20 border border-rose-500/30 space-y-2">
-              <div className="text-xs font-mono text-rose-400 uppercase font-bold">
+              <div className="text-sm font-tag text-rose-400 uppercase font-bold">
                 Industry Challenge & Structural Latency:
               </div>
               <p className="text-sm text-slate-200 leading-relaxed">
@@ -108,7 +108,7 @@ export const IndustriesView: React.FC<IndustriesViewProps> = ({
             </div>
 
             <div className="p-6 rounded-2xl bg-emerald-950/30 border border-emerald-500/30 space-y-2">
-              <div className="text-xs font-mono text-emerald-400 uppercase font-bold">
+              <div className="text-sm font-tag text-emerald-400 uppercase font-bold">
                 Zyntara AI Transformation Opportunity:
               </div>
               <p className="text-sm text-slate-200 leading-relaxed">
@@ -119,7 +119,7 @@ export const IndustriesView: React.FC<IndustriesViewProps> = ({
 
           {/* Intelligence Layer Applications */}
           <div className="space-y-3">
-            <h3 className="text-xs font-mono text-slate-400 uppercase tracking-wider">
+            <h3 className="text-sm font-tag text-slate-400 uppercase tracking-wider">
               Domain Intelligence & Telemetry Ingestion:
             </h3>
             <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
@@ -134,7 +134,7 @@ export const IndustriesView: React.FC<IndustriesViewProps> = ({
 
           {/* Expected Outcomes Framework */}
           <div className="p-6 rounded-2xl bg-slate-900/80 border border-slate-800 space-y-4">
-            <div className="text-xs font-mono text-emerald-400 uppercase font-semibold">
+            <div className="text-sm font-tag text-emerald-400 uppercase font-semibold">
               Quantifiable Business Impact Metrics:
             </div>
             <div className="grid grid-cols-1 sm:grid-cols-3 gap-4">
@@ -150,7 +150,7 @@ export const IndustriesView: React.FC<IndustriesViewProps> = ({
           {/* Architecture Components & Workforce Modules */}
           <div className="grid grid-cols-1 sm:grid-cols-2 gap-6 pt-4 border-t border-slate-800">
             <div>
-              <div className="text-xs font-mono text-slate-400 uppercase mb-2">
+              <div className="text-sm font-tag text-slate-400 uppercase mb-2">
                 Deployed Workforce Modules:
               </div>
               <div className="flex flex-wrap gap-2">
@@ -163,7 +163,7 @@ export const IndustriesView: React.FC<IndustriesViewProps> = ({
             </div>
 
             <div>
-              <div className="text-xs font-mono text-slate-400 uppercase mb-2">
+              <div className="text-sm font-tag text-slate-400 uppercase mb-2">
                 Architecture Components:
               </div>
               <div className="flex flex-wrap gap-2">

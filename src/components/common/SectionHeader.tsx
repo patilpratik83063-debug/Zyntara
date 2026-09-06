@@ -56,15 +56,15 @@ export const SectionHeader: React.FC<SectionHeaderProps> = ({
       {/* Eyebrow or Badge */}
       <motion.div variants={item} className="flex items-center gap-2.5 mb-3.5">
         {eyebrow && (
-          <span className={`font-mono text-xs tracking-[0.2em] uppercase font-semibold ${isLight ? 'text-[#059669]' : 'text-[#D6B77A]'}`}>
+          <span className={`font-tag text-sm tracking-wide ${isLight ? 'text-[#059669]' : 'text-[#D6B77A]'}`}>
             {eyebrow}
           </span>
         )}
         {eyebrow && <span className={`hidden sm:block w-10 h-px ${isLight ? 'bg-[#059669]/40' : 'bg-[#D6B77A]/40'}`} />}
         {badge && (
-          <span className={`inline-flex items-center px-2.5 py-0.5 rounded-full text-[10px] font-mono tracking-wider ${
+          <span className={`inline-flex items-center px-3 py-1 rounded-full text-xs font-tag tracking-wide ${
             isLight
-              ? 'bg-[#111216]/5 text-[#111216] border border-[#111216]/10 font-semibold'
+              ? 'bg-[#111216]/5 text-[#111216] border border-[#111216]/10'
               : 'bg-[#222A3A]/80 text-[#EBD9B3] border border-[#D6B77A]/25'
           }`}>
             {badge}
