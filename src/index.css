@@ -223,6 +223,14 @@ html.lenis body {
   animation: gradient-pan 6s ease-in-out infinite;
 }
 
+/* Premium static gradient text — GPU-safe, no per-frame repaint */
+.text-gradient-shimmer {
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-image: linear-gradient(90deg, #F5F3EE 0%, #D6B77A 45%, #34D399 100%);
+}
+
 /* Button shine sweep */
 @keyframes shine {
   0% { transform: translateX(-100%) skewX(-15deg); }
