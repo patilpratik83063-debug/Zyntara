@@ -148,63 +148,65 @@ export const HeroSection: React.FC<HeroSectionProps> = ({
           </motion.div>
 
           {/* Main Headline — cinematic word reveal */}
-          <motion.h1 className="text-4xl sm:text-6xl lg:text-7xl xl:text-8xl font-display font-extrabold text-[#F5F3EE] tracking-tight leading-[1.02]">
+          <motion.h1 className="text-4xl sm:text-6xl lg:text-7xl xl:text-8xl font-display font-extrabold text-[#F5F3EE] tracking-tight leading-[1.03]">
             <span className="block">
               <AnimatedText
-                text="BUILD"
-                stagger={0.08}
+                text="AUTOMATE"
+                stagger={0.09}
                 delay={0.15}
-              />{' '}
-              <AnimatedText
-                text="AN"
-                stagger={0.08}
-                delay={0.3}
-                wordClassName="text-white/60"
               />
             </span>
             <AnimatedText
-              text="AI-POWERED"
+              text="EVERYTHING."
               wordClassName="font-tag font-normal italic text-transparent bg-clip-text bg-gradient-to-r from-[#6EE7B7] via-[#34D399] to-[#D6B77A]"
-              stagger={0.09}
-              delay={0.55}
+              stagger={0.1}
+              delay={0.5}
               className="block"
             />
-            <span className="relative inline-block">
+            <span className="block sm:mt-1">
               <AnimatedText
-                text="ENTERPRISE."
-                stagger={0.09}
+                text="SCALE"
+                stagger={0.1}
                 delay={0.95}
-                wordClassName="text-gradient-shimmer"
-              />
-              {/* Hand-drawn flourish underline */}
-              <motion.svg
-                className="absolute -bottom-2 sm:-bottom-4 left-0 w-full h-4 sm:h-6 pointer-events-none"
-                viewBox="0 0 300 24"
-                fill="none"
-                initial="hidden"
-                animate="visible"
-              >
-                <motion.path
-                  d="M4 16 C 60 6, 130 22, 180 12 S 290 8, 296 12"
-                  stroke="url(#hero-flourish)"
-                  strokeWidth="5"
-                  strokeLinecap="round"
-                  variants={{ hidden: { pathLength: 0, opacity: 0 }, visible: { pathLength: 1, opacity: 1 } }}
-                  transition={{ duration: 1.1, delay: 1.4, ease: [0.16, 1, 0.3, 1] }}
+                wordClassName="text-white/85"
+              />{' '}
+              <span className="relative inline-block">
+                <AnimatedText
+                  text="WITHOUT LIMITS."
+                  stagger={0.1}
+                  delay={1.2}
+                  wordClassName="text-gradient-shimmer"
                 />
-                <defs>
-                  <linearGradient id="hero-flourish" x1="0" y1="0" x2="300" y2="0" gradientUnits="userSpaceOnUse">
-                    <stop stopColor="#34D399" />
-                    <stop offset="1" stopColor="#D6B77A" />
-                  </linearGradient>
-                </defs>
-              </motion.svg>
+                {/* Hand-drawn flourish underline */}
+                <motion.svg
+                  className="absolute -bottom-2 sm:-bottom-4 left-0 w-full h-4 sm:h-6 pointer-events-none"
+                  viewBox="0 0 320 24"
+                  fill="none"
+                  initial="hidden"
+                  animate="visible"
+                >
+                  <motion.path
+                    d="M4 16 C 62 6, 132 22, 184 12 S 304 7, 314 11"
+                    stroke="url(#hero-flourish)"
+                    strokeWidth="5"
+                    strokeLinecap="round"
+                    variants={{ hidden: { pathLength: 0, opacity: 0 }, visible: { pathLength: 1, opacity: 1 } }}
+                    transition={{ duration: 1.1, delay: 1.7, ease: [0.16, 1, 0.3, 1] }}
+                  />
+                  <defs>
+                    <linearGradient id="hero-flourish" x1="0" y1="0" x2="320" y2="0" gradientUnits="userSpaceOnUse">
+                      <stop stopColor="#34D399" />
+                      <stop offset="1" stopColor="#D6B77A" />
+                    </linearGradient>
+                  </defs>
+                </motion.svg>
+              </span>
             </span>
           </motion.h1>
 
           {/* Supporting Executive Statement */}
           <motion.p variants={item} className="text-base sm:text-lg text-[#B6BAC4] font-normal leading-relaxed max-w-xl">
-            Connect your data, workflows, teams and business systems with intelligent AI, automation and software built around the way your business actually works.
+            Replace manual busywork with intelligent systems that think, connect, and move on their own — so your company compounds instead of churning.
           </motion.p>
 
           {/* Flagship Ecosystem Callout */}
